@@ -1,16 +1,13 @@
-import React from 'react'
-
-
-import '../page2.css'
 
 import frame1 from "../../../assets/Digital_Marketing_Services/images/image1.png";
-import frame2 from "../../../assets/Digital_Marketing_Services/images/image2.png";
-import frame3 from "../../../assets/Digital_Marketing_Services/images/image3.png";
-import frame4 from "../../../assets/Digital_Marketing_Services/images/image4.png";
-import frame5 from "../../../assets/Digital_Marketing_Services/images/image5.png";
+import frame3 from "../../../assets/Digital_Marketing_Services/images/image2.png";
+import frame5 from "../../../assets/Digital_Marketing_Services/images/image3.png";
+import frame2 from "../../../assets/Digital_Marketing_Services/images/image4.png";
+import frame4 from "../../../assets/Digital_Marketing_Services/images/image5.png";
 import frame6 from "../../../assets/Digital_Marketing_Services/images/image6.png";
+import "./page1.css";
 
-const Page2 = () => {
+const Service3_2 = () => {
   return (
     <div>
       <section className="digital-marketing-services-2-2">
@@ -22,7 +19,7 @@ const Page2 = () => {
 
         <div className="benefites-containr-2">
           <div className="column-2 custom-border-2 right-pad-30">
-            <div>
+            <div className="e-commerce-services-benefits-div">
               <img src={frame1} alt="Icon" />
               <h3 className="benefit-title">Strategic Brand Positioning</h3>
               <p className="benefit-text">
@@ -33,8 +30,18 @@ const Page2 = () => {
               </p>
             </div>
 
-            <div>
+            <div className="e-commerce-services-benefits-div">
               <img src={frame2} alt="Icon" />
+              <h3 className="benefit-title">Qualified Lead & Demand Generation</h3>
+              <p className="benefit-text">
+                We design structured social media journeys that transform engagement into high quality leads, supporting sustainable demand generation, improved conversion rates, and measurable revenue growth.
+              </p>
+            </div>
+          </div>
+
+          <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
+            <div className="e-commerce-services-benefits-div">
+              <img src={frame3} alt="Icon" />
               <h3 className="benefit-title">Performance Driven Visibility</h3>
               <p className="benefit-text">
                 Our approach prioritizes quality reach over vanity metrics,
@@ -43,53 +50,34 @@ const Page2 = () => {
                 business outcomes.
               </p>
             </div>
-          </div>
 
-          <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
-            <div>
-              <img src={frame6} alt="Icon" />
-              <h3 className="benefit-title">Consistent Brand Experience</h3>
-              <p className="benefit-text">
-                From visual identity to brand messaging, we maintain complete
-                consistency across all social media platforms helping build
-                recognition, trust, and a cohesive brand experience that
-                audiences remember.
-              </p>
-            </div>
-
-            <div>
-              <img src={frame5} alt="Icon" />
+            <div className="e-commerce-services-benefits-div">
+              <img src={frame4} alt="Icon" />
               <h3 className="benefit-title">
-                Qualified Lead & Demand Generation
+                Data Backed Decision Making
               </h3>
               <p className="benefit-text">
-                We design structured social media journeys that transform
-                engagement into high quality leads, supporting sustainable
-                demand generation, improved conversion rates, and measurable
-                revenue growth.
+                Every strategy and campaign is guided by in depth analytics, audience insights, and performance data allowing continuous optimization, smarter decisions, and predictable marketing results.
               </p>
             </div>
           </div>
 
           <div className="column-2 left-pad-50 right-pad-30">
-            <div>
-              <img src={frame3} alt="Icon" />
-              <h3 className="benefit-title">Data Backed Decision Making</h3>
+            <div className="e-commerce-services-benefits-div">
+              <img src={frame5} alt="Icon" />
+              <h3 className="benefit-title">Consistent Brand Experience</h3>
               <p className="benefit-text">
-                Every strategy and campaign is guided by in depth analytics,
-                audience insights, and performance data allowing continuous
-                optimization, smarter decisions, and predictable marketing
-                results.
+                From visual identity to brand messaging, we maintain complete consistency across all social media platforms helping build recognition, trust, and a cohesive brand experience that audiences remember.
               </p>
             </div>
 
-            <div>
-              <img src={frame4} alt="Icon" />
+            <div className="e-commerce-services-benefits-div">
+              <img src={frame6} alt="Icon" />
               <h3 className="benefit-title">Reputation & Community Growth</h3>
               <p className="benefit-text">
-                We actively manage conversations, interactions, and feedback to
-                build trust driven communities, strengthen brand reputation, and
-                foster long term customer loyalty around your business.
+                By aligning branding with business strategy and operations, we
+                reduce confusion, improve execution speed, and enable teams to
+                communicate and perform with clarity and confidence.
               </p>
             </div>
           </div>
@@ -113,7 +101,7 @@ const Page2 = () => {
             <span className="second-text">Key Highlights</span>
           </p>
 
-          <ul>
+          <ul style={{ marginLeft: "40px", width: "100%" }}>
             <li className="second-text">
               Strategic Brand Authority Position your brand with clarity,
               credibility, and market relevance
@@ -138,7 +126,7 @@ const Page2 = () => {
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Page2
+export default Service3_2;

@@ -22,7 +22,7 @@ import ContactUs_header from "./components/ContactUs/Contact/ContactUs_header";
 import Contact from "./components/Home/HomePage8/Contact";
 import EcommerceSolutions from "./components/Services/EcommerceSolutions/EcommerceSolutions";
 import BusinessSoftwareSolutions from "./components/Services/BusinessSoftwareSolutions/BusinessSoftwareSolutions";
-import DigitalMarketingService from "./components/Services/DigitalMarketingService/DigitalMarketingService";
+import Digital_Marketing_Services from "./components/Services/DigitalMarketingService/DigitalMarketingServices";
 import DesignCreativeService from "./components/Services/DesignCreativeService/DesignCreativeService";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import BrandingStrategy from "./components/Services/BrandingStrategy/BrandingStrategy";
@@ -40,7 +40,7 @@ function App() {
          <Route path="/contact" element={<><ContactUs_header/><Contact/><HomePage9/></>}/>
          <Route path="/services/ecommerce-solutions" element={<><EcommerceSolutions/></>}/>
          <Route path="/services/business-software-solutions" element={<><BusinessSoftwareSolutions/></>}/>
-         <Route path="/services/digital-marketing" element={<><DigitalMarketingService/></>} />
+         <Route path="/services/digital-marketing" element={<><Digital_Marketing_Services/></>} />
          <Route path="/services/design-Creative-Services" element={<><DesignCreativeService/></>} />
          <Route path="/services/branding-strategy" element={<><BrandingStrategy/></>}/>
       </Routes>

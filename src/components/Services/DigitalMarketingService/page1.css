@@ -9,17 +9,17 @@
 
 @font-face {
   font-family: 'decalotype-light';
-  src: url('../assets/font/decalotype.light.ttf');
+  src: url('../../assets/font/decalotype.light.ttf');
 }
 
 @font-face {
   font-family: 'decalotype-regular';
-  src: url('../assets/font/decalotype.regular.ttf');
+  src: url('../../assets/font/decalotype.regular.ttf');
 }
 
 @font-face {
   font-family: 'decalotype-semibold';
-  src: url('../assets/font/decalotype.semibold.ttf');
+  src: url('../../assets/font/decalotype.semibold.ttf');
 }
 
 /* ==========================================
@@ -29,9 +29,9 @@
 .hero-box-service1 {
 
   padding: 3%;
-  padding-top: 0px;
+  padding-top: 80px;
 background-image:
-    url("../assets/images/Ellipse 7.png"),
+    url("../../assets/images/Ellipse 7.png"),
     linear-gradient(
     90deg,
     #000103,
@@ -261,7 +261,7 @@ background-image:
 
   .hero-box-service1 {
     background-image:
-      url("../assets/images/Ellipse 5.png"),
+      url("../../assets/images/Ellipse 5.png"),
       linear-gradient(-90deg,
         #000103,
         #000814,
@@ -358,7 +358,7 @@ background-image:
 
   .hero-box-service1 {
     background-image:
-      url("../assets/images/Ellipse 5.png"),
+      url("../../assets/images/Ellipse 5.png"),
       linear-gradient(-90deg,
         #000103,
         #000814,
@@ -464,9 +464,9 @@ background-image:
   padding: clamp(40px, 6vw, 100px) 0;
 
   background-image:
-    url("../assets/images/Ellipse 81.png"),
-    url("../assets/images/Ellipse 6.png"),
-    url("../assets/images/Vector 3-1.png"),
+    url("../../assets/images/Ellipse 81.png"),
+    url("../../assets/images/Ellipse 6.png"),
+    url("../../assets/images/Vector 3-1.png"),
     linear-gradient(to right, #000103, #000814, #01112C, #00307C);
 
   background-position:
@@ -596,7 +596,7 @@ background-image:
 
   .digital-marketing-services-2-2 {
     background-image:
-      url("../assets/images/Ellipse 5-1.png"),
+      url("../../assets/images/Ellipse 5-1.png"),
       linear-gradient(to bottom, #000103, #000814, #01112C, #00307C);
 
     background-size: 200px, cover;
@@ -612,8 +612,8 @@ background-image:
   margin-top: -2%;
 
     background-image:
-  url("src/assets/images/Ellipse 6-1.png"),
-  url("src/assets/images/Vector 3.png"),
+  url("../../assets/images/Ellipse 6-1.png"),
+  url("../../assets/images/Vector 3.png"),
    linear-gradient(
     90deg,
     #000103,
@@ -724,9 +724,9 @@ background-size:
   margin-top: -80px;
 
   background-image:
-    url("../assets/images/Vector 3-1.png"),
-    url("../assets/images/Ellipse 7.png"),
-    url("../assets/images/Ellipse 81.png"),
+    url("../../assets/images/Vector 3-1.png"),
+    url("../../assets/images/Ellipse 7.png"),
+    url("../../assets/images/Ellipse 81.png"),
     linear-gradient(
     90deg,
     #000103,
@@ -964,10 +964,10 @@ background-size:
   margin-top: -3px;
   padding: 3%;
       background-image:
-    url("../assets/images/Vector 3.png"),
-    url("../assets/images/Ellipse 7.png"),
-    url("../assets/images/Ellipse 6.png"),
-    url("../assets/images/Ellipse 6-1.png"),
+    url("../../assets/images/Vector 3.png"),
+    url("../../assets/images/Ellipse 7.png"),
+    url("../../assets/images/Ellipse 6.png"),
+    url("../../assets/images/Ellipse 6-1.png"),
     linear-gradient(
     to right,
     #000103,
@@ -1123,7 +1123,7 @@ body {
   width: 100vw;
   min-height: 100vh;
     background-image:
-    url('../assets/images/Ellipse 81.png'),
+    url('../../assets/images/Ellipse 81.png'),
     linear-gradient(
     90deg,
     #000103,
