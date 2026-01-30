@@ -16,7 +16,11 @@
 .hero-box-service1 {
 
   padding: 3%;
+<<<<<<< HEAD
   padding-top: clamp(60px, 6vw, 140px);
+=======
+  padding-top: 80px;
+>>>>>>> e780f4390a4d2acaea8a8e2c64ba87c9b54fda0c
 background-image:
     url("../../assets/images/Ellipse 7.png"),
     linear-gradient(
@@ -45,9 +49,15 @@ background-image:
 .title2-service1 {
   font-family: 'decalotype-semibold';
   font-size: 80px;
+<<<<<<< HEAD
   font-weight: 800;
   line-height: 0.98;
   padding: 8px 0;
+=======
+  font-family: 800;
+  height: auto;
+  line-height: 1.2;
+>>>>>>> e780f4390a4d2acaea8a8e2c64ba87c9b54fda0c
   text-align: center;
   background: linear-gradient(135deg, #00c8ff, #0077ff);
   -webkit-background-clip: text;
@@ -394,7 +404,14 @@ background-image:
     text-align: left;
     width: 150%;
     border: 2px solid red;
+<<<<<<< HEAD
 
 
   }
 }
+=======
+  }
+}
+
+
+>>>>>>> e780f4390a4d2acaea8a8e2c64ba87c9b54fda0c

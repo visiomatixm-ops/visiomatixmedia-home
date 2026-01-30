@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 
 
@@ -7,14 +8,27 @@ import image3 from "../../../assets/Digital_Marketing_Services/images/2.png";
 
 
 const Page3 = () => {
+=======
+import React from "react";
+import "../page1.css";
+import image3 from "../../../assets/Digital_Marketing_Services/images/2.png";
+
+const Service3_3 = () => {
+>>>>>>> e780f4390a4d2acaea8a8e2c64ba87c9b54fda0c
   return (
     <>
       <section className="business-software-solution3">
         <p className="para-bss3">
           <p>
+<<<<<<< HEAD
             A Results Driven Organic Social Media Marketing Agency in Nashik
           </p>
           At Visiomatix Media, a trusted social media marketing agency in
+=======
+           A Results Driven Organic Social Media Marketing Agency in Nashik
+            </p>
+         At Visiomatix Media, a trusted social media marketing agency in
+>>>>>>> e780f4390a4d2acaea8a8e2c64ba87c9b54fda0c
           Nashik, we specialize in driving organic growth and brand visibility
           through strategically crafted social media ecosystems. Our focus goes
           beyond paid promotion we create high quality, engaging content that
@@ -26,6 +40,7 @@ const Page3 = () => {
           fosters loyalty, and enhances online presence without dependence on ad
           spend helping brands engage, influence, and convert audiences
           organically with lasting impact.
+<<<<<<< HEAD
         </p>
         <img src={image3} alt="" className="image-bss3" />
       </section>
@@ -34,3 +49,15 @@ const Page3 = () => {
 }
 
 export default Page3
+=======
+          </p>
+        <img src={image3} alt="" className="image-bss3" />
+      </section>
+    </>
+  );
+};
+
+export default Service3_3;
+
+
+>>>>>>> e780f4390a4d2acaea8a8e2c64ba87c9b54fda0c

@@ -108,6 +108,7 @@
   ;
 }
 
+<<<<<<< HEAD
 /* Ensure list markers and text are consistently indented */
 .second-container-2 ul {
   padding-left: 30px;
@@ -119,6 +120,8 @@
   list-style-position: outside;
 }
 
+=======
+>>>>>>> e780f4390a4d2acaea8a8e2c64ba87c9b54fda0c
 /* ================= TABLET ================= */
 
 @media (max-width: 992px) {
