@@ -1,4 +1,4 @@
-import "./page1.css";
+import "../page1.css";
 import logo from "../../../assets/Digital_Marketing_Services/images/logo.png";
 import igIcon from "../../../assets/Digital_Marketing_Services/images/instgram2.png";
 import fbIcon from "../../../assets/Digital_Marketing_Services/images/facebook3.png";

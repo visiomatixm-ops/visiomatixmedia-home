@@ -1,5 +1,5 @@
 import React from "react";
-import "./page1.css";
+import "../page1.css";
 
 // import img1 from "../assets/branding-and-strategy/images/5-1.png";
 // import img2 from "../assets/branding-and-strategy/images/5-2.png";

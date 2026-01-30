@@ -1,4 +1,4 @@
-import "./page1.css";
+import "../page1.css";
 import img1 from "../../../assets/Digital_Marketing_Services/icon/PPC.png";
 import img2 from "../../../assets/Digital_Marketing_Services/icon/web-app.png";
 import img3 from "../../../assets/Digital_Marketing_Services/icon/email.png";

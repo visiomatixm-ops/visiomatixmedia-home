@@ -1,5 +1,5 @@
 import React from 'react'
-import './page1.css'
+import '../page1.css'
 
 import Service3_1 from './Page1'
 import Service3_2 from './Page2'

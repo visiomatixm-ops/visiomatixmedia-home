@@ -5,7 +5,7 @@ import frame5 from "../../../assets/Digital_Marketing_Services/images/image3.png
 import frame2 from "../../../assets/Digital_Marketing_Services/images/image4.png";
 import frame4 from "../../../assets/Digital_Marketing_Services/images/image5.png";
 import frame6 from "../../../assets/Digital_Marketing_Services/images/image6.png";
-import "./page1.css";
+import "../page1.css";
 
 const Service3_2 = () => {
   return (

@@ -1,4 +1,4 @@
-import "./page1.css";
+import "../page1.css";
 
 import digimart from "../../../assets/Digital_Marketing_Services/images/1.png";
 
