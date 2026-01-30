@@ -121,16 +121,52 @@ const Contact = () => {
   </div>
 
   <div className="field">
-    <input name="mobile" type="tel" placeholder="Phone Number*" />
+    <input
+      name="mobile"
+      type="tel"
+      placeholder="Phone Number*"
+      inputMode="numeric"
+      pattern="\d*"
+      maxLength={10}
+      onInput={(e) => { e.target.value = e.target.value.replace(/\D/g, '').slice(0,10); }}
+      onPaste={(e) => {
+        e.preventDefault();
+        const paste = (e.clipboardData || window.clipboardData).getData('text') || '';
+        const digits = paste.replace(/\D/g, '').slice(0,10);
+        const target = e.target;
+        const start = target.selectionStart || 0;
+        const end = target.selectionEnd || 0;
+        const newVal = (target.value || '').slice(0, start) + digits + (target.value || '').slice(end);
+        target.value = newVal.slice(0,10);
+        target.dispatchEvent(new Event('input', { bubbles: true }));
+      }}
+    />
     {errors.mobile && <small className="error">{errors.mobile}</small>}
   </div>
 
 </div>
 
 
-            <select name="service">
+            <select
+              name="service"
+              onChange={(e) => {
+                if (e.target.value) {
+                  setErrors((prev) => {
+                    if (!prev || !prev.service) return prev;
+                    const copy = { ...prev };
+                    delete copy.service;
+                    return copy;
+                  });
+                }
+              }}
+            >
               <option value="">Which service are you interested in?*</option>
-              <option value="digital-market">Digital Marketing</option>
+              <option value="digital-marketing">Digital Marketing</option>
+              <option value="design-creative">Design & Creative</option>
+              <option value="webapp-development">Web App Development</option>
+              <option value="business-software-solutions">Business Software Solutions</option>
+              <option value="ecommerce-solutions">E-Commerce Solutions</option>
+              <option value="branding-strategy">Branding & Strategy</option>
             </select>
             {errors.service && <small className='error'>{errors.service}</small>}
 

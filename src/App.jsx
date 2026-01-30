@@ -24,7 +24,7 @@ import BusinessSoftwareSolutions from "./components/Services/BusinessSoftwareSol
 import DesignCreativeService from "./components/Services/DesignCreativeService/DesignCreativeService";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import BrandingStrategy from "./components/Services/BrandingStrategy/BrandingStrategy";
-
+import DigitalMarketingService from "./components/Services/DigitalMarketingService/DigitalMarketingService";
 function App() {
   return (
     <div className="app">
@@ -40,6 +40,7 @@ function App() {
          <Route path="/services/business-software-solutions" element={<><BusinessSoftwareSolutions/></>}/>
          <Route path="/services/design-Creative-Services" element={<><DesignCreativeService/></>} />
          <Route path="/services/branding-strategy" element={<><BrandingStrategy/></>}/>
+         <Route path="/services/digital-marketing" element={<><DigitalMarketingService/></>}/>
       </Routes>
           
       </BrowserRouter>
