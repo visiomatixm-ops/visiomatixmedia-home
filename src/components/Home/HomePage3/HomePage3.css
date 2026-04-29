@@ -1,0 +1,305 @@
+.why-section-home3 {
+  width: 100%;
+  color: #FFFFFF;
+  font-family: "Decolotype", sans-serif;
+  overflow-x: hidden;
+  /* padding: 0 clamp(24px, 6vw, 100px) clamp(60px, 8vw, 80px); */
+  background-image:
+  url('../../../assets/images/Ellipse\ 6.png'),
+   radial-gradient(
+    circle at right center,
+    rgba(0, 123, 255, 0.6),
+    rgba(0, 123, 255, 0.3) 20%,
+    transparent 40%
+  ),
+
+  linear-gradient(90deg,#000103,#000814,#01112C,#00307C);
+  background-repeat: no-repeat,no-repeat,no-repeat,no-repeat;
+  background-size:
+  250px auto,
+  650px auto,
+  cover
+  ;
+  background-position:
+  left 0px top 0px,
+
+  right 0px top 0%,
+  center
+  ;
+}
+
+.why-section-home3 > * {
+  /* max-width: 1400px; */
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+
+.why-text-main-top-container-home3 {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  align-items: center;
+}
+
+
+.top-badge-home3 {
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.years-home3 {
+  
+  font-family: "Tourney", sans-serif;
+  font-size: 96px;
+  line-height: 1;
+}
+
+.top-badge-home3 p {
+  font-family: "Commissioner", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.top-badge-home3 a {
+  color: #4FD1FF;
+  text-decoration: underline;
+}
+
+.experience-text-home3 {
+  font-size: 18px;
+}
+
+.why-content-home3 h1 {
+  padding-left: 50px;
+
+  font-size: 48px;
+  margin: 18px 0 14px;
+  background: linear-gradient(90deg, #02C6FF, #4B6DEF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.why-content-home3 p {
+  padding-left: 50px;
+
+  font-size: 18px;
+  line-height: 1.55;
+  max-width: 620px;
+}
+
+.why-choose-big-text-home3 {
+  font-size: 20px;
+  font-weight: 300;
+  
+}
+
+
+
+.why-image-home3 {
+  max-width: 550px;
+  display: grid;
+  grid-template-columns: auto max-content;/* image | pill */
+  align-items: center;
+}
+
+
+
+/* IMAGE */
+.why-image-home3 img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 22px;
+}
+
+/* PILL COLUMN */
+.pill-column-home3 {
+  width: 30px;
+  /* margin-left: -100px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PILL */
+.contact-pill-home3 {
+  transform: rotate(-90deg) translateY(-30px);
+  transform-origin: center;
+  text-decoration: none;
+  height: 36px;
+  padding: 0 28px;
+padding-top:8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  
+  white-space: nowrap;
+}
+
+
+.stats-wrapper-home3 {
+  padding-left: 50px;
+
+  margin-top: 48px;
+}
+
+.stats-row-home3 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px;
+}
+
+.stats-text-container-home3 {
+  display: flex;
+  align-items: center;
+  
+  gap: 10px;
+}
+
+.stat-box-home3 h1 {
+  font-size: 38px;
+  background: linear-gradient(90deg, #02C6FF, #4B6DEF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat-box-home3 span {
+  font-size: 18px;
+  color: rgba(225, 222, 222, 0.75);
+}
+
+
+.divider-home3 {
+  height: 1.5px;
+  background: #31CCFF;
+  margin: 22px 0 26px;
+  padding: 0px;
+  /* width: 100vw; */
+  /* margin-left: -100px; */
+}
+
+.trusted-text-home3 {
+  text-decoration: underline;
+  margin-bottom: 28px;
+  padding-left: 50px;
+
+}
+
+.brands-wrapper-home3 {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.brands-marquee-home3 {
+  display: flex;
+  width: max-content;
+  animation: marquee 50s linear infinite;
+}
+
+.brand-card-home3 {
+  padding: 0 30px;
+  
+}
+
+.brand-card-home3 img {
+  max-width: 200px;
+}
+
+
+.services-section-home3 {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 50px;
+
+}
+
+.integrated-digital-title-home3 {
+  font-size: 40px;
+  background: linear-gradient(90deg, #0BBBFD, #4771F0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.integrated-digital-desc-home3 {
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: "Commissioner", sans-serif;
+  text-align: right;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (max-width: 900px) {
+  .why-text-main-top-container-home3 {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .why-image-home3 {
+    grid-template-columns: 1fr;
+  }
+
+  .pill-column-home3 {
+    display: none;
+  }
+
+  .stats-row-home3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-row-home3 {
+    grid-template-columns: 1fr;
+  }
+
+  .why-image-home3 img {
+    max-width: 320px;
+  }
+}
+
+@media (max-width:480px) {
+  .why-section-home3{
+    background-image: none;
+  }
+}
+@media (min-width: 1200px) {
+  .why-image-home3 {
+    gap: 6px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .why-image-home3 {
+    gap: 4px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-pill-home3 {
+    transform: rotate(-90deg) translateY(-40px);
+  }
+}
+
+@media (min-width: 1400px) {
+  .contact-pill-home3 {
+    transform: rotate(-90deg) translateY(-50px);
+  }
+}

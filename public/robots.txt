@@ -1,0 +1,10 @@
+# Visiomatix Media - SEO Robots Configuration
+# Last Updated: 2026-04-02
+
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /uploads/
+
+Sitemap: https://visiomatix.in/sitemap.xml
+

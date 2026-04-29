@@ -1,0 +1,200 @@
+/* ================= MAIN SECTION ================= */
+
+/* Global fallback animations for Service Page2 variants (ensures all pages animate even without explicit framer-motion code) */
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeSlideDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-80px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.benefites-2 {
+  animation: fadeSlideDown 0.8s ease-out forwards;
+}
+.sub-title-2 {
+  animation: fadeSlideUp 0.8s ease-out 0.2s forwards;
+}
+.benefites-containr-2 {
+  animation: fadeSlideUp 0.8s ease-out 0.3s forwards;
+}
+.second-container-2 {
+  animation: slideInLeft 0.8s ease-out 0.3s forwards;
+}
+
+/* For card-level and content-level animations on all Page2 card patterns */
+.benefites-containr-2 .column-2 > div,
+.benefites-containr-2 .e-commerce-services-benefits-div {
+  opacity: 0;
+  animation: fadeSlideUp 0.8s ease-out 0.35s forwards;
+}
+
+.digital-marketing-services-2-2 {
+  font-family: "Decalotype";
+  /* padding: clamp(40px, 6vw, 100px) 0; */
+
+  background-image:
+    url("../../assets/images/Ellipse 81.png"),
+    url("../../assets/images/Ellipse 6-2.png"),
+    url("../../assets/images/Vector 3-1.png"),
+    linear-gradient(to right, #000103, #000814, #01112C, #00307C);
+
+  background-position:
+    left top,
+    right 0% bottom 0%,
+    right 0px top 100%,
+    center;
+
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+
+  background-size:
+    clamp(150px, 25vw, 300px) clamp(150px, 25vw, 500px),
+    clamp(150px, 25vw, 300px) auto,
+    84% auto,
+    cover;
+    /* padding-left: 50px; */
+
+}
+
+/* ================= COMMON CONTAINER ================= */
+
+.benefites-2,
+.sub-title-2,
+.benefites-containr-2,
+.second-container-2 {
+  /* width: 90%; */
+  /* max-width: 1200px; */
+  /* margin:  auto; */
+}
+
+/* ================= HEADER LINE ================= */
+
+.benefites-2 {
+    padding-left: 50px;
+
+  color: #00C8FF;
+  border-bottom: 2px solid #00A5FA;
+  /* width: 100vw; */
+  /* margin-left: -50px; */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  /* padding-left: 50px; */
+  font-size: clamp(16px, 2vw, 20px);
+  font-family: "decalotype-regular";
+}
+
+/* ================= SUB TITLE ================= */
+
+.sub-title-2 {
+    padding-left: 50px;
+
+  color: #ffffff;
+  font-size: clamp(22px, 3vw, 36px);
+  margin-bottom: 50px;
+  font-family: "decalotype-regular";
+}
+
+/* ================= BENEFITS GRID ================= */
+
+.benefites-containr-2 {
+    padding-left: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* ================= COLUMNS ================= */
+
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  
+}
+
+.custom-border-2 {
+  border-right: 2px solid #00A5FA;
+  padding-right: 30px;
+}
+
+/* ================= TEXT ================= */
+
+.benefit-title {
+  font-size: clamp(14px, 1.8vw, 16px);
+  font-family: "decalotype-semibold";
+  color: #ffffff;
+  line-height: 1.2;
+  max-width: 200px;
+  padding: 8px 0px;
+}
+
+.benefit-text {
+  font-size: clamp(14px, 1.8vw, 15px);
+  font-family: "decalotype-light";
+  line-height: 140%;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+/* ================= SECOND SECTION ================= */
+
+.second-container-2 {
+  margin-top: 70px;
+    padding-left: 50px;
+
+}
+
+.second-text {
+  font-family: "decalotype-light";
+  font-size: clamp(14px, 2vw, 18px);
+  line-height: 150%;
+  color: #ffff;
+  ;
+}
+
+/* Ensure list markers and text are consistently indented */
+.second-container-2 ul {
+  padding-left: 30px;
+  margin-left: 0;
+}
+
+.second-container-2 li {
+  margin: 8px 0;
+  list-style-position: outside;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px) {
+  .benefites-containr-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .custom-border-2 {
+    border-right: none;
+    padding-right: 0;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 576px) {
+  .benefites-containr-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .benefites-containr-2 .column-2 > div,
+  .custom-border-2>.e-commerce-services-benefits-div,
+  .e-commerce-services-benefits-div {
+    border-bottom: 2px solid #00A5FA;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+  }
+}
