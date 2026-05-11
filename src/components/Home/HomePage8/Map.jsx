@@ -1,5 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  fadeLeft,
+  fadeRight,
+  fadeUp,
+  scaleIn,
+  floatYSlow,
+  glowPulse,
+  viewport,
+  EASE,
+} from "../../../hooks/useScrollAnimation";
 import worldMap from "../../../assets/images/map_final.png";
 import "./Map.css";
 
@@ -10,20 +20,40 @@ const Map = () => {
       <div className="global-container">
         {/* Text Overlay */}
         <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
+          variants={fadeLeft}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewport}
           className="global-text"
         >
-          <p className="subtitle">Representing Visiomatix Media on the</p>
-          <h1 className="title">Global Stage!</h1>
+          <motion.p
+            className="subtitle"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: EASE }}
+            viewport={viewport}
+          >
+            Representing Visiomatix Media on the
+          </motion.p>
+          <motion.h1
+            className="title"
+            initial={{ opacity: 0, x: -50, scale: 0.9 }}
+            whileInView={{ opacity: 1, x: 0, scale: 1 }}
+            transition={{ duration: 0.8, ease: EASE, delay: 0.15 }}
+            viewport={viewport}
+          >
+            Global Stage!
+          </motion.h1>
         </motion.div>
 
-        {/* Map Image */}
+        {/* Map Image — continuous subtle float */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
+          variants={scaleIn}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewport}
+          animate="float"
+          {...floatYSlow}
           className="map-wrapper"
         >
           <img

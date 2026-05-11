@@ -56,41 +56,54 @@
 .read-more-wrapper {
   margin-top: 35px;
   margin-left: 285px;
-  max-width: 128px;
-  height: 37px;
-  padding: 1px;
+  width: 148px;
+  height: 38px;
+  padding: 1.5px;
   border-radius: 50px;
-  background: linear-gradient(to right, #00c8ff, #023a90, #00c3fb);
+  background: linear-gradient(135deg, #00c8ff, #023a90, #00c3fb);
+  position: relative;
+  transition: box-shadow 0.3s ease;
+}
+
+.read-more-wrapper:hover {
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.45);
 }
 
 .read-more-btn {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
-  background: #013992;
+  background: #012d7a;
   border: none;
-  border-radius: 18px;
-  text-decoration: none;
-  font-family: 'decalotype-light';
-
+  border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-
-  font-size: 15px;
-  font-weight: 300;
+  gap: 6px;
+  padding: 0 14px;
+  font-size: 12.5px;
   color: #ffffff;
   cursor: pointer;
+  text-decoration: none;
+  font-family: 'decalotype-light';
+  white-space: nowrap;
+  overflow: hidden;
+  transition: background 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background: #014cb0;
 }
 
 .read-more-icon {
-  max-width: 15px;
+  width: 12px;
+  min-width: 12px;
+  flex-shrink: 0;
   transform: rotate(-45deg);
-  filter:
-    drop-shadow(0.3px  0 white)
-    drop-shadow(0.5px 0 0 white)
-    drop-shadow(0 0.5px 0 white)
-    drop-shadow(0 0.5px 0 white);
+  transition: transform 0.3s ease;
+}
+
+.read-more-btn:hover .read-more-icon {
+  transform: rotate(-45deg) translate(3px, -3px);
 }
 
 #hero_job {
@@ -113,6 +126,13 @@
 .hero_img {
   border-radius: 10%;
   max-width: 1000px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, filter 0.35s ease;
+}
+
+.hero_box:hover .hero_img {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 16px 36px rgba(0, 200, 255, 0.28);
+  filter: brightness(1.08);
 }
 
 .blue {
@@ -151,10 +171,22 @@
   font-size: 20px;
   line-height: 136%;
   color: #ffffff;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 .card img {
   max-width: 98.47px;
   height: 93px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  text-shadow: 0 0 16px rgba(0, 200, 255, 0.35);
+}
+
+.card:hover img {
+  transform: scale(1.08) rotate(-3deg);
+  filter: drop-shadow(0 0 14px rgba(0, 200, 255, 0.4));
 }
 
 #card4 {
@@ -169,22 +201,45 @@
   background: none;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .marquee {
   display: flex;
-  max-width: max-content;
-  animation: scroll 40s linear infinite;
+  width: max-content;
+  min-width: 200%;
+  animation: scroll 12s linear infinite !important;
+  animation-play-state: running !important;
+  will-change: transform;
+  cursor: pointer;
+}
+
+.digital_mart:hover .marquee,
+.marquee:hover,
+.marquee:focus,
+.marquee:focus-within {
+  animation-play-state: running !important;
 }
 
 .track {
   display: flex;
   gap: 10px;
   white-space: nowrap;
+  flex-shrink: 0;
   font-size: 90px;
   font-family: "Decalotype", sans-serif;
   color: #ffffff;
-  /* padding-right: 60px; */
+  padding-right: 28px;
+}
+
+.track span {
+  transition: transform 0.25s ease, color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.track span:hover {
+  transform: translateY(-2px);
+  color: #8feaff;
+  text-shadow: 0 0 18px rgba(0, 200, 255, 0.4);
 }
 
 .star {
@@ -197,10 +252,10 @@
 /* KEY: move exactly one track max-width */
 @keyframes scroll {
   from {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
@@ -220,6 +275,11 @@
   gap: 10px;
   justify-content: space-around;
   align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.div-end:hover {
+  transform: translateY(-3px);
 }
 .div-end h1 {
   background: linear-gradient(135deg, #02c5ff, #4b6def);

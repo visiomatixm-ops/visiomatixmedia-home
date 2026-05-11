@@ -2,7 +2,8 @@
   width: 100%;
   color: #FFFFFF;
   font-family: "Decolotype", sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  overflow: hidden;
   /* padding: 0 clamp(24px, 6vw, 100px) clamp(60px, 8vw, 80px); */
   background-image:
   url('../../../assets/images/Ellipse\ 6.png'),
@@ -171,6 +172,33 @@ padding-top:8px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* ── Stat box hover ── */
+.stat-box-home3 {
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+.stat-box-home3:hover {
+  transform: translateY(-6px);
+}
+
+/* ── Why image hover ── */
+.why-image-home3 img {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.why-image-home3:hover img {
+  transform: scale(1.04);
+  box-shadow: 0 20px 60px rgba(0, 100, 255, 0.3);
+}
+
+/* ── Brand card hover ── */
+.brand-card-home3 img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0.85) grayscale(0.3);
+}
+.brand-card-home3:hover img {
+  transform: scale(1.12);
+  filter: brightness(1.1) grayscale(0);
+}
 
 .stat-box-home3 span {
   font-size: 18px;
@@ -194,27 +222,50 @@ padding-top:8px;
 
 }
 
-.brands-wrapper-home3 {
+/* .brands-wrapper-home3 {
   width: 100vw;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
+  padding: 12px 0;
+} */
+ .brands-wrapper-home3 {
+  width: 100%;
+  overflow: hidden;
+  padding: 12px 0;
+}
+
+.brands-wrapper-home3:hover .brands-marquee-home3 {
+  animation-play-state: paused;
 }
 
 .brands-marquee-home3 {
   display: flex;
   width: max-content;
-  animation: marquee 50s linear infinite;
+  animation: marquee 50s linear infinite !important;
+  will-change: transform;
 }
 
 .brand-card-home3 {
   padding: 0 30px;
-  
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.35s ease;
+}
+
+.brand-card-home3:hover {
+  transform: scale(1.15) translateY(-4px);
 }
 
 .brand-card-home3 img {
   max-width: 200px;
+  transition: filter 0.3s ease;
+  filter: brightness(0.85) grayscale(0.3);
+}
+
+.brand-card-home3:hover img {
+  filter: brightness(1.15) grayscale(0) drop-shadow(0 0 10px rgba(0, 200, 255, 0.5));
 }
 
 

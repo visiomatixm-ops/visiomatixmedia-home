@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import "./HomePage1.css";
 
@@ -13,6 +13,44 @@ import image7 from "../../../assets/images/image7.png";
 
 import arrow1 from "../../../assets/icons/arrow1.png";
 import arrow2 from "../../../assets/icons/arrow2.png";
+
+import {
+  staggerContainer,
+  staggerItem,
+  floatYSlow,
+  glowPulse,
+  EASE,
+} from "../../../hooks/useScrollAnimation";
+
+/* ── hero section entrance (page-load, not scroll) ── */
+const heroSectionEntrance = {
+  hidden:  {},
+  visible: {
+    transition: { staggerChildren: 0.18, delayChildren: 0.1 },
+  },
+};
+
+const heroChild = {
+  hidden:  { opacity: 0, y: 55 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.85, ease: EASE } },
+};
+
+/* ── slide content — plays every slide change ── */
+const contentSlide = {
+  initial:  { opacity: 0, x: -70, filter: "blur(6px)" },
+  animate:  { opacity: 1, x: 0,   filter: "blur(0px)",
+              transition: { duration: 0.7, ease: EASE } },
+  exit:     { opacity: 0, x: 30, filter: "blur(4px)",
+              transition: { duration: 0.3, ease: EASE } },
+};
+
+const imageSlide = {
+  initial:  { opacity: 0, scale: 0.72, x: 80, rotate: 4 },
+  animate:  { opacity: 1, scale: 1,    x: 0,  rotate: 0,
+              transition: { duration: 0.85, ease: EASE } },
+  exit:     { opacity: 0, scale: 0.85, x: -40,
+              transition: { duration: 0.3 } },
+};
 
 const HomePage1 = () => {
   const navigate = useNavigate();
@@ -147,37 +185,74 @@ const HomePage1 = () => {
                 className="slide-home1"
               >
                 <div className="slide-inner-home1">
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 1 }}
-                    viewport={{ once: false, amount: 0.3 }}
-                    className="content-home1"
-                  >
-                    <h4 className="welcome-home1">
-                      Welcome to Visiomatix Media
-                    </h4>
+                  {/* CONTENT — entrance animation on every slide change */}
+                  <AnimatePresence mode="wait">
+                    <motion.div
+                      key={`content-${currentIndex}`}
+                      {...contentSlide}
+                      className="content-home1"
+                    >
+                      {/* Page-load stagger for the very first render */}
+                      <motion.div
+                        variants={heroSectionEntrance}
+                        initial="hidden"
+                        animate="visible"
+                        style={{ display: "contents" }}
+                      >
+                        <motion.h4
+                          variants={heroChild}
+                          className="welcome-home1"
+                        >
+                          Welcome to Visiomatix Media
+                        </motion.h4>
 
-                    <h1 className="page1-heading-home1">
-                      <span className="gradient-text-home1">{slide.title}</span>
-                    </h1>
+                        <motion.h1
+                          variants={heroChild}
+                          className="page1-heading-home1"
+                        >
+                          <span className="gradient-text-home1">
+                            {slide.title}
+                          </span>
+                        </motion.h1>
 
-                    <p className="paragraph-home1">{slide.description}</p>
+                        <motion.p
+                          variants={heroChild}
+                          className="paragraph-home1"
+                        >
+                          {slide.description}
+                        </motion.p>
 
-                    <button className="button-home1" onClick={handleCallClick}>
-                      Get Your Free Call
-                    </button>
-                  </motion.div>
+                        {/* Glowing CTA button */}
+                        <motion.button
+                          variants={heroChild}
+                          className="button-home1"
+                          onClick={handleCallClick}
+                          animate="pulse"
+                          {...glowPulse}
+                          whileHover={{
+                            scale: 1.07,
+                            boxShadow: "0 8px 36px rgba(0,200,255,0.5)",
+                          }}
+                          whileTap={{ scale: 0.95 }}
+                        >
+                          Get Your Free Call
+                        </motion.button>
+                      </motion.div>
+                    </motion.div>
+                  </AnimatePresence>
 
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8 }}
-                    viewport={{ once: false, amount: 0.3 }}
-                    className="image-container-home1"
-                  >
-                    <img src={slide.image} alt={slide.title} />
-                  </motion.div>
+                  {/* IMAGE — floating + entrance per slide */}
+                  <AnimatePresence mode="wait">
+                    <motion.div
+                      key={`image-${currentIndex}`}
+                      {...imageSlide}
+                      className="image-container-home1"
+                      animate={["animate", "float"]}
+                      variants={{ ...imageSlide, ...floatYSlow }}
+                    >
+                      <img src={slide.image} alt={slide.title} />
+                    </motion.div>
+                  </AnimatePresence>
                 </div>
               </div>
             ))}
@@ -185,21 +260,34 @@ const HomePage1 = () => {
         </div>
       </div>
 
-      <div className="controls-home1">
-        <img
+      {/* CONTROLS */}
+      <motion.div
+        className="controls-home1"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.9, duration: 0.6, ease: EASE }}
+      >
+        <motion.img
           src={arrow2}
           alt="Previous"
           className="arrow-home1"
           onClick={handlePrev}
+          whileHover={{ scale: 1.25, rotate: -10, filter: "brightness(1.6)" }}
+          whileTap={{ scale: 0.85 }}
+          transition={{ type: "spring", stiffness: 300 }}
         />
 
         <div className="dots-home1">
           {[0, 1, 2].map((dotIndex) => (
-            <span
+            <motion.span
               key={`dot-${dotIndex}`}
-              className={`dot-home1 ${
-                dotIndex === activeDotIndex ? "active-home1" : ""
-              }`}
+              className={`dot-home1 ${dotIndex === activeDotIndex ? "active-home1" : ""}`}
+              animate={
+                dotIndex === activeDotIndex
+                  ? { scale: 1.6, opacity: 1 }
+                  : { scale: 1, opacity: 0.45 }
+              }
+              transition={{ type: "spring", stiffness: 350, damping: 22 }}
               onClick={() => {
                 if (dotIndex === 0) setCurrentIndex(1);
                 if (dotIndex === 1) setCurrentIndex(3);
@@ -209,13 +297,16 @@ const HomePage1 = () => {
           ))}
         </div>
 
-        <img
+        <motion.img
           src={arrow1}
           alt="Next"
           className="arrow-home1"
           onClick={handleNext}
+          whileHover={{ scale: 1.25, rotate: 10, filter: "brightness(1.6)" }}
+          whileTap={{ scale: 0.85 }}
+          transition={{ type: "spring", stiffness: 300 }}
         />
-      </div>
+      </motion.div>
     </section>
   );
 };

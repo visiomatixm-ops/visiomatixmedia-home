@@ -1,6 +1,7 @@
 import React from "react";
 import "../../page5.css";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import instagram from "../../../../assets/BrandIntegrationImplementation/icon/1.png";
 import facebook from "../../../../assets/BrandIntegrationImplementation/icon/2.png";
@@ -51,10 +52,14 @@ const Page5 = () => {
       <section className="slider-bss5">
 
         <div className="slider-track-bss5">
-
-          {[...logos, ...logos].map((img, index) => (
-            <img src={img} alt="logo" key={index}/>
-          ))}
+{[...logos, ...logos].map((img, index) => (
+  <motion.img
+    src={img}
+    alt="logo"
+    key={index}
+    whileHover={{ scale: 1.15, filter: "brightness(1.15) drop-shadow(0 0 10px rgba(0,200,255,0.5))", transition: { duration: 0.3 } }}
+  />
+))}
 
         </div>
 
@@ -76,11 +81,14 @@ const Page5 = () => {
           unified brand presence and achieve sustainable market performance.
         </p>
 
-        <button>
-          <NavLink to="/contact" className="nav-avoid-blue">
-            Book Your Free Strategy Call
-          </NavLink>
-        </button>
+       <motion.button
+  whileHover={{ scale: 1.07, boxShadow: "0 0 24px rgba(0,200,255,0.45)" }}
+  whileTap={{ scale: 0.93 }}
+>
+  <NavLink to="/contact" className="nav-avoid-blue">
+    Book Your Free Strategy Call
+  </NavLink>
+</motion.button>
 
       </section>
 

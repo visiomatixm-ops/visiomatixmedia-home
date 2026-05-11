@@ -1,5 +1,12 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import {
+  fadeLeft,
+  fadeRight,
+  fadeUp,
+  scaleIn,
+  viewport,
+} from "../../../hooks/useScrollAnimation";
 import ReCAPTCHA from "react-google-recaptcha";
 import "./Contact.css";
 import ellipse from "../../../assets/images/Ellipse 5.png";
@@ -59,7 +66,7 @@ const Contact = () => {
     setSubmitStatus(null);
 
     try {
-      const backendUrl ="https://visiomatix.onrender.com";
+      const backendUrl = "https://visiomatix.onrender.com";
       const response = await fetch(`${backendUrl}/contact`, {
         method: "POST",
         headers: {
@@ -102,10 +109,15 @@ const Contact = () => {
       <div className="contact-container">
         {/* LEFT */}
         <motion.div
-          initial={{ opacity: 0, x: -80 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: false, amount: 0.3 }}
+          // initial={{ opacity: 0, x: -80 }}
+          // whileInView={{ opacity: 1, x: 0 }}
+          // transition={{ duration: 0.8 }}
+          // viewport={{ once: false, amount: 0.3 }}
+          // className="contact-left"
+          variants={fadeLeft}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewport}
           className="contact-left"
         >
           <div className="left-content">
@@ -158,9 +170,14 @@ const Contact = () => {
 
         {/* RIGHT */}
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
+          // initial={{ opacity: 0, x: 100 }}
+          // whileInView={{ opacity: 1, x: 0 }}
+          // transition={{ duration: 0.8 }}
+          // className="contact-right"
+          variants={fadeRight}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewport}
           className="contact-right"
         >
           <span className="small-title">Let’s Talk Growth</span>

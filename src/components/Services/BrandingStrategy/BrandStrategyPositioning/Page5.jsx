@@ -1,6 +1,7 @@
 import React from "react";
 import "../../page5.css";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import instagram from "../../../../assets/BrandStrategyPositioning/icon/1.png";
 import facebook from "../../../../assets/BrandStrategyPositioning/icon/2.png";
@@ -52,9 +53,14 @@ const Page5 = () => {
 
         <div className="slider-track-bss5">
 
-          {[...logos, ...logos].map((img, index) => (
-            <img src={img} alt="logo" key={index}/>
-          ))}
+       {[...logos, ...logos].map((img, index) => (
+  <motion.img
+    src={img}
+    alt="logo"
+    key={index}
+    whileHover={{ scale: 1.15, filter: "brightness(1.15) drop-shadow(0 0 10px rgba(0,200,255,0.5))", transition: { duration: 0.3 } }}
+  />
+))}
 
         </div>
 
@@ -66,12 +72,14 @@ const Page5 = () => {
          At Visiomatix Media, our Brand Strategy & Positioning solutions are engineered to perform across complex markets and evolving competitive landscapes. We develop data-driven positioning frameworks and cohesive brand systems aligned with business vision, audience intelligence, and strategic communication  ensuring clarity, consistency, and scalable market presence across digital and organizational channels. We specialize in delivering high-impact positioning solutions, including brand positioning strategy, identity architecture, messaging frameworks, audience and market research, brand governance systems, and multi-channel implementation. Every framework is built for differentiation, authority, and measurable performance  helping businesses establish credible, recognizable, and future-ready market positions.
         </p>
 
-        <button>
-          <NavLink to="/contact" className="nav-avoid-blue">
-            Book Your Free Strategy Call
-          </NavLink>
-        </button>
-
+<motion.button
+  whileHover={{ scale: 1.07, boxShadow: "0 0 24px rgba(0,200,255,0.45)" }}
+  whileTap={{ scale: 0.93 }}
+>
+  <NavLink to="/contact" className="nav-avoid-blue">
+    Book Your Free Strategy Call
+  </NavLink>
+</motion.button>
       </section>
 
     </main>

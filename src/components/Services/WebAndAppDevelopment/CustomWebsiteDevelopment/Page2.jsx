@@ -82,7 +82,13 @@ const Page2 = () => {
 
           <div className="column-2 custom-border-2 right-pad-30">
 
-            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}>
+            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}
+    whileHover={{
+      y: -8,
+      scale: 1.03,
+      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
+      transition: { type: "spring", stiffness: 260 }
+    }}>
               <motion.img
                 src={frame1}
                 alt="Icon"
@@ -100,7 +106,13 @@ const Page2 = () => {
               </p>
             </motion.div>
 
-            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}>
+            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}
+    whileHover={{
+      y: -8,
+      scale: 1.03,
+      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
+      transition: { type: "spring", stiffness: 260 }
+    }}>
               <motion.img
                 src={frame2}
                 alt="Icon"
@@ -120,7 +132,13 @@ const Page2 = () => {
 
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
 
-            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}>
+            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}
+    whileHover={{
+      y: -8,
+      scale: 1.03,
+      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
+      transition: { type: "spring", stiffness: 260 }
+    }}>
               <motion.img
                 src={frame6}
                 alt="Icon"
@@ -138,7 +156,13 @@ const Page2 = () => {
               </p>
             </motion.div>
 
-            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}>
+            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}
+    whileHover={{
+      y: -8,
+      scale: 1.03,
+      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
+      transition: { type: "spring", stiffness: 260 }
+    }}>
               <motion.img
                 src={frame5}
                 alt="Icon"
@@ -160,7 +184,13 @@ const Page2 = () => {
 
           <div className="column-2 left-pad-50 right-pad-30">
 
-            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}>
+            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}
+    whileHover={{
+      y: -8,
+      scale: 1.03,
+      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
+      transition: { type: "spring", stiffness: 260 }
+    }}>
               <motion.img
                 src={frame3}
                 alt="Icon"
@@ -178,7 +208,13 @@ const Page2 = () => {
               </p>
             </motion.div>
 
-            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}>
+            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}
+    whileHover={{
+      y: -8,
+      scale: 1.03,
+      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
+      transition: { type: "spring", stiffness: 260 }
+    }}>
               <motion.img
                 src={frame4}
                 alt="Icon"

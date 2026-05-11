@@ -12,6 +12,13 @@ import ytIcon from "../../../assets/images/Youtube4.png";
 import arrow from "../../../assets/images/Union-1.png";
 import eclipse from "../../../assets/images/Ellipse.png";
 import WhatsAppButton from "../../../components/whatsapp/WhatsAppButton";
+import {
+  fadeLeft,
+  fadeRight,
+  fadeUp,
+  viewport,
+} from "../../../hooks/useScrollAnimation";
+
 const HomePage9 = () => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
@@ -77,10 +84,14 @@ const HomePage9 = () => {
         <div className="footer-grid">
           {/* BRAND */}
           <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            variants={fadeLeft}
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewport}
             className="footer-col"
+            // initial={{ opacity: 0, x: -100 }}
+            // whileInView={{ opacity: 1, x: 0 }}
+            // transition={{ duration: 0.8 }}
           >
             <div className="logo-section">
               <img src={logo} alt="Visiomatix" className="brand-logo" />
@@ -120,10 +131,14 @@ const HomePage9 = () => {
           <div className="footer-col">
             <h3 className="footer-header">SERVICES</h3>
             <motion.ul
-              initial={{ opacity: 0, y: 60 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: false }}
+              // initial={{ opacity: 0, y: 60 }}
+              // whileInView={{ opacity: 1, y: 0 }}
+              // transition={{ duration: 0.8 }}
+              // viewport={{ once: false }}
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewport}
               className="footer-list"
             >
               <li>
@@ -233,12 +248,19 @@ const HomePage9 = () => {
           <div className="footer-col">
             <h3 className="footer-header">EXPLORE</h3>
             <motion.ul
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewport}
+              className="footer-list"
+            >
+              {/* <motion.ul
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: false }}
               className="footer-list"
-            >
+            > */}
               <li>
                 <NavLink style={{ color: "#ffffff" }} to="/">
                   Home
@@ -304,9 +326,13 @@ const HomePage9 = () => {
 
           {/* JOURNEY */}
           <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            // initial={{ opacity: 0, x: 100 }}
+            // whileInView={{ opacity: 1, x: 0 }}
+            // transition={{ duration: 0.8 }}
+            variants={fadeRight}
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewport}
             className="footer-col journey-col"
           >
             <h3 className="footer-header">Start Your Growth Journey</h3>
@@ -329,60 +355,56 @@ const HomePage9 = () => {
 
             <div className="contact-block">
               <span className="blue-label">For Sales</span>
-              <p className="brand-text brand-contact">
-                info@visiomatix.in
-              </p>
+              <p className="brand-text brand-contact">info@visiomatix.in</p>
 
               <span className="blue-label">For Careers</span>
               <p className="brand-text brand-contact">rohit@visiomatix.in</p>
             </div>
-
-            
           </motion.div>
           {/* FORM — CORRECT POSITION */}
-            <div className="subscribe-block">
-              <p className="subscribe-title">Stay ahead of the curve.</p>
-              <p className="subscribe-text">
-                Subscribe for updates, trends, and insights.
-              </p>
+          <div className="subscribe-block">
+            <p className="subscribe-title">Stay ahead of the curve.</p>
+            <p className="subscribe-text">
+              Subscribe for updates, trends, and insights.
+            </p>
 
-              <form className="subscribe-form" onSubmit={handleSubscribe}>
-                <input
-                  type="email"
-                  placeholder="Enter your work email"
-                  value={email}
-                  onChange={(e) => {
-                    setEmail(e.target.value);
-                    setError("");
-                  }}
-                />
-                {error && (
-                  <small className="subscribe-form"
-                  
-                  style={{
-                      color: "black",
-                    fontSize: "13px",
-                    marginTop: "6px",
-                  }
-                    
-                  }>{error}</small>
-                  
-                )}
-
-                <button type="submit">Subscribe</button>
-              </form>
+            <form className="subscribe-form" onSubmit={handleSubscribe}>
+              <input
+                type="email"
+                placeholder="Enter your work email"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                  setError("");
+                }}
+              />
               {error && (
-                <p
+                <small
+                  className="subscribe-form"
                   style={{
-                    color: "red",
+                    color: "black",
                     fontSize: "13px",
                     marginTop: "6px",
                   }}
                 >
                   {error}
-                </p>
+                </small>
               )}
-            </div>
+
+              <button type="submit">Subscribe</button>
+            </form>
+            {error && (
+              <p
+                style={{
+                  color: "red",
+                  fontSize: "13px",
+                  marginTop: "6px",
+                }}
+              >
+                {error}
+              </p>
+            )}
+          </div>
         </div>
 
         {/* BOTTOM */}

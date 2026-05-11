@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 import { useState } from "react";
 import "./index.css";
@@ -24,6 +24,16 @@ import union from "../../../assets/images/Union.png";
 import Union1 from "../../../assets/images/Union-1.png";
 
 import rohitshinde from "../../../assets/images/rohitshinde.png";
+import {
+  fadeUp,
+  fadeLeft,
+  fadeRight,
+  scaleIn,
+  staggerContainer,
+  cardReveal,
+  viewport,
+  EASE,
+} from "../../../hooks/useScrollAnimation";
 
 /* ================= EXPERTISE ================= */
 const expertiseList = [
@@ -143,80 +153,136 @@ const HomePage4 = () => {
     <section className="about-page-home4">
       <div className="about-inner-home4">
         {/* ================= ARROWS ================= */}
-        <div className="arrow-home4">
-          <img src={union} alt="Prev" onClick={prevServices} />
-          <img src={Union1} alt="Next" onClick={nextServices} />
-        </div>
+        <motion.div
+          className="arrow-home4"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: EASE }}
+          viewport={viewport}
+        >
+          <motion.img
+            src={union}
+            alt="Prev"
+            onClick={prevServices}
+            whileHover={{ scale: 1.2, filter: "brightness(1.5)" }}
+            whileTap={{ scale: 0.85 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          />
+          <motion.img
+            src={Union1}
+            alt="Next"
+            onClick={nextServices}
+            whileHover={{ scale: 1.2, filter: "brightness(1.5)" }}
+            whileTap={{ scale: 0.85 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          />
+        </motion.div>
 
         {/* ================= SERVICES GRID ================= */}
-        <div className="services-grid-home4">
-          {service
-            .slice(serviceIndex, serviceIndex + visibleCount)
-            .map((item, i) => (
-              <motion.div
-                initial={{ opacity: 0, x: 100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                className="feature-card-1-home4"
-                key={item.id}
-              >
-                <div style={{ width: "186px", margin: "auto" }}>
-                  <motion.div
-                    initial={{ opacity: 0, rotate: -20 }}
-                    whileInView={{ opacity: 1, rotate: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="service-icon-home4"
-                  >
-                    <img src={item.image} alt={item.title} />
-                  </motion.div>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={serviceIndex}
+            className="services-grid-home4"
+            variants={staggerContainer}
+            initial="hidden"
+            animate="visible"
+            exit={{ opacity: 0, y: 20, transition: { duration: 0.2 } }}
+          >
+            {service
+              .slice(serviceIndex, serviceIndex + visibleCount)
+              .map((item, i) => (
+                <motion.div
+                  variants={cardReveal}
+                  className="feature-card-1-home4"
+                  key={item.id}
+                  whileHover={{
+                    y: -12,
+                    scale: 1.03,
+                    boxShadow: "0 20px 52px rgba(0,150,255,0.28)",
+                    borderColor: "rgb(0,180,255)",
+                    transition: { type: "spring", stiffness: 280, damping: 18 },
+                  }}
+                >
+                  <div style={{ width: "100%", padding: "0 4px" }}>
+                    <motion.div
+                      className="service-icon-home4"
+                      initial={{ opacity: 0, scale: 0.5 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: i * 0.06, type: "spring", stiffness: 200 }}
+                      viewport={viewport}
+                      whileHover={{ rotate: [0, -8, 8, 0], scale: 1.15 }}
+                    >
+                      <img src={item.image} alt={item.title} />
+                    </motion.div>
+                    <h3 className="service-title-home4">{item.title}</h3>
+                    <p className="service-desc-home4">{item.desc}</p>
 
-                  <h3 className="service-title-home4">{item.title}</h3>
-                  <p className="service-desc-home4">{item.desc}</p>
-
-                  <div className="read-more-wrapper-home4">
-                    <NavLink to={item.address} className="read-more-btn-home4">
-                      Read More
-                      <img
-                        src={Union1}
-                        alt="arrow"
-                        className="read-more-icon-home4"
-                      />
-                    </NavLink>
+                    <div className="read-more-wrapper-home4">
+                      <NavLink to={item.address} className="read-more-btn-home4">
+                        Read More
+                        <img
+                          src={Union1}
+                          alt="arrow"
+                          className="read-more-icon-home4"
+                        />
+                      </NavLink>
+                    </div>
                   </div>
-                </div>
-              </motion.div>
-            ))}
-        </div>
+                </motion.div>
+              ))}
+          </motion.div>
+        </AnimatePresence>
 
         {/* ================= FOUNDER SECTION ================= */}
         <div className="founder-section-home4">
           {/* IMAGE */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
+            variants={scaleIn}
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewport}
             className="founder-image-home4"
           >
-            <img src={rohitshinde} alt="Rohit Shinde" />
+            <motion.img
+              src={rohitshinde}
+              alt="Rohit Shinde"
+              whileHover={{ scale: 1.03, filter: "brightness(1.08)" }}
+              transition={{ duration: 0.4 }}
+            />
           </motion.div>
 
           {/* MAIN TEXT */}
           <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewport}
             className="founder-column-home4 text-reduce-top"
           >
-            <p className="homepage-4-title-home4">Rohit Shinde</p>
-            <p className="homepage-4-subTitle-home4">
+            <motion.p
+              className="homepage-4-title-home4"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, ease: EASE }}
+              viewport={viewport}
+            >
+              Rohit Shinde
+            </motion.p>
+            <motion.p
+              className="homepage-4-subTitle-home4"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, ease: EASE, delay: 0.1 }}
+              viewport={viewport}
+            >
               Founder & Creative Head, Visiomatix Media
-            </p>
+            </motion.p>
 
             <p className="homepage-4-text-home4">
               <span className="dropcap-home4">I</span> am the Founder & CEO of
               Visiomatix Media, a global minded, performance led digital
               marketing agency built to deliver scalable growth and measurable
-              ROI. I lead the company’s strategic direction, overseeing
+              ROI. I lead the company's strategic direction, overseeing
               everything from market positioning and demand generation to
               execution, optimization, and long-term client success.
               <br />
@@ -238,9 +304,10 @@ const HomePage4 = () => {
 
           {/* SIDE TEXT */}
           <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            variants={fadeRight}
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewport}
             className="founder-column-home4 right-home4"
           >
             <p className="homepage-4-text-home4">

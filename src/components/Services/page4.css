@@ -90,8 +90,13 @@
 .read-more-icon-bss4 {
   width: 15px;
   transform: rotate(-45deg);
+  transition: transform 0.3s ease;
   filter:
     drop-shadow(0.3px 0 white) drop-shadow(0.5px 0 0 white) drop-shadow(0 0.5px 0 white) drop-shadow(0 0.5px 0 white);
+}
+
+.read-more-btn-bss4:hover .read-more-icon-bss4 {
+  transform: rotate(-45deg) translate(3px, -3px);
 }
 
 .blue-bss4 {
@@ -133,7 +138,7 @@
 .feature-card-bss4 {
   position: relative;
 
-  padding: 20px 22px;
+  padding: 16px;
   border-radius: 50px;
 
   background: transparent;
@@ -141,9 +146,9 @@
   box-sizing: border-box;
   width: 100%;
   /* responsive */
-  max-width: 259px;
-  /* keeps design on large screens */
-  height: 302px;
+  /* Keeps design on large screens */
+  min-height: 274px;
+  height: max-content;
 }
 
 .feature-card-bss4::before {
@@ -191,24 +196,42 @@
 ================================ */
 .feature-card-bss4 h4 {
   font-family: "decalotype-semibold", sans-serif;
-  font-size: 16px;
-  width: 190px;
+  font-size: 15px;
+  width: 100%;
   font-weight: 600;
   line-height: 1.2;
   text-align: left;
   margin-top: -5px;
+  margin-bottom: 10px;
 }
 
 .feature-card-bss4 p {
   font-family: "decalotype-light", sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 300;
-  line-height: 1.2;
-  color: #ffffff;
+  line-height: 1.5;
+  color: #d1d5db;
   text-align: left;
-  letter-spacing: 0.8px;
   margin-top: -10px;
 
+}
+
+.feature-card-bss4 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card-bss4:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 16px rgba(0, 200, 255, 0.35);
+}
+
+.icon-box-bss4 img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.feature-card-bss4:hover .icon-box-bss4 img {
+  transform: scale(1.08) rotate(-3deg);
+  filter: drop-shadow(0 0 14px rgba(0, 200, 255, 0.4));
 }
 
 /* =========================

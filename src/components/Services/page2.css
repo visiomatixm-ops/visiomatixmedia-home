@@ -2,33 +2,59 @@
 
 /* Global fallback animations for Service Page2 variants (ensures all pages animate even without explicit framer-motion code) */
 @keyframes fadeSlideUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
 @keyframes fadeSlideDown {
-  from { opacity: 0; transform: translateY(-40px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
 @keyframes slideInLeft {
-  from { opacity: 0; transform: translateX(-80px); }
-  to { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .benefites-2 {
   animation: fadeSlideDown 0.8s ease-out forwards;
 }
+
 .sub-title-2 {
   animation: fadeSlideUp 0.8s ease-out 0.2s forwards;
 }
+
 .benefites-containr-2 {
   animation: fadeSlideUp 0.8s ease-out 0.3s forwards;
 }
+
 .second-container-2 {
   animation: slideInLeft 0.8s ease-out 0.3s forwards;
 }
 
 /* For card-level and content-level animations on all Page2 card patterns */
-.benefites-containr-2 .column-2 > div,
+.benefites-containr-2 .column-2>div,
 .benefites-containr-2 .e-commerce-services-benefits-div {
   opacity: 0;
   animation: fadeSlideUp 0.8s ease-out 0.35s forwards;
@@ -57,7 +83,7 @@
     clamp(150px, 25vw, 300px) auto,
     84% auto,
     cover;
-    /* padding-left: 50px; */
+  /* padding-left: 50px; */
 
 }
 
@@ -75,7 +101,7 @@
 /* ================= HEADER LINE ================= */
 
 .benefites-2 {
-    padding-left: 50px;
+  padding-left: 50px;
 
   color: #00C8FF;
   border-bottom: 2px solid #00A5FA;
@@ -91,7 +117,7 @@
 /* ================= SUB TITLE ================= */
 
 .sub-title-2 {
-    padding-left: 50px;
+  padding-left: 50px;
 
   color: #ffffff;
   font-size: clamp(22px, 3vw, 36px);
@@ -102,7 +128,7 @@
 /* ================= BENEFITS GRID ================= */
 
 .benefites-containr-2 {
-    padding-left: 50px;
+  padding-left: 50px;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -115,7 +141,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  
+
 }
 
 .custom-border-2 {
@@ -142,11 +168,31 @@
   opacity: 0.8;
 }
 
+.e-commerce-services-benefits-div {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.e-commerce-services-benefits-div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 16px rgba(0, 200, 255, 0.35);
+}
+
+.e-commerce-services-benefits-div img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.e-commerce-services-benefits-div:hover img {
+  transform: scale(1.08) rotate(-3deg);
+  filter: drop-shadow(0 0 14px rgba(0, 200, 255, 0.4));
+}
+
 /* ================= SECOND SECTION ================= */
 
 .second-container-2 {
   margin-top: 70px;
-    padding-left: 50px;
+  padding-left: 50px;
 
 }
 
@@ -189,7 +235,7 @@
     grid-template-columns: 1fr;
   }
 
-  .benefites-containr-2 .column-2 > div,
+  .benefites-containr-2 .column-2>div,
   .custom-border-2>.e-commerce-services-benefits-div,
   .e-commerce-services-benefits-div {
     border-bottom: 2px solid #00A5FA;

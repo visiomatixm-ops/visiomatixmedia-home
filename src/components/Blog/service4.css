@@ -75,7 +75,21 @@
   z-index: 1;
   box-sizing: border-box;
 }
-
+.service4-philosophy-card-blog {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: default;
+}
+.service4-philosophy-card-blog:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 48px rgba(0, 100, 255, 0.25);
+}
+.service4-icon-box-blog-blog img {
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+.service4-philosophy-card-blog:hover .service4-icon-box-blog-blog img {
+  transform: scale(1.18) rotate(-6deg);
+  filter: drop-shadow(0 0 10px rgba(0, 200, 255, 0.45));
+}
 .service4-philosophy-card-blog::before {
   content: "";
   position: absolute;

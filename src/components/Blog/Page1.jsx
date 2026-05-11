@@ -2,8 +2,19 @@ import "./service_1.css";
 import blogImg1 from "../../assets/blog/images/blog_1.png";
 import arrow from "../../assets/business-software-solutions/icon/arrow1.png";
 import { useState } from "react";
-// eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  fadeLeft,
+  fadeRight,
+  fadeUp,
+  scaleIn,
+  staggerContainer,
+  cardReveal,
+  glowPulse,
+  drawLine,
+  viewport,
+  EASE,
+} from "../../hooks/useScrollAnimation";
 
 const Service3_1 = ({ blogs = [] }) => {
   const [selectedBlog, setSelectedBlog] = useState(null);
@@ -13,91 +24,154 @@ const Service3_1 = ({ blogs = [] }) => {
   return (
     <div className="service_1_root-blog">
       <main className="hero-box-service1-blog">
+
+        {/* ── HERO HEADING BLOCK ── */}
         <div className="title-box-service1-blog">
+
+          {/* Title — clip-path reveal matching About page hero */}
           <motion.h1
             className="title2-service1-blog"
-            initial={{ opacity: 0, y: -60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: -60, filter: "blur(8px)" }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{ duration: 0.9, ease: EASE }}
           >
             Blog's
           </motion.h1>
+
+          {/* Sub-title — clip reveal (same as ContactUs header) */}
           <motion.p
             className="sub-title-service1-blog"
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, clipPath: "inset(100% 0 0 0)" }}
+            animate={{ opacity: 1, clipPath: "inset(0% 0 0 0)" }}
+            transition={{ duration: 0.9, ease: EASE, delay: 0.2 }}
           >
             Recent Post
           </motion.p>
+
+          {/* Paragraph — fade from left (matches Career hero para) */}
           <motion.p
             className="service-para1-service1-blog"
-            initial={{ opacity: 0, x: -120 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.9 }}
+            variants={fadeLeft}
+            initial="hidden"
+            animate="visible"
           >
             We share result driven digital marketing insights that help brands
             improve online visibility, increase audience engagement, and drive
             sustainable business growth through strategic SEO, social media
             marketing, and performance focused campaigns.
           </motion.p>
+
+          {/* Animated divider — draws from left (matches HomePage3/AboutUs2) */}
+          <motion.div
+            variants={drawLine}
+            initial="hidden"
+            animate="visible"
+            style={{
+              height: "2px",
+              background: "linear-gradient(90deg, #00c8ff, #1e88e5, transparent)",
+              margin: "20px 0",
+              transformOrigin: "left",
+            }}
+          />
         </div>
 
         {isEmpty ? (
-          <p style={{ textAlign: "center", color: "#fff", marginTop: 40 }}>
+          <motion.p
+            style={{ textAlign: "center", color: "#fff", marginTop: 40 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6 }}
+          >
             No blog posts available yet.
-          </p>
+          </motion.p>
         ) : (
           <div className="blog-content-sb1-blog">
-            <div className="blog-cards-sb1-blog">
-              {latest.map((blog, index) => (
+
+            {/* ── BLOG CARDS — stagger cardReveal (matches HomePage4 service cards) ── */}
+            <motion.div
+              className="blog-cards-sb1-blog"
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewport}
+            >
+              {latest.map((blog) => (
                 <motion.div
                   className="blog-card-sb1-blog"
                   key={blog._id || blog.id}
-                  initial={{ opacity: 0, y: 80 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: index * 0.15 }}
+                  variants={cardReveal}
+                  whileHover={{
+                    y: -10,
+                    boxShadow: "0 20px 52px rgba(0,120,255,0.28)",
+                    transition: { type: "spring", stiffness: 260, damping: 18 },
+                  }}
                 >
                   <div className="blog-img-container-sb1-blog">
                     <motion.img
                       src={blog.imageUrl || blog.image || blogImg1}
                       alt={blog.title}
                       className="fit-image"
-                      initial={{ opacity: 0, scale: 0.6 }}
+                      initial={{ opacity: 0, scale: 0.8 }}
                       whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.8 }}
+                      transition={{ duration: 0.7, ease: EASE }}
+                      viewport={viewport}
                     />
                   </div>
-                  <p className="blog-meta-sb1-blog">
+
+                  <motion.p
+                    className="blog-meta-sb1-blog"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, ease: EASE }}
+                    viewport={viewport}
+                  >
                     {new Date(blog.date).toLocaleDateString()}{" "}
                     <span className="dot-separator-blog">•</span>{" "}
                     {blog.author || "Admin"}{" "}
                     <span className="dot-separator-blog">•</span>{" "}
                     {blog.comments || "No Comments"}
-                  </p>
+                  </motion.p>
+
                   <p className="blog-desc-sb1-blog">{blog.title}</p>
+
+                  {/* Read More — glowPulse wrapper matches CTA buttons site-wide */}
                   <div className="read-more-wrapper-sb1-blog">
-                    <button
-                      className="read-more-btn-sb1-blog"
-                      onClick={() => setSelectedBlog(blog)}
+                    <motion.div
+                      animate="pulse"
+                      variants={glowPulse}
+                      style={{ display: "inline-block", borderRadius: "30px" }}
                     >
-                      Read More
-                      <img
-                        src={arrow}
-                        alt="arrow"
-                        className="read-more-icon-sb1-blog"
-                      />
-                    </button>
+                      <motion.button
+                        className="read-more-btn-sb1-blog"
+                        onClick={() => setSelectedBlog(blog)}
+                        whileHover={{
+                          scale: 1.06,
+                          x: 4,
+                          boxShadow: "0 0 18px rgba(0,200,255,0.45)",
+                        }}
+                        whileTap={{ scale: 0.93 }}
+                        transition={{ type: "spring", stiffness: 300 }}
+                      >
+                        Read More
+                        <img
+                          src={arrow}
+                          alt="arrow"
+                          className="read-more-icon-sb1-blog"
+                        />
+                      </motion.button>
+                    </motion.div>
                   </div>
                 </motion.div>
               ))}
-            </div>
+            </motion.div>
 
+            {/* ── SIDE TEXT — fade from right (matches HomePage2 welcome text) ── */}
             <motion.div
               className="blog-side-text-sb1-blog"
-              initial={{ opacity: 0, x: -120 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.9 }}
+              variants={fadeRight}
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewport}
             >
               <p>
                 We share result driven digital marketing insights designed to
@@ -116,37 +190,64 @@ const Service3_1 = ({ blogs = [] }) => {
         )}
       </main>
 
-      {selectedBlog && (
-        <div className="blog-modal" onClick={() => setSelectedBlog(null)}>
-          <div
-            className="blog-modal-content"
-            onClick={(e) => e.stopPropagation()}
+      {/* ── BLOG MODAL — AnimatePresence (matches Career modal) ── */}
+      <AnimatePresence>
+        {selectedBlog && (
+          <motion.div
+            className="blog-modal"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            onClick={() => setSelectedBlog(null)}
           >
-            <button
-              className="blog-modal-close"
-              onClick={() => setSelectedBlog(null)}
+            <motion.div
+              className="blog-modal-content"
+              initial={{ opacity: 0, scale: 0.82, y: 60 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.88, y: 40 }}
+              transition={{ duration: 0.4, ease: EASE }}
+              onClick={(e) => e.stopPropagation()}
             >
-              ×
-            </button>
-            {selectedBlog.imageUrl && (
-              <img
-                src={selectedBlog.imageUrl}
-                alt={selectedBlog.title}
-                className="blog-modal-image"
-              />
-            )}
-            <h2 className="blog-modal-title">{selectedBlog.title}</h2>
-            <p className="blog-modal-meta">
-              {new Date(selectedBlog.date).toLocaleDateString()} •{" "}
-              {selectedBlog.author || "Admin"} •{" "}
-              {selectedBlog.comments || "No Comments"}
-            </p>
-            <p className="blog-modal-description">
-              {selectedBlog.description || selectedBlog.title}
-            </p>
-          </div>
-        </div>
-      )}
+              <motion.button
+                className="blog-modal-close"
+                onClick={() => setSelectedBlog(null)}
+                whileHover={{ scale: 1.15, rotate: 90 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                ×
+              </motion.button>
+              {selectedBlog.imageUrl && (
+                <motion.img
+                  src={selectedBlog.imageUrl}
+                  alt={selectedBlog.title}
+                  className="blog-modal-image"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: 0.15, ease: EASE }}
+                />
+              )}
+              <motion.h2
+                className="blog-modal-title"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2, ease: EASE }}
+              >
+                {selectedBlog.title}
+              </motion.h2>
+              <p className="blog-modal-meta">
+                {new Date(selectedBlog.date).toLocaleDateString()} •{" "}
+                {selectedBlog.author || "Admin"} •{" "}
+                {selectedBlog.comments || "No Comments"}
+              </p>
+              <p className="blog-modal-description">
+                {selectedBlog.description || selectedBlog.title}
+              </p>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

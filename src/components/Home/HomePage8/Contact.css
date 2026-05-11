@@ -154,6 +154,26 @@ option {
   align-items: center;
   justify-content: center;
 }
+
+/* ── Social icon hover ── */
+.socials a {
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.socials a:hover {
+  transform: translateY(-5px) scale(1.12);
+  border-color: #00c8ff;
+  box-shadow: 0 6px 20px rgba(0, 200, 255, 0.35);
+}
+
+/* ── FAQ box hover ── */
+.faq-box {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.faq-box:hover {
+  border-color: #00c8ff;
+  box-shadow: 0 4px 20px rgba(0, 200, 255, 0.15);
+}
+
 .socials-footer {
   margin-top: 20px;
   display: flex;

@@ -173,6 +173,7 @@ const Benefit = ({ img, title, text }) => (
       initial={{ opacity:0, scale:0.6 }}
       whileInView={{ opacity:1, scale:1 }}
       transition={{ duration:0.6, ease:"easeOut" }}
+      whileHover={{ rotate: [0, -6, 6, 0], scale: 1.15, transition: { duration: 0.4 } }}
     />
     <h3 className="benefit-title">{title}</h3>
     <p className="benefit-text">{text}</p>

@@ -86,6 +86,8 @@
 /* CHARACTER */
 .hero-visual-home2 {
   position: relative;
+  z-index: 1;
+  isolation: isolate;
   /* display: flex; */
   /* justify-content: flex-end; */
   
@@ -94,6 +96,7 @@
 .hero-img-home2 {
   padding-top: 40px;
   width: 360px;
+  position: relative;
   z-index: 2;
   animation: float 3s infinite ease-in-out;
   
@@ -106,6 +109,8 @@
   /* right: -120px; */
   /* margin: 0px; */
   opacity: 0.7;
+  z-index: 0;
+  pointer-events: none;
   /* border: 2px solid red; */
 
 }
@@ -124,9 +129,12 @@
 /* ROCKET */
 .rocket-home2 {
   position: relative;
+  isolation: isolate;
 }
 
 .rocket-img-home2 {
+  position: relative;
+  z-index: 2;
   /* width: 700px; */
   animation: float 3s infinite ease-in-out;
   /* border: 2px solid red; */
@@ -140,6 +148,8 @@
   /* top: -120px; */
   /* left: -160px; */
   opacity: 0.7;
+  z-index: 0;
+  pointer-events: none;
 }
 
 /* WELCOME */
@@ -415,4 +425,27 @@
     margin-top: 40px;
   }
 
+}
+/* ── Hero image hover ── */
+.hero-img-home2 {
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+.hero-visual-home2:hover .hero-img-home2 {
+  filter: drop-shadow(0 0 30px rgba(0, 200, 255, 0.5));
+  transform: translateY(-8px) scale(1.03);
+}
+
+/* ── Rocket hover ── */
+.rocket-home2:hover .rocket-img-home2 {
+  filter: drop-shadow(0 0 24px rgba(0, 200, 255, 0.45));
+}
+
+/* ── Button glow ── */
+.hero-btn-home2 {
+  transition: all 0.3s ease;
+}
+.hero-btn-home2:hover {
+  background: #0a3fa0;
+  box-shadow: 0 0 20px rgba(8, 192, 238, 0.5);
+  transform: translateY(-3px);
 }

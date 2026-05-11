@@ -41,6 +41,11 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+.contact-title {
+  background-size: 200% auto;
+  animation: shimmer-sweep 4s linear infinite;
+  will-change: background-position;
+}
 
 .contact-breadcrumb {
   font-family: 'decalotype-regular';
@@ -61,4 +66,8 @@
 /* override the contact  */
 .contact {
   background-image: none !important;
+}
+@keyframes shimmer-sweep {
+  0%   { background-position: 0% center; }
+  100% { background-position: 200% center; }
 }

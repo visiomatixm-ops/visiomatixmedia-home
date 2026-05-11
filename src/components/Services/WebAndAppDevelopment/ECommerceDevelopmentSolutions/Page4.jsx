@@ -99,12 +99,19 @@ const Page4 = () => {
             <h4>{item.title}</h4>
             <p>{item.description}</p>
 
-            <div className="read-more-wrapper-bss4">
+            <motion.div
+              className="read-more-wrapper-bss4"
+              whileHover={{
+                scale: 1.07,
+                boxShadow: "0 0 18px rgba(0,200,255,0.4)",
+              }}
+              whileTap={{ scale: 0.93 }}
+            >
               <NavLink to={item.red} className="read-more-btn-bss4">
                 Read More
                 <img src={arrow} alt="arrow" className="read-more-icon-bss4" />
               </NavLink>
-            </div>
+            </motion.div>
 
           </div>
         ))}

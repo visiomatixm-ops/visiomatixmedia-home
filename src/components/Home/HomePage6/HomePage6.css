@@ -1,4 +1,3 @@
-
 /* ===============================
    PARTNERS SECTION BASE
 ================================ */
@@ -12,23 +11,24 @@
 
   /* 🔒 zoom safety */
   max-width: 100%;
-  overflow-x: hidden;
-    background-image:
-  url('../../../assets/images/Ellipse\ 5.png'),
-  /* url('../../../assets/images/Ellipse\ 6-2.png'), */
-  /* url('../../../assets/images/Ellipse\ 6-1.png'), */
+  /* overflow-x: hidden; */
+  overflow: hidden;
+  background-image:
+    url('../../../assets/images/Ellipse\ 5.png'),
+    /* url('../../../assets/images/Ellipse\ 6-2.png'), */
+    /* url('../../../assets/images/Ellipse\ 6-1.png'), */
 
-  linear-gradient(90deg,#000103,#000814,#01112c,#00307c);
-  background-repeat: no-repeat,no-repeat;
+    linear-gradient(90deg, #000103, #000814, #01112c, #00307c);
+  background-repeat: no-repeat, no-repeat;
   background-size: clamp(200px, 30vw, 400px),
-  /* 250px auto, */
-  /* 250px auto, */
-  cover;
-  background-position: 
-  left 0px bottom -1px,
-  /* right 0px top 54.4%, */
-  /* right 0px top 100%, */
-  center ;
+    /* 250px auto, */
+    /* 250px auto, */
+    cover;
+  background-position:
+    left 0px bottom -1px,
+    /* right 0px top 54.4%, */
+    /* right 0px top 100%, */
+    center;
 }
 
 /* ===============================
@@ -55,7 +55,8 @@
 .heading-home6 h1 {
   font-weight: 500;
   font-size: clamp(26px, 4vw, 39px);
-  line-height: 1.15; /* 🔒 fixed for zoom */
+  line-height: 1.15;
+  /* 🔒 fixed for zoom */
   background: linear-gradient(90deg, #67bdff 50%, #557aff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -66,7 +67,8 @@
   font-weight: 100;
   font-size: clamp(18px, 3vw, 29px);
   color: rgb(227, 227, 227);
-  line-height: 1.25; /* 🔒 fixed */
+  line-height: 1.25;
+  /* 🔒 fixed */
 }
 
 /* ===============================
@@ -75,23 +77,26 @@
 .logo-slider-home6 {
   width: 100%;
   overflow: hidden;
-  margin-bottom: clamp(50px, 8vw, 92px);
+  /* vertical padding gives scale() room so pills don't clip */
+  padding: 16px 0;
+  margin-bottom: clamp(30px, 6vw, 68px);
 
-  /* 🔒 prevents zoom jump */
   contain: layout paint;
 }
 
 .logo-track-home6 {
   display: flex;
-  
+
   gap: clamp(16px, 3vw, 26px);
   width: max-content;
-  animation: scroll-logos 28s linear infinite;
+  animation: scroll-logos 28s linear infinite !important;
 
   /* 🔒 GPU stability */
   will-change: transform;
 }
 
+/* Pause marquee on individual pill hover too */
+.logo-pill-home6:hover~.logo-pill-home6,
 .logo-slider-home6:hover .logo-track-home6 {
   animation-play-state: paused;
 }
@@ -105,20 +110,36 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.logo-pill-home6:hover {
+  transform: scale(1.15) translateY(-6px);
+  box-shadow: 0 14px 36px rgba(0, 120, 255, 0.3);
+  border-color: rgba(0, 200, 255, 0.6);
 }
 
 .logo-pill-home6 img {
   max-width: 75%;
   max-height: 75%;
   object-fit: contain;
-  
-  
+  transition: filter 0.3s ease;
+}
+
+.logo-pill-home6:hover img {
+  filter: brightness(1.1) drop-shadow(0 0 6px rgba(0, 200, 255, 0.4));
 }
 
 @keyframes scroll-logos {
-  from { transform: translate3d(0, 0, 0); }
-  to   { transform: translate3d(-50%, 0, 0); }
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
 }
 
 /* ===============================
@@ -139,12 +160,13 @@
    ARROW BG
 ================================ */
 .arrow-bg-home6 {
-  
+
   position: absolute;
   left: 50%;
   bottom: -8px;
   transform: translateX(-50%);
-  width: min(95%, 1400px); /* 🔒 clamps zoom overflow */
+  width: min(95%, 1400px);
+  /* 🔒 clamps zoom overflow */
 }
 
 /* ===============================
@@ -167,17 +189,18 @@
    CARD ITEM
 ================================ */
 .card-item-home6 {
-  
+
   position: relative;
   isolation: isolate;
-  min-width: 0; /* 🔒 text overflow fix */
+  min-width: 0;
+  /* 🔒 text overflow fix */
 }
 
 /* ===============================
    DOT
 ================================ */
 .card-dot-home6 {
-  
+
   width: 46px;
   display: block;
   margin-bottom: 30px;
@@ -188,14 +211,25 @@
 ================================ */
 .info-card-home6 {
   border-radius: 23px;
-  padding: clamp(20px, 3vw, 26px)
-           clamp(18px, 3vw, 24px);
+  padding: clamp(20px, 3vw, 26px) clamp(18px, 3vw, 24px);
   display: flex;
   flex-direction: column;
 
   /* 🔒 zoom stability */
   height: 100%;
 }
+
+/* ── Info card hover ── */
+.info-card-home6 {
+  transition: transform 0.35s ease, background 0.35s ease;
+}
+
+.card-item-home6:hover .info-card-home6 {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Logo pill hover is defined above near the component */
 
 .info-card-home6 h3 {
   font-size: clamp(17px, 2vw, 20px);
@@ -211,7 +245,7 @@
   line-height: 1.55;
   color: #e9e9e9;
   margin: 0;
-  
+
 }
 
 /* ===============================
@@ -223,7 +257,7 @@
   font-weight: 400;
   margin-top: 30px;
   padding: 0px 50px 0px 50px;
-  
+
 }
 
 /* ===============================
@@ -234,7 +268,7 @@
     display: none;
   }
 
-  .partners-home6{
+  .partners-home6 {
     background-image: none;
   }
 

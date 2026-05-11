@@ -18,6 +18,16 @@ import brand12 from "../../../assets/icons/brand12.png";
 import Why from "../../../assets/images/Why.png";
 import { NavLink } from "react-router";
 
+import {
+  fadeLeft,
+  fadeUp,
+  scaleIn,
+  staggerContainer,
+  countReveal,
+  viewport,
+  EASE,
+} from "../../../hooks/useScrollAnimation";
+
 const stats = [
   { value: "234+", label: "Projects Completed" },
   { value: "165+", label: "Client Satisfaction" },
@@ -27,18 +37,9 @@ const stats = [
 ];
 
 const brands = [
-  brand1,
-  brand2,
-  brand3,
-  brand4,
-  brand5,
-  brand6,
-  brand7,
-  brand8,
-  brand9,
-  brand10,
-  brand11,
-  brand12,
+  brand1, brand2, brand3, brand4,
+  brand5, brand6, brand7, brand8,
+  brand9, brand10, brand11, brand12,
 ];
 
 export default function HomePage3() {
@@ -48,8 +49,23 @@ export default function HomePage3() {
       <div className="why-text-main-top-container-home3">
         {/* LEFT CONTENT */}
         <div className="why-text-left-container-home3">
-          <div className="top-badge-home3">
-            <span className="years-home3">4+</span>
+          {/* Animated Badge */}
+          <motion.div
+            className="top-badge-home3"
+            initial={{ opacity: 0, x: -60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: EASE }}
+            viewport={viewport}
+          >
+            <motion.span
+              className="years-home3"
+              initial={{ opacity: 0, scale: 0.3, rotate: -15 }}
+              whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+              transition={{ type: "spring", stiffness: 150, damping: 12, delay: 0.25 }}
+              viewport={viewport}
+            >
+              4+
+            </motion.span>
             <div>
               <p>
                 Leading Digital Marketing Agency in India – Visiomatix Media
@@ -58,23 +74,23 @@ export default function HomePage3() {
               </p>
               <p className="experience-text-home3">Years of Experience</p>
             </div>
-          </div>
+          </motion.div>
 
           <div className="why-main-home3">
             <div className="why-content-home3">
               <motion.div
-                initial={{ opacity: 0, x: -120 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.3 }}
+                variants={fadeLeft}
+                initial="hidden"
+                whileInView="visible"
+                viewport={viewport}
               >
                 <h1>Why Choose Us</h1>
               </motion.div>
               <motion.div
-                initial={{ opacity: 0, y: 60 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: false, amount: 0.3 }}
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={viewport}
               >
                 <p>
                   We design digital strategies that power the next stage of your
@@ -94,17 +110,20 @@ export default function HomePage3() {
         </div>
 
         {/* IMAGE + PILL */}
-        <motion.div 
-        initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: false, amount: 0.3 }}
-        className="why-image-home3">
-          
-            
-          
-            <img src={Why} alt="Why Choose Us" />
-          
+        <motion.div
+          variants={scaleIn}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewport}
+          className="why-image-home3"
+        >
+          <motion.img
+            src={Why}
+            alt="Why Choose Us"
+            whileHover={{ scale: 1.04, filter: "brightness(1.08)" }}
+            transition={{ duration: 0.4 }}
+            style={{ width: "100%", maxWidth: "420px", borderRadius: "22px" }}
+          />
 
           <motion.div
             whileHover={{ scale: 1.1 }}
@@ -118,41 +137,53 @@ export default function HomePage3() {
         </motion.div>
       </div>
 
-      {/* STATS */}
+      {/* STATS — each one spring-bounces in with stagger */}
       <div className="stats-wrapper-home3">
-        <div className="stats-row-home3">
+        <motion.div
+          className="stats-row-home3"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewport}
+        >
           {stats.map((item, i) => (
-            <div className="stat-box-home3" key={i}>
+            <motion.div
+              className="stat-box-home3"
+              key={i}
+              variants={countReveal}
+              whileHover={{ y: -8, scale: 1.05 }}
+            >
               <div className="stats-text-container-home3">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 1.5 }}
-                  viewport={{ once: false, amount: 0.3 }}
-                >
-                  <h1>{item.value}</h1>
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, x: -120 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.8 }}
-                  viewport={{ once: false, amount: 0.3 }}
-                >
-                  <span>{item.label}</span>
-                </motion.div>
+                <h1>{item.value}</h1>
+                <span>{item.label}</span>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
 
-      {/* DIVIDER */}
-      <div className="divider-home3"></div>
+      {/* DIVIDER — draws from left */}
+      <motion.div
+        className="divider-home3"
+        initial={{ scaleX: 0, opacity: 0 }}
+        whileInView={{ scaleX: 1, opacity: 1 }}
+        transition={{ duration: 1.2, ease: EASE }}
+        viewport={viewport}
+        style={{ transformOrigin: "left" }}
+      />
 
-      {/* TRUSTED */}
-      <p className="trusted-text-home3">Trusted by 100+ Global Brands</p>
+      {/* TRUSTED text */}
+      <motion.p
+        className="trusted-text-home3"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: EASE }}
+        viewport={viewport}
+      >
+        Trusted by 100+ Global Brands
+      </motion.p>
 
-      {/* BRANDS MARQUEE */}
+      {/* BRANDS MARQUEE — 2 copies for seamless -50% loop */}
       <div className="brands-wrapper-home3">
         <div className="brands-marquee-home3">
           {[...brands, ...brands].map((logo, i) => (
@@ -165,9 +196,10 @@ export default function HomePage3() {
 
       {/* SERVICES */}
       <motion.div
-        initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewport}
         className="services-section-home3"
       >
         <h2 className="integrated-digital-title-home3">
@@ -181,7 +213,7 @@ export default function HomePage3() {
           solutions that align with your business objectives. From brand
           strategy, SEO, and performance marketing to web development, UI/UX,
           and analytics, every service works in sync to deliver consistent brand
-          experiences, measurable ROI, and long-term scalable growth. We don’t
+          experiences, measurable ROI, and long-term scalable growth. We don't
           just execute campaigns—we build digital ecosystems that drive
           visibility, engagement, and sustained business success.
         </p>

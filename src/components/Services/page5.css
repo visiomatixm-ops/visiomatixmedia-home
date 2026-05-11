@@ -74,6 +74,16 @@
 
 .slider-track-bss5 img {
   flex-shrink: 0;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.slider-bss5:hover .slider-track-bss5 {
+  animation-play-state: paused;
+}
+
+.slider-track-bss5 img:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 14px rgba(0, 200, 255, 0.4));
 }
 
 @keyframes scroll {
@@ -114,6 +124,14 @@
   font-family: 'commissioner-semibold';
   margin-top: 40px;
   padding: 20px 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.para-bss5>button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35), 0 0 16px rgba(0, 200, 255, 0.35);
+  filter: brightness(1.1);
 }
 .nav-avoid-blue{
   color:white;

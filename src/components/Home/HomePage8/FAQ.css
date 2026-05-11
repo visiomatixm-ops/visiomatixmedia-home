@@ -141,22 +141,14 @@
 }
 
 /* =========================
-   ANSWER (ANIMATION)
+   ANSWER — Framer Motion controls height
 ========================= */
 .faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.6s ease-in-out;
-}
-
-.faq-box.open .faq-answer {
-  max-height: 600px;
+  /* height is animated by Framer Motion - no max-height needed */
 }
 
 .faq-answer p {
   padding: 0 22px 18px;
-  /* font-size: clamp(13px, 2.5vw, 14px); */
-  /* make the FAQ answers font size equal to questions */
   font-size: clamp(15px, 3.5vw, 20px);     
   color: #e0e7ff;
 }

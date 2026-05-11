@@ -421,7 +421,25 @@
   overflow: hidden;
   border-radius: 20px;
 }
-
+.career-card-sb1-career {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
+}
+.career-card-sb1-career:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(0, 120, 255, 0.22);
+}
+.career-img-container-sb1-career {
+  overflow: hidden;
+  border-radius: 20px;
+}
+.career-img-container-sb1-career img {
+  transition: transform 0.55s ease !important;
+  transform: none !important;
+}
+.career-card-sb1-career:hover .career-img-container-sb1-career img {
+  transform: scale(1.05) !important;
+}
 .career-img-container-sb1-career img {
   width: 100%;
   height: auto;
@@ -541,9 +559,15 @@
   transition: all 0.3s ease;
 }
 
+.view-details-btn-sb1-career {
+  transition: background 0.3s ease, color 0.3s ease,
+              transform 0.3s ease, box-shadow 0.3s ease;
+}
 .view-details-btn-sb1-career:hover {
   background: #00c8ff;
   color: #013992;
+  transform: translateX(4px);
+  box-shadow: 0 0 16px rgba(0, 200, 255, 0.4);
 }
 
 .view-details-icon-sb1-career {
@@ -711,6 +735,16 @@
   border-radius: 25px;
   object-fit: cover;
 }
+.careers1-right img,
+.careers2-right img {
+  transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+}
+.careers1-right:hover img,
+.careers2-right:hover img {
+  transform: scale(1.04) translateY(-6px);
+  box-shadow: 0 20px 60px rgba(0, 100, 255, 0.3);
+  filter: brightness(1.06);
+}
 
 /* LINE FIX */
 .line-2 {
@@ -771,6 +805,19 @@
 .point {
   margin-bottom: 25px;
 }
+.point {
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+.point:hover {
+  transform: translateX(8px);
+}
+.point h3 {
+  transition: color 0.3s ease;
+}
+.point:hover h3 {
+  color: #00c8ff;
+}
 
 .point h3 {
   font-size: 20px;
@@ -801,25 +848,24 @@
 
 .card2 {
   position: relative;
-
   width: 100%;
   max-width: 300px; 
-
   padding: 28px 26px;
-
   border-radius: 45px;
-
   background: transparent; 
-
   min-height: 260px; 
-
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
   box-sizing: border-box;
 }
-
+.card2 {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.card2:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 48px rgba(0, 100, 255, 0.25);
+}
 /* GRADIENT BORDER */
 .card2::before {
   content: "";
