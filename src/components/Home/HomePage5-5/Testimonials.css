@@ -88,8 +88,9 @@
   align-items: center;
   margin-top: 0;
   /* Increased vertical padding for more breathing room */
-  padding: 32px 0; 
+  padding: 32px 0;
 }
+
 .carousel {
   width: 100%;
   overflow: hidden;
@@ -113,11 +114,13 @@
 } */
 .carousel-track {
   display: flex;
-  align-items: stretch; /* Ensures cards in a row have equal height */
-  gap: 40px; 
+  align-items: stretch;
+  /* Ensures cards in a row have equal height */
+  gap: 40px;
   width: 100%;
-  padding: 0 80px; 
+  padding: 0 80px;
 }
+
 /* .testimonial-card {
   display: flex;
   align-items: center;
@@ -129,23 +132,28 @@
 .testimonial-card {
   display: flex;
   align-items: center;
-  gap: 32px; 
-  
-  flex: 1 0 auto; 
-  min-width: 450px; 
-  padding: 24px 0; 
+  gap: 32px;
+
+  flex: 1 0 auto;
+  min-width: 450px;
+  padding: 24px 0;
 }
+
 .profile-section {
   display: flex;
   align-items: center;
   gap: 16px;
-  flex-shrink: 0; /* Ensures identity section never compresses */
-  width: 200px; /* Stable width for the left side */
+  flex-shrink: 0;
+  /* Ensures identity section never compresses */
+  width: 200px;
+  /* Stable width for the left side */
 }
+
 .client-info {
   margin-bottom: 0;
   min-width: 120px;
 }
+
 /* .testimonial-card>div {
   display: flex;
   align-items: center;
@@ -190,7 +198,8 @@
   margin: 0;
   max-width: 340px;
   min-width: 200px;
-  border-left: 1.5px solid #ffffff; /* This is your white divider */
+  border-left: 1.5px solid #ffffff;
+  /* This is your white divider */
   padding-left: 20px;
   white-space: normal;
 }
@@ -206,7 +215,7 @@
   .testimonial-card {
     min-width: 300px;
   }
-  
+
   .nav-btn {
     display: none;
   }

@@ -112,7 +112,7 @@ const Service3_1 = () => {
                 </h2>
                 <p>
                   We create platform-specific, premium content aligned with your
-                  brand identity—designed for engagement, reach, and conversion
+                  brand identity designed for engagement, reach, and conversion
                   through strategic storytelling.
                 </p>
               </motion.div>
@@ -143,7 +143,7 @@ const Service3_1 = () => {
               viewport={{ once: false, amount: 0.3 }}
             >
               With Visiomatix Media, social media marketing delivers more than
-              visibility—it builds brand authority, meaningful engagement, and
+              visibility it builds brand authority, meaningful engagement, and
               measurable business growth. Through strategic planning, premium
               content, and performance driven execution, we help brands attract
               the right audience, strengthen credibility, and convert attention

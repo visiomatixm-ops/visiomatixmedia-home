@@ -67,7 +67,7 @@ export default function HomePage6() {
       </div>
 
       <div className="cards-wrapper-home6">
-        <img src={growthArrow} className="arrow-bg-home6" alt="" />
+        <img src={growthArrow} className="arrow-bg-home6" alt="growth wave" />
 
         <motion.div
           variants={staggerContainer}
@@ -126,7 +126,7 @@ export default function HomePage6() {
         execution into a clear, scalable roadmap. This three-step system
         eliminates guesswork, minimizes risk, and transforms insight into
         execution and execution into measurable ROI. It's not a one-off campaign
-        or a creative experiment—it's a repeatable, performance-led growth
+        or a creative experiment it's a repeatable, performance-led growth
         engine built to scale brands with precision and confidence.
       </motion.p>
     </section>

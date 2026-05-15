@@ -214,7 +214,7 @@ export default function HomePage3() {
           strategy, SEO, and performance marketing to web development, UI/UX,
           and analytics, every service works in sync to deliver consistent brand
           experiences, measurable ROI, and long-term scalable growth. We don't
-          just execute campaigns—we build digital ecosystems that drive
+          just execute campaigns we build digital ecosystems that drive
           visibility, engagement, and sustained business success.
         </p>
       </motion.div>

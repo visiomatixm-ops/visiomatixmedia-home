@@ -165,7 +165,7 @@ const HomePage2Hero = () => {
               viewport={viewport}
             >
               {[
-                "Whether you're a startup entering the global market, a digital agency seeking a strategic partner, or an enterprise ready to scale across regions — Visiomatix Media integrates seamlessly into your growth journey.",
+                "Whether you're a startup entering the global market, a digital agency seeking a strategic partner, or an enterprise ready to scale across regions Visiomatix Media integrates seamlessly into your growth journey.",
                 "Working with clients across industries and geographies, we combine strategy, creativity, technology, and performance marketing into a scalable digital system built for global impact.",
                 "From startups to scale-ups, we adapt to diverse markets, align with your vision, and deliver results that transcend borders.",
                 "This is digital growth without boundaries.",
