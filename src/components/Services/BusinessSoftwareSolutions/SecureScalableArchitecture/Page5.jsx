@@ -31,12 +31,13 @@ const logos = [
   be,
   ball,
   reddit,
-  quora,
+  quora
 ];
 
 const Page5 = () => {
   return (
     <main className="bss5">
+
       <section className="blue-title-bss5">
         <h1>
           Strategic Architecture Partnerships
@@ -54,18 +55,7 @@ const Page5 = () => {
 
       <section className="para-bss5">
         <p>
-          At Visiomatix Media, our Secure & Scalable Architecture solutions are
-          engineered to perform seamlessly across complex business environments
-          and digital ecosystems. We design infrastructure frameworks aligned
-          with operational requirements, security standards, and long-term
-          business objectives ensuring consistent performance, resilience, and
-          scalability across systems and departments. We specialize in building
-          high-performance architectural foundations including cloud
-          infrastructure, enterprise system frameworks, API-driven ecosystems,
-          secure data environments, microservices architectures, and scalable
-          deployment models. Every architecture is optimized for security,
-          performance, scalability, and reliability enabling organizations to
-          maintain stable, protected, and future-ready digital operations.
+        At Visiomatix Media, our Secure & Scalable Architecture solutions are engineered to perform seamlessly across complex business environments and digital ecosystems. We design infrastructure frameworks aligned with operational requirements, security standards, and long-term business objectives  ensuring consistent performance, resilience, and scalability across systems and departments. We specialize in building high-performance architectural foundations including cloud infrastructure, enterprise system frameworks, API-driven ecosystems, secure data environments, microservices architectures, and scalable deployment models. Every architecture is optimized for security, performance, scalability, and reliability enabling organizations to maintain stable, protected, and future-ready digital operations.
         </p>
 
         <button>
@@ -73,7 +63,9 @@ const Page5 = () => {
             Book Your Free Strategy Call
           </NavLink>
         </button>
+
       </section>
+
     </main>
   );
 };

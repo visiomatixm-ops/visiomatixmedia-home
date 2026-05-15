@@ -51,6 +51,7 @@ const Page2 = () => {
   return (
     <>
       <section className="digital-marketing-services-2-2">
+
         <motion.div
           className="benefites-2"
           variants={fadeDown}
@@ -78,17 +79,16 @@ const Page2 = () => {
           whileInView="visible"
           viewport={{ once: false, amount: 0.2 }}
         >
+
           <div className="column-2 custom-border-2 right-pad-30">
-            <motion.div
-              className="e-commerce-services-benefits-div"
-              variants={fadeUp}
-              whileHover={{
-                y: -8,
-                scale: 1.03,
-                boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-                transition: { type: "spring", stiffness: 260 },
-              }}
-            >
+
+            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}
+    whileHover={{
+      y: -8,
+      scale: 1.03,
+      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
+      transition: { type: "spring", stiffness: 260 }
+    }}>
               <motion.img
                 src={frame1}
                 alt="Icon"
@@ -106,16 +106,13 @@ const Page2 = () => {
               </p>
             </motion.div>
 
-            <motion.div
-              className="e-commerce-services-benefits-div"
-              variants={fadeUp}
-              whileHover={{
-                y: -8,
-                scale: 1.03,
-                boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-                transition: { type: "spring", stiffness: 260 },
-              }}
-            >
+            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}
+    whileHover={{
+      y: -8,
+      scale: 1.03,
+      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
+      transition: { type: "spring", stiffness: 260 }
+    }}>
               <motion.img
                 src={frame2}
                 alt="Icon"
@@ -130,19 +127,18 @@ const Page2 = () => {
                 retention, usability, and conversion rates across all devices.
               </p>
             </motion.div>
+
           </div>
 
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
-            <motion.div
-              className="e-commerce-services-benefits-div"
-              variants={fadeUp}
-              whileHover={{
-                y: -8,
-                scale: 1.03,
-                boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-                transition: { type: "spring", stiffness: 260 },
-              }}
-            >
+
+            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}
+    whileHover={{
+      y: -8,
+      scale: 1.03,
+      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
+      transition: { type: "spring", stiffness: 260 }
+    }}>
               <motion.img
                 src={frame6}
                 alt="Icon"
@@ -160,16 +156,13 @@ const Page2 = () => {
               </p>
             </motion.div>
 
-            <motion.div
-              className="e-commerce-services-benefits-div"
-              variants={fadeUp}
-              whileHover={{
-                y: -8,
-                scale: 1.03,
-                boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-                transition: { type: "spring", stiffness: 260 },
-              }}
-            >
+            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}
+    whileHover={{
+      y: -8,
+      scale: 1.03,
+      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
+      transition: { type: "spring", stiffness: 260 }
+    }}>
               <motion.img
                 src={frame5}
                 alt="Icon"
@@ -186,19 +179,18 @@ const Page2 = () => {
                 reliability across modern web environments.
               </p>
             </motion.div>
+
           </div>
 
           <div className="column-2 left-pad-50 right-pad-30">
-            <motion.div
-              className="e-commerce-services-benefits-div"
-              variants={fadeUp}
-              whileHover={{
-                y: -8,
-                scale: 1.03,
-                boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-                transition: { type: "spring", stiffness: 260 },
-              }}
-            >
+
+            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}
+    whileHover={{
+      y: -8,
+      scale: 1.03,
+      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
+      transition: { type: "spring", stiffness: 260 }
+    }}>
               <motion.img
                 src={frame3}
                 alt="Icon"
@@ -216,16 +208,13 @@ const Page2 = () => {
               </p>
             </motion.div>
 
-            <motion.div
-              className="e-commerce-services-benefits-div"
-              variants={fadeUp}
-              whileHover={{
-                y: -8,
-                scale: 1.03,
-                boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-                transition: { type: "spring", stiffness: 260 },
-              }}
-            >
+            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}
+    whileHover={{
+      y: -8,
+      scale: 1.03,
+      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
+      transition: { type: "spring", stiffness: 260 }
+    }}>
               <motion.img
                 src={frame4}
                 alt="Icon"
@@ -242,7 +231,9 @@ const Page2 = () => {
                 competitive, secure, and future ready.
               </p>
             </motion.div>
+
           </div>
+
         </motion.div>
 
         <motion.div
@@ -267,36 +258,27 @@ const Page2 = () => {
 
           <motion.ul style={{ width: "100%" }} variants={containerVariant}>
             <motion.li className="second-text" variants={fadeUp}>
-              Strategic Website Architecture Future ready website architectures
-              designed around business objectives, user behavior, and long term
-              scalability.
+              Strategic Website Architecture Future ready website architectures designed around business objectives, user behavior, and long term scalability.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Performance Driven Website Development Execution focused on speed,
-              stability, efficiency ensuring optimized performance, reliability,
-              measurable business outcomes.
+              Performance Driven Website Development Execution focused on speed, stability, efficiency ensuring optimized performance, reliability, measurable business outcomes.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Standardized development frameworks and clean coding practices
-              that ensure consistency, easy maintenance, and professional-grade
-              execution.
+              Standardized development frameworks and clean coding practices that ensure consistency, easy maintenance, and professional-grade execution.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              High-Impact User Experience & Functionality Intuitive,
-              user-centric website experiences engineered to enhance engagement,
-              usability, and conversion performance.
+              High-Impact User Experience & Functionality Intuitive, user-centric website experiences engineered to enhance engagement, usability, and conversion performance.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Security, Stability & Technical Credibility Secure development
-              practices, robust data protection, and reliable system performance
-              that establish long term trust stability.
+              Security, Stability & Technical Credibility Secure development practices, robust data protection, and reliable system performance that establish long term trust stability.
             </motion.li>
           </motion.ul>
         </motion.div>
+
       </section>
     </>
   );

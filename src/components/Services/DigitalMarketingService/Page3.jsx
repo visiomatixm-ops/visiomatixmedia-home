@@ -1,16 +1,18 @@
-import React from "react";
+import React from 'react'
 
-import "../page3.css";
+import '../page3.css'
 
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 import image3 from "../../../assets/Digital_Marketing_Services/images/2.png";
 
+
 const Page3 = () => {
   return (
     <>
       <section className="business-software-solution3">
+
         <motion.p
           className="para-bss3"
           initial={{ opacity: 0, x: -120 }}
@@ -44,9 +46,10 @@ const Page3 = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: false, amount: 0.3 }}
         />
+
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Page3;
+export default Page3

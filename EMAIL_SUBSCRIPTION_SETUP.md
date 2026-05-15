@@ -187,14 +187,14 @@ cp .env.example .env
 RESEND_API_KEY=your_actual_resend_api_key
 CONTACT_EMAIL=your_email@company.com
 WEBSITE_URL=http://localhost:3000
-MONGODB_URI=mongodb://localhost:27017/Visiomatix
+MONGODB_URI=mongodb://localhost:27017/visiomatix
 ```
 
 ### 3. Verify MongoDB is Running
 
 ```bash
 # MongoDB should be accessible at MONGODB_URI
-# For local development: mongodb://localhost:27017/Visiomatix
+# For local development: mongodb://localhost:27017/visiomatix
 ```
 
 ### 4. Start Backend Server
@@ -231,7 +231,7 @@ curl -X POST http://localhost:5000/api/subscribe \
 # First login to get JWT token
 curl -X POST http://localhost:5000/admin/login \
   -H "Content-Type: application/json" \
-  -d '{"email":"admin@Visiomatix.com","password":"your_password"}'
+  -d '{"email":"admin@visiomatix.com","password":"your_password"}'
 
 # Get token from response, then create blog
 curl -X POST http://localhost:5000/api/blogs \

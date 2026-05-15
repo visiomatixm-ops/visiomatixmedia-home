@@ -35,20 +35,16 @@ const Page3 = () => {
           expand confidently while preserving strong brand equity and market
           presence.
         </motion.p>
-        <motion.img
-          src={image3}
-          alt="..."
-          className="image-bss3"
-          initial={{ opacity: 0, scale: 0.6 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: false, amount: 0.3 }}
-          whileHover={{
-            scale: 1.04,
-            filter: "brightness(1.08)",
-            boxShadow: "0 20px 60px rgba(0,100,255,0.3)",
-          }}
-        />
+    <motion.img
+  src={image3}
+  alt="..."
+  className="image-bss3"
+  initial={{ opacity: 0, scale: 0.6 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: false, amount: 0.3 }}
+  whileHover={{ scale: 1.04, filter: "brightness(1.08)", boxShadow: "0 20px 60px rgba(0,100,255,0.3)" }}
+/>
       </section>
     </>
   );

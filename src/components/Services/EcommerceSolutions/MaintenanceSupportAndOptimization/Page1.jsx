@@ -10,9 +10,10 @@ const Page1 = () => {
     <div className="service_1_root">
       <main className="hero-box-service1">
         <div className="title-box-service1">
+
           <motion.h1
             className="title2-service1"
-            style={{ fontSize: "75px" }}
+            style={{fontSize:"75px"}}
             initial={{ opacity: 0, y: -60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -47,9 +48,11 @@ const Page1 = () => {
             and ongoing optimization, we transform system maintenance into a
             strategic advantage that sustains growth and operational excellence.
           </motion.p>
+
         </div>
 
         <div className="logo-box2-service1">
+
           <motion.img
             src={digimart}
             alt=""
@@ -60,6 +63,7 @@ const Page1 = () => {
           />
 
           <div>
+
             <motion.div
               className="social-media-service1"
               initial={{ opacity: 0, x: -120 }}
@@ -74,6 +78,7 @@ const Page1 = () => {
             </motion.div>
 
             <div className="content-box-service1">
+
               <motion.div
                 className="content-service1"
                 initial={{ opacity: 0, y: 60 }}
@@ -126,6 +131,7 @@ const Page1 = () => {
                   with business growth.
                 </p>
               </motion.div>
+
             </div>
 
             <motion.p
@@ -142,7 +148,9 @@ const Page1 = () => {
               downtime, and transform ongoing system management into a strategic
               advantage that sustains growth and operational excellence.
             </motion.p>
+
           </div>
+
         </div>
       </main>
     </div>

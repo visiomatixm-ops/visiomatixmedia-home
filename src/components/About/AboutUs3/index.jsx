@@ -50,12 +50,13 @@ const Counter = ({ value, duration = 2000 }) => {
             const progress = timestamp - startTime;
             const current = Math.min(
               startValue + (progress / duration) * 20,
-              number,
+              number
             );
             if (ref.current) {
-              ref.current.textContent = Number.isInteger(number)
-                ? Math.floor(current) + suffix
-                : current.toFixed(1) + suffix;
+              ref.current.textContent =
+                Number.isInteger(number)
+                  ? Math.floor(current) + suffix
+                  : current.toFixed(1) + suffix;
             }
             if (progress < duration) {
               requestAnimationFrame(animate);
@@ -64,12 +65,11 @@ const Counter = ({ value, duration = 2000 }) => {
           requestAnimationFrame(animate);
         } else {
           if (ref.current) {
-            ref.current.textContent =
-              Math.floor(number - 20) + value.replace(/[0-9.]/g, "");
+            ref.current.textContent = Math.floor(number - 20) + value.replace(/[0-9.]/g, "");
           }
         }
       },
-      { threshold: 0.3 },
+      { threshold: 0.3 }
     );
     if (el) observer.observe(el);
     return () => observer.disconnect();
@@ -234,30 +234,10 @@ const AboutUs3 = () => {
         whileInView="visible"
         viewport={viewport}
       >
-        <FeatureCard
-          src={star}
-          alt="star"
-          label="6+ Years of Delivering Smart Digital Solutions"
-          delay={0}
-        />
-        <FeatureCard
-          src={hand}
-          alt="hand"
-          label="A Team Driving Creative Intelligence"
-          delay={0.1}
-        />
-        <FeatureCard
-          src={bulb}
-          alt="bulb"
-          label="Smart Execution for Smarter Results"
-          delay={0.2}
-        />
-        <FeatureCard
-          src={human}
-          alt="human"
-          label="Turning Ambition Into Measurable Success"
-          delay={0.3}
-        />
+        <FeatureCard src={star}  alt="star"  label="6+ Years of Delivering Smart Digital Solutions" delay={0} />
+        <FeatureCard src={hand}  alt="hand"  label="A Team Driving Creative Intelligence"           delay={0.1} />
+        <FeatureCard src={bulb}  alt="bulb"  label="Smart Execution for Smarter Results"            delay={0.2} />
+        <FeatureCard src={human} alt="human" label="Turning Ambition Into Measurable Success"       delay={0.3} />
       </motion.div>
 
       {/* DIVIDER */}

@@ -21,7 +21,6 @@ import {
   cardReveal,
   viewport,
 } from "../../../hooks/useScrollAnimation";
-
 export default function HomePage6() {
   const logos = [
     wordpress,
@@ -35,7 +34,7 @@ export default function HomePage6() {
 
   return (
     <section className="partners-home6">
-      {/* Animated divider line */}
+      {/* Animated divider line — draws from left */}
       <motion.div
         className="top-line-home6"
         initial={{ scaleX: 0, opacity: 0 }}
@@ -78,54 +77,33 @@ export default function HomePage6() {
           className="cards-row-home6"
         >
           {[
-            {
-              icon: dotIcon1,
-              title: "Data & Intelligence",
-              text: "We analyze patterns, user behavior, and performance metrics to uncover what truly drives results. Every insight fuels smarter decisions, optimized campaigns, and sustainable brand growth. At Visiomatix Media, data powers precision, performance, and progress.",
-              active: false,
-            },
-            {
-              icon: dotIcon2,
-              title: "Design That Works",
-              text: "We don't design for trends,we design for results. Every pixel is purposeful, every interaction intentional. Design at Visiomatix Media is engineered to perform.",
-              active: true,
-            },
-            {
-              icon: dotIcon3,
-              title: "Strategy & Planning",
-              text: "We develop data-backed digital strategies that align brand vision with customer behavior and market dynamics. Our approach ensures every campaign, channel, and investment works together to drive consistent, scalable results.",
-              active: false,
-            },
+            { icon: dotIcon1, title: "Data & Intelligence", text: "We analyze patterns, user behavior, and performance metrics to uncover what truly drives results. Every insight fuels smarter decisions, optimized campaigns, and sustainable brand growth. At Visiomatix Media, data powers precision, performance, and progress.", active: false },
+            { icon: dotIcon2, title: "Design That Works", text: "We don't design for trends,we design for results. Every pixel is purposeful, every interaction intentional. Design at Visiomatix Media is engineered to perform.", active: true },
+            { icon: dotIcon3, title: "Strategy & Planning", text: "We develop data-backed digital strategies that align brand vision with customer behavior and market dynamics. Our approach ensures every campaign, channel, and investment works together to drive consistent, scalable results.", active: false },
           ].map((card, i) => (
             <motion.div
               key={i}
               variants={cardReveal}
-              style={{ height: "100%" }}
               whileHover={{
                 y: -10,
                 scale: 1.03,
                 transition: { type: "spring", stiffness: 260, damping: 18 },
               }}
             >
-              <div
-                className={`info-card-home6${card.active ? " active-home6" : ""}`}
-              >
+              <div className="card-item-home6">
                 <motion.img
                   src={card.icon}
                   className="card-dot-home6"
                   alt=""
                   initial={{ opacity: 0, scale: 0.4, rotate: -20 }}
                   whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-                  whileHover={{ rotate: 180, scale: 1.15 }}
-                  transition={{
-                    delay: i * 0.1 + 0.2,
-                    type: "spring",
-                    stiffness: 220,
-                  }}
+                  transition={{ delay: i * 0.1 + 0.2, type: "spring", stiffness: 220 }}
                   viewport={viewport}
                 />
-                <h3>{card.title}</h3>
-                <p>{card.text}</p>
+                <div className={`info-card-home6${card.active ? " active-home6" : ""}`}>
+                  <h3>{card.title}</h3>
+                  <p>{card.text}</p>
+                </div>
               </div>
             </motion.div>
           ))}
@@ -148,7 +126,7 @@ export default function HomePage6() {
         execution into a clear, scalable roadmap. This three-step system
         eliminates guesswork, minimizes risk, and transforms insight into
         execution and execution into measurable ROI. It's not a one-off campaign
-        or a creative experiment, it's a repeatable, performance-led growth
+        or a creative experiment—it's a repeatable, performance-led growth
         engine built to scale brands with precision and confidence.
       </motion.p>
     </section>

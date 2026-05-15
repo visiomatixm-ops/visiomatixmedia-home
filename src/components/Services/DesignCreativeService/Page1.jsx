@@ -1,4 +1,5 @@
-import React from "react";
+
+import React from 'react'
 import "../page1.css";
 
 // eslint-disable-next-line no-unused-vars
@@ -6,11 +7,14 @@ import { motion } from "framer-motion";
 
 import digimart from "../../../assets/design-creative/images/1.png";
 
+
 const Page1 = () => {
   return (
     <div className="service_1_root">
       <main className="hero-box-service1">
+
         <div className="title-box-service1">
+
           <motion.h1
             className="title2-service1"
             initial={{ opacity: 0, y: -60 }}
@@ -47,9 +51,11 @@ const Page1 = () => {
             disciplined, and performance driven built for organizations that
             value precision, consistency, and measurable brand impact.
           </motion.p>
+
         </div>
 
         <div className="logo-box2-service1">
+
           <motion.img
             src={digimart}
             alt=""
@@ -60,6 +66,7 @@ const Page1 = () => {
           />
 
           <div>
+
             <motion.div
               className="social-media-service1"
               initial={{ opacity: 0, x: -120 }}
@@ -74,6 +81,7 @@ const Page1 = () => {
             </motion.div>
 
             <div className="content-box-service1">
+
               <motion.div
                 className="content-service1"
                 initial={{ opacity: 0, y: 80 }}
@@ -126,6 +134,7 @@ const Page1 = () => {
                   brand credibility, recognition, and long term equity.
                 </p>
               </motion.div>
+
             </div>
 
             <motion.p
@@ -141,11 +150,13 @@ const Page1 = () => {
               help brands communicate clearly, strengthen credibility, and
               transform visual identity into lasting value.
             </motion.p>
+
           </div>
         </div>
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default Page1;
+export default Page1
+

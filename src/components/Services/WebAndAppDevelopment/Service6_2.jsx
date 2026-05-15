@@ -1,9 +1,9 @@
-import frame1 from "../../../assets/Web-and-app-development-services/Icon1.png";
-import frame2 from "../../../assets/Web-and-app-development-services/Icon2.png";
-import frame3 from "../../../assets/Web-and-app-development-services/Icon3.png";
-import frame4 from "../../../assets/Web-and-app-development-services/Icon4.png";
-import frame5 from "../../../assets/Web-and-app-development-services/Icon5.png";
-import frame6 from "../../../assets/Web-and-app-development-services/Icon6.png";
+import frame1 from '../../../assets/Web-and-app-development-services/Icon1.png';
+import frame2 from '../../../assets/Web-and-app-development-services/Icon2.png';
+import frame3 from '../../../assets/Web-and-app-development-services/Icon3.png';
+import frame4 from '../../../assets/Web-and-app-development-services/Icon4.png';
+import frame5 from '../../../assets/Web-and-app-development-services/Icon5.png';
+import frame6 from '../../../assets/Web-and-app-development-services/Icon6.png';
 import "../page2.css";
 
 import { motion } from "framer-motion";
@@ -49,6 +49,7 @@ const Service6_2 = () => {
   return (
     <section className="digital-marketing-services-2-2">
       <div className="service2-container">
+
         <motion.p
           className="benefites-2"
           variants={fadeDown}
@@ -76,47 +77,37 @@ const Service6_2 = () => {
           whileInView="visible"
           viewport={{ once: false, amount: 0.2 }}
         >
-          <div className="column-2 border-right">
-            <Benefit
-              img={frame1}
-              title=" Business Driven Development"
-              text="We don’t just build websites and applications we create digital products aligned with your business objectives, ensuring every feature supports growth, efficiency, and ROI."
-            />
 
-            <Benefit
-              img={frame2}
-              title="User Centric UI/UX Engineering"
-              text="By integrating advanced UI/UX principles, we ensure intuitive navigation, higher user engagement, and improved conversion rates across web and mobile platforms."
-            />
+          <div className="column-2 border-right">
+            <Benefit img={frame1} title=" Business Driven Development"
+              text="We don’t just build websites and applications we create digital products aligned with your business objectives, ensuring every feature supports growth, efficiency, and ROI." />
+           
+
+            <Benefit img={frame2} title="User Centric UI/UX Engineering"
+              text="By integrating advanced UI/UX principles, we ensure intuitive navigation, higher user engagement, and improved conversion rates across web and mobile platforms." />
+            
           </div>
 
           <div className="column-2 border-right">
-            <Benefit
-              img={frame6}
-              title="Fully Custom & Scalable Solutions"
-              text="Projects are built from the ground up with modular e-commerce architectures that scale, allowing new features, products, users, integrations without affecting performance."
-            />
+            <Benefit img={frame6} title="Fully Custom & Scalable Solutions"
+              text="Projects are built from the ground up with modular e-commerce architectures that scale, allowing new features, products, users, integrations without affecting performance." />
+           
 
-            <Benefit
-              img={frame5}
-              title="Secure & Robust Development"
-              text="We follow industry-standard security protocols, ensuring data protection, secure transactions, and long-term system reliability."
-            />
+            <Benefit img={frame5} title="Secure & Robust Development"
+              text="We follow industry-standard security protocols, ensuring data protection, secure transactions, and long-term system reliability." />
+            
           </div>
 
           <div className="column-2">
-            <Benefit
-              img={frame3}
-              title="High Performance Architecture"
-              text="Our solutions are optimized for speed, stability, and performance, delivering fast load times and smooth functionality even under high user traffic."
-            />
+            <Benefit img={frame3} title="High Performance Architecture"
+              text="Our solutions are optimized for speed, stability, and performance, delivering fast load times and smooth functionality even under high user traffic." />
+            
 
-            <Benefit
-              img={frame4}
-              title=" Post Launch Support & Continuous Improvement"
-              text="Beyond launch, we provide ongoing maintenance, performance monitoring, updates, and feature enhancements to keep your digital product competitive."
-            />
+            <Benefit img={frame4} title=" Post Launch Support & Continuous Improvement"
+              text="Beyond launch, we provide ongoing maintenance, performance monitoring, updates, and feature enhancements to keep your digital product competitive." />
+           
           </div>
+
         </motion.div>
 
         <motion.div
@@ -127,15 +118,8 @@ const Service6_2 = () => {
           viewport={{ once: false, amount: 0.3 }}
         >
           <p className="second-text">
-            Web & App Development services at Visiomatix Media go beyond
-            building functional digital products we create scalable, secure, and
-            high performance platforms that drive long term business growth. Our
-            strategic, performance driven development approach ensures every
-            website and application aligns with business objectives, enhances
-            user experience, and delivers measurable impact across digital
-            ecosystems.
-            <br />
-            <br />
+            Web & App Development services at Visiomatix Media go beyond building functional digital products we create scalable, secure, and high performance platforms that drive long term business growth. Our strategic, performance driven development approach ensures every website and application aligns with business objectives, enhances user experience, and delivers measurable impact across digital ecosystems.
+            <br /><br />
             <span className="second-text">Key Highlights</span>
           </p>
 
@@ -145,14 +129,20 @@ const Service6_2 = () => {
               "Performance Driven Development Execution focused on speed, stability, and efficiency, ensuring optimized performance, reliability, and measurable outcomes.",
               "Consistent Systems & Code Standards Standardized frameworks and clean code practices ensure consistency, easy maintenance, and professional execution.",
               "High Impact User Experience & Functionality Intuitive, user friendly digital experiences that enhance engagement, usability, and conversions.",
-              "Security, Stability & Technical Credibility Secure coding, strong data protection, and reliable system performance ensure long term trust and stability.",
+              "Security, Stability & Technical Credibility Secure coding, strong data protection, and reliable system performance ensure long term trust and stability."
             ].map((item, index) => (
-              <motion.li key={index} className="second-text" variants={fadeUp}>
+              <motion.li
+                key={index}
+                className="second-text"
+                variants={fadeUp}
+              >
                 {item}
               </motion.li>
             ))}
           </motion.ul>
+
         </motion.div>
+
       </div>
     </section>
   );
@@ -162,13 +152,13 @@ const Benefit = ({ img, title, text }) => (
   <motion.div
     className="e-commerce-services-benefits-div"
     variants={fadeUp}
+  
     whileHover={{
       y: -8,
       scale: 1.03,
       boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 },
-    }}
-  >
+      transition: { type: "spring", stiffness: 260 }
+    }}>
     <motion.img
       src={img}
       alt=""
@@ -176,11 +166,7 @@ const Benefit = ({ img, title, text }) => (
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: false }}
-      whileHover={{
-        rotate: [0, -6, 6, 0],
-        scale: 1.15,
-        transition: { duration: 0.4 },
-      }}
+      whileHover={{ rotate: [0, -6, 6, 0], scale: 1.15, transition: { duration: 0.4 } }}
     />
     <h3 className="benefit-title">{title}</h3>
     <p className="benefit-text">{text}</p>

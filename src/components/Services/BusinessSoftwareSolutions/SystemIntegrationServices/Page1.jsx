@@ -9,6 +9,7 @@ const Page1 = () => {
     <div className="service_1_root">
       <main className="hero-box-service1">
         <div className="title-box-service1">
+
           <motion.h1
             className="title2-service1"
             initial={{ opacity: 0, y: -60 }}
@@ -46,9 +47,11 @@ const Page1 = () => {
             transform fragmented systems into cohesive, efficient, and
             future-ready digital infrastructures.
           </motion.p>
+
         </div>
 
         <div className="logo-box2-service1">
+
           <motion.img
             src={digimart}
             alt=""
@@ -59,6 +62,7 @@ const Page1 = () => {
           />
 
           <div>
+
             <motion.div
               className="social-media-service1"
               initial={{ opacity: 0, x: -120 }}
@@ -73,6 +77,7 @@ const Page1 = () => {
             </motion.div>
 
             <div className="content-box-service1">
+
               <motion.div
                 className="content-service1"
                 initial={{ opacity: 0, y: 60 }}
@@ -125,6 +130,7 @@ const Page1 = () => {
                   secure data exchange, and sustainable scalability.
                 </p>
               </motion.div>
+
             </div>
 
             <motion.p
@@ -142,7 +148,9 @@ const Page1 = () => {
               technologies into cohesive infrastructures that drive long-term
               operational efficiency and sustainable business growth.
             </motion.p>
+
           </div>
+
         </div>
       </main>
     </div>

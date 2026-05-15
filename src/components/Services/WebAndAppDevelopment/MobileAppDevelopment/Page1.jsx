@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React from 'react'
 import "../../page1.css";
 import digimart from "../../../../assets/MobileAppDevelopment(iOS & Android)/image1.png";
 
@@ -8,6 +8,7 @@ const Page1 = () => {
     <div className="service_1_root">
       <main className="hero-box-service1">
         <div className="title-box-service1">
+
           <motion.h1
             className="title2-service1"
             initial={{ opacity: 0, y: -60 }}
@@ -44,9 +45,11 @@ const Page1 = () => {
             performance-driven built for organizations that prioritize
             reliability, scalability, and measurable digital impact.
           </motion.p>
+
         </div>
 
         <div className="logo-box2-service1">
+
           <motion.img
             src={digimart}
             alt=""
@@ -57,6 +60,7 @@ const Page1 = () => {
           />
 
           <div>
+
             <motion.div
               className="social-media-service1"
               initial={{ opacity: 0, x: -120 }}
@@ -71,6 +75,7 @@ const Page1 = () => {
             </motion.div>
 
             <div className="content-box-service1">
+
               <motion.div
                 className="content-service1"
                 initial={{ opacity: 0, y: 60 }}
@@ -125,6 +130,7 @@ const Page1 = () => {
                   digital sustainability.
                 </p>
               </motion.div>
+
             </div>
 
             <motion.p
@@ -140,11 +146,12 @@ const Page1 = () => {
               we help brands build reliable mobile platforms, elevate user
               experience, and transform mobile presence into lasting value.
             </motion.p>
+
           </div>
         </div>
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default Page1;
+export default Page1

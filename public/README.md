@@ -22,7 +22,7 @@ The robots.txt file is a text file placed in the root directory of web server th
 - Specifies the sitemap location
 - Sets crawl delay parameters
 
-**Access:** https://Visiomatix.onrender.com/robots.txt
+**Access:** https://visiomatix.onrender.com/robots.txt
 
 ---
 
@@ -55,7 +55,7 @@ The sitemap is an XML file that lists important URLs on the website to ensure Go
 </urlset>
 ```
 
-**Access:** https://Visiomatix.onrender.com/sitemap.xml
+**Access:** https://visiomatix.onrender.com/sitemap.xml
 
 ---
 
@@ -64,9 +64,9 @@ The sitemap is an XML file that lists important URLs on the website to ensure Go
 ### Google Search Console
 
 1. Visit https://search.google.com/search-console
-2. Add property: https://Visiomatix.onrender.com
+2. Add property: https://visiomatix.onrender.com
 3. Verify ownership
-4. Submit sitemap: https://Visiomatix.onrender.com/sitemap.xml
+4. Submit sitemap: https://visiomatix.onrender.com/sitemap.xml
 5. Monitor crawl statistics
 
 ### Bing Webmaster Tools
@@ -74,7 +74,7 @@ The sitemap is an XML file that lists important URLs on the website to ensure Go
 1. Visit https://www.bing.com/webmasters/
 2. Add site
 3. Verify ownership
-4. Submit sitemap: https://Visiomatix.onrender.com/sitemap.xml
+4. Submit sitemap: https://visiomatix.onrender.com/sitemap.xml
 5. Monitor performance
 
 ---
@@ -93,13 +93,13 @@ The sitemap is an XML file that lists important URLs on the website to ensure Go
 ### Test robots.txt
 
 ```bash
-curl https://Visiomatix.onrender.com/robots.txt
+curl https://visiomatix.onrender.com/robots.txt
 ```
 
 ### Test sitemap.xml
 
 ```bash
-curl https://Visiomatix.onrender.com/sitemap.xml
+curl https://visiomatix.onrender.com/sitemap.xml
 ```
 
 ### Validate XML

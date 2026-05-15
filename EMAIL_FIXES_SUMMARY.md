@@ -120,7 +120,7 @@ Backend validates again
     ↓
 Resend API sends:
    FROM: onboarding@resend.dev (or custom domain if verified)
-   TO: VisiomatixMedia@gmail.com (temporary) or info@Visiomatix.in (after domain verification)
+   TO: visiomatixmedia@gmail.com (temporary) or info@visiomatix.in (after domain verification)
    REPLY-TO: user's email address
     ↓
 Email arrives at your inbox
@@ -151,7 +151,7 @@ Each subscriber receives notification
 ### API Endpoint Status
 
 ```
-curl -X POST "https://Visiomatix.onrender.com/api/contact"
+curl -X POST "https://visiomatix.onrender.com/api/contact"
 Response: HTTP 200 ✅
 Message: "Email submission successful"
 ```
@@ -170,7 +170,7 @@ Resend returned:
 
 ```
 "You can only send testing emails to your own email address
-(VisiomatixMedia@gmail.com). To send emails to other recipients,
+(visiomatixmedia@gmail.com). To send emails to other recipients,
 please verify a domain at resend.com/domains"
 ```
 
@@ -178,7 +178,7 @@ This is EXPECTED behavior. It means:
 
 - ✅ API is working correctly
 - ✅ Resend authentication succeeded
-- ⏳ Need to verify domain for sending to info@Visiomatix.in
+- ⏳ Need to verify domain for sending to info@visiomatix.in
 
 ---
 
@@ -220,17 +220,17 @@ This is EXPECTED behavior. It means:
    - Service will auto-restart
 
 2. **Update CONTACT_EMAIL to Verified Email**
-   - Use: VisiomatixMedia@gmail.com (temporarily)
+   - Use: visiomatixmedia@gmail.com (temporarily)
    - Or verify domain first at resend.com/domains
 
 ### Optional (For Production)
 
 1. **Verify Domain with Resend**
    - Go to: https://resend.com/domains
-   - Add: Visiomatix.in
+   - Add: visiomatix.in
    - Follow DNS verification process
    - Takes 10-30 minutes
-   - Then use: noreply@Visiomatix.in or info@Visiomatix.in
+   - Then use: noreply@visiomatix.in or info@visiomatix.in
 
 ---
 
@@ -245,16 +245,16 @@ RESEND_API_KEY=re_xxxxxxxxxxxx          # From resend.com
 ### Important
 
 ```env
-CONTACT_EMAIL=VisiomatixMedia@gmail.com  # Verified email (temporarily)
+CONTACT_EMAIL=visiomatixmedia@gmail.com  # Verified email (temporarily)
 # or after domain verification:
-CONTACT_EMAIL=info@Visiomatix.in
+CONTACT_EMAIL=info@visiomatix.in
 ```
 
 ### Recommended
 
 ```env
 RESEND_FROM_EMAIL=onboarding@resend.dev  # Or your domain after verification
-WEBSITE_URL=https://Visiomatix.com
+WEBSITE_URL=https://visiomatix.com
 ```
 
 ### Already Needed
@@ -276,7 +276,7 @@ CLOUDINARY_API_SECRET=...
 - [ ] Add RESEND_API_KEY environment variable
 - [ ] Save changes and wait for restart (1-2 min)
 - [ ] Submit test contact form
-- [ ] Check email at VisiomatixMedia@gmail.com
+- [ ] Check email at visiomatixmedia@gmail.com
 - [ ] Verify all form fields in email
 - [ ] Subscribe test email via website
 - [ ] Create test blog post
@@ -301,7 +301,7 @@ CLOUDINARY_API_SECRET=...
 
 1. **URGENT:** Add RESEND_API_KEY to Render environment
 2. **TODAY:** Test contact form submission
-3. **TODAY:** Verify email received at Visiomatix email
+3. **TODAY:** Verify email received at visiomatix email
 4. **THIS WEEK:** Verify domain with Resend
 5. **UPDATE:** Update CONTACT_EMAIL to use verified domain
 

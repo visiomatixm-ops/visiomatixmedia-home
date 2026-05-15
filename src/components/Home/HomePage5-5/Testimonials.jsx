@@ -135,6 +135,7 @@ const Testimonials = () => {
 
       {/* Three-up carousel wrapped in blue frame */}
       <div className="carousel-frame">
+        
         {/* Arrow controls MOVED INSIDE THE FRAME */}
         <motion.div
           className="arrow-gap"
@@ -190,22 +191,24 @@ const Testimonials = () => {
                   transition: { duration: 0.3 },
                 }}
               >
-                {visibleTestimonials.map((item) => (
-                  <div className="testimonial-card" key={item.id}>
-                    {/* New wrapper for left-side profile content */}
-                    <div className="profile-section">
-                      <img src={item.img} alt={item.name} />
+{visibleTestimonials.map((item) => (
+  <div className="testimonial-card" key={item.id}>
+    
+    {/* New wrapper for left-side profile content */}
+    <div className="profile-section">
+      <img src={item.img} alt={item.name} />
+      
+      <div className="client-info">
+        <h4>{item.name}</h4>
+        <span className="role">{item.role}</span>
+      </div>
+    </div>
 
-                      <div className="client-info">
-                        <h4>{item.name}</h4>
-                        <span className="role">{item.role}</span>
-                      </div>
-                    </div>
-
-                    {/* Sibling to profile-section */}
-                    <p className="testimonial-text">"{item.text}"</p>
-                  </div>
-                ))}
+    {/* Sibling to profile-section */}
+    <p className="testimonial-text">"{item.text}"</p>
+    
+  </div>
+))}
               </motion.div>
             </AnimatePresence>
           </div>

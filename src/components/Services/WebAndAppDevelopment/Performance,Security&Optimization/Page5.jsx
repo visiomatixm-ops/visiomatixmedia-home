@@ -11,12 +11,15 @@ import camel from "../../../../assets/PerformanceSecurity&Optimization/image9.pn
 
 import { NavLink } from "react-router-dom";
 
-const logos = [erp, crm, bpm, a, dot, hr, camel];
+const logos = [
+  erp, crm, bpm, a, dot, hr, camel
+];
 
 const Page5 = () => {
   return (
     <section className="bss5">
       <div className="bss5-container">
+
         <div className="blue-title-bss5">
           <h1>
             High-Performance & Security Frameworks
@@ -32,29 +35,17 @@ const Page5 = () => {
           </div>
         </section>
 
+
         <div className="para-bss5">
           <p>
-            At Visiomatix Media, our Performance, Security & Optimization
-            services are designed to strengthen and elevate digital platforms
-            across all environments and infrastructures. We ensure systems
-            operate at peak speed, remain resilient against threats, and scale
-            efficiently under growing user demand delivering consistent
-            performance across web, mobile, cloud, and enterprise ecosystems. We
-            specialize in performance tuning, infrastructure optimization,
-            security hardening, vulnerability management, database refinement,
-            caching strategies, and continuous monitoring. Every system is
-            optimized for speed, protection, stability, and operational
-            efficiency enabling businesses to safeguard digital assets, enhance
-            user trust, and maintain a secure, high performing, and future ready
-            digital presence.
+            At Visiomatix Media, our Performance, Security & Optimization services are designed to strengthen and elevate digital platforms across all environments and infrastructures. We ensure systems operate at peak speed, remain resilient against threats, and scale efficiently under growing user demand delivering consistent performance across web, mobile, cloud, and enterprise ecosystems.
+            We specialize in performance tuning, infrastructure optimization, security hardening, vulnerability management, database refinement, caching strategies, and continuous monitoring. Every system is optimized for speed, protection, stability, and operational efficiency enabling businesses to safeguard digital assets, enhance user trust, and maintain a secure, high performing, and future ready digital presence.
           </p>
 
-          <button>
-            <NavLink to="/contact" className="nav-avoid-blue">
-              Book Your Free Strategy Call
-            </NavLink>
-          </button>
+          <button><NavLink to='/contact' className="nav-avoid-blue">Book Your Free Strategy Call</NavLink></button>
+
         </div>
+
       </div>
     </section>
   );

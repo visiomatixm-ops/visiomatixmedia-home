@@ -48,7 +48,7 @@ const Career = () => {
   useEffect(() => {
     const fetchCareers = async () => {
       try {
-        const res = await fetch("https://Visiomatix.onrender.com/api/careers");
+        const res = await fetch("https://visiomatix.onrender.com/api/careers");
         const data = await res.json();
         setPosts(data);
       } catch (err) {
@@ -78,19 +78,13 @@ const Career = () => {
         "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
       ];
       if (!validTypes.includes(file.type)) {
-        setErrors((prev) => ({
-          ...prev,
-          resume: "Please upload a PDF, DOC, or DOCX file",
-        }));
+        setErrors((prev) => ({ ...prev, resume: "Please upload a PDF, DOC, or DOCX file" }));
         setResume(null);
         e.target.value = "";
         return;
       }
       if (file.size > 5 * 1024 * 1024) {
-        setErrors((prev) => ({
-          ...prev,
-          resume: "Resume file must be less than 5MB",
-        }));
+        setErrors((prev) => ({ ...prev, resume: "Resume file must be less than 5MB" }));
         setResume(null);
         e.target.value = "";
         return;
@@ -108,12 +102,9 @@ const Career = () => {
     const newErrors = {};
     if (!formData.name?.trim()) newErrors.name = "Name is required";
     if (!formData.email) newErrors.email = "Email is required";
-    else if (!/\S+@\S+\.\S+/.test(formData.email))
-      newErrors.email = "Invalid email address";
-    if (!formData.qualification?.trim())
-      newErrors.qualification = "Qualification is required";
-    if (!/^[0-9]{10}$/.test(formData.mobile || ""))
-      newErrors.mobile = "Phone number must be 10 digits";
+    else if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = "Invalid email address";
+    if (!formData.qualification?.trim()) newErrors.qualification = "Qualification is required";
+    if (!/^[0-9]{10}$/.test(formData.mobile || "")) newErrors.mobile = "Phone number must be 10 digits";
     if (!formData.role) newErrors.role = "Please select a role";
     if (!resume) newErrors.resume = "Please upload your resume";
     if (!captchaVerified) newErrors.captcha = "Please verify CAPTCHA";
@@ -146,36 +137,27 @@ const Career = () => {
       uploadFormData.append("message", formDataPlain.message);
       if (resume) uploadFormData.append("resume", resume);
 
-      const response = await fetch(
-        "https://Visiomatix.onrender.com/api/career-application",
-        {
-          method: "POST",
-          body: uploadFormData,
-        },
-      );
+      const response = await fetch("https://visiomatix.onrender.com/api/career-application", {
+        method: "POST",
+        body: uploadFormData,
+      });
       const data = await response.json();
 
       if (data.success) {
         setSubmitStatus("success");
-        setSubmitMessage(
-          "Application sent successfully! We'll review your resume and get back to you soon.",
-        );
+        setSubmitMessage("Application sent successfully! We'll review your resume and get back to you soon.");
         e.target.reset();
         setCaptchaVerified(false);
         setResume(null);
         setTimeout(() => setSubmitStatus(null), 5000);
       } else {
         setSubmitStatus("error");
-        setSubmitMessage(
-          data.message || "Failed to send application. Please try again.",
-        );
+        setSubmitMessage(data.message || "Failed to send application. Please try again.");
       }
     } catch (error) {
       console.error(error);
       setSubmitStatus("error");
-      setSubmitMessage(
-        "Server error. Please try later or contact us directly.",
-      );
+      setSubmitMessage("Server error. Please try later or contact us directly.");
     } finally {
       setLoading(false);
     }
@@ -184,11 +166,13 @@ const Career = () => {
   return (
     <div className="role_1_root-career">
       <div className="career-page-wrapper">
+
         {/* ═══════════════════════════════
             HERO
         ═══════════════════════════════ */}
         <main className="hero-box-role1-career">
           <div className="title-box-role1-career">
+
             {/* CHANGE 1 — Hero title */}
             <motion.h1
               className="title2-role1-career"
@@ -228,6 +212,7 @@ const Career = () => {
           {/* ─── JOB CARDS ─── */}
           <div className="career-content-sb1-career">
             <div className="container-1400">
+
               {/* CHANGE 4 — Job cards stagger */}
               <motion.div
                 className="career-cards-sb1-career"
@@ -244,11 +229,7 @@ const Career = () => {
                     whileHover={{
                       y: -8,
                       boxShadow: "0 16px 48px rgba(0,120,255,0.22)",
-                      transition: {
-                        type: "spring",
-                        stiffness: 260,
-                        damping: 18,
-                      },
+                      transition: { type: "spring", stiffness: 260, damping: 18 },
                     }}
                   >
                     {job.imageUrl && (
@@ -269,9 +250,7 @@ const Career = () => {
                       <span className="dot-separator-career">•</span>{" "}
                       {job.location || "Not specified"}{" "}
                       <span className="dot-separator-career">•</span>{" "}
-                      {job.requirements
-                        ? job.requirements.split(/[,\n]+/)[0].trim()
-                        : ""}
+                      {job.requirements ? job.requirements.split(/[,\n]+/)[0].trim() : ""}
                     </p>
                     <p className="career-desc-sb1-career">{job.title}</p>
 
@@ -280,11 +259,7 @@ const Career = () => {
                       <motion.button
                         className="read-more-btn-sb1-blog"
                         onClick={() => setSelected(job)}
-                        whileHover={{
-                          scale: 1.06,
-                          x: 4,
-                          boxShadow: "0 0 16px rgba(0,200,255,0.4)",
-                        }}
+                        whileHover={{ scale: 1.06, x: 4, boxShadow: "0 0 16px rgba(0,200,255,0.4)" }}
                         whileTap={{ scale: 0.93 }}
                         transition={{ type: "spring", stiffness: 300 }}
                       >
@@ -304,6 +279,7 @@ const Career = () => {
         <section className="careers1">
           <div className="container-1400">
             <div className="careers1-content">
+
               {/* CHANGE 6 — Left text block */}
               <motion.div
                 className="careers1-left"
@@ -348,12 +324,7 @@ const Career = () => {
                 <motion.img
                   src={img1}
                   alt="team"
-                  whileHover={{
-                    scale: 1.04,
-                    y: -6,
-                    filter: "brightness(1.06)",
-                    boxShadow: "0 20px 60px rgba(0,100,255,0.3)",
-                  }}
+                  whileHover={{ scale: 1.04, y: -6, filter: "brightness(1.06)", boxShadow: "0 20px 60px rgba(0,100,255,0.3)" }}
                   transition={{ duration: 0.45 }}
                 />
               </motion.div>
@@ -377,6 +348,7 @@ const Career = () => {
         <section className="careers2">
           <div className="container-1400">
             <div className="careers2-top">
+
               {/* CHANGE 9 — Left points block */}
               <motion.div
                 className="careers2-left"
@@ -395,21 +367,9 @@ const Career = () => {
                 </motion.h2>
 
                 {[
-                  {
-                    num: "01",
-                    title: "Growing Digital Opportunities",
-                    desc: "The digital industry is expanding rapidly as businesses move online.",
-                  },
-                  {
-                    num: "02",
-                    title: "High Demand for Digital Skills",
-                    desc: "Companies are actively seeking professionals with digital skills.",
-                  },
-                  {
-                    num: "03",
-                    title: "Continuous Learning & Innovation",
-                    desc: "The digital field constantly evolves with new technologies.",
-                  },
+                  { num: "01", title: "Growing Digital Opportunities", desc: "The digital industry is expanding rapidly as businesses move online." },
+                  { num: "02", title: "High Demand for Digital Skills", desc: "Companies are actively seeking professionals with digital skills." },
+                  { num: "03", title: "Continuous Learning & Innovation", desc: "The digital field constantly evolves with new technologies." },
                 ].map((point, i) => (
                   <motion.div
                     className="point"
@@ -418,14 +378,9 @@ const Career = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.7, ease: EASE, delay: i * 0.15 }}
                     viewport={viewport}
-                    whileHover={{
-                      x: 8,
-                      transition: { type: "spring", stiffness: 300 },
-                    }}
+                    whileHover={{ x: 8, transition: { type: "spring", stiffness: 300 } }}
                   >
-                    <h3>
-                      <span>{point.num}</span> {point.title}
-                    </h3>
+                    <h3><span>{point.num}</span> {point.title}</h3>
                     <p>{point.desc}</p>
                   </motion.div>
                 ))}
@@ -442,12 +397,7 @@ const Career = () => {
                 <motion.img
                   src={img2}
                   alt="team work"
-                  whileHover={{
-                    scale: 1.04,
-                    y: -6,
-                    filter: "brightness(1.06)",
-                    boxShadow: "0 20px 60px rgba(0,100,255,0.3)",
-                  }}
+                  whileHover={{ scale: 1.04, y: -6, filter: "brightness(1.06)", boxShadow: "0 20px 60px rgba(0,100,255,0.3)" }}
                   transition={{ duration: 0.45 }}
                 />
               </motion.div>
@@ -487,6 +437,7 @@ const Career = () => {
         ═══════════════════════════════ */}
         <section className="contact">
           <div className="contact-container">
+
             {/* LEFT info card */}
             <motion.div
               variants={fadeLeft}
@@ -504,8 +455,8 @@ const Career = () => {
                 <div>
                   <h4>Address</h4>
                   <p>
-                    Office No. 3, Om Sai Apartment, <br /> Near by Petrol Pump,
-                    Ganur Road,
+                    Office No. 3, Om Sai Apartment, <br /> Near by Petrol
+                    Pump, Ganur Road,
                     <br />
                     Davkhar Nagar, Chandawad, Nashik,
                     <br />
@@ -517,7 +468,7 @@ const Career = () => {
 
                 <div>
                   <h4>Email</h4>
-                  <p>info@Visiomatix.in</p>
+                  <p>info@visiomatix.in</p>
                 </div>
 
                 <div className="line" />
@@ -526,34 +477,17 @@ const Career = () => {
               {/* CHANGE 12 — social icons spring hover */}
               <div className="socials">
                 {[
-                  {
-                    href: "https://www.instagram.com/Visiomatix_media/",
-                    src: instagram,
-                    alt: "Instagram",
-                  },
-                  {
-                    href: "https://www.facebook.com/Visiomatixmedia",
-                    src: facebook,
-                    alt: "Facebook",
-                  },
-                  {
-                    href: "https://www.linkedin.com/company/Visiomatix-media/posts/?feedView=all",
-                    src: linkedin,
-                    alt: "LinkedIn",
-                  },
-                  { href: "https://x.com/Visiomatixmedia", src: x, alt: "X" },
+                  { href: "https://www.instagram.com/visiomatix_media/", src: instagram, alt: "Instagram" },
+                  { href: "https://www.facebook.com/visiomatixmedia", src: facebook, alt: "Facebook" },
+                  { href: "https://www.linkedin.com/company/visiomatix-media/posts/?feedView=all", src: linkedin, alt: "LinkedIn" },
+                  { href: "https://x.com/visiomatixmedia", src: x, alt: "X" },
                 ].map((social) => (
                   <motion.a
                     key={social.alt}
                     href={social.href}
                     target="_blank"
                     rel="noreferrer"
-                    whileHover={{
-                      y: -5,
-                      scale: 1.12,
-                      borderColor: "#00c8ff",
-                      boxShadow: "0 6px 20px rgba(0,200,255,0.35)",
-                    }}
+                    whileHover={{ y: -5, scale: 1.12, borderColor: "#00c8ff", boxShadow: "0 6px 20px rgba(0,200,255,0.35)" }}
                     whileTap={{ scale: 0.9 }}
                     transition={{ type: "spring", stiffness: 300 }}
                   >
@@ -580,27 +514,17 @@ const Career = () => {
                 <div className="grid">
                   <div className="field">
                     <input name="name" placeholder="Name" />
-                    {errors.name && (
-                      <small className="error">{errors.name}</small>
-                    )}
+                    {errors.name && <small className="error">{errors.name}</small>}
                   </div>
 
                   <div className="field">
                     <input name="email" type="email" placeholder="Email" />
-                    {errors.email && (
-                      <small className="error">{errors.email}</small>
-                    )}
+                    {errors.email && <small className="error">{errors.email}</small>}
                   </div>
 
                   <div className="field">
-                    <input
-                      name="qualification"
-                      placeholder="Qualification"
-                      required
-                    />
-                    {errors.qualification && (
-                      <small className="error">{errors.qualification}</small>
-                    )}
+                    <input name="qualification" placeholder="Qualification" required />
+                    {errors.qualification && <small className="error">{errors.qualification}</small>}
                   </div>
 
                   <div className="field">
@@ -612,33 +536,21 @@ const Career = () => {
                       pattern="\d*"
                       maxLength={10}
                       onInput={(e) => {
-                        e.target.value = e.target.value
-                          .replace(/\D/g, "")
-                          .slice(0, 10);
+                        e.target.value = e.target.value.replace(/\D/g, "").slice(0, 10);
                       }}
                       onPaste={(e) => {
                         e.preventDefault();
-                        const paste =
-                          (e.clipboardData || window.clipboardData).getData(
-                            "text",
-                          ) || "";
+                        const paste = (e.clipboardData || window.clipboardData).getData("text") || "";
                         const digits = paste.replace(/\D/g, "").slice(0, 10);
                         const target = e.target;
                         const start = target.selectionStart || 0;
                         const end = target.selectionEnd || 0;
-                        const newVal =
-                          (target.value || "").slice(0, start) +
-                          digits +
-                          (target.value || "").slice(end);
+                        const newVal = (target.value || "").slice(0, start) + digits + (target.value || "").slice(end);
                         target.value = newVal.slice(0, 10);
-                        target.dispatchEvent(
-                          new Event("input", { bubbles: true }),
-                        );
+                        target.dispatchEvent(new Event("input", { bubbles: true }));
                       }}
                     />
-                    {errors.mobile && (
-                      <small className="error">{errors.mobile}</small>
-                    )}
+                    {errors.mobile && <small className="error">{errors.mobile}</small>}
                   </div>
                 </div>
 
@@ -661,15 +573,9 @@ const Career = () => {
                   <option value="full-stack">Full Stack Development</option>
                   <option value="graphic-design">Graphic Design</option>
                   <option value="ai">Artificial Intelligence</option>
-                  <option value="qa">
-                    Software Testing & Quality Assurance
-                  </option>
-                  <option value="cloud">
-                    Cloud Computing & Hosting Management
-                  </option>
-                  <option value="app-dev">
-                    App Development (iOS & Android)
-                  </option>
+                  <option value="qa">Software Testing & Quality Assurance</option>
+                  <option value="cloud">Cloud Computing & Hosting Management</option>
+                  <option value="app-dev">App Development (iOS & Android)</option>
                   <option value="digital-marketing">Digital Marketing</option>
                   <option value="vfx">VFX & Motion Graphics</option>
                   <option value="hr">Human Resource Management (HR)</option>
@@ -690,11 +596,7 @@ const Career = () => {
                 >
                   <label
                     htmlFor="resume"
-                    style={{
-                      display: "block",
-                      marginBottom: "0.5rem",
-                      fontWeight: "500",
-                    }}
+                    style={{ display: "block", marginBottom: "0.5rem", fontWeight: "500" }}
                   >
                     Upload Resume* (PDF, DOC, DOCX - Max 5MB)
                   </label>
@@ -703,27 +605,14 @@ const Career = () => {
                     type="file"
                     accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
                     onChange={handleResumeChange}
-                    style={{
-                      padding: "0.5rem",
-                      border: "1px solid #ccc",
-                      borderRadius: "4px",
-                      width: "100%",
-                    }}
+                    style={{ padding: "0.5rem", border: "1px solid #ccc", borderRadius: "4px", width: "100%" }}
                   />
                   {resume && (
-                    <small
-                      style={{
-                        color: "green",
-                        display: "block",
-                        marginTop: "0.25rem",
-                      }}
-                    >
+                    <small style={{ color: "green", display: "block", marginTop: "0.25rem" }}>
                       ✓ {resume.name} selected
                     </small>
                   )}
-                  {errors.resume && (
-                    <small className="error">{errors.resume}</small>
-                  )}
+                  {errors.resume && <small className="error">{errors.resume}</small>}
                 </motion.div>
 
                 <ReCAPTCHA
@@ -748,24 +637,13 @@ const Career = () => {
                 <motion.div
                   animate="pulse"
                   variants={glowPulse}
-                  style={{
-                    display: "inline-block",
-                    borderRadius: "10px",
-                    width: "100%",
-                  }}
+                  style={{ display: "inline-block", borderRadius: "10px", width: "100%" }}
                 >
                   <motion.button
                     type="submit"
                     className="talk"
                     disabled={loading}
-                    whileHover={
-                      !loading
-                        ? {
-                            scale: 1.03,
-                            boxShadow: "0 8px 28px rgba(0,200,255,0.4)",
-                          }
-                        : {}
-                    }
+                    whileHover={!loading ? { scale: 1.03, boxShadow: "0 8px 28px rgba(0,200,255,0.4)" } : {}}
                     whileTap={!loading ? { scale: 0.97 } : {}}
                     transition={{ type: "spring", stiffness: 300 }}
                   >
@@ -799,9 +677,7 @@ const Career = () => {
                 onClick={(e) => e.stopPropagation()}
               >
                 <h2>{selected.title}</h2>
-                <p className="modal-location">
-                  📍 {selected.location || "Not specified"}
-                </p>
+                <p className="modal-location">📍 {selected.location || "Not specified"}</p>
                 <p className="modal-date">
                   Posted: {new Date(selected.date).toLocaleDateString()}
                 </p>
@@ -823,10 +699,7 @@ const Career = () => {
                 )}
                 <motion.button
                   onClick={() => setSelected(null)}
-                  whileHover={{
-                    scale: 1.05,
-                    boxShadow: "0 5px 15px rgba(0,200,255,0.4)",
-                  }}
+                  whileHover={{ scale: 1.05, boxShadow: "0 5px 15px rgba(0,200,255,0.4)" }}
                   whileTap={{ scale: 0.95 }}
                 >
                   Close

@@ -34,7 +34,7 @@ const HomePage9 = () => {
 
     try {
       const response = await fetch(
-        "https://Visiomatix.onrender.com/api/subscribe",
+        "https://visiomatix.onrender.com/api/subscribe",
         {
           method: "POST",
           headers: {
@@ -355,10 +355,10 @@ const HomePage9 = () => {
 
             <div className="contact-block">
               <span className="blue-label">For Sales</span>
-              <p className="brand-text brand-contact">info@Visiomatix.in</p>
+              <p className="brand-text brand-contact">info@visiomatix.in</p>
 
               <span className="blue-label">For Careers</span>
-              <p className="brand-text brand-contact">rohit@Visiomatix.in</p>
+              <p className="brand-text brand-contact">rohit@visiomatix.in</p>
             </div>
           </motion.div>
           {/* FORM — CORRECT POSITION */}
@@ -413,24 +413,24 @@ const HomePage9 = () => {
         <div className="footer-bottom">
           <div className="socials-footer">
             <a
-              href="https://www.instagram.com/Visiomatix_media/"
+              href="https://www.instagram.com/visiomatix_media/"
               target="_blank"
             >
               <img src={igIcon} alt="Instagram" />
             </a>
-            <a href="https://www.facebook.com/Visiomatixmedia" target="_blank">
+            <a href="https://www.facebook.com/visiomatixmedia" target="_blank">
               <img src={fbIcon} alt="Facebook" />
             </a>
             <a
-              href="https://www.linkedin.com/company/Visiomatix-media/posts/?feedView=all"
+              href="https://www.linkedin.com/company/visiomatix-media/posts/?feedView=all"
               target="_blank"
             >
               <img src={liIcon} alt="LinkedIn" />
             </a>
-            <a href="https://x.com/Visiomatixmedia" target="_blank">
+            <a href="https://x.com/visiomatixmedia" target="_blank">
               <img src={xIcon} alt="X" />
             </a>
-            <a href="https://www.youtube.com/@Visiomatixmedia" target="_blank">
+            <a href="https://www.youtube.com/@visiomatixmedia" target="_blank">
               <img src={ytIcon} alt="YouTube" />
             </a>
           </div>

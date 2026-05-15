@@ -15,23 +15,11 @@ const Service3_3 = () => {
           viewport={{ once: false, amount: 0.3 }}
         >
           <p>
-            Strategic System Integration Partner in Nashik Focused on Unified
-            Ecosystems & Scalable Connectivity
+Strategic System Integration Partner in Nashik Focused on Unified Ecosystems & Scalable Connectivity
           </p>
-          At Visiomatix Media, a trusted System Integration Services company in
-          Nashik, we specialize in designing scalable, secure, and
-          high-performance integration frameworks that unify complex digital
-          ecosystems. Our focus goes beyond technical connectivity we build
-          purpose-driven integration solutions that streamline operations,
-          synchronize data, and ensure seamless collaboration across platforms,
-          departments, and enterprise tools.
-          <br />
-          As a performance-driven integration partner in Nashik, we believe
-          effective system integration is built on intelligent architecture,
-          structured workflows, and disciplined execution. This approach ensures
-          reliability, scalability, and operational efficiency enabling
-          organizations to transform fragmented systems into cohesive,
-          future-ready digital infrastructures that support sustainable growth.
+         At Visiomatix Media, a trusted System Integration Services company in Nashik, we specialize in designing scalable, secure, and high-performance integration frameworks that unify complex digital ecosystems. Our focus goes beyond technical connectivity 
+we build purpose-driven integration solutions that streamline operations, synchronize data, and ensure seamless collaboration across platforms, departments, and enterprise tools.<br/>
+As a performance-driven integration partner in Nashik, we believe effective system integration is built on intelligent architecture, structured workflows, and disciplined execution. This approach ensures reliability, scalability, and operational efficiency enabling organizations to transform fragmented systems into cohesive, future-ready digital infrastructures that support sustainable growth.
         </motion.p>
         <motion.img
           src={image3}

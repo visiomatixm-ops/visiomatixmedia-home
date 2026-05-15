@@ -24,7 +24,9 @@ import { NavLink } from "react-router-dom";
 const Page5 = () => {
   return (
     <main className="bss5">
+
       <section className="blue-title-bss5">
+
         <motion.h1
           initial={{ opacity: 0, y: -60 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -34,7 +36,9 @@ const Page5 = () => {
           Social Platforms We Specialize In
           <div>Strategic Partnerships</div>
         </motion.h1>
+
       </section>
+
 
       <motion.section
         className="slider-bss5"
@@ -43,41 +47,19 @@ const Page5 = () => {
         transition={{ duration: 0.8 }}
         viewport={{ once: false, amount: 0.3 }}
       >
+
         <div className="slider-track-bss5">
-          {[
-            instagram,
-            facebook,
-            linkedin,
-            youtube,
-            x,
-            pinterest,
-            snapchat,
-            whatsapp,
-            google,
-            telegram,
-            be,
-            ball,
-            reddit,
-            quora,
-            instagram,
-            facebook,
-            linkedin,
-            youtube,
-            x,
-            pinterest,
-            snapchat,
-            whatsapp,
-            google,
-            telegram,
-            be,
-            ball,
-            reddit,
-            quora,
+          {[instagram, facebook, linkedin, youtube, x, pinterest, snapchat,
+            whatsapp, google, telegram, be, ball, reddit, quora,
+            instagram, facebook, linkedin, youtube, x, pinterest, snapchat,
+            whatsapp, google, telegram, be, ball, reddit, quora
           ].map((icon, index) => (
             <img key={index} src={icon} alt="social-icon" />
           ))}
         </div>
+
       </motion.section>
+
 
       <motion.section
         className="para-bss5"
@@ -86,6 +68,7 @@ const Page5 = () => {
         transition={{ duration: 0.9 }}
         viewport={{ once: false, amount: 0.3 }}
       >
+
         <p>
           At Visiomatix Media, we specialize in managing a diverse ecosystem of
           social media platforms, selecting and optimizing each channel based on
@@ -105,11 +88,13 @@ const Page5 = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: false, amount: 0.3 }}
         >
-          <NavLink to="/contact" className="nav-avoid-blue">
+          <NavLink to='/contact' className="nav-avoid-blue">
             Book Your Free Strategy Call
           </NavLink>
         </motion.button>
+
       </motion.section>
+
     </main>
   );
 };

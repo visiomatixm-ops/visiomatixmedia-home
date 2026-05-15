@@ -12,7 +12,7 @@
 ### Action 1: Set Environment Variables in Render (2 minutes)
 
 1. Open https://render.com/dashboard
-2. Click your backend service (Visiomatix or similar)
+2. Click your backend service (visiomatix or similar)
 3. Go to **Settings** tab
 4. Scroll to **Environment** section
 5. Add these variables:
@@ -20,7 +20,7 @@
 | Variable            | Value                                     |
 | ------------------- | ----------------------------------------- |
 | `RESEND_API_KEY`    | Your key from https://resend.com/api-keys |
-| `CONTACT_EMAIL`     | `VisiomatixMedia@gmail.com` _(temporary)_ |
+| `CONTACT_EMAIL`     | `visiomatixmedia@gmail.com` _(temporary)_ |
 | `RESEND_FROM_EMAIL` | `onboarding@resend.dev`                   |
 
 6. Click **Save Changes**
@@ -30,7 +30,7 @@
 
 **Option A: Test via Contact Form**
 
-- Go to: https://Visiomatix.com/contact (or localhost:3000/contact)
+- Go to: https://visiomatix.com/contact (or localhost:3000/contact)
 - Fill out the form
 - Click Submit
 - Should see "Message sent successfully!"
@@ -38,7 +38,7 @@
 **Option B: Test via curl**
 
 ```bash
-curl -X POST "https://Visiomatix.onrender.com/api/contact" \
+curl -X POST "https://visiomatix.onrender.com/api/contact" \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Test",
@@ -62,7 +62,7 @@ Expected response:
 
 ### Action 3: Verify Email Received (Check inbox)
 
-- Go to: **VisiomatixMedia@gmail.com**
+- Go to: **visiomatixmedia@gmail.com**
 - Look for email with subject: "New Lead from [Name] – Visiomatix Media"
 - Verify all form fields are included
 - Test done! ✅
@@ -74,7 +74,7 @@ Expected response:
 ### 1. Contact Form → Your Email
 
 - User submits form at `/contact`
-- Email arrives at VisiomatixMedia@gmail.com
+- Email arrives at visiomatixmedia@gmail.com
 - You can reply to user via email
 
 ### 2. New Blog → Subscriber Emails
@@ -96,13 +96,13 @@ Expected response:
 When ready, use your own domain:
 
 1. Go to: https://resend.com/domains
-2. Add: `Visiomatix.in`
+2. Add: `visiomatix.in`
 3. Add DNS records (Resend provides them)
 4. Wait 10-30 minutes for verification
 5. Update Render:
    ```
-   CONTACT_EMAIL = info@Visiomatix.in
-   RESEND_FROM_EMAIL = noreply@Visiomatix.in
+   CONTACT_EMAIL = info@visiomatix.in
+   RESEND_FROM_EMAIL = noreply@visiomatix.in
    ```
 
 ---
@@ -123,7 +123,7 @@ When ready, use your own domain:
 
 ### "validation_error about domain"
 
-→ This is normal! Use VisiomatixMedia@gmail.com for now (see Action 1)
+→ This is normal! Use visiomatixmedia@gmail.com for now (see Action 1)
 
 ### "Email not received"
 
@@ -138,7 +138,7 @@ When ready, use your own domain:
 - [ ] Environment variables added to Render
 - [ ] Service has restarted (check Render logs)
 - [ ] Test form submitted successfully
-- [ ] Email received at VisiomatixMedia@gmail.com
+- [ ] Email received at visiomatixmedia@gmail.com
 - [ ] All contact form fields included in email
 - [ ] Ready to accept real customer inquiries! ✅
 

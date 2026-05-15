@@ -6,32 +6,36 @@ const Page1 = () => {
   return (
     <div className="service_1_root">
       <main className="hero-box-service1">
+
         {/* LEFT CONTENT */}
         <div className="title-box-service1">
-          <h1 className="title2-service1">Secure & Scalable Architecture</h1>
+          <h1 className="title2-service1">
+            Secure & Scalable Architecture
+          </h1>
 
           <p className="sub-title-service1">
-            Architecture Designed for Security, Scalability & Operational
-            Excellence.
+            Architecture Designed for Security, Scalability & Operational Excellence.
           </p>
 
           <p className="service-para1-service1">
-            At Visiomatix Media, Secure & Scalable Architecture is treated as
-            the foundation of sustainable digital growth not just a technical
-            framework. We design and implement resilient, high-performance
-            architectural ecosystems that ensure security by design, seamless
-            scalability, and long-term operational stability. Through
-            intelligent system design and disciplined engineering standards, we
-            create secure, scalable infrastructures that empower businesses to
-            grow confidently and sustainably.
+            At Visiomatix Media, Secure & Scalable Architecture is treated as the
+            foundation of sustainable digital growth not just a technical framework.
+            We design and implement resilient, high-performance architectural
+            ecosystems that ensure security by design, seamless scalability,
+            and long-term operational stability. Through intelligent system design
+            and disciplined engineering standards, we create secure, scalable
+            infrastructures that empower businesses to grow confidently and
+            sustainably.
           </p>
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="logo-box2-service1">
+       <div className="logo-box2-service1">
+
           <img src={architecture} alt="Secure Scalable Architecture" />
 
           <div>
+
             <div className="social-media-service1">
               <p>
                 OUR SECURE ARCHITECTURE FRAMEWORK <br />
@@ -40,16 +44,15 @@ const Page1 = () => {
             </div>
 
             <div className="content-box-service1">
+
               <div className="content-service1">
                 <h2>
-                  <span>01.</span> Security-First Architecture Strategy &
-                  Planning
+                  <span>01.</span> Security-First Architecture Strategy & Planning
                 </h2>
                 <p>
-                  We define system objectives, assess infrastructure
-                  requirements, and design scalable architecture frameworks
-                  aligned with performance, protection, and long-term business
-                  growth.
+                  We define system objectives, assess infrastructure requirements,
+                  and design scalable architecture frameworks aligned with
+                  performance, protection, and long-term business growth.
                 </p>
               </div>
 
@@ -74,11 +77,12 @@ const Page1 = () => {
                   data protection, and sustainable architectural scalability.
                 </p>
               </div>
+
             </div>
 
             <p>
-              With Visiomatix Media, Secure & Scalable Architecture delivers
-              more than structure it establishes a resilient foundation for
+              With Visiomatix Media, Secure & Scalable Architecture delivers more
+              than structure it establishes a resilient foundation for
               performance, protection, and long-term growth. Through
               security-first design, intelligent infrastructure planning, and
               disciplined engineering standards, we help organizations build
@@ -86,11 +90,19 @@ const Page1 = () => {
               enable scalability, and transform core systems into sustainable,
               high-performance infrastructures.
             </p>
+
           </div>
         </div>
+
       </main>
     </div>
   );
 };
 
 export default Page1;
+
+
+
+
+
+       

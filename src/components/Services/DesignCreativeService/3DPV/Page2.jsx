@@ -12,13 +12,7 @@ import frame6 from "../../../../assets/3d-product-visualisation/images/frame6.pn
 const Page2 = () => {
   return (
     <>
-      <motion.section
-        className="digital-marketing-services-2-2"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1 }}
-      >
+      <motion.section className="digital-marketing-services-2-2" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 1 }}>
         <div className="benefites-2">BENEFITS</div>
 
         <div className="sub-title-2">

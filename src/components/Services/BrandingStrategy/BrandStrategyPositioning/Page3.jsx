@@ -1,12 +1,14 @@
-import React from "react";
+import React from 'react'
 import { motion } from "framer-motion";
-import "../../page3.css";
+import '../../page3.css'
 
 import image3 from "../../../../assets/BrandStrategyPositioning/images/2.png";
 
 const Page3 = () => {
   return (
+
     <section className="business-software-solution3">
+
       <motion.p
         className="para-bss3"
         initial={{ opacity: 0, x: -120 }}
@@ -14,41 +16,36 @@ const Page3 = () => {
         transition={{ duration: 0.8 }}
         viewport={{ once: false, amount: 0.3 }}
       >
+
         <p>
-          Brand Strategy & Positioning Company in Nashik Engineering Market
-          Leadership Through Insight & Structure
+          Brand Strategy & Positioning Company in Nashik
+          Engineering Market Leadership Through Insight & Structure
         </p>
-        At Visiomatix Media, a trusted Brand Strategy & Positioning company in
-        Nashik, we specialize in building scalable, insight-driven positioning
-        systems that drive sustainable business growth. Our expertise extends
-        beyond visual identity
+
+        
+         At Visiomatix Media, a trusted Brand Strategy & Positioning company in Nashik, we specialize in building scalable, insight-driven positioning systems that drive sustainable business growth. Our expertise extends beyond visual identity
+        
+
         <br />
-        we design strategic brand frameworks that define market perception,
-        strengthen competitive positioning, and ensure long-term consistency
-        across digital and offline channels. As a performance-focused brand
-        strategy partner in Nashik, we believe powerful brands are built on
-        clear positioning, audience intelligence, and disciplined execution.
-        This structured approach enables clarity, credibility, and scalability
-        helping businesses sharpen their market presence and convert brand
-        strategy into measurable commercial impact.
+         we design strategic brand frameworks that define market perception, strengthen competitive positioning, and ensure long-term consistency across digital and offline channels.
+        As a performance-focused brand strategy partner in Nashik, we believe powerful brands are built on clear positioning, audience intelligence, and disciplined execution. This structured approach enables clarity, credibility, and scalability  helping businesses sharpen their market presence and convert brand strategy into measurable commercial impact.
+        
+
       </motion.p>
 
-      <motion.img
-        src={image3}
-        alt="..."
-        className="image-bss3"
-        initial={{ opacity: 0, scale: 0.6 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: false, amount: 0.3 }}
-        whileHover={{
-          scale: 1.04,
-          filter: "brightness(1.08)",
-          boxShadow: "0 20px 60px rgba(0,100,255,0.3)",
-        }}
-      />
-    </section>
-  );
-};
+    <motion.img
+  src={image3}
+  alt="..."
+  className="image-bss3"
+  initial={{ opacity: 0, scale: 0.6 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: false, amount: 0.3 }}
+  whileHover={{ scale: 1.04, filter: "brightness(1.08)", boxShadow: "0 20px 60px rgba(0,100,255,0.3)" }}
+/>
 
-export default Page3;
+    </section>
+  )
+}
+
+export default Page3

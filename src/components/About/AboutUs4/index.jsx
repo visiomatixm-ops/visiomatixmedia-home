@@ -27,11 +27,9 @@ const WordSplit = ({ text }) => {
         <motion.span
           key={i}
           variants={{
-            hidden: { opacity: 0, y: 40, skewY: 6 },
+            hidden:  { opacity: 0, y: 40, skewY: 6 },
             visible: {
-              opacity: 1,
-              y: 0,
-              skewY: 0,
+              opacity: 1, y: 0, skewY: 0,
               transition: { duration: 0.65, ease: EASE },
             },
           }}
@@ -49,6 +47,7 @@ const AboutUs4 = () => {
     <div className="page-about4">
       <section className="global-stage-about4">
         <div className="global-container-about4">
+
           {/* TEXT — fade left + word split */}
           <motion.div
             variants={fadeLeft}
@@ -104,11 +103,11 @@ const AboutUs4 = () => {
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
               whileHover={{
                 scale: 1.04,
-                filter:
-                  "brightness(1.12) drop-shadow(0 0 24px rgba(0,200,255,0.3))",
+                filter: "brightness(1.12) drop-shadow(0 0 24px rgba(0,200,255,0.3))",
               }}
             />
           </motion.div>
+
         </div>
       </section>
     </div>

@@ -1,6 +1,6 @@
 # ✅ ACTION CHECKLIST - Email Integration Fix
 
-## 🎯 IMMediaTE ACTIONS (Do First)
+## 🎯 IMMEDIATE ACTIONS (Do First)
 
 ### Phase 1: Get Resend API Key (2 min)
 
@@ -23,7 +23,7 @@ Variable Name: RESEND_API_KEY
 Variable Value: re_xxxxxxxxxx (your key from step 1)
 
 Variable Name: CONTACT_EMAIL
-Variable Value: VisiomatixMedia@gmail.com
+Variable Value: visiomatixmedia@gmail.com
 
 Variable Name: RESEND_FROM_EMAIL
 Variable Value: onboarding@resend.dev
@@ -41,7 +41,7 @@ Variable Value: onboarding@resend.dev
 
 **Option A: Via Website**
 
-- [ ] Go to https://Visiomatix.com/contact (or your domain)
+- [ ] Go to https://visiomatix.com/contact (or your domain)
 - [ ] Fill out form with valid data
 - [ ] Submit
 - [ ] Should see "Message sent successfully!"
@@ -51,7 +51,7 @@ Variable Value: onboarding@resend.dev
 - [ ] Run this command:
 
 ```bash
-curl -X POST "https://Visiomatix.onrender.com/api/contact" \
+curl -X POST "https://visiomatix.onrender.com/api/contact" \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Test",
@@ -67,7 +67,7 @@ curl -X POST "https://Visiomatix.onrender.com/api/contact" \
 
 ### Phase 5: Check Email Received (2 min)
 
-- [ ] Open email: **VisiomatixMedia@gmail.com**
+- [ ] Open email: **visiomatixmedia@gmail.com**
 - [ ] Look for new email with subject: "New Lead from Test"
 - [ ] Verify email contains:
   - [ ] Name: "Test"
@@ -126,7 +126,7 @@ curl -X POST "https://Visiomatix.onrender.com/api/contact" \
 ### Daily
 
 - [ ] Check if contact form submissions received
-- [ ] Monitor VisiomatixMedia@gmail.com inbox
+- [ ] Monitor visiomatixmedia@gmail.com inbox
 
 ### Weekly
 
@@ -147,8 +147,8 @@ curl -X POST "https://Visiomatix.onrender.com/api/contact" \
 ### Next Week
 
 - [ ] Verify domain at resend.com
-- [ ] Update CONTACT_EMAIL to `info@Visiomatix.in`
-- [ ] Update RESEND_FROM_EMAIL to `noreply@Visiomatix.in`
+- [ ] Update CONTACT_EMAIL to `info@visiomatix.in`
+- [ ] Update RESEND_FROM_EMAIL to `noreply@visiomatix.in`
 - [ ] Test again to confirm professional domain working
 
 ### Later
@@ -176,13 +176,13 @@ curl -X POST "https://Visiomatix.onrender.com/api/contact" \
 ### If email not received
 
 - [ ] Check spam/promotions folder
-- [ ] Verify VisiomatixMedia@gmail.com is correct
+- [ ] Verify visiomatixmedia@gmail.com is correct
 - [ ] Wait 30 seconds and check again
 - [ ] Go to resend.com/dashboard to check delivery status
 
 ### If validation error about domain
 
-- [ ] This is EXPECTED - use VisiomatixMedia@gmail.com temporarily
+- [ ] This is EXPECTED - use visiomatixmedia@gmail.com temporarily
 - [ ] Not an error, just Resend limitation
 - [ ] Plan to verify domain when ready
 
@@ -196,7 +196,7 @@ curl -X POST "https://Visiomatix.onrender.com/api/contact" \
 - [ ] Environment variables added to Render
 - [ ] Service restarted
 - [ ] Contact form tested
-- [ ] Email received at VisiomatixMedia@gmail.com
+- [ ] Email received at visiomatixmedia@gmail.com
 - [ ] All 3 email features tested
 
 ### Documentation

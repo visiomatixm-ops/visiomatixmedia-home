@@ -12,7 +12,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        "https://Visiomatix.onrender.com/admin/login",
+        "https://visiomatix.onrender.com/admin/login",
         {
           method: "POST",
           headers: {

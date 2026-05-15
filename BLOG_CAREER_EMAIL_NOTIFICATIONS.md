@@ -32,9 +32,9 @@ Your system is now fully configured to send email notifications to subscribers w
 
 ```env
 RESEND_API_KEY="re_amw1GyEq_RfeLzpofZRDmgAHMLxWbYTJY"  # ✅ Active
-CONTACT_EMAIL="info@Visiomatix.in"                      # ✅ Set
+CONTACT_EMAIL="info@visiomatix.in"                      # ✅ Set
 RESEND_FROM_EMAIL="onboarding@resend.dev"              # ✅ Set
-WEBSITE_URL="https://Visiomatix.in"                    # ✅ Set
+WEBSITE_URL="https://visiomatix.in"                    # ✅ Set
 MONGODB_URI="..."                                       # ✅ Set
 ```
 
@@ -97,7 +97,7 @@ First, get admin auth token:
 curl -X POST http://localhost:5000/admin/login \
   -H "Content-Type: application/json" \
   -d '{
-    "email": "admin@Visiomatix.com",
+    "email": "admin@visiomatix.com",
     "password": "password123"
   }'
 ```
@@ -184,7 +184,7 @@ Render will auto-deploy. Wait 2-3 minutes.
 Use your live API endpoint:
 
 ```bash
-curl -X POST https://Visiomatix.onrender.com/api/subscribe \
+curl -X POST https://visiomatix.onrender.com/api/subscribe \
   -H "Content-Type: application/json" \
   -d '{
     "email": "your-test@example.com"
@@ -466,8 +466,8 @@ Subscribers receive emails in inbox
 | -------------------- | ------------ | ----------------------- |
 | RESEND API Key       | ✅ Set       | `re_amw1GyEq...`        |
 | From Email           | ✅ Set       | `onboarding@resend.dev` |
-| Website URL          | ✅ Set       | `https://Visiomatix.in` |
-| Contact Email        | ✅ Set       | `info@Visiomatix.in`    |
+| Website URL          | ✅ Set       | `https://visiomatix.in` |
+| Contact Email        | ✅ Set       | `info@visiomatix.in`    |
 | Email Service        | ✅ Complete  | Full implementation     |
 | Blog Notifications   | ✅ Enabled   | Auto-send on upload     |
 | Career Notifications | ✅ Enabled   | Auto-send on upload     |

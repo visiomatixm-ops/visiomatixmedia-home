@@ -9,6 +9,7 @@ const Page1 = () => {
     <div className="service_1_root">
       <main className="hero-box-service1">
         <div className="title-box-service1">
+
           <motion.h1
             className="title2-service1"
             initial={{ opacity: 0, y: -60 }}
@@ -45,9 +46,11 @@ const Page1 = () => {
             continuity and operational efficiency, keeping your digital
             ecosystem resilient, optimized, and future-ready.
           </motion.p>
+
         </div>
 
         <div className="logo-box2-service1">
+
           <motion.img
             src={digimart}
             alt=""
@@ -58,6 +61,7 @@ const Page1 = () => {
           />
 
           <div>
+
             <motion.div
               className="social-media-service1"
               initial={{ opacity: 0, x: -120 }}
@@ -72,6 +76,7 @@ const Page1 = () => {
             </motion.div>
 
             <div className="content-box-service1">
+
               <motion.div
                 className="content-service1"
                 initial={{ opacity: 0, y: 60 }}
@@ -122,6 +127,7 @@ const Page1 = () => {
                   uptime, system resilience, and long term digital continuity.
                 </p>
               </motion.div>
+
             </div>
 
             <motion.p
@@ -138,6 +144,7 @@ const Page1 = () => {
               digital investments enabling sustained performance and long term
               business value.
             </motion.p>
+
           </div>
         </div>
       </main>

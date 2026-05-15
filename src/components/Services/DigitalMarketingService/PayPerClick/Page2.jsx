@@ -48,12 +48,13 @@ const Service3_2 = () => {
   return (
     <div>
       <section className="digital-marketing-services-2-2">
+
         <motion.div
           className="benefites-2"
           variants={fadeDown}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once:false, amount:0.3 }}
         >
           BENEFITS
         </motion.div>
@@ -63,7 +64,7 @@ const Service3_2 = () => {
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once:false, amount:0.3 }}
         >
           Benefits of Design & Creative Services with Visiomatix Media
         </motion.div>
@@ -73,53 +74,40 @@ const Service3_2 = () => {
           variants={containerVariant}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once:false, amount:0.2 }}
         >
-          <div className="column-2 custom-border-2 right-pad-30">
-            <Benefit
-              img={frame1}
-              title={
-                <>
-                  Strategic Brand <br /> Positioning
-                </>
-              }
-              text="We align PPC campaigns with clear business objectives, search intent, and competitive insights ensuring every ad placement contributes to stronger market presence, brand relevance, and performance clarity."
-            />
 
-            <Benefit
-              img={frame2}
-              title="Qualified Lead & Demand Generation"
-              text="We design conversion focused PPC funnels that turn clicks into qualified leads and measurable revenue, supporting scalable growth and predictable acquisition outcomes."
-            />
+          <div className="column-2 custom-border-2 right-pad-30">
+
+            <Benefit img={frame1} title={<>
+              Strategic Brand <br /> Positioning
+            </>} text="We align PPC campaigns with clear business objectives, search intent, and competitive insights ensuring every ad placement contributes to stronger market presence, brand relevance, and performance clarity." />
+
+            <Benefit img={frame2} title="Qualified Lead & Demand Generation"
+              text="We design conversion focused PPC funnels that turn clicks into qualified leads and measurable revenue, supporting scalable growth and predictable acquisition outcomes." />
+
           </div>
 
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
-            <Benefit
-              img={frame3}
-              title="Performance Driven Demand Capture"
-              text="Our PPC strategies focus on high-intent visibility rather than vanity traffic, helping your brand consistently reach decision ready audiences with greater efficiency, relevance, and conversion potential."
-            />
 
-            <Benefit
-              img={frame4}
-              title="Data Backed Optimization & Intelligence"
-              text="Every campaign is guided by deep performance analytics, audience signals, and ROI metrics enabling continuous optimization, smarter bidding decisions, and sustained ROAS improvement."
-            />
+            <Benefit img={frame3} title="Performance Driven Demand Capture"
+              text="Our PPC strategies focus on high-intent visibility rather than vanity traffic, helping your brand consistently reach decision ready audiences with greater efficiency, relevance, and conversion potential." />
+
+            <Benefit img={frame4} title="Data Backed Optimization & Intelligence"
+              text="Every campaign is guided by deep performance analytics, audience signals, and ROI metrics enabling continuous optimization, smarter bidding decisions, and sustained ROAS improvement." />
+
           </div>
 
           <div className="column-2 left-pad-50 right-pad-30">
-            <Benefit
-              img={frame5}
-              title="Consistent Brand & Message Control"
-              text="From ad copy to landing page alignment, we maintain message consistency across all paid channels protecting brand equity while delivering a seamless and trustworthy user experience."
-            />
 
-            <Benefit
-              img={frame6}
-              title="Scalable Growth with Cost Efficiency"
-              text="Through disciplined budget control, bid optimization, and audience refinement, we ensure scalable campaign growth while maintaining cost efficiency and long term profitability."
-            />
+            <Benefit img={frame5} title="Consistent Brand & Message Control"
+              text="From ad copy to landing page alignment, we maintain message consistency across all paid channels protecting brand equity while delivering a seamless and trustworthy user experience." />
+
+            <Benefit img={frame6} title="Scalable Growth with Cost Efficiency"
+              text="Through disciplined budget control, bid optimization, and audience refinement, we ensure scalable campaign growth while maintaining cost efficiency and long term profitability." />
+
           </div>
+
         </motion.div>
 
         <motion.div
@@ -127,7 +115,7 @@ const Service3_2 = () => {
           variants={slideLeft}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once:false, amount:0.3 }}
         >
           <p className="second-text">
             Pay Per Click (PPC) advertising with Visiomatix Media is built for
@@ -148,32 +136,31 @@ const Service3_2 = () => {
           </p>
 
           <motion.ul style={{ width: "100%" }} variants={containerVariant}>
+
             <motion.li className="second-text" variants={fadeUp}>
-              Strategic Demand Capture Target high intent audiences with
-              precision and relevance across paid channels
+              Strategic Demand Capture Target high intent audiences with precision and relevance across paid channels
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Performance Led Growth ROI focused execution driven by data,
-              analytics, and continuous optimization
+              Performance Led Growth ROI focused execution driven by data, analytics, and continuous optimization
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Controlled Brand Messaging Maintain message clarity and brand
-              integrity across all PPC touchpoints
+              Controlled Brand Messaging Maintain message clarity and brand integrity across all PPC touchpoints
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Qualified Leads & Conversions Convert ad spend into high quality
-              leads and measurable business outcomes
+              Qualified Leads & Conversions Convert ad spend into high quality leads and measurable business outcomes
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Scalable & Cost-Efficient Campaigns Optimize budgets, bids, and
-              performance to drive sustainable, profitable growth
+              Scalable & Cost-Efficient Campaigns Optimize budgets, bids, and performance to drive sustainable, profitable growth
             </motion.li>
+
           </motion.ul>
+
         </motion.div>
+
       </section>
     </div>
   );
@@ -184,24 +171,20 @@ const Benefit = ({ img, title, text }) => (
   <motion.div
     className="e-commerce-services-benefits-div"
     variants={fadeUp}
+  
     whileHover={{
       y: -8,
       scale: 1.03,
       boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 },
-    }}
-  >
+      transition: { type: "spring", stiffness: 260 }
+    }}>
     <motion.img
       src={img}
       alt="Icon"
-      initial={{ opacity: 0, scale: 0.6 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      whileHover={{
-        rotate: [0, -6, 6, 0],
-        scale: 1.15,
-        transition: { duration: 0.4 },
-      }}
+      initial={{ opacity:0, scale:0.6 }}
+      whileInView={{ opacity:1, scale:1 }}
+      transition={{ duration:0.6, ease:"easeOut" }}
+      whileHover={{ rotate: [0, -6, 6, 0], scale: 1.15, transition: { duration: 0.4 } }}
     />
     <h3 className="benefit-title">{title}</h3>
     <p className="benefit-text">{text}</p>

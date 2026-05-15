@@ -66,7 +66,7 @@ const Contact = () => {
     setSubmitStatus(null);
 
     try {
-      const backendUrl = "https://Visiomatix.onrender.com";
+      const backendUrl = "https://visiomatix.onrender.com";
       const response = await fetch(`${backendUrl}/contact`, {
         method: "POST",
         headers: {
@@ -140,7 +140,7 @@ const Contact = () => {
 
             <div>
               <h4>Email</h4>
-              <p>info@Visiomatix.in</p>
+              <p>info@visiomatix.in</p>
             </div>
 
             <div className="line" />
@@ -148,21 +148,21 @@ const Contact = () => {
 
           <div className="socials">
             <a
-              href="https://www.instagram.com/Visiomatix_media/"
+              href="https://www.instagram.com/visiomatix_media/"
               target="_blank"
             >
               <img src={instagram} alt="Instagram" />
             </a>
-            <a href="https://www.facebook.com/Visiomatixmedia" target="_blank">
+            <a href="https://www.facebook.com/visiomatixmedia" target="_blank">
               <img src={facebook} alt="Facebook" />
             </a>
             <a
-              href="https://www.linkedin.com/company/Visiomatix-media/posts/?feedView=all"
+              href="https://www.linkedin.com/company/visiomatix-media/posts/?feedView=all"
               target="_blank"
             >
               <img src={linkedin} alt="LinkedIn" />
             </a>
-            <a href="https://x.com/Visiomatixmedia" target="_blank">
+            <a href="https://x.com/visiomatixmedia" target="_blank">
               <img src={x} alt="X" />
             </a>
           </div>

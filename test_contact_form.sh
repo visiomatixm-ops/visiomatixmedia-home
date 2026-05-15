@@ -17,7 +17,7 @@ YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
 # Configuration
-BACKEND_URL="https://Visiomatix.onrender.com/api/contact"
+BACKEND_URL="https://visiomatix.onrender.com/api/contact"
 LOCAL_URL="http://localhost:5000/api/contact"
 
 echo "Testing Backend Deployment Status..."
@@ -183,4 +183,4 @@ echo "  - mobile (optional, but 10 digits if provided)"
 echo "  - service (optional)"
 echo "  - message (required)"
 echo ""
-echo "Expected Email Recipient: info@Visiomatix.in"
+echo "Expected Email Recipient: info@visiomatix.in"

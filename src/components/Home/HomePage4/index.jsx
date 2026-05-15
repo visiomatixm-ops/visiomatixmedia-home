@@ -208,11 +208,7 @@ const HomePage4 = () => {
                       className="service-icon-home4"
                       initial={{ opacity: 0, scale: 0.5 }}
                       whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{
-                        delay: i * 0.06,
-                        type: "spring",
-                        stiffness: 200,
-                      }}
+                      transition={{ delay: i * 0.06, type: "spring", stiffness: 200 }}
                       viewport={viewport}
                       whileHover={{ rotate: [0, -8, 8, 0], scale: 1.15 }}
                     >
@@ -222,10 +218,7 @@ const HomePage4 = () => {
                     <p className="service-desc-home4">{item.desc}</p>
 
                     <div className="read-more-wrapper-home4">
-                      <NavLink
-                        to={item.address}
-                        className="read-more-btn-home4"
-                      >
+                      <NavLink to={item.address} className="read-more-btn-home4">
                         Read More
                         <img
                           src={Union1}

@@ -7,6 +7,7 @@ const Page1 = () => {
     <div className="service_1_root">
       <main className="hero-box-service1">
         <div className="title-box-service1">
+
           <motion.h1
             className="title2-service1"
             initial={{ opacity: 0, y: -60 }}
@@ -42,9 +43,11 @@ const Page1 = () => {
             influence intent, drive engagement, and convert visibility into
             action while protecting long term brand value.
           </motion.p>
+
         </div>
 
         <div className="logo-box2-service1">
+
           <motion.img
             src={digimart}
             alt="Content & Video Marketing"
@@ -55,8 +58,9 @@ const Page1 = () => {
           />
 
           <div>
+
             <motion.div
-              className="social-Media-service1"
+              className="social-media-service1"
               initial={{ opacity: 0, x: -120 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
@@ -69,6 +73,7 @@ const Page1 = () => {
             </motion.div>
 
             <div className="content-box-service1">
+
               <motion.div
                 className="content-service1"
                 initial={{ opacity: 0, y: 60 }}
@@ -119,6 +124,7 @@ const Page1 = () => {
                   ensure efficiency, scalability, and sustained content impact.
                 </p>
               </motion.div>
+
             </div>
 
             <motion.p
@@ -134,7 +140,9 @@ const Page1 = () => {
               help brands capture attention, strengthen connection, and convert
               visibility into sustained business value.
             </motion.p>
+
           </div>
+
         </div>
       </main>
     </div>

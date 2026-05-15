@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react'
 import { motion } from "framer-motion";
-import "../../page3.css";
+import '../../page3.css'
+
 
 import image3 from "../../../../assets/ProcessAutomationSolution/image2.png";
 
@@ -16,22 +17,11 @@ const Page3 = () => {
           viewport={{ once: false, amount: 0.3 }}
         >
           <p>
-            A Performance Driven Process Automation Partner in Nashik
-            Streamlining Operations. Accelerating Growth.
+            A Performance Driven Process Automation Partner in Nashik Streamlining Operations. Accelerating Growth.
           </p>
-          At Visiomatix Media, a trusted Process Automation Solutions company in
-          Nashik, we specialize in designing intelligent, scalable, and secure
-          automation systems that drive operational efficiency and sustainable
-          business growth. Our focus goes beyond basic implementation we build
-          purpose-driven automation frameworks that eliminate manual
-          bottlenecks, streamline complex workflows, and ensure consistent
-          performance across business environments. As a performance-driven
-          automation solutions provider in Nashik, we believe impactful
-          automation is built on intelligent architecture, process-centric
-          design, and disciplined execution. This structured approach ensures
-          accuracy, scalability, and operational reliability empowering
-          organizations to optimize productivity and achieve measurable,
-          long-term growth.
+          At Visiomatix Media, a trusted Process Automation Solutions company in Nashik, we specialize in designing intelligent, scalable, and secure automation systems that drive operational efficiency and sustainable business growth.
+          Our focus goes beyond basic implementation we build purpose-driven automation frameworks that eliminate manual bottlenecks, streamline complex workflows, and ensure consistent performance across business environments.
+          As a performance-driven automation solutions provider in Nashik, we believe impactful automation is built on intelligent architecture, process-centric design, and disciplined execution. This structured approach ensures accuracy, scalability, and operational reliability  empowering organizations to optimize productivity and achieve measurable, long-term growth.
         </motion.p>
         <motion.img
           src={image3}
@@ -44,7 +34,7 @@ const Page3 = () => {
         />
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Page3;
+export default Page3

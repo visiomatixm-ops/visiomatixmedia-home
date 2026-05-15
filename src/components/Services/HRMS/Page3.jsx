@@ -8,6 +8,7 @@ const Page3 = () => {
   return (
     <>
       <section className="business-software-solution3">
+
         <motion.p
           className="para-bss3"
           initial={{ opacity: 0, x: -120 }}
@@ -15,10 +16,9 @@ const Page3 = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: false, amount: 0.3 }}
         >
-          <p>
-            HRMS Solutions in Nashik Ensuring Efficiency, Clarity & Workforce
-            Performance
-          </p>
+          <p>HRMS Solutions in Nashik Ensuring Efficiency, Clarity & Workforce
+            Performance</p>
+
           At Visiomatix Media, a trusted HRMS solutions provider in Nashik, we
           specialize in building and optimizing HR systems that ensure
           efficiency, consistency, and long-term organizational growth.
@@ -32,6 +32,7 @@ const Page3 = () => {
           strategic alignment. Our approach ensures adaptability, accuracy, and
           scalable performance helping businesses improve employee productivity,
           strengthen communication, and drive sustainable growth.
+
         </motion.p>
 
         <motion.img
@@ -43,6 +44,7 @@ const Page3 = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: false, amount: 0.3 }}
         />
+
       </section>
     </>
   );

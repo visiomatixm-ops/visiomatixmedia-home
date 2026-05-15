@@ -5,7 +5,7 @@
 When testing the API, Resend returned this error:
 
 ```
-You can only send testing emails to your own email address (VisiomatixMedia@gmail.com).
+You can only send testing emails to your own email address (visiomatixmedia@gmail.com).
 To send emails to other recipients, please verify a domain at resend.com/domains,
 and change the `from` address to an email using this domain.
 ```
@@ -14,8 +14,8 @@ This means:
 
 - ✅ The API is working correctly
 - ✅ Resend authentication is success
-- ❌ You can currently only send to: **VisiomatixMedia@gmail.com**
-- ❌ You cannot send to: **info@Visiomatix.in** (domain not verified)
+- ❌ You can currently only send to: **visiomatixmedia@gmail.com**
+- ❌ You cannot send to: **info@visiomatix.in** (domain not verified)
 
 ---
 
@@ -28,11 +28,11 @@ Use your personal email to verify emails are being sent:
 1. Change temporary test:
 
    ```bash
-   CONTACT_EMAIL=VisiomatixMedia@gmail.com
+   CONTACT_EMAIL=visiomatixmedia@gmail.com
    ```
 
 2. Test the contact form again
-3. Check VisiomatixMedia@gmail.com for incoming emails
+3. Check visiomatixmedia@gmail.com for incoming emails
 
 ### Option 2: Production Setup (Recommended)
 
@@ -42,7 +42,7 @@ Verify your business domain with Resend to send emails from any address:
 
 1. Go to: https://resend.com/domains
 2. Click "Add New Domain"
-3. Enter your domain: `Visiomatix.in`
+3. Enter your domain: `visiomatix.in`
 
 #### Step 2: Add DNS Records
 
@@ -74,26 +74,26 @@ Value: [Resend-provided value]
 Once domain is verified, update Render environment:
 
 ```env
-RESEND_FROM_EMAIL=noreply@Visiomatix.in
-CONTACT_EMAIL=info@Visiomatix.in
+RESEND_FROM_EMAIL=noreply@visiomatix.in
+CONTACT_EMAIL=info@visiomatix.in
 ```
 
 ---
 
-## Current Workaround (ImMediate Fix)
+## Current Workaround (Immediate Fix)
 
-**For imMediate testing/production:**
+**For immediate testing/production:**
 
 Option A: Send contact form emails to your verified email
 
 ```env
-CONTACT_EMAIL=VisiomatixMedia@gmail.com
+CONTACT_EMAIL=visiomatixmedia@gmail.com
 RESEND_FROM_EMAIL=onboarding@resend.dev
 ```
 
 Option B: Send testing emails and forward them
 
-- Emails arrive at VisiomatixMedia@gmail.com
+- Emails arrive at visiomatixmedia@gmail.com
 - Forward/reply to contact senders
 - Complete domain verification later
 
@@ -108,7 +108,7 @@ Go to Render Dashboard > Your Backend Service > Settings > Environment
 Add/Update:
 
 ```
-CONTACT_EMAIL = VisiomatixMedia@gmail.com
+CONTACT_EMAIL = visiomatixmedia@gmail.com
 RESEND_FROM_EMAIL = onboarding@resend.dev
 RESEND_API_KEY = re_xxxx... (your actual key)
 ```
@@ -117,12 +117,12 @@ Click "Save Changes" and wait for restart (1-2 minutes)
 
 ### Step 2: Test Contact Form
 
-Submit a test form at: https://Visiomatix.com/contact
+Submit a test form at: https://visiomatix.com/contact
 
 Or test via curl:
 
 ```bash
-curl -X POST "https://Visiomatix.onrender.com/api/contact" \
+curl -X POST "https://visiomatix.onrender.com/api/contact" \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Test User",
@@ -136,7 +136,7 @@ curl -X POST "https://Visiomatix.onrender.com/api/contact" \
 
 ### Step 3: Check Email
 
-Check inbox at **VisiomatixMedia@gmail.com** for:
+Check inbox at **visiomatixmedia@gmail.com** for:
 
 - Subject: "New Lead from Test User – Visiomatix Media"
 - Contact details from the form
@@ -155,10 +155,10 @@ Backend validates & formats
            ↓
 Resend API sends email:
    FROM: onboarding@resend.dev (Resend test domain)
-   TO: VisiomatixMedia@gmail.com (your verified email)
+   TO: visiomatixmedia@gmail.com (your verified email)
    REPLY-TO: user@example.com (user's email)
            ↓
-Email arrives at VisiomatixMedia@gmail.com
+Email arrives at visiomatixmedia@gmail.com
            ↓
 You receive and manually respond to user
 ```
@@ -167,17 +167,17 @@ You receive and manually respond to user
 
 ## Timeline to Full Resolution
 
-### ImMediate (Next 1 hour)
+### Immediate (Next 1 hour)
 
 - [ ] Add `RESEND_API_KEY` to Render if not already done
-- [ ] Update `CONTACT_EMAIL` to `VisiomatixMedia@gmail.com`
+- [ ] Update `CONTACT_EMAIL` to `visiomatixmedia@gmail.com`
 - [ ] Restart Render service
 - [ ] Test contact form
 - [ ] Verify emails arrive
 
 ### Short Term (Next 24-48 hours)
 
-- [ ] Choose domain to verify (info@Visiomatix.in or marketing@Visiomatix.in)
+- [ ] Choose domain to verify (info@visiomatix.in or marketing@visiomatix.in)
 - [ ] Go to resend.com/domains
 - [ ] Add and verify your domain
 - [ ] Update Render environment with verified domain email
@@ -197,42 +197,42 @@ The same issue applies to subscriber notifications. Subscribers will receive ema
 
 - **To:** subscriber's email address (works with any email)
 - **From:** onboarding@resend.dev (currently)
-- **Reply-To:** info@Visiomatix.in (from env variable)
+- **Reply-To:** info@visiomatix.in (from env variable)
 
 To improve this, verify your domain, then update:
 
 ```
-RESEND_FROM_EMAIL=noreply@Visiomatix.in
+RESEND_FROM_EMAIL=noreply@visiomatix.in
 ```
 
 ---
 
 ## FAQ
 
-**Q: Why can't I send to info@Visiomatix.in right now?**
+**Q: Why can't I send to info@visiomatix.in right now?**
 A: Resend requires domain verification for security. Free tier can only send to verified owner email initially.
 
-**Q: Can I use info@Visiomatix.in as the recipient?**
-A: Not yet with current Resend configuration. Use your personal verified email (VisiomatixMedia@gmail.com) temporarily.
+**Q: Can I use info@visiomatix.in as the recipient?**
+A: Not yet with current Resend configuration. Use your personal verified email (visiomatixmedia@gmail.com) temporarily.
 
 **Q: How long does domain verification take?**
 A: Usually 10-30 minutes after DNS records are added.
 
 **Q: Will contact form emails be lost?**
-A: No, they'll arrive at VisiomatixMedia@gmail.com instead of info@Visiomatix.in temporarily.
+A: No, they'll arrive at visiomatixmedia@gmail.com instead of info@visiomatix.in temporarily.
 
 **Q: Do subscribers need action?**
 A: No, they'll work fine. Emails will arrive in their inbox from onboarding@resend.dev (unless you verify domain).
 
-**Q: Can I use a subdomain like noreply.Visiomatix.in?**
+**Q: Can I use a subdomain like noreply.visiomatix.in?**
 A: Yes! That's recommended for production.
 
 ---
 
 ## Next Steps Summary
 
-1. **ImMediate (required):**
-   - Set `CONTACT_EMAIL=VisiomatixMedia@gmail.com` in Render
+1. **Immediate (required):**
+   - Set `CONTACT_EMAIL=visiomatixmedia@gmail.com` in Render
    - Set all other required environment variables
    - Test contact form
 

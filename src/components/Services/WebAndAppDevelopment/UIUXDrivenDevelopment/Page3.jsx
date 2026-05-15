@@ -1,12 +1,13 @@
-import React from "react";
+import React from 'react'
 import { motion } from "framer-motion";
-import "../../page3.css";
+import '../../page3.css'
 
 import image3 from "../../../../assets/UIUXDrivenDevelopment/images/2.png";
 
 const Page3 = () => {
   return (
     <section className="business-software-solution3">
+
       <motion.div
         className="para-bss3"
         initial={{ opacity: 0, x: -120 }}
@@ -14,19 +15,21 @@ const Page3 = () => {
         transition={{ duration: 0.8 }}
         viewport={{ once: false, amount: 0.3 }}
       >
-        <h2>Human Centered UI-UX Design & Development in Nashik</h2>
+
+        <h2>
+          Human Centered UI-UX Design & Development in Nashik
+        </h2>
 
         <p>
-          At Visiomatix Media, we approach UI-UX driven development as a
-          strategic design discipline grounded in deep user insight and clear
-          business intent.
+          At Visiomatix Media, we approach UI-UX driven development as a strategic design 
+          discipline grounded in deep user insight and clear business intent.
         </p>
 
         <p>
-          Through continuous validation, usability refinement, and
-          performance-aware implementation, we ensure every design decision
-          enhances engagement and reduces friction.
+          Through continuous validation, usability refinement, and performance-aware 
+          implementation, we ensure every design decision enhances engagement and reduces friction.
         </p>
+
       </motion.div>
 
       <motion.img
@@ -38,8 +41,9 @@ const Page3 = () => {
         transition={{ duration: 0.8 }}
         viewport={{ once: false, amount: 0.3 }}
       />
-    </section>
-  );
-};
 
-export default Page3;
+    </section>
+  )
+}
+
+export default Page3

@@ -273,8 +273,8 @@ Submit to:
 
 **Website Owner:** Visiomatix Media
 **Deployment:** Render.com
-**Domain:** Visiomatix.onrender.com
-**Backend URL:** https://Visiomatix.onrender.com
+**Domain:** visiomatix.onrender.com
+**Backend URL:** https://visiomatix.onrender.com
 
 For technical support or SEO questions, refer to:
 

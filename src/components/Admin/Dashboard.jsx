@@ -43,7 +43,7 @@ const Dashboard = () => {
   const loadItems = async () => {
     const token = localStorage.getItem("adminToken");
     try {
-      const res = await fetch(`https://Visiomatix.onrender.com/api/${mode}`, {
+      const res = await fetch(`https://visiomatix.onrender.com/api/${mode}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
@@ -168,7 +168,7 @@ const Dashboard = () => {
     const token = localStorage.getItem("adminToken");
     try {
       const res = await fetch(
-        `https://Visiomatix.onrender.com/api/${mode}/${id}`,
+        `https://visiomatix.onrender.com/api/${mode}/${id}`,
         {
           method: "DELETE",
           headers: { Authorization: `Bearer ${token}` },
@@ -208,7 +208,7 @@ const Dashboard = () => {
 
     const token = localStorage.getItem("adminToken");
     try {
-      const url = `https://Visiomatix.onrender.com/api/${mode}${editing ? `/${editing._id}` : ""}`;
+      const url = `https://visiomatix.onrender.com/api/${mode}${editing ? `/${editing._id}` : ""}`;
       const method = editing ? "PUT" : "POST";
       const res = await fetch(url, {
         method,

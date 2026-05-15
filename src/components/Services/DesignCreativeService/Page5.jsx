@@ -1,4 +1,5 @@
-import React from "react";
+
+import React from 'react'
 
 import "../page5.css";
 
@@ -19,29 +20,21 @@ import ecom from "../../../assets/design-creative/icon/11.png";
 import ssas from "../../../assets/design-creative/icon/12.png";
 import nitro from "../../../assets/design-creative/icon/13.png";
 import api from "../../../assets/design-creative/icon/14.png";
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
+
 
 const Page5 = () => {
+
   const logos = [
-    erp,
-    crm,
-    bpm,
-    a,
-    dot,
-    hr,
-    camel,
-    finance,
-    saas,
-    ppt,
-    ecom,
-    ssas,
-    nitro,
-    api,
+    erp, crm, bpm, a, dot, hr, camel,
+    finance, saas, ppt, ecom, ssas, nitro, api
   ];
 
   return (
     <main className="bss5">
+
       <section className="blue-title-bss5">
+
         <motion.h1
           initial={{ opacity: 0, y: -60 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +44,9 @@ const Page5 = () => {
           Creative Platforms We Design For
           <div>Strategic Creative Partnerships</div>
         </motion.h1>
+
       </section>
+
 
       <motion.section
         className="slider-bss5"
@@ -60,12 +55,15 @@ const Page5 = () => {
         transition={{ duration: 0.8 }}
         viewport={{ once: false, amount: 0.3 }}
       >
+
         <div className="slider-track-bss5">
           {[...logos, ...logos].map((img, index) => (
             <img src={img} alt="creative-icon" key={index} />
           ))}
         </div>
+
       </motion.section>
+
 
       <motion.section
         className="para-bss5"
@@ -74,6 +72,7 @@ const Page5 = () => {
         transition={{ duration: 0.9 }}
         viewport={{ once: false, amount: 0.3 }}
       >
+
         <p>
           At Visiomatix Media, our Design & Creative Services are crafted to
           perform seamlessly across a wide range of digital platforms. We design
@@ -94,13 +93,16 @@ const Page5 = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: false, amount: 0.3 }}
         >
-          <NavLink to="/contact" className="nav-avoid-blue">
+          <NavLink to='/contact' className="nav-avoid-blue">
             Book Your Free Strategy Call
           </NavLink>
         </motion.button>
-      </motion.section>
-    </main>
-  );
-};
 
-export default Page5;
+      </motion.section>
+
+    </main>
+  )
+}
+
+export default Page5
+

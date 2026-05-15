@@ -31,12 +31,13 @@ const logos = [
   be,
   ball,
   reddit,
-  quora,
+  quora
 ];
 
 const Page5 = () => {
   return (
     <main className="bss5">
+
       <section className="blue-title-bss5">
         <h1>
           Conversion Solutions We Deliver
@@ -54,18 +55,17 @@ const Page5 = () => {
 
       <section className="para-bss5">
         <p>
-          At Visiomatix Media, our Checkout & Conversion Optimization services
-          are engineered to maximize performance across complex digital commerce
-          environments and high-traffic sales channels. We refine checkout
-          journeys aligned with customer behavior, purchase intent, and
-          operational workflows ensuring consistent speed, seamless processing,
-          and higher conversion rates across storefronts and payment systems. We
-          specialize in optimizing checkout flows, cart experiences, payment
-          integrations, trust signals, validation logic, and post-purchase
-          funnels. Every optimization is focused on speed, security, sability,
-          and measurable revenue impact enabling businesses to reduce
-          abandonment, increase completed transactions, and build reliable,
-          high-performing digital commerce systems.
+        At Visiomatix Media, our Checkout & Conversion Optimization services 
+        are engineered to maximize performance across complex digital commerce 
+        environments and high-traffic sales channels. We refine checkout journeys 
+        aligned with customer behavior, purchase intent, and operational workflows 
+        ensuring consistent speed, seamless processing, and higher conversion rates 
+        across storefronts and payment systems. We specialize in optimizing checkout 
+        flows, cart experiences, payment integrations, trust signals, validation logic, 
+        and post-purchase funnels. Every optimization is focused on speed, security, 
+        sability, and measurable revenue impact enabling businesses to reduce abandonment,
+        increase completed transactions, and build reliable, high-performing digital 
+        commerce systems.
         </p>
 
         <button>
@@ -73,7 +73,9 @@ const Page5 = () => {
             Book Your Free Strategy Call
           </NavLink>
         </button>
+
       </section>
+
     </main>
   );
 };

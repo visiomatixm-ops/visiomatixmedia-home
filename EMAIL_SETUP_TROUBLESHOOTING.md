@@ -10,7 +10,7 @@
 
 ### 2. ✅ Contact Form Email Submission
 
-**Problem:** Contact form submissions weren't reaching info@Visiomatix.in.  
+**Problem:** Contact form submissions weren't reaching info@visiomatix.in.  
 **Root Cause:** Missing or unconfigured `RESEND_API_KEY` in Render environment.  
 **Fix Applied:** Added API key validation and better error handling in `contactController.js`
 
@@ -23,12 +23,12 @@ All of these must be set in your Render dashboard under Settings > Environment:
 ```env
 # Resend Configuration (CRITICAL - Without this, NO emails will send)
 RESEND_API_KEY=re_xxxxxxxxxxxx...
-RESEND_FROM_EMAIL=noreply@Visiomatix.in  # Must be verified with Resend
+RESEND_FROM_EMAIL=noreply@visiomatix.in  # Must be verified with Resend
 # Or use default: onboarding@resend.dev (for testing only)
 
 # Contact & Subscriber Configuration
-CONTACT_EMAIL=info@Visiomatix.in
-WEBSITE_URL=https://Visiomatix.com
+CONTACT_EMAIL=info@visiomatix.in
+WEBSITE_URL=https://visiomatix.com
 
 # Database Configuration
 MONGODB_URI=your_mongodb_connection_string
@@ -69,8 +69,8 @@ PORT=5000
 | ------------------- | ------------------------ | --------------------- |
 | `RESEND_API_KEY`    | `re_xxxx...`             | From Resend dashboard |
 | `RESEND_FROM_EMAIL` | `onboarding@resend.dev`  | Default (for testing) |
-| `CONTACT_EMAIL`     | `info@Visiomatix.in`     | Your email            |
-| `WEBSITE_URL`       | `https://Visiomatix.com` | Your website domain   |
+| `CONTACT_EMAIL`     | `info@visiomatix.in`     | Your email            |
+| `WEBSITE_URL`       | `https://visiomatix.com` | Your website domain   |
 
 ### Step 3: Deploy Updated Code
 
@@ -104,7 +104,7 @@ Wait 2-3 minutes for Render to rebuild and deploy, then check:
 
 2. **Test Contact Form:**
    ```bash
-   curl -X POST "https://Visiomatix.onrender.com/api/contact" \
+   curl -X POST "https://visiomatix.onrender.com/api/contact" \
      -H "Content-Type: application/json" \
      -d '{
        "name": "Test User",
@@ -135,7 +135,7 @@ User fills contact form
          ↓
 Frontend validates (name, email, phone, message, CAPTCHA)
          ↓
-POST to https://Visiomatix.onrender.com/api/contact
+POST to https://visiomatix.onrender.com/api/contact
          ↓
 Backend validates fields again
          ↓
@@ -145,10 +145,10 @@ Format HTML email
          ↓
 Call Resend API with:
   - from: RESEND_FROM_EMAIL (onboarding@resend.dev)
-  - to: info@Visiomatix.in
+  - to: info@visiomatix.in
   - subject: "New Lead from [Name] – Visiomatix Media"
          ↓
-Email sent to info@Visiomatix.in
+Email sent to info@visiomatix.in
          ↓
 Return success response to frontend
          ↓
@@ -213,7 +213,7 @@ Log results to console
 3. Verify recipient email is correct in `CONTACT_EMAIL`
 4. Test manually:
    ```bash
-   curl -X POST "https://Visiomatix.onrender.com/api/contact" \
+   curl -X POST "https://visiomatix.onrender.com/api/contact" \
      -H "Content-Type: application/json" \
      -d '{"name":"Test","email":"test@test.com","message":"test"}'
    ```
@@ -245,7 +245,7 @@ Log results to console
 ### Test 1: Contact Form
 
 ```bash
-curl -X POST "https://Visiomatix.onrender.com/api/contact" \
+curl -X POST "https://visiomatix.onrender.com/api/contact" \
   -H "Content-Type: application/json" \
   -d '{
     "name": "John Doe",
@@ -269,7 +269,7 @@ curl -X POST "https://Visiomatix.onrender.com/api/contact" \
 
 **Check:**
 
-- Email arrives at info@Visiomatix.in
+- Email arrives at info@visiomatix.in
 - Reply-to field shows sender@example.com
 - Subject includes "John Doe – Visiomatix Media"
 
@@ -355,7 +355,7 @@ curl -X POST "https://Visiomatix.onrender.com/api/contact" \
 
 Once complete, all three email flows will work:
 
-- Contact form → info@Visiomatix.in
+- Contact form → info@visiomatix.in
 - Blog posted → All subscribers
 - Career posted → All subscribers
 

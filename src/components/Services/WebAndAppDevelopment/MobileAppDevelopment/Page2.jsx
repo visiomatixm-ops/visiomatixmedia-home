@@ -1,4 +1,4 @@
-import frame3 from "../../../../assets/MobileAppDevelopment(iOS & Android)/icon2.png";
+import frame3  from "../../../../assets/MobileAppDevelopment(iOS & Android)/icon2.png";
 import frame1 from "../../../../assets/MobileAppDevelopment(iOS & Android)/icon1.png";
 import frame5 from "../../../../assets/MobileAppDevelopment(iOS & Android)/icon3.png";
 import frame2 from "../../../../assets/MobileAppDevelopment(iOS & Android)/icon4.png";
@@ -48,6 +48,7 @@ const Page2 = () => {
   return (
     <div>
       <section className="digital-marketing-services-2-2">
+
         <motion.div
           className="benefites-2"
           variants={fadeDown}
@@ -75,47 +76,31 @@ const Page2 = () => {
           whileInView="visible"
           viewport={{ once: false, amount: 0.2 }}
         >
-          <div className="column-2 custom-border-2 right-pad-30">
-            <Benefit
-              img={frame1}
-              title="Business-Driven Mobile App Development"
-              text="We don’t just build mobile applications we create strategic digital products aligned with business objectives, ensuring every feature supports growth, efficiency, and measurable ROI."
-            />
 
-            <Benefit
-              img={frame2}
-              title="User-Centric Mobile UI/UX Engineering"
-              text="By applying advanced mobile UI/UX principles, we design intuitive, engaging experiences that improve usability, user retention, and conversion rates across Android and iOS platforms."
-            />
+          <div className="column-2 custom-border-2 right-pad-30">
+            <Benefit img={frame1} title="Business-Driven Mobile App Development"
+              text="We don’t just build mobile applications we create strategic digital products aligned with business objectives, ensuring every feature supports growth, efficiency, and measurable ROI." />
+
+            <Benefit img={frame2} title="User-Centric Mobile UI/UX Engineering"
+              text="By applying advanced mobile UI/UX principles, we design intuitive, engaging experiences that improve usability, user retention, and conversion rates across Android and iOS platforms." />
           </div>
 
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
-            <Benefit
-              img={frame3}
-              title="Fully Custom & Scalable Mobile Solutions"
-              text="Each mobile app is developed from the ground up, enabling seamless scalability as your user base and business expand without performance bottlenecks or rework."
-            />
+            <Benefit img={frame3} title="Fully Custom & Scalable Mobile Solutions"
+              text="Each mobile app is developed from the ground up, enabling seamless scalability as your user base and business expand without performance bottlenecks or rework." />
 
-            <Benefit
-              img={frame4}
-              title="Secure & Robust Mobile App Development"
-              text="We implement industry-standard mobile security practices, ensuring data protection, secure authentication, and long-term application reliability."
-            />
+            <Benefit img={frame4} title="Secure & Robust Mobile App Development"
+              text="We implement industry-standard mobile security practices, ensuring data protection, secure authentication, and long-term application reliability." />
           </div>
 
           <div className="column-2 left-pad-50 right-pad-30">
-            <Benefit
-              img={frame5}
-              title="High-Performance Mobile Architecture"
-              text="Our mobile applications are optimized for speed, stability, and efficiency, delivering smooth performance, fast response times, and reliability even under high user loads."
-            />
+            <Benefit img={frame5} title="High-Performance Mobile Architecture"
+              text="Our mobile applications are optimized for speed, stability, and efficiency, delivering smooth performance, fast response times, and reliability even under high user loads." />
 
-            <Benefit
-              img={frame6}
-              title="Post-Launch Support & Continuous Optimization"
-              text="Beyond launch, we provide ongoing app maintenance, performance monitoring, updates, and feature enhancements to keep your mobile product competitive and future-ready."
-            />
+            <Benefit img={frame6} title="Post-Launch Support & Continuous Optimization"
+              text="Beyond launch, we provide ongoing app maintenance, performance monitoring, updates, and feature enhancements to keep your mobile product competitive and future-ready." />
           </div>
+
         </motion.div>
 
         <motion.div
@@ -126,7 +111,7 @@ const Page2 = () => {
           viewport={{ once: false, amount: 0.3 }}
         >
           <p className="second-text">
-            At Visiomatix Media, mobile app development is delivered as a
+             At Visiomatix Media, mobile app development is delivered as a
             strategic growth asset. We engineer scalable, secure, and
             performance-driven mobile applications that strengthen engagement,
             support business expansion, and deliver long-term digital value.
@@ -140,52 +125,41 @@ const Page2 = () => {
 
           <motion.ul variants={containerVariant}>
             <motion.li className="second-text" variants={fadeUp}>
-              Future-ready mobile app architectures designed around business
-              objectives, user behavior, and long-term scalability across
-              Android and iOS platforms.
+              Future-ready mobile app architectures designed around business objectives, user behavior, and long-term scalability across Android and iOS platforms.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Execution focused on speed, stability, and efficiency ensuring
-              optimized app performance, reliability, and measurable business
-              outcomes.
+              Execution focused on speed, stability, and efficiency ensuring optimized app performance, reliability, and measurable business outcomes.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Standardized mobile frameworks and clean coding practices that
-              ensure consistency, easier maintenance, and professional-grade
-              execution.
+              Standardized mobile frameworks and clean coding practices that ensure consistency, easier maintenance, and professional-grade execution.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Intuitive, user-centric mobile experiences engineered to enhance
-              engagement, usability, and conversion performance.
+              Intuitive, user-centric mobile experiences engineered to enhance engagement, usability, and conversion performance.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Secure mobile development practices, strong data protection, and
-              reliable app performance that ensure long-term trust and
-              operational stability.
+              Secure mobile development practices, strong data protection, and reliable app performance that ensure long-term trust and operational stability.
             </motion.li>
           </motion.ul>
         </motion.div>
+
       </section>
     </div>
-  );
+  )
 };
 
 // 🔥 SAME Benefit component pattern
 const Benefit = ({ img, title, text }) => (
-  <motion.div
-    className="e-commerce-services-benefits-div"
-    variants={fadeUp}
+  <motion.div className='e-commerce-services-benefits-div' variants={fadeUp}
     whileHover={{
       y: -8,
       scale: 1.03,
       boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 },
-    }}
-  >
+      transition: { type: "spring", stiffness: 260 }
+    }}>
     <motion.img
       src={img}
       alt="Icon"
@@ -193,11 +167,7 @@ const Benefit = ({ img, title, text }) => (
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: false }}
-      whileHover={{
-        rotate: [0, -6, 6, 0],
-        scale: 1.15,
-        transition: { duration: 0.4 },
-      }}
+      whileHover={{ rotate: [0, -6, 6, 0], scale: 1.15, transition: { duration: 0.4 } }}
     />
     <h3 className="benefit-title">{title}</h3>
     <p className="benefit-text">{text}</p>

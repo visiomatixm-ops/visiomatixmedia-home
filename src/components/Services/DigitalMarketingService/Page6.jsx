@@ -9,11 +9,12 @@ import ytIcon from "../../../assets/Digital_Marketing_Services/images/Youtube4.p
 import arrow from "../../../assets/Digital_Marketing_Services/images/union-1.png";
 // import eclipse from "../../../assets/images/Ellipse.png";
 
+
 const Service3_6 = () => {
   return (
     <div className="page-root-bss6 decalotype-font-bss6">
       {/* HERO */}
-      {/* <img src={eclipse} className="eclipse" alt="" /> */}
+       {/* <img src={eclipse} className="eclipse" alt="" /> */}
       <section className="hero-section-bss6">
         <div className="hero-header-row-bss6">
           <motion.h1
@@ -59,33 +60,20 @@ const Service3_6 = () => {
             </div>
 
             <p className="brand-text-bss6">
-              At Visiomatix Media, we don’t just market brands we engineer
-              digital growth systems. <br />
-              Built with a global mindset and driven by performance, we help
-              businesses cut through noise, capture attention, and convert
-              audiences into loyal customers. <br />
-              Founded in India and working with brands acoress industries our
-              team of strategies, designer, marketers, and technologists blends
-              creativity with data to deliver measurable results. From brand
-              positioning and SEO to high-impact creatives, social media, and
-              conversion focused campaigns every move is intentional, every
-              outcome is tracked.We believe in clarity over clutter, strategy
-              over shortcuts, andresults over promises.
-              <br /> Visiomatix Media is where ambition meets execution and
-              digital presence turn into digital dominace.
-              <br /> Think Global. Build Strong. Grow with Visiomatix.
+              At Visiomatix Media, we don’t just market brands we engineer digital
+              growth systems. <br />Built with a global mindset and driven by
+              performance, we help businesses cut through noise, capture
+              attention, and convert audiences into loyal customers. <br />Founded in India and working with brands acoress industries our team of strategies, designer, marketers, and technologists blends creativity with data to deliver measurable results. From brand positioning and SEO to high-impact creatives, social media, and conversion focused campaigns every move is intentional, every outcome is tracked.We believe in clarity over clutter, strategy over shortcuts, andresults over promises.
+           <br /> Visiomatix Media is where ambition meets execution and digital presence turn into digital dominace.
+            <br />  Think Global. Build Strong. Grow with Visiomatix.
             </p>
 
             <div className="contact-block-bss6">
               <span className="blue-label-bss6">For Sales</span>
-              <p className="brand-text-bss6 brand-contact-bss6">
-                +91 89991 01916
-              </p>
+              <p className="brand-text-bss6 brand-contact-bss6">+91 89991 01916</p>
 
               <span className="blue-label-bss6">For Careers</span>
-              <p className="brand-text-bss6 brand-contact-bss6">
-                +91 92702 71916
-              </p>
+              <p className="brand-text-bss6 brand-contact-bss6">+91 92702 71916</p>
             </div>
           </div>
 
@@ -134,31 +122,17 @@ const Service3_6 = () => {
             <h3 className="footer-header-bss6">Start Your Growth Journey</h3>
 
             <p className="address-text-bss6">
-              Om Sai Apartment, Road, Manmad – Chandwad Rd, Davkhar Nagar,
-              Ganur, Nashik, Maharashtra – 423101
+              Om Sai Apartment, Road, Manmad – Chandwad Rd, Davkhar Nagar, Ganur,
+              Nashik, Maharashtra – 423101
             </p>
-            <p className="footer-para2-bss6">
-              Our office serves as a hub for strategy, creativity, and digital
-              innovation, where ideas are transformed into impactful digital
-              solutions. From this central workspace, our team collaborates
-              closely with clients across regions and industries, ensuring
-              seamless communication, reliable support, and consistent
-              execution. We focus on building scalable strategies, delivering
-              measurable results, and driving long-term growth through data
-              driven insights, creative excellence, and performance oriented
-              digital solutions.
-            </p>
+            <p className="footer-para2-bss6">Our office serves as a hub for strategy, creativity, and digital innovation, where ideas are transformed into impactful digital solutions. From this central workspace, our team collaborates closely with clients across regions and industries, ensuring seamless communication, reliable support, and consistent execution. We focus on building scalable strategies, delivering measurable results, and driving long-term growth through data driven insights, creative excellence, and performance oriented digital solutions.</p>
 
             <div className="contact-block-bss6">
               <span className="blue-label-bss6">For Sales</span>
-              <p className="brand-text-bss6 brand-contact-bss6">
-                info@Visiomatix.in
-              </p>
+            <p className="brand-text-bss6 brand-contact-bss6">info@visiomatix.in</p>
 
-              <span className="blue-label-bss6">For Careers</span>
-              <p className="brand-text-bss6 brand-contact-bss6">
-                info@Visiomatix.in
-              </p>
+            <span className="blue-label-bss6">For Careers</span>
+            <p className="brand-text-bss6 brand-contact-bss6">info@visiomatix.in</p>
             </div>
 
             {/* FORM — CORRECT POSITION */}
@@ -175,7 +149,10 @@ const Service3_6 = () => {
               </p>
 
               <div className="subscribe-form-bss6">
-                <input type="email" placeholder="Enter your work email" />
+                <input
+                  type="email"
+                  placeholder="Enter your work email"
+                />
                 <button>Subscribe</button>
               </div>
             </motion.div>

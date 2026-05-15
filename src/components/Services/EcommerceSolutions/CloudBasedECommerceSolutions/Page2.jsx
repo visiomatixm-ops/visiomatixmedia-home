@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import "../../page2.css";
 import { motion } from "framer-motion";
 
@@ -50,6 +50,7 @@ const Page2 = () => {
   return (
     <>
       <section className="digital-marketing-services-2-2">
+
         <motion.div
           className="benefites-2"
           variants={fadeDown}
@@ -77,47 +78,37 @@ const Page2 = () => {
           whileInView="visible"
           viewport={{ once: false, amount: 0.2 }}
         >
-          <div className="column-2 custom-border-2 right-pad-30">
-            <Benefit
-              img={frame1}
-              title="Cloud-Native Commerce Architecture"
-              text="Our cloud-based e-commerce platforms are architected around your business model, product strategy, and customer journey  ensuring seamless alignment between cloud infrastructure, operations, and long-term revenue growth."
-            />
 
-            <Benefit
-              img={frame2}
-              title="Secure & Compliant Cloud Commerce"
-              text="We implement advanced cloud security protocols, encrypted transactions, role-based access control, and compliance-ready infrastructure to safeguard customer data and business operations."
-            />
+          <div className="column-2 custom-border-2 right-pad-30">
+
+            <Benefit img={frame1} title="Cloud-Native Commerce Architecture"
+              text="Our cloud-based e-commerce platforms are architected around your business model, product strategy, and customer journey  ensuring seamless alignment between cloud infrastructure, operations, and long-term revenue growth." />
+
+            <Benefit img={frame2} title="Secure & Compliant Cloud Commerce"
+              text="We implement advanced cloud security protocols, encrypted transactions, role-based access control, and compliance-ready infrastructure to safeguard customer data and business operations." />
+
           </div>
 
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
-            <Benefit
-              img={frame6}
-              title="Elastic & Future-Ready Scalability"
-              text="We build flexible, modular cloud commerce systems that automatically scale with traffic spikes, product expansion, and market demand  without compromising performance or uptime."
-            />
 
-            <Benefit
-              img={frame5}
-              title="Seamless Cloud Integrations"
-              text="Our solutions integrate effortlessly with CRMs, ERPs, payment gateways, logistics partners, and third-party tools  creating a unified, scalable digital commerce ecosystem."
-            />
+            <Benefit img={frame6} title="Elastic & Future-Ready Scalability"
+              text="We build flexible, modular cloud commerce systems that automatically scale with traffic spikes, product expansion, and market demand  without compromising performance or uptime." />
+
+            <Benefit img={frame5} title="Seamless Cloud Integrations"
+              text="Our solutions integrate effortlessly with CRMs, ERPs, payment gateways, logistics partners, and third-party tools  creating a unified, scalable digital commerce ecosystem." />
+
           </div>
 
           <div className="column-2 left-pad-50 right-pad-30">
-            <Benefit
-              img={frame3}
-              title="High Performance & Uptime Stability"
-              text="Our cloud environments are optimized for speed, resilience, and availability delivering smooth browsing, fast checkouts, and uninterrupted performance during peak sales events."
-            />
 
-            <Benefit
-              img={frame4}
-              title="Automated Operations & Efficiency"
-              text="Through cloud-based automation for order processing, inventory sync, reporting, and performance monitoring, we reduce manual effort, minimize errors, and enhance operational efficiency across teams."
-            />
+            <Benefit img={frame3} title="High Performance & Uptime Stability"
+              text="Our cloud environments are optimized for speed, resilience, and availability delivering smooth browsing, fast checkouts, and uninterrupted performance during peak sales events." />
+
+            <Benefit img={frame4} title="Automated Operations & Efficiency"
+              text="Through cloud-based automation for order processing, inventory sync, reporting, and performance monitoring, we reduce manual effort, minimize errors, and enhance operational efficiency across teams." />
+
           </div>
+
         </motion.div>
 
         <motion.div
@@ -127,80 +118,63 @@ const Page2 = () => {
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
         >
+
           <p className="second-text">
-            Cloud-Based E-commerce Solutions at Visiomatix Media go beyond
-            hosting online stores we build scalable, secure, and
-            high-performance cloud commerce ecosystems engineered for long-term
-            revenue growth and operational agility. Our cloud-native,
-            performance-driven approach ensures every platform aligns with
-            business objectives, enhances customer journeys, optimizes
-            infrastructure efficiency, and delivers measurable commercial
-            impact.
-            <br />
-            <br />
+            Cloud-Based E-commerce Solutions at Visiomatix Media go beyond hosting online stores we build scalable, secure, and high-performance cloud commerce ecosystems engineered for long-term revenue growth and operational agility. Our cloud-native, performance-driven approach ensures every platform aligns with business objectives, enhances customer journeys, optimizes infrastructure efficiency, and delivers measurable commercial impact.
+            <br /><br />
             <span className="second-text">Key Highlights</span>
           </p>
 
-          <motion.ul style={{ width: "100%" }} variants={containerVariant}>
+          <motion.ul style={{ width: '100%' }} variants={containerVariant}>
+
             <motion.li className="second-text" variants={fadeUp}>
-              Cloud-Native Commerce Architecture Future-ready, scalable cloud
-              infrastructures designed around your business model, customer
-              lifecycle, and growth strategy.
+              Cloud-Native Commerce Architecture Future-ready, scalable cloud infrastructures designed around your business model, customer lifecycle, and growth strategy.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Built for speed and uptime stability, our platforms dynamically
-              scale during traffic spikes, peak sales, and expansion phases
-              without compromising performance.
+              Built for speed and uptime stability, our platforms dynamically scale during traffic spikes, peak sales, and expansion phases without compromising performance.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Optimized code, modular frameworks, and standardized cloud
-              deployment practices ensure maintainability, resilience, and
-              professional execution.
+              Optimized code, modular frameworks, and standardized cloud deployment practices ensure maintainability, resilience, and professional execution.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Conversion-Focused User Experiences High-performance storefronts
-              and role-based admin systems engineered for usability, agility,
-              and operational control.
+              Conversion-Focused User Experiences High-performance storefronts and role-based admin systems engineered for usability, agility, and operational control.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Advanced cloud security protocols, encrypted transactions, and
-              stable infrastructure ensure trust, compliance readiness, and
-              long-term transactional stability.
+              Advanced cloud security protocols, encrypted transactions, and stable infrastructure ensure trust, compliance readiness, and long-term transactional stability.
             </motion.li>
+
           </motion.ul>
+
         </motion.div>
+
       </section>
     </>
-  );
+  )
 };
 
 // 🔥 SAME reusable component
 const Benefit = ({ img, title, text }) => (
   <motion.div
-    className="e-commerce-services-benefits-div"
+    className='e-commerce-services-benefits-div'
     variants={fadeUp}
+  
     whileHover={{
       y: -8,
       scale: 1.03,
       boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 },
-    }}
-  >
+      transition: { type: "spring", stiffness: 260 }
+    }}>
     <motion.img
       src={img}
       alt="Icon"
       initial={{ opacity: 0, scale: 0.6 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      whileHover={{
-        rotate: [0, -6, 6, 0],
-        scale: 1.15,
-        transition: { duration: 0.4 },
-      }}
+      whileHover={{ rotate: [0, -6, 6, 0], scale: 1.15, transition: { duration: 0.4 } }}
     />
     <h3 className="benefit-title">{title}</h3>
     <p className="benefit-text">{text}</p>

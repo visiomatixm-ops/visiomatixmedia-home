@@ -1,5 +1,7 @@
 import "../../page5.css";
 
+
+
 import erp from "../../../../assets/SecureScableArchitecture/image3.png";
 import crm from "../../../../assets/SecureScableArchitecture/image4.png";
 import bpm from "../../../../assets/SecureScableArchitecture/image5.png";
@@ -14,18 +16,14 @@ import camel from "../../../../assets/SecureScableArchitecture/image9.png";
 // import ssas from "../../../../assets/ecommerce-solutions/icon/Group 234.png";
 // import nitro from "../../../../assets/ecommerce-solutions/icon/Group 212 (2).png";
 // import api from "../../../../assets/ecommerce-solutions/icon/Group 235.png";
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 const logos = [
-  erp,
-  crm,
-  bpm,
-  a,
-  dot,
-  hr,
-  camel,
+  erp, crm, bpm, a, dot, hr, camel,
   // finance, saas, ppt, ecom, ssas, nitro, api
 ];
+
+
 
 const Page5 = () => {
   return (
@@ -45,30 +43,17 @@ const Page5 = () => {
         </div>
       </section>
 
+
       <section className="para-bss5">
         <p>
-          At Visiomatix Media, our Secure & Scalable Architecture solutions are
-          engineered to perform seamlessly across complex digital ecosystems and
-          enterprise environments. We design system foundations aligned with
-          business models, operational workflows, and technology landscapes
-          ensuring consistency, high performance, and long-term scalability
-          across applications, databases, and infrastructure layers. We
-          specialize in building resilient cloud architectures, secure
-          application frameworks, scalable infrastructure models, API-ready
-          environments, data protection layers, and enterprise-grade system
-          foundations. Every architecture is optimized for performance,
-          security, scalability, and stability enabling organizations to operate
-          reliable, protected, and future-ready digital infrastructures.
+          At Visiomatix Media, our Secure & Scalable Architecture solutions are engineered to perform seamlessly across complex digital ecosystems and enterprise environments. We design system foundations aligned with business models, operational workflows, and technology landscapes  ensuring consistency, high performance, and long-term scalability across applications, databases, and infrastructure layers.
+          We specialize in building resilient cloud architectures, secure application frameworks, scalable infrastructure models, API-ready environments, data protection layers, and enterprise-grade system foundations. Every architecture is optimized for performance, security, scalability, and stability  enabling organizations to operate reliable, protected, and future-ready digital infrastructures.
         </p>
 
-        <button>
-          <NavLink to="/contact" className="nav-avoid-blue">
-            Book Your Free Strategy Call
-          </NavLink>
-        </button>
+        <button><NavLink to='/contact' className="nav-avoid-blue">Book Your Free Strategy Call</NavLink></button>
       </section>
     </main>
-  );
-};
+  )
+}
 
-export default Page5;
+export default Page5

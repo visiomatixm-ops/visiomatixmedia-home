@@ -7,62 +7,51 @@ export const EASE = [0.16, 1, 0.3, 1];
 
 // ── DIRECTIONAL FADES ───────────────────────────────────────
 export const fadeUp = {
-  hidden: { opacity: 0, y: 80 },
+  hidden:  { opacity: 0, y: 80 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: EASE } },
 };
 
 export const fadeDown = {
-  hidden: { opacity: 0, y: -60 },
+  hidden:  { opacity: 0, y: -60 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: EASE } },
 };
 
 export const fadeLeft = {
-  hidden: { opacity: 0, x: -100 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: EASE } },
+  hidden:  { opacity: 0, x: -100 },
+  visible: { opacity: 1, x: 0,   transition: { duration: 0.8, ease: EASE } },
 };
 
 export const fadeRight = {
-  hidden: { opacity: 0, x: 100 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: EASE } },
+  hidden:  { opacity: 0, x: 100 },
+  visible: { opacity: 1, x: 0,   transition: { duration: 0.8, ease: EASE } },
 };
 
 // ── SCALE ───────────────────────────────────────────────────
 export const scaleIn = {
-  hidden: { opacity: 0, scale: 0.6, rotate: -3 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    rotate: 0,
-    transition: { duration: 0.9, ease: EASE },
-  },
+  hidden:  { opacity: 0, scale: 0.6, rotate: -3 },
+  visible: { opacity: 1, scale: 1,   rotate: 0,
+             transition: { duration: 0.9, ease: EASE } },
 };
 
 // ── FLIP UP (3D card reveal) ─────────────────────────────────
 export const flipUp = {
-  hidden: { opacity: 0, y: 60, rotateX: 25, scale: 0.92 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    rotateX: 0,
-    scale: 1,
-    transition: { duration: 0.65, ease: EASE },
-  },
+  hidden:  { opacity: 0, y: 60, rotateX: 25, scale: 0.92 },
+  visible: { opacity: 1, y: 0,  rotateX: 0,  scale: 1,
+             transition: { duration: 0.65, ease: EASE } },
 };
 
 // ── BOUNCE IN ───────────────────────────────────────────────
 export const bounceIn = {
-  hidden: { opacity: 0, scale: 0.5 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: { type: "spring", stiffness: 260, damping: 18 },
-  },
+  hidden:  { opacity: 0, scale: 0.5 },
+  visible: { opacity: 1, scale: 1,
+             transition: { type: "spring", stiffness: 260, damping: 18 } },
 };
 
 // ── DRAW LINE (scaleX from left) ────────────────────────────
 export const drawLine = {
-  hidden: { scaleX: 0, opacity: 0 },
-  visible: { scaleX: 1, opacity: 1, transition: { duration: 1.0, ease: EASE } },
+  hidden:  { scaleX: 0, opacity: 0 },
+  visible: { scaleX: 1, opacity: 1,
+             transition: { duration: 1.0, ease: EASE } },
 };
 
 // ── GLOW PULSE (repeating border glow) ──────────────────────
@@ -119,30 +108,23 @@ export const staggerFast = {
 
 // ── STAGGER CHILD ITEMS ─────────────────────────────────────
 export const staggerItem = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease: EASE } },
+  hidden:  { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0,
+             transition: { duration: 0.55, ease: EASE } },
 };
 
 // ── CARD REVEAL (for grid cards) ────────────────────────────
 export const cardReveal = {
-  hidden: { opacity: 0, y: 60, scale: 0.88 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: { duration: 0.6, ease: EASE },
-  },
+  hidden:  { opacity: 0, y: 60, scale: 0.88 },
+  visible: { opacity: 1, y: 0,  scale: 1,
+             transition: { duration: 0.6, ease: EASE } },
 };
 
 // ── STAT REVEAL (for number stats) ──────────────────────────
 export const statReveal = {
-  hidden: { opacity: 0, y: 50, scale: 0.7 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: { duration: 0.6, ease: EASE },
-  },
+  hidden:  { opacity: 0, y: 50, scale: 0.7 },
+  visible: { opacity: 1, y: 0,  scale: 1,
+             transition: { duration: 0.6, ease: EASE } },
 };
 
 // ── VIEWPORT CONFIG ─────────────────────────────────────────
@@ -152,61 +134,48 @@ export const viewport = { once: false, margin: "-80px" };
 
 // ── ZOOM SLIDE (scale from large + fade in) ─────────────────
 export const zoomSlide = {
-  hidden: { opacity: 0, scale: 1.18 },
-  visible: { opacity: 1, scale: 1, transition: { duration: 1.1, ease: EASE } },
+  hidden:  { opacity: 0, scale: 1.18 },
+  visible: { opacity: 1, scale: 1,
+             transition: { duration: 1.1, ease: EASE } },
 };
 
 // ── ROTATE FADE IN (for icons/badges) ───────────────────────
 export const rotateFadeIn = {
-  hidden: { opacity: 0, rotate: -15, scale: 0.7 },
-  visible: {
-    opacity: 1,
-    rotate: 0,
-    scale: 1,
-    transition: { type: "spring", stiffness: 200, damping: 18 },
-  },
+  hidden:  { opacity: 0, rotate: -15, scale: 0.7 },
+  visible: { opacity: 1, rotate: 0, scale: 1,
+             transition: { type: "spring", stiffness: 200, damping: 18 } },
 };
 
 // ── WORD REVEAL VARIANTS ─────────────────────────────────────
 export const wordContainerVariant = {
-  hidden: {},
+  hidden:  {},
   visible: { transition: { staggerChildren: 0.08, delayChildren: 0.05 } },
 };
 
 export const wordItemVariant = {
-  hidden: { opacity: 0, y: 40, rotate: 3 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    rotate: 0,
-    transition: { duration: 0.55, ease: EASE },
-  },
+  hidden:  { opacity: 0, y: 40, rotate: 3 },
+  visible: { opacity: 1, y: 0, rotate: 0,
+             transition: { duration: 0.55, ease: EASE } },
 };
 
 // ── SLIDE UP CLIP (premium text reveal) ─────────────────────
 export const clipReveal = {
-  hidden: { clipPath: "inset(100% 0% 0% 0%)", opacity: 0, y: 30 },
-  visible: {
-    clipPath: "inset(0% 0% 0% 0%)",
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.85, ease: EASE },
-  },
+  hidden:  { clipPath: "inset(100% 0% 0% 0%)", opacity: 0, y: 30 },
+  visible: { clipPath: "inset(0% 0% 0% 0%)", opacity: 1, y: 0,
+             transition: { duration: 0.85, ease: EASE } },
 };
 
 // ── COUNT UP REVEAL ─────────────────────────────────────────
 export const countReveal = {
-  hidden: { opacity: 0, scale: 0.4, y: 30 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    y: 0,
-    transition: { type: "spring", stiffness: 180, damping: 14 },
-  },
+  hidden:  { opacity: 0, scale: 0.4, y: 30 },
+  visible: { opacity: 1, scale: 1, y: 0,
+             transition: { type: "spring", stiffness: 180, damping: 14 } },
 };
 
+
+
 // /* ============================================================
-//    Visiomatix  —  Master Animation Variants
+//    VISIOMATIX  —  Master Animation Variants
 //    All components on Home & About pages import from here.
 //    ============================================================ */
 

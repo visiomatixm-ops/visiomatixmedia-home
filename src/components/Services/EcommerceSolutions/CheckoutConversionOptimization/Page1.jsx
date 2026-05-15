@@ -7,23 +7,19 @@ const Page1 = () => {
     <div className="service_1_root">
       <main className="hero-box-service1">
         <div className="title-box-service1">
-          <h1 className="title2-service1" style={{ fontSize: "75px" }}>
-            Checkout & Conversion Optimization
-          </h1>
+          <h1 className="title2-service1" style={{fontSize:"75px"}}>Checkout & Conversion Optimization</h1>
 
           <p className="sub-title-service1">
-            Smart Checkout Optimization. Accelerating Conversions & Revenue
-            Growth.
+           Smart Checkout Optimization. Accelerating Conversions & Revenue Growth.
           </p>
 
           <p className="service-para1-service1">
-            At Visiomatix Media, Checkout & Conversion Optimization is treated
-            as a strategic revenue accelerator not just a UI enhancement. We
-            design and refine high-performance checkout systems that reduce
-            friction, enhance user trust, and maximize transaction completion
-            rates. Through intelligent checkout architecture and performance
-            tuning, we transform drop-offs into completed purchases and traffic
-            into sustainable revenue growth.
+           At Visiomatix Media, Checkout & Conversion Optimization is treated as a
+           strategic revenue accelerator  not just a UI enhancement. We design and 
+           refine high-performance checkout systems that reduce friction, enhance 
+           user trust, and maximize transaction completion rates. Through intelligent 
+           checkout architecture and performance tuning, we transform drop-offs into 
+           completed purchases and traffic into sustainable revenue growth.
           </p>
         </div>
 
@@ -39,14 +35,15 @@ const Page1 = () => {
             </div>
 
             <div className="content-box-service1">
+
               <div className="content-service1">
                 <h2>
                   <span>01.</span> Conversion Strategy & Checkout Analysis
                 </h2>
                 <p>
-                  We define revenue goals, analyze user behavior, and map
-                  friction points across the checkout journey to design a
-                  streamlined, high-converting purchase flow.
+                 We define revenue goals, analyze user behavior, and map 
+                 friction points across the checkout journey to design a 
+                 streamlined, high-converting purchase flow.
                 </p>
               </div>
 
@@ -55,34 +52,33 @@ const Page1 = () => {
                   <span>02.</span>High-Performance Checkout Optimization
                 </h2>
                 <p>
-                  We build and refine fast, secure, and conversion-driven
-                  checkout systems engineered to reduce cart abandonment,
-                  simplify payments, and enhance transaction completion rates.
+                We build and refine fast, secure, and conversion-driven 
+                checkout systems engineered to reduce cart abandonment, 
+                simplify payments, and enhance transaction completion rates.
                 </p>
               </div>
 
               <div className="content-service1">
                 <h2>
-                  <span>03.</span> Continuous Testing, Security & Performance
-                  Enhancement
+                  <span>03.</span> Continuous Testing, Security & Performance Enhancement
                 </h2>
                 <p>
-                  Through A/B testing, performance tuning, and security
-                  hardening, we ensure checkout stability, payment reliability,
-                  and scalable growth under increasing traffic demands.
+                Through A/B testing, performance tuning, and security hardening, we ensure 
+                checkout stability, payment reliability, and scalable growth under increasing 
+                traffic demands.
                 </p>
               </div>
+
             </div>
 
             <p>
-              With Visiomatix Media, Checkout & Conversion Optimization delivers
-              more than completed transactions it creates frictionless buying
-              journeys that maximize revenue potential. Through strategic
-              checkout architecture, performance-driven enhancements, and
-              disciplined testing, we help businesses reduce cart abandonment,
-              increase conversion rates, and transform traffic into consistent,
-              sustainable revenue growth
+             With Visiomatix Media, Checkout & Conversion Optimization delivers more than completed 
+             transactions  it creates frictionless buying journeys that maximize revenue potential. 
+             Through strategic checkout architecture, performance-driven enhancements, and disciplined 
+             testing, we help businesses reduce cart abandonment, increase conversion rates, and 
+             transform traffic into consistent, sustainable revenue growth
             </p>
+
           </div>
         </div>
       </main>

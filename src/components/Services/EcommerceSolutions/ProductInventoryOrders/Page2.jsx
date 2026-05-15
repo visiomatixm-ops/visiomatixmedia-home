@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import "../../page2.css";
 import { motion } from "framer-motion";
 
@@ -50,12 +50,13 @@ const Page2 = () => {
   return (
     <>
       <section className="digital-marketing-services-2-2">
+
         <motion.div
           className="benefites-2"
           variants={fadeDown}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once:false, amount:0.3 }}
         >
           BENEFITS
         </motion.div>
@@ -65,10 +66,9 @@ const Page2 = () => {
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once:false, amount:0.3 }}
         >
-          Benefits of Product, Inventory & Order Management with Visiomatix
-          Media
+          Benefits of Product, Inventory & Order Management with Visiomatix Media
         </motion.div>
 
         <motion.div
@@ -76,49 +76,39 @@ const Page2 = () => {
           variants={containerVariant}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once:false, amount:0.2 }}
         >
-          <div className="column-2 custom-border-2 right-pad-30">
-            <Benefit
-              img={frame1}
-              title="Business-Centric Inventory Architecture"
-              text="Our systems are designed around your product structure, stock movement logic, and order workflows  ensuring seamless alignment between inventory control, operations, and revenue objectives."
-            />
 
-            <Benefit
-              img={frame2}
-              title="Secure & Controlled Operations"
-              text="We implement role-based access control, secure data handling, and structured validation systems to safeguard product data and maintain operational compliance."
-            />
+          <div className="column-2 custom-border-2 right-pad-30">
+
+            <Benefit img={frame1} title="Business-Centric Inventory Architecture"
+              text="Our systems are designed around your product structure, stock movement logic, and order workflows  ensuring seamless alignment between inventory control, operations, and revenue objectives." />
+
+            <Benefit img={frame2} title="Secure & Controlled Operations"
+              text="We implement role-based access control, secure data handling, and structured validation systems to safeguard product data and maintain operational compliance." />
+
           </div>
 
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
-            <Benefit
-              img={frame6}
-              title="Scalable & Future-Ready Management Systems"
-              text="We build modular inventory and order frameworks that scale effortlessly as your catalog, warehouses, and sales channels expand without disrupting system stability."
-            />
 
-            <Benefit
-              img={frame5}
-              title="Seamless System Integrations"
-              text="Seamless System Integrations Our solutions integrate smoothly with ERPs, CRMs, payment systems, logistics partners, and multi-channel platforms creating a unified and efficient commerce infrastructure."
-            />
+            <Benefit img={frame6} title="Scalable & Future-Ready Management Systems"
+              text="We build modular inventory and order frameworks that scale effortlessly as your catalog, warehouses, and sales channels expand without disrupting system stability." />
+
+            <Benefit img={frame5} title="Seamless System Integrations"
+              text="Seamless System Integrations Our solutions integrate smoothly with ERPs, CRMs, payment systems, logistics partners, and multi-channel platforms creating a unified and efficient commerce infrastructure." />
+
           </div>
 
           <div className="column-2 left-pad-50 right-pad-30">
-            <Benefit
-              img={frame3}
-              title="High Performance & Operational Reliability"
-              text="Our platforms are optimized for speed, accuracy, and real-time synchronization  ensuring consistent stock visibility and smooth order processing even during peak demand."
-            />
 
-            <Benefit
-              img={frame4}
-              title="Operational Automation & Efficiency"
-              text="By automating stock updates, order routing, fulfillment workflows, and reporting, we reduce manual errors, improve accuracy, and enhance overall operational efficiency."
-            />
+            <Benefit img={frame3} title="High Performance & Operational Reliability"
+              text="Our platforms are optimized for speed, accuracy, and real-time synchronization  ensuring consistent stock visibility and smooth order processing even during peak demand." />
+
+            <Benefit img={frame4} title="Operational Automation & Efficiency"
+              text="By automating stock updates, order routing, fulfillment workflows, and reporting, we reduce manual errors, improve accuracy, and enhance overall operational efficiency." />
+
           </div>
+
         </motion.div>
 
         <motion.div
@@ -126,81 +116,65 @@ const Page2 = () => {
           variants={slideLeft}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once:false, amount:0.3 }}
         >
+
           <p className="second-text">
-            Product, Inventory & Order Management at Visiomatix Media goes
-            beyond backend tracking we build scalable, secure, and
-            high-performance management systems that strengthen operational
-            control, accuracy, and long-term business efficiency. Our
-            structured, performance-driven approach ensures every system aligns
-            with product workflows, stock movement, and order lifecycle
-            management to deliver measurable operational impact.
-            <br />
-            <br />
+            Product, Inventory & Order Management at Visiomatix Media goes beyond backend tracking  we build scalable, secure, and high-performance management systems that strengthen operational control, accuracy, and long-term business efficiency. Our structured, performance-driven approach ensures every system aligns with product workflows, stock movement, and order lifecycle management to deliver measurable operational impact.
+            <br /><br />
             <span className="second-text">Key Highlights</span>
           </p>
 
-          <motion.ul style={{ width: "100%" }} variants={containerVariant}>
+          <motion.ul style={{ width: '100%' }} variants={containerVariant}>
+
             <motion.li className="second-text" variants={fadeUp}>
-              Strategic Inventory Architecture Future-ready system design
-              aligned with product structures, warehouse logic, and scalable
-              order workflows.
+              Strategic Inventory Architecture Future-ready system design aligned with product structures, warehouse logic, and scalable order workflows.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Performance-Driven System Development Engineered for speed,
-              real-time stock synchronization, and accurate order processing
-              across channels.
+              Performance-Driven System Development Engineered for speed, real-time stock synchronization, and accurate order processing across channels.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Structured Systems & Clean Standards Standardized frameworks and
-              disciplined logic ensure maintainability, consistency, and
-              reliable execution.
+              Structured Systems & Clean Standards Standardized frameworks and disciplined logic ensure maintainability, consistency, and reliable execution.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              High-Impact Operational Visibility Role-based dashboards and
-              intelligent tracking systems enhance product control, stock
-              clarity, and fulfillment efficiency.
+              High-Impact Operational Visibility Role-based dashboards and intelligent tracking systems enhance product control, stock clarity, and fulfillment efficiency.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Security, Stability & Data Integrity Secure data handling, access
-              control, and system reliability ensure compliance, operational
-              stability, and long-term trust.
+              Security, Stability & Data Integrity Secure data handling, access control, and system reliability ensure compliance, operational stability, and long-term trust.
             </motion.li>
+
           </motion.ul>
+
         </motion.div>
+
       </section>
     </>
-  );
+  )
 };
 
 // 🔥 SAME reusable component
 const Benefit = ({ img, title, text }) => (
   <motion.div
-    className="e-commerce-services-benefits-div"
+    className='e-commerce-services-benefits-div'
     variants={fadeUp}
+  
     whileHover={{
       y: -8,
       scale: 1.03,
       boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 },
-    }}
-  >
+      transition: { type: "spring", stiffness: 260 }
+    }}>
     <motion.img
       src={img}
       alt="Icon"
-      initial={{ opacity: 0, scale: 0.6 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      whileHover={{
-        rotate: [0, -6, 6, 0],
-        scale: 1.15,
-        transition: { duration: 0.4 },
-      }}
+      initial={{ opacity:0, scale:0.6 }}
+      whileInView={{ opacity:1, scale:1 }}
+      transition={{ duration:0.6, ease:"easeOut" }}
+      whileHover={{ rotate: [0, -6, 6, 0], scale: 1.15, transition: { duration: 0.4 } }}
     />
     <h3 className="benefit-title">{title}</h3>
     <p className="benefit-text">{text}</p>

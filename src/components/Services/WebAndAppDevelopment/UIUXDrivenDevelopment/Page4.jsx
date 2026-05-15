@@ -52,7 +52,7 @@ const expertiseList = [
     img: performance,
   },
   {
-    title: "UI/UX Driven Development",
+    title: "UI/UX–Driven Development",
     description:
       "Development powered by user centric UI/UX principles to improve engagement, navigation, and conversion rates across digital platforms.",
     img: uiux,

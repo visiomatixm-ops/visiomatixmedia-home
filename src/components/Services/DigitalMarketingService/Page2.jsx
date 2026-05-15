@@ -50,12 +50,13 @@ const Page2 = () => {
   return (
     <div>
       <section className="digital-marketing-services-2-2">
+
         <motion.div
           className="benefites-2"
           variants={fadeDown}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once:false, amount:0.3 }}
         >
           BENEFITS
         </motion.div>
@@ -65,7 +66,7 @@ const Page2 = () => {
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once:false, amount:0.3 }}
         >
           Benefits of Social Media Marketing with Visiomatix Media
         </motion.div>
@@ -75,58 +76,41 @@ const Page2 = () => {
           variants={containerVariant}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once:false, amount:0.2 }}
         >
-          <div className="column-2 custom-border-2 right-pad-30">
-            <Benefit
-              img={frame1}
-              title={
-                <>
-                  Strategic Brand
-                  <br /> Positioning
-                </>
-              }
-              text="We position your brand with clear intent and strategic direction, ensuring that every post, campaign, and interaction contributes to stronger brand perception, enhanced credibility, and long term market authority."
-            />
 
-            <Benefit
-              img={frame2}
-              title="Performance Driven Visibility"
-              text="Our approach prioritizes quality reach over vanity metrics, ensuring your brand consistently reaches the right audience with higher intent, relevance, and potential to convert into real business outcomes."
-            />
+          <div className="column-2 custom-border-2 right-pad-30">
+
+            <Benefit img={frame1} title={<>
+              Strategic Brand<br /> Positioning
+            </>} text="We position your brand with clear intent and strategic direction, ensuring that every post, campaign, and interaction contributes to stronger brand perception, enhanced credibility, and long term market authority." />
+
+            <Benefit img={frame2} title="Performance Driven Visibility"
+              text="Our approach prioritizes quality reach over vanity metrics, ensuring your brand consistently reaches the right audience with higher intent, relevance, and potential to convert into real business outcomes." />
+
           </div>
 
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
-            <Benefit
-              img={frame6}
-              title={
-                <>
-                  Consistent Brand <br /> Experience
-                </>
-              }
-              text="From visual identity to brand messaging, we maintain complete consistency across all social media platforms helping build recognition, trust, and a cohesive brand experience that audiences remember."
-            />
 
-            <Benefit
-              img={frame5}
-              title="Qualified Lead & Demand Generation"
-              text="We design structured social media journeys that transform engagement into high quality leads, supporting sustainable demand generation, improved conversion rates, and measurable revenue growth."
-            />
+            <Benefit img={frame6} title={<>
+              Consistent Brand <br /> Experience
+            </>} text="From visual identity to brand messaging, we maintain complete consistency across all social media platforms helping build recognition, trust, and a cohesive brand experience that audiences remember." />
+
+            <Benefit img={frame5} title="Qualified Lead & Demand Generation"
+              text="We design structured social media journeys that transform engagement into high quality leads, supporting sustainable demand generation, improved conversion rates, and measurable revenue growth." />
+
           </div>
 
           <div className="column-2 left-pad-50 right-pad-30">
-            <Benefit
-              img={frame3}
-              title="Data Backed Decision Making"
-              text="Every strategy and campaign is guided by in depth analytics, audience insights, and performance data allowing continuous optimization, smarter decisions, and predictable marketing results."
-            />
 
-            <Benefit
-              img={frame4}
-              title="Reputation & Community Growth"
-              text="We actively manage conversations, interactions, and feedback to build trust driven communities, strengthen brand reputation, and foster long term customer loyalty around your business."
-            />
+            <Benefit img={frame3} title="Data Backed Decision Making"
+              text="Every strategy and campaign is guided by in depth analytics, audience insights, and performance data allowing continuous optimization, smarter decisions, and predictable marketing results." />
+
+            <Benefit img={frame4} title="Reputation & Community Growth"
+              text="We actively manage conversations, interactions, and feedback to build trust driven communities, strengthen brand reputation, and foster long term customer loyalty around your business." />
+
           </div>
+
         </motion.div>
 
         <motion.div
@@ -134,8 +118,9 @@ const Page2 = () => {
           variants={slideLeft}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once:false, amount:0.3 }}
         >
+
           <p className="second-text">
             Social media marketing with Visiomatix Media is built for brands
             that demand strategic clarity, consistent execution, and measurable
@@ -154,32 +139,31 @@ const Page2 = () => {
           </p>
 
           <motion.ul variants={containerVariant}>
+
             <motion.li className="second-text" variants={fadeUp}>
-              Strategic Brand Authority Position your brand with clarity,
-              credibility, and market relevance
+              Strategic Brand Authority Position your brand with clarity, credibility, and market relevance
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Performance Led Growth Data driven execution focused on measurable
-              results, not vanity metrics
+              Performance Led Growth Data driven execution focused on measurable results, not vanity metrics
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Consistent Brand Presence Unified visuals and messaging across all
-              platforms
+              Consistent Brand Presence Unified visuals and messaging across all platforms
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Qualified Engagement & Leads Turn audience attention into real
-              business opportunities
+              Qualified Engagement & Leads Turn audience attention into real business opportunities
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Reputation & Community Building Build trust driven digital
-              communities that last
+              Reputation & Community Building Build trust driven digital communities that last
             </motion.li>
+
           </motion.ul>
+
         </motion.div>
+
       </section>
     </div>
   );
@@ -187,27 +171,20 @@ const Page2 = () => {
 
 // 🔥 SAME reusable card
 const Benefit = ({ img, title, text }) => (
-  <motion.div
-    className="e-commerce-services-benefits-div"
-    variants={fadeUp}
+  <motion.div className='e-commerce-services-benefits-div' variants={fadeUp}
     whileHover={{
       y: -8,
       scale: 1.03,
       boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 },
-    }}
-  >
+      transition: { type: "spring", stiffness: 260 }
+    }}>
     <motion.img
       src={img}
       alt="Icon"
-      initial={{ opacity: 0, scale: 0.6 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      whileHover={{
-        rotate: [0, -6, 6, 0],
-        scale: 1.15,
-        transition: { duration: 0.4 },
-      }}
+      initial={{ opacity:0, scale:0.6 }}
+      whileInView={{ opacity:1, scale:1 }}
+      transition={{ duration:0.6, ease:"easeOut" }}
+      whileHover={{ rotate: [0, -6, 6, 0], scale: 1.15, transition: { duration: 0.4 } }}
     />
     <h3 className="benefit-title">{title}</h3>
     <p className="benefit-text">{text}</p>

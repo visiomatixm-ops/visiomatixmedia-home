@@ -18,20 +18,8 @@ import eco from "../../../../assets/VisualEffects(VFX)/icon/13.png";
 import ssa from "../../../../assets/VisualEffects(VFX)/icon/14.png";
 
 const logos = [
-  erp,
-  crm,
-  bpm,
-  a,
-  dot,
-  hr,
-  camel,
-  finance,
-  saas,
-  ppt,
-  ecom,
-  ssas,
-  eco,
-  ssa,
+  erp, crm, bpm, a, dot, hr, camel,
+  finance, saas, ppt, ecom, ssas, eco, ssa
 ];
 
 const Page5 = () => {
@@ -68,11 +56,7 @@ const Page5 = () => {
           and platform.
         </p>
 
-        <button>
-          <NavLink to="/contact" className="nav-avoid-blue">
-            Book Your Free Strategy Call
-          </NavLink>
-        </button>
+                              <button><NavLink to='/contact' className="nav-avoid-blue">Book Your Free Strategy Call</NavLink></button>
       </section>
     </main>
   );
