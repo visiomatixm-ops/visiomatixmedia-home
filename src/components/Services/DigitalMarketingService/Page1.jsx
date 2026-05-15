@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import "../page1.css";
 
 // eslint-disable-next-line no-unused-vars
@@ -7,12 +7,10 @@ import { motion } from "framer-motion";
 import digimart from "../../../assets/Digital_Marketing_Services/images/1.png";
 
 const Service3_1 = () => {
-  
   return (
     <div className="service_1_root">
       <main className="hero-box-service1">
         <div className="title-box-service1" style={{ width: "100%" }}>
-          
           <motion.h1
             className="title2-service1"
             style={{ width: "100%" }}
@@ -52,11 +50,9 @@ const Service3_1 = () => {
             for organizations that value precision, reputation, and measurable
             impact.{" "}
           </motion.p>
-
         </div>
 
         <div className="logo-box2-service1">
-
           <motion.img
             src={digimart}
             alt="Image"
@@ -67,7 +63,6 @@ const Service3_1 = () => {
           />
 
           <div>
-
             <motion.div
               className="social-media-service1"
               initial={{ opacity: 0, x: -120 }}
@@ -82,7 +77,6 @@ const Service3_1 = () => {
             </motion.div>
 
             <div className="content-box-service1">
-
               <motion.div
                 className="content-service1"
                 initial={{ opacity: 0, y: 80 }}
@@ -112,7 +106,7 @@ const Service3_1 = () => {
                 </h2>
                 <p>
                   We create platform-specific, premium content aligned with your
-                  brand identity—designed for engagement, reach, and conversion
+                  brand identity designed for engagement, reach, and conversion
                   through strategic storytelling.
                 </p>
               </motion.div>
@@ -133,7 +127,6 @@ const Service3_1 = () => {
                   reputation and long-term equity.
                 </p>
               </motion.div>
-
             </div>
 
             <motion.p
@@ -143,13 +136,12 @@ const Service3_1 = () => {
               viewport={{ once: false, amount: 0.3 }}
             >
               With Visiomatix Media, social media marketing delivers more than
-              visibility—it builds brand authority, meaningful engagement, and
+              visibility it builds brand authority, meaningful engagement, and
               measurable business growth. Through strategic planning, premium
               content, and performance driven execution, we help brands attract
               the right audience, strengthen credibility, and convert attention
               into long term value.
             </motion.p>
-
           </div>
         </div>
       </main>

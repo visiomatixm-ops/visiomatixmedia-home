@@ -16,9 +16,8 @@ import ball from "../../../../assets/UIUXDrivenDevelopment/icon/12.png";
 import reddit from "../../../../assets/UIUXDrivenDevelopment/icon/13.png";
 import quora from "../../../../assets/UIUXDrivenDevelopment/icon/14.png";
 
-
 const logos = [
-     instagram,
+  instagram,
   facebook,
   linkedin,
   youtube,
@@ -31,39 +30,49 @@ const logos = [
   be,
   ball,
   reddit,
-  quora
+  quora,
 ];
 
 const Page5 = () => {
-    return (
-        <main className="bss5">
-            <section className="blue-title-bss5">
-                <h1>
-                  Experience-Led Product Engineering
-                    <div>Structured Design Frameworks</div>
-                </h1>
-            </section>
+  return (
+    <main className="bss5">
+      <section className="blue-title-bss5">
+        <h1>
+          Experience-Led Product Engineering
+          <div>Structured Design Frameworks</div>
+        </h1>
+      </section>
 
-            <section className="slider-bss5">
-  <div className="slider-track-bss5">
-    {[...logos, ...logos].map((img, index) => (
-      <img src={img} alt="logo" key={index} />
-    ))}
-  </div>
-</section>
+      <section className="slider-bss5">
+        <div className="slider-track-bss5">
+          {[...logos, ...logos].map((img, index) => (
+            <img src={img} alt="logo" key={index} />
+          ))}
+        </div>
+      </section>
 
+      <section className="para-bss5">
+        <p>
+          At Visiomatix Media, UI-UX driven development is centered on
+          delivering consistent, intuitive experiences across screens, devices,
+          and digital touchpoints. We design interface systems that adapt
+          seamlessly to user behavior, platform requirements, and evolving
+          business needs. Our expertise spans experience design for websites,
+          web applications, mobile interfaces, dashboards, SaaS platforms, and
+          complex digital systems. Every interface is crafted with a strong
+          focus on usability, responsiveness, visual consistency, and
+          interaction performance helping brands present a cohesive, reliable,
+          and professional digital experience across platforms.
+        </p>
 
-            <section className="para-bss5">
-                <p>
-                  At Visiomatix Media, UI-UX driven development is centered on delivering consistent, intuitive experiences across screens, devices, and digital touchpoints. We design interface systems that adapt seamlessly to user behavior, platform requirements, and evolving business needs.
-Our expertise spans experience design for websites, web applications, mobile interfaces, dashboards, SaaS platforms, and complex digital systems. Every interface is crafted with a strong focus on usability, responsiveness, visual consistency, and interaction performance helping brands present a cohesive, reliable, and professional digital experience across platforms.
-                   </p>
-
-                                                                      <button><NavLink to='/contact' className="nav-avoid-blue">Book Your Free Strategy Call</NavLink></button>
-
-            </section>
-        </main>
-    );
+        <button>
+          <NavLink to="/contact" className="nav-avoid-blue">
+            Book Your Free Strategy Call
+          </NavLink>
+        </button>
+      </section>
+    </main>
+  );
 };
 
 export default Page5;

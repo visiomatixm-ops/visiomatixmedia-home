@@ -37,9 +37,18 @@ const stats = [
 ];
 
 const brands = [
-  brand1, brand2, brand3, brand4,
-  brand5, brand6, brand7, brand8,
-  brand9, brand10, brand11, brand12,
+  brand1,
+  brand2,
+  brand3,
+  brand4,
+  brand5,
+  brand6,
+  brand7,
+  brand8,
+  brand9,
+  brand10,
+  brand11,
+  brand12,
 ];
 
 export default function HomePage3() {
@@ -61,7 +70,12 @@ export default function HomePage3() {
               className="years-home3"
               initial={{ opacity: 0, scale: 0.3, rotate: -15 }}
               whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-              transition={{ type: "spring", stiffness: 150, damping: 12, delay: 0.25 }}
+              transition={{
+                type: "spring",
+                stiffness: 150,
+                damping: 12,
+                delay: 0.25,
+              }}
               viewport={viewport}
             >
               4+

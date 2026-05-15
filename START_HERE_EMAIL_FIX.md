@@ -37,14 +37,14 @@ Go to: https://render.com/dashboard
 2. Settings → Environment
 3. Add:
    - `RESEND_API_KEY` = Get from https://resend.com/api-keys
-   - `CONTACT_EMAIL` = `visiomatixmedia@gmail.com` (temporary)
+   - `CONTACT_EMAIL` = `Visiomatixmedia@gmail.com` (temporary)
    - `RESEND_FROM_EMAIL` = `onboarding@resend.dev`
 4. Save & Wait 1-2 min for restart
 
 ### Step 2: Test (1 min)
 
 ```bash
-curl -X POST "https://visiomatix.onrender.com/api/contact" \
+curl -X POST "https://Visiomatix.onrender.com/api/contact" \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Test",
@@ -58,7 +58,7 @@ curl -X POST "https://visiomatix.onrender.com/api/contact" \
 
 ### Step 3: Check Email (1 min)
 
-Look for email at **visiomatixmedia@gmail.com** labeled "New Lead from Test"
+Look for email at **Visiomatixmedia@gmail.com** labeled "New Lead from Test"
 
 ✅ **Done!** All email features now working!
 
@@ -136,16 +136,16 @@ RESEND_API_KEY = re_xxxx...       (from resend.com)
 ### 🟡 Important (For emails to be received)
 
 ```
-CONTACT_EMAIL = visiomatixmedia@gmail.com  (temporary)
+CONTACT_EMAIL = Visiomatixmedia@gmail.com  (temporary)
 # Later update to:
-CONTACT_EMAIL = info@visiomatix.in (after domain verification)
+CONTACT_EMAIL = info@Visiomatix.in (after domain verification)
 ```
 
 ### 🟢 Optional (Defaults provided)
 
 ```
 RESEND_FROM_EMAIL = onboarding@resend.dev  (or your domain)
-WEBSITE_URL = https://visiomatix.com
+WEBSITE_URL = https://Visiomatix.com
 ```
 
 ---
@@ -208,8 +208,8 @@ WEBSITE_URL = https://visiomatix.com
 
 4. **Future: Use Custom Domain:**
    ```
-   RESEND_FROM_EMAIL = noreply@visiomatix.in
-   CONTACT_EMAIL = info@visiomatix.in
+   RESEND_FROM_EMAIL = noreply@Visiomatix.in
+   CONTACT_EMAIL = info@Visiomatix.in
    ```
    (Requires domain verification first)
 
@@ -222,7 +222,7 @@ WEBSITE_URL = https://visiomatix.com
 | "404 Not Found"                 | Wait 2-3 min for Render deployment               |
 | "RESEND_API_KEY not configured" | Add to Render environment variables              |
 | Email not received              | Check spam folder / veriify recipient email      |
-| "validation_error domain"       | This is expected - use visiomatixmedia@gmail.com |
+| "validation_error domain"       | This is expected - use Visiomatixmedia@gmail.com |
 | Test script fails               | Ensure you're testing deployed API not localhost |
 
 ---
@@ -257,7 +257,7 @@ WEBSITE_URL = https://visiomatix.com
 You'll know everything works when:
 
 1. ✅ Contact form shows "Message sent successfully!"
-2. ✅ Email appears at visiomatixmedia@gmail.com within 30 sec
+2. ✅ Email appears at Visiomatixmedia@gmail.com within 30 sec
 3. ✅ Email includes all form fields
 4. ✅ Subject shows "New Lead from [Name]"
 5. ✅ You can click reply and respond to user

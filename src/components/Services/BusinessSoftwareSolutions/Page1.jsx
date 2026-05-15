@@ -12,31 +12,31 @@ const Page1 = () => {
       <main className="hero-box-service1">
         <div className="title-box-service1">
           <motion.h1
-              className="title2-service1"
-              initial={{ opacity:0, y:-60 }}
-              whileInView={{ opacity:1, y:0 }}
-              transition={{ duration:0.8 }}
-              viewport={{ once:false, amount:0.3 }}
-            >
-              Business Software Solutions
-            </motion.h1>
+            className="title2-service1"
+            initial={{ opacity: 0, y: -60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: false, amount: 0.3 }}
+          >
+            Business Software Solutions
+          </motion.h1>
           <motion.p
-              className="sub-title-service1"
-              initial={{ opacity:0, y:60 }}
-              whileInView={{ opacity:1, y:0 }}
-              transition={{ duration:0.8 }}
-              viewport={{ once:false, amount:0.3 }}
-            >
+            className="sub-title-service1"
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: false, amount: 0.3 }}
+          >
             Engineered for Performance, Scale, and Reliability. Business
             Software Solutions
           </motion.p>
-           <motion.p
-              className="service-para1-service1"
-              initial={{ opacity:0, x:-120 }}
-              whileInView={{ opacity:1, x:0 }}
-              transition={{ duration:0.9 }}
-              viewport={{ once:false, amount:0.3 }}
-            >
+          <motion.p
+            className="service-para1-service1"
+            initial={{ opacity: 0, x: -120 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9 }}
+            viewport={{ once: false, amount: 0.3 }}
+          >
             At Visiomatix Media, business software solutions are treated as
             strategic digital assets not just technical implementations. We
             design and develop scalable, secure, and high performance software
@@ -49,21 +49,21 @@ const Page1 = () => {
         </div>
         <div className="logo-box2-service1">
           <motion.img
-              src={digimart}
-              alt=""
-              initial={{ opacity:0, scale:0.5 }}
-              whileInView={{ opacity:1, scale:1 }}
-              transition={{ duration:0.8 }}
-              viewport={{ once:false, amount:0.3 }}
-            />
+            src={digimart}
+            alt=""
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: false, amount: 0.3 }}
+          />
           <div>
             <motion.div
-                  className="social-media-service1"
-                  initial={{ opacity:0, x:-120 }}
-                  whileInView={{ opacity:1, x:0 }}
-                  transition={{ duration:0.8 }}
-                  viewport={{ once:false, amount:0.3 }}
-                >
+              className="social-media-service1"
+              initial={{ opacity: 0, x: -120 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: false, amount: 0.3 }}
+            >
               <p>
                 HOW BUSINESS SOFTWARE SOLUTIONS WORKS <br />{" "}
                 <span>HOW WE BUILD BUSINESS SOFTWARE SOLUTIONS</span>
@@ -71,12 +71,12 @@ const Page1 = () => {
             </motion.div>
             <div className="content-box-service1">
               <motion.div
-                      className="content-service1"
-                      initial={{ opacity:0, y:60 }}
-                      whileInView={{ opacity:1, y:0 }}
-                      transition={{ duration:0.8 }}
-                      viewport={{ once:false, amount:0.3 }}
-                    >
+                className="content-service1"
+                initial={{ opacity: 0, y: 60 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: false, amount: 0.3 }}
+              >
                 <h2>
                   <span>01.</span> Strategic Software Architecture & Planning
                 </h2>
@@ -89,12 +89,12 @@ const Page1 = () => {
               </motion.div>
 
               <motion.div
-                      className="content-service1"
-                      initial={{ opacity:0, y:60 }}
-                      whileInView={{ opacity:1, y:0 }}
-                      transition={{ duration:0.9 }}
-                      viewport={{ once:false, amount:0.3 }}
-                    >
+                className="content-service1"
+                initial={{ opacity: 0, y: 60 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9 }}
+                viewport={{ once: false, amount: 0.3 }}
+              >
                 <h2>
                   <span>02.</span> High Performance Software Development &
                   Execution
@@ -106,12 +106,12 @@ const Page1 = () => {
                 </p>
               </motion.div>
               <motion.div
-                      className="content-service1"
-                      initial={{ opacity:0, y:60 }}
-                      whileInView={{ opacity:1, y:0 }}
-                      transition={{ duration:1 }}
-                      viewport={{ once:false, amount:0.3 }}
-                    >
+                className="content-service1"
+                initial={{ opacity: 0, y: 60 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: false, amount: 0.3 }}
+              >
                 <h2>
                   <span>03.</span> Quality Assurance, Security & Scalability
                   Management
@@ -125,11 +125,11 @@ const Page1 = () => {
               </motion.div>
             </div>
             <motion.p
-                  initial={{ opacity:0, x:120 }}
-                  whileInView={{ opacity:1, x:0 }}
-                  transition={{ duration:0.9 }}
-                  viewport={{ once:false, amount:0.3 }}
-                >
+              initial={{ opacity: 0, x: 120 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.9 }}
+              viewport={{ once: false, amount: 0.3 }}
+            >
               With Visiomatix Media, business software solutions deliver more
               than functionality they enable operational efficiency, scalable
               systems, and long-term business impact. Through strategic software

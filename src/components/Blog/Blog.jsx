@@ -12,7 +12,7 @@ const Blog = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const res = await fetch("https://visiomatix.onrender.com/api/blogs");
+        const res = await fetch("https://Visiomatix.onrender.com/api/blogs");
         const data = await res.json();
         // Show blogs according to latest uploads first
         const sortedBlogs = data.sort(

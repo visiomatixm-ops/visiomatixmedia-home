@@ -50,7 +50,7 @@ All required files are in place and properly configured:
 ### Data Submission:
 
 ```javascript
-POST https://visiomatix.onrender.com/api/contact
+POST https://Visiomatix.onrender.com/api/contact
 Content-Type: application/json
 ```
 
@@ -71,7 +71,7 @@ Content-Type: application/json
 ### Resend Integration:
 
 - Uses Resend API to send emails
-- Recipient: `info@visiomatix.in` (from environment variable)
+- Recipient: `info@Visiomatix.in` (from environment variable)
 - From address: `onboarding@resend.dev` (default) or custom domain if configured
 - Professional HTML email template with all form data
 
@@ -79,7 +79,7 @@ Content-Type: application/json
 
 ```bash
 RESEND_API_KEY=your_resend_api_key
-CONTACT_EMAIL=info@visiomatix.in
+CONTACT_EMAIL=info@Visiomatix.in
 RESEND_FROM_EMAIL=noreply@yourdomain.com  # Optional
 ```
 
@@ -149,7 +149,7 @@ After deployment:
 1. Navigate to the contact page on your website
 2. Fill out the form with test data
 3. Submit the form
-4. Check your email (info@visiomatix.in) for the received message
+4. Check your email (info@Visiomatix.in) for the received message
 
 ---
 
@@ -159,7 +159,7 @@ When the form is successfully submitted, you'll receive an email like:
 
 ```
 From: Test User <test@example.com>
-To: info@visiomatix.in
+To: info@Visiomatix.in
 Subject: New Lead from Test User – Visiomatix Media
 Reply-To: test@example.com
 
@@ -247,7 +247,7 @@ The API returns proper error responses:
 
 ## 🎯 Conclusion
 
-**The contact form implementation is complete and ready to use.** The frontend is correctly configured to send data to the backend, and the backend is set up to receive it, validate it, and send emails via Resend to info@visiomatix.in.
+**The contact form implementation is complete and ready to use.** The frontend is correctly configured to send data to the backend, and the backend is set up to receive it, validate it, and send emails via Resend to info@Visiomatix.in.
 
 **Action Required:** Push the code to Render and ensure environment variables are set.
 
@@ -256,7 +256,7 @@ Once deployed, the complete flow will be:
 1. User fills contact form on website
 2. Frontend validates and sends POST request to `/api/contact`
 3. Backend receives data, validates, and sends email via Resend
-4. Email arrives at info@visiomatix.in with all form details
+4. Email arrives at info@Visiomatix.in with all form details
 5. Frontend shows success message to user
 
 ---

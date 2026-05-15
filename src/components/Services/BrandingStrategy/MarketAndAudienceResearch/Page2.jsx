@@ -48,20 +48,27 @@ const slideLeft = {
 
 // Benefit component
 const Benefit = ({ img, title, text }) => (
-  <motion.div className='e-commerce-services-benefits-div' variants={fadeUp}
+  <motion.div
+    className="e-commerce-services-benefits-div"
+    variants={fadeUp}
     whileHover={{
       y: -8,
       scale: 1.03,
       boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 }
-    }}>
+      transition: { type: "spring", stiffness: 260 },
+    }}
+  >
     <motion.img
       src={img}
       alt={title}
       initial={{ scale: 0.5, opacity: 0 }}
       whileInView={{ scale: 1, opacity: 1 }}
       transition={{ duration: 0.6 }}
-      whileHover={{ rotate: [0, -6, 6, 0], scale: 1.15, transition: { duration: 0.4 } }}
+      whileHover={{
+        rotate: [0, -6, 6, 0],
+        scale: 1.15,
+        transition: { duration: 0.4 },
+      }}
     />
     <h3 className="benefit-title">{title}</h3>
     <p className="benefit-text">{text}</p>

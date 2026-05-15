@@ -1,4 +1,4 @@
-# 🚀 IMMEDIATE ACTION PLAN - SEO SUBMISSION
+# 🚀 IMMediaTE ACTION PLAN - SEO SUBMISSION
 
 **Priority:** 🔴 CRITICAL  
 **Time Required:** 30-60 minutes  
@@ -30,7 +30,7 @@ Your website now has professional SEO implementation:
 1. **Go to:** https://search.google.com/search-console
 2. **Click:** "Start now" or sign in
 3. **Add property:**
-   - Enter: `https://visiomatix.onrender.com`
+   - Enter: `https://Visiomatix.onrender.com`
    - Click: "Continue"
 4. **Verify ownership** (choose one method):
    - ✅ **Best:** HTML file upload → Download → Upload to /public folder
@@ -38,11 +38,11 @@ Your website now has professional SEO implementation:
    - Alternative: Google Analytics (if already connected)
 5. **Submit sitemap:**
    - Click: "Sitemaps" menu
-   - Enter: `https://visiomatix.onrender.com/sitemap.xml`
+   - Enter: `https://Visiomatix.onrender.com/sitemap.xml`
    - Click: "Submit"
 6. **Request indexing:**
    - Click: "URL inspection"
-   - Enter: `https://visiomatix.onrender.com/`
+   - Enter: `https://Visiomatix.onrender.com/`
    - Click: "Request indexing"
 
 ✅ **Result:** Google will start crawling your site today
@@ -56,7 +56,7 @@ Your website now has professional SEO implementation:
 1. **Go to:** https://www.bing.com/webmasters/
 2. **Sign in** with your Microsoft account (create if needed)
 3. **Add site:**
-   - Enter: `https://visiomatix.onrender.com`
+   - Enter: `https://Visiomatix.onrender.com`
    - Click: "Add"
 4. **Verify domain** (choose method):
    - ✅ Best: Add DNS record (if you have access)
@@ -64,7 +64,7 @@ Your website now has professional SEO implementation:
    - Alternative: Robot.txt
 5. **Submit sitemap:**
    - Go to: "Sitemaps"
-   - Add: `https://visiomatix.onrender.com/sitemap.xml`
+   - Add: `https://Visiomatix.onrender.com/sitemap.xml`
 
 ✅ **Result:** Bing will also crawl your site
 
@@ -75,7 +75,7 @@ Your website now has professional SEO implementation:
 **Time:** 10 minutes | **Impact:** 🟡 Important
 
 1. **Go to:** https://analytics.google.com
-2. **Create account** for: visiomatix.onrender.com
+2. **Create account** for: Visiomatix.onrender.com
 3. **Get tracking code**
 4. **Add to index.html** (before closing `</head>` tag)
 5. **Enable Search Console integration**

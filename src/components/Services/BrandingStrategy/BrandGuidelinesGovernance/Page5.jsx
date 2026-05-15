@@ -32,60 +32,66 @@ const logos = [
   be,
   ball,
   reddit,
-  quora
+  quora,
 ];
 
 const Page5 = () => {
   return (
-
     <main className="bss5">
-
       <section className="blue-title-bss5">
-
         <h1>
           Brand Guidelines & Governance Solutions
           <div>Strategic Brand Governance Systems</div>
         </h1>
-
       </section>
 
       <section className="slider-bss5">
-
         <div className="slider-track-bss5">
-
-        {[...logos, ...logos].map((img, index) => (
-  <motion.img
-    src={img}
-    alt="logo"
-    key={index}
-    whileHover={{ scale: 1.15, filter: "brightness(1.15) drop-shadow(0 0 10px rgba(0,200,255,0.5))", transition: { duration: 0.3 } }}
-  />
-))}
-
+          {[...logos, ...logos].map((img, index) => (
+            <motion.img
+              src={img}
+              alt="logo"
+              key={index}
+              whileHover={{
+                scale: 1.15,
+                filter:
+                  "brightness(1.15) drop-shadow(0 0 10px rgba(0,200,255,0.5))",
+                transition: { duration: 0.3 },
+              }}
+            />
+          ))}
         </div>
-
       </section>
 
       <section className="para-bss5">
-
         <p>
-         At Visiomatix Media, our Brand Guidelines & Governance solutions are designed to maintain consistency across complex brand ecosystems and market touchpoints. We develop structured governance frameworks aligned with business vision, communication standards, and operational workflows ensuring clarity, control, and scalability across digital and organizational channels.
-         We specialize in delivering comprehensive guideline systems, including brand usage manuals, tone-of-voice standards, visual compliance rules, governance protocols, and multi-channel execution frameworks. Every system is crafted for consistency, accuracy, and long-term brand protection helping businesses safeguard brand equity, maintain credibility, and ensure professional execution across markets.
+          At Visiomatix Media, our Brand Guidelines & Governance solutions are
+          designed to maintain consistency across complex brand ecosystems and
+          market touchpoints. We develop structured governance frameworks
+          aligned with business vision, communication standards, and operational
+          workflows ensuring clarity, control, and scalability across digital
+          and organizational channels. We specialize in delivering comprehensive
+          guideline systems, including brand usage manuals, tone-of-voice
+          standards, visual compliance rules, governance protocols, and
+          multi-channel execution frameworks. Every system is crafted for
+          consistency, accuracy, and long-term brand protection helping
+          businesses safeguard brand equity, maintain credibility, and ensure
+          professional execution across markets.
         </p>
 
-       <motion.button
-  whileHover={{ scale: 1.07, boxShadow: "0 0 24px rgba(0,200,255,0.45)" }}
-  whileTap={{ scale: 0.93 }}
->
-  <NavLink to="/contact" className="nav-avoid-blue">
-    Book Your Free Strategy Call
-  </NavLink>
-</motion.button>
-
+        <motion.button
+          whileHover={{
+            scale: 1.07,
+            boxShadow: "0 0 24px rgba(0,200,255,0.45)",
+          }}
+          whileTap={{ scale: 0.93 }}
+        >
+          <NavLink to="/contact" className="nav-avoid-blue">
+            Book Your Free Strategy Call
+          </NavLink>
+        </motion.button>
       </section>
-
     </main>
-
   );
 };
 

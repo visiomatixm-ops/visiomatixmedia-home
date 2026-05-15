@@ -50,7 +50,6 @@ const Page2 = () => {
   return (
     <div>
       <section className="digital-marketing-services-2-2">
-
         <motion.div
           className="benefites-2"
           variants={fadeDown}
@@ -78,31 +77,47 @@ const Page2 = () => {
           whileInView="visible"
           viewport={{ once: false, amount: 0.2 }}
         >
-
           <div className="column-2 custom-border-2 right-pad-30">
-            <Benefit img={frame1} title="Intelligent System Monitoring"
-              text="We proactively monitor performance, detect vulnerabilities early, and ensure uninterrupted platform operations with zero compromise on stability." />
+            <Benefit
+              img={frame1}
+              title="Intelligent System Monitoring"
+              text="We proactively monitor performance, detect vulnerabilities early, and ensure uninterrupted platform operations with zero compromise on stability."
+            />
 
-            <Benefit img={frame2} title="Priority Issue Resolution"
-              text="Our structured support model ensures rapid diagnosis, efficient troubleshooting, and minimal downtime to safeguard business continuity." />
+            <Benefit
+              img={frame2}
+              title="Priority Issue Resolution"
+              text="Our structured support model ensures rapid diagnosis, efficient troubleshooting, and minimal downtime to safeguard business continuity."
+            />
           </div>
 
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
-            <Benefit img={frame3} title="Advanced Updates & Security Reinforcement"
-              text="Strategic updates, critical patches, and enhanced security layers keep your systems protected, optimized, and aligned with evolving digital standards." />
+            <Benefit
+              img={frame3}
+              title="Advanced Updates & Security Reinforcement"
+              text="Strategic updates, critical patches, and enhanced security layers keep your systems protected, optimized, and aligned with evolving digital standards."
+            />
 
-            <Benefit img={frame4} title="Adaptive & Scalable Support Structure"
-              text="As your operations expand, our maintenance ecosystem evolves ensuring long-term reliability, resilience, and seamless scalability." />
+            <Benefit
+              img={frame4}
+              title="Adaptive & Scalable Support Structure"
+              text="As your operations expand, our maintenance ecosystem evolves ensuring long-term reliability, resilience, and seamless scalability."
+            />
           </div>
 
           <div className="column-2 left-pad-50 right-pad-30">
-            <Benefit img={frame5} title="Performance Enhancement & Stability Engineering"
-              text="We fine tune infrastructure, improve system speed, and strengthen stability to deliver consistent performance under real world demand." />
+            <Benefit
+              img={frame5}
+              title="Performance Enhancement & Stability Engineering"
+              text="We fine tune infrastructure, improve system speed, and strengthen stability to deliver consistent performance under real world demand."
+            />
 
-            <Benefit img={frame6} title="Continuous Optimization & Strategic Improvements"
-              text="Beyond routine support, we introduce proactive enhancements and performance refinements to keep your digital ecosystem competitive and future ready." />
+            <Benefit
+              img={frame6}
+              title="Continuous Optimization & Strategic Improvements"
+              text="Beyond routine support, we introduce proactive enhancements and performance refinements to keep your digital ecosystem competitive and future ready."
+            />
           </div>
-
         </motion.div>
 
         <motion.div
@@ -127,27 +142,34 @@ const Page2 = () => {
 
           <motion.ul variants={containerVariant}>
             <motion.li className="second-text" variants={fadeUp}>
-              Proactive System Monitoring continuous performance tracking and health assessments to prevent disruptions and ensure operational stability.
+              Proactive System Monitoring continuous performance tracking and
+              health assessments to prevent disruptions and ensure operational
+              stability.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Timely Updates & Security Management Regular patches, upgrades, and vulnerability management to protect your platform from emerging threats.
+              Timely Updates & Security Management Regular patches, upgrades,
+              and vulnerability management to protect your platform from
+              emerging threats.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Performance Optimization & Efficiency Ongoing refinements to improve speed, responsiveness, and overall system reliability.
+              Performance Optimization & Efficiency Ongoing refinements to
+              improve speed, responsiveness, and overall system reliability.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Rapid Issue Resolution & Technical Support Structured support mechanisms to resolve issues quickly and minimize downtime.
+              Rapid Issue Resolution & Technical Support Structured support
+              mechanisms to resolve issues quickly and minimize downtime.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Long-Term Stability & Scalability Maintenance frameworks designed to support growth, ensure resilience, and sustain digital performance over time.
+              Long-Term Stability & Scalability Maintenance frameworks designed
+              to support growth, ensure resilience, and sustain digital
+              performance over time.
             </motion.li>
           </motion.ul>
         </motion.div>
-
       </section>
     </div>
   );
@@ -155,13 +177,16 @@ const Page2 = () => {
 
 // 🔥 SAME Benefit component (consistent across all pages now)
 const Benefit = ({ img, title, text }) => (
-  <motion.div className='e-commerce-services-benefits-div' variants={fadeUp}
+  <motion.div
+    className="e-commerce-services-benefits-div"
+    variants={fadeUp}
     whileHover={{
       y: -8,
       scale: 1.03,
       boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 }
-    }}>
+      transition: { type: "spring", stiffness: 260 },
+    }}
+  >
     <motion.img
       src={img}
       alt="Icon"
@@ -169,7 +194,11 @@ const Benefit = ({ img, title, text }) => (
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: false }}
-      whileHover={{ rotate: [0, -6, 6, 0], scale: 1.15, transition: { duration: 0.4 } }}
+      whileHover={{
+        rotate: [0, -6, 6, 0],
+        scale: 1.15,
+        transition: { duration: 0.4 },
+      }}
     />
     <h3 className="benefit-title">{title}</h3>
     <p className="benefit-text">{text}</p>

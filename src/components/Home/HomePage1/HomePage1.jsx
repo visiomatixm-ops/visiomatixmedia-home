@@ -24,32 +24,44 @@ import {
 
 /* ── hero section entrance (page-load, not scroll) ── */
 const heroSectionEntrance = {
-  hidden:  {},
+  hidden: {},
   visible: {
     transition: { staggerChildren: 0.18, delayChildren: 0.1 },
   },
 };
 
 const heroChild = {
-  hidden:  { opacity: 0, y: 55 },
+  hidden: { opacity: 0, y: 55 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.85, ease: EASE } },
 };
 
 /* ── slide content — plays every slide change ── */
 const contentSlide = {
-  initial:  { opacity: 0, x: -70, filter: "blur(6px)" },
-  animate:  { opacity: 1, x: 0,   filter: "blur(0px)",
-              transition: { duration: 0.7, ease: EASE } },
-  exit:     { opacity: 0, x: 30, filter: "blur(4px)",
-              transition: { duration: 0.3, ease: EASE } },
+  initial: { opacity: 0, x: -70, filter: "blur(6px)" },
+  animate: {
+    opacity: 1,
+    x: 0,
+    filter: "blur(0px)",
+    transition: { duration: 0.7, ease: EASE },
+  },
+  exit: {
+    opacity: 0,
+    x: 30,
+    filter: "blur(4px)",
+    transition: { duration: 0.3, ease: EASE },
+  },
 };
 
 const imageSlide = {
-  initial:  { opacity: 0, scale: 0.72, x: 80, rotate: 4 },
-  animate:  { opacity: 1, scale: 1,    x: 0,  rotate: 0,
-              transition: { duration: 0.85, ease: EASE } },
-  exit:     { opacity: 0, scale: 0.85, x: -40,
-              transition: { duration: 0.3 } },
+  initial: { opacity: 0, scale: 0.72, x: 80, rotate: 4 },
+  animate: {
+    opacity: 1,
+    scale: 1,
+    x: 0,
+    rotate: 0,
+    transition: { duration: 0.85, ease: EASE },
+  },
+  exit: { opacity: 0, scale: 0.85, x: -40, transition: { duration: 0.3 } },
 };
 
 const HomePage1 = () => {

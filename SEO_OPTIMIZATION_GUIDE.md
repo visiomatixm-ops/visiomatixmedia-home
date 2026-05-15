@@ -124,9 +124,9 @@ This document outlines the SEO optimizations implemented for the Visiomatix Medi
 #### Google Search Console
 
 1. Go to https://search.google.com/search-console
-2. Add property: https://visiomatix.onrender.com
+2. Add property: https://Visiomatix.onrender.com
 3. Verify ownership (choose from multiple methods)
-4. Submit sitemap: https://visiomatix.onrender.com/sitemap.xml
+4. Submit sitemap: https://Visiomatix.onrender.com/sitemap.xml
 5. Request indexing for main pages
 6. Monitor performance in Search Console dashboard
 
@@ -134,9 +134,9 @@ This document outlines the SEO optimizations implemented for the Visiomatix Medi
 
 1. Go to https://www.bing.com/webmasters/tools
 2. Sign in with account
-3. Add new site: https://visiomatix.onrender.com
+3. Add new site: https://Visiomatix.onrender.com
 4. Verify ownership
-5. Submit sitemap: https://visiomatix.onrender.com/sitemap.xml
+5. Submit sitemap: https://Visiomatix.onrender.com/sitemap.xml
 6. Monitor in Bing Webmaster Tools dashboard
 
 #### Yandex (for Russian/Eastern European markets)
@@ -296,5 +296,5 @@ For questions about SEO implementation, refer to:
 ---
 
 **Last Updated:** March 13, 2026
-**Domain:** https://visiomatix.onrender.com
+**Domain:** https://Visiomatix.onrender.com
 **Status:** Active

@@ -10,16 +10,7 @@ import img6 from "../../../../assets/Pay_Per_Click/icon/AzAds.png";
 import img7 from "../../../../assets/Pay_Per_Click/icon/XAds.png";
 import { NavLink } from "react-router-dom";
 
-
-const logos = [
-  img1,
-  img2,
-  img3,
-  img4,
-  img5,
-  img6,
-  img7
-];
+const logos = [img1, img2, img3, img4, img5, img6, img7];
 
 const Service3_5 = () => {
   return (
@@ -53,7 +44,11 @@ const Service3_5 = () => {
           into measurable growth while protecting long term brand value.
         </p>
 
-                              <button><NavLink to='/contact' className="nav-avoid-blue">Book Your Free Strategy Call</NavLink></button>
+        <button>
+          <NavLink to="/contact" className="nav-avoid-blue">
+            Book Your Free Strategy Call
+          </NavLink>
+        </button>
       </section>
     </main>
   );

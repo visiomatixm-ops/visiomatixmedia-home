@@ -12,17 +12,8 @@ import dot from "../../../../assets/backend-api-development/icon/image5.png";
 import hrm from "../../../../assets/backend-api-development/icon/image6.png";
 import cam from "../../../../assets/backend-api-development/icon/image7.png";
 
-
 const Page5 = () => {
-  const logos = [
-    erp,
-    crm,
-    bpm,
-    abc,
-    dot,
-    hrm,
-    cam,
-  ];
+  const logos = [erp, crm, bpm, abc, dot, hrm, cam];
 
   return (
     <main className="bss5">

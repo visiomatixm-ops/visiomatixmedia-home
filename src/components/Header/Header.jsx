@@ -76,10 +76,7 @@ const Header = () => {
               About
             </NavLink>
 
-            <div
-              className="nav-dropdown"
-              ref={desktopDropdownRef}
-            >
+            <div className="nav-dropdown" ref={desktopDropdownRef}>
               <span
                 className={`nav-link dropdown-toggle ${desktopServicesOpen || isServiceActive ? "active" : ""}`}
                 onClick={() => setDesktopServicesOpen((prev) => !prev)}

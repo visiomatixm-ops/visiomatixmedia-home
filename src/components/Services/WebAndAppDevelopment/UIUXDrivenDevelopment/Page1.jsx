@@ -8,7 +8,6 @@ const Page1 = () => {
     <div className="service_1_root">
       <main className="hero-box-service1">
         <div className="title-box-service1">
-
           <motion.h1
             className="title2-service1"
             initial={{ opacity: 0, y: -60 }}
@@ -26,7 +25,8 @@ const Page1 = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: false, amount: 0.3 }}
           >
-            UI–UX Centered Development Solutions. Optimized for Performance and Growth.
+            UI–UX Centered Development Solutions. Optimized for Performance and
+            Growth.
           </motion.p>
 
           <motion.p
@@ -36,20 +36,18 @@ const Page1 = () => {
             transition={{ duration: 0.9 }}
             viewport={{ once: false, amount: 0.3 }}
           >
-            At Visiomatix Media, UI–UX driven development begins with experience,
-            not code. We design and build digital interfaces where usability,
-            interaction flow, and visual clarity work together to create
-            scalable, high-performance digital products across web and app
-            platforms. Our approach combines human-centered design, structured
-            development, and performance optimization crafted for brands that
-            demand consistency, scalability, and measurable experience-led
-            impact.
+            At Visiomatix Media, UI–UX driven development begins with
+            experience, not code. We design and build digital interfaces where
+            usability, interaction flow, and visual clarity work together to
+            create scalable, high-performance digital products across web and
+            app platforms. Our approach combines human-centered design,
+            structured development, and performance optimization crafted for
+            brands that demand consistency, scalability, and measurable
+            experience-led impact.
           </motion.p>
-
         </div>
 
         <div className="logo-box2-service1">
-
           <motion.img
             src={uiux}
             alt="UI UX Development"
@@ -60,7 +58,6 @@ const Page1 = () => {
           />
 
           <div>
-
             <motion.div
               className="social-media-service1"
               initial={{ opacity: 0, x: -120 }}
@@ -75,7 +72,6 @@ const Page1 = () => {
             </motion.div>
 
             <div className="content-box-service1">
-
               <motion.div
                 className="content-service1"
                 initial={{ opacity: 0, y: 60 }}
@@ -118,16 +114,15 @@ const Page1 = () => {
                 viewport={{ once: false, amount: 0.3 }}
               >
                 <h2>
-                  <span>03.</span> Validation, Optimization & Experience Scalability
+                  <span>03.</span> Validation, Optimization & Experience
+                  Scalability
                 </h2>
                 <p>
                   We refine and strengthen experiences through usability
-                  testing, performance optimization, and scalable design
-                  systems ensuring reliability, consistency, and long-term
-                  value.
+                  testing, performance optimization, and scalable design systems
+                  ensuring reliability, consistency, and long-term value.
                 </p>
               </motion.div>
-
             </div>
 
             <motion.p
@@ -142,10 +137,9 @@ const Page1 = () => {
               perform consistently, and support long-term business outcomes. By
               combining user centered design thinking, refined execution, and
               performance focused development, we help brands create reliable
-              digital products, elevate user engagement, and turn design
-              quality into lasting digital value.
+              digital products, elevate user engagement, and turn design quality
+              into lasting digital value.
             </motion.p>
-
           </div>
         </div>
       </main>

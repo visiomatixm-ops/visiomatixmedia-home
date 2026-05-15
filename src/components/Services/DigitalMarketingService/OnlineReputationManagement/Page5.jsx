@@ -36,7 +36,7 @@ const Service3_5 = () => {
           Reputation Management platforms, carefully prioritizing and optimizing
           each touchpoint based on your brand objectives, industry environment,
           and audience perception. From search results and review platforms to
-          social channels, media mentions, and community discussions, we design
+          social channels, Media mentions, and community discussions, we design
           platform specific ORM strategies focused on credibility, visibility
           control, and trust reinforcement. Through disciplined execution, real
           time sentiment monitoring, and continuous reputation optimization, we
@@ -45,7 +45,11 @@ const Service3_5 = () => {
           protecting credibility across all digital touchpoints.
         </p>
 
-                              <button><NavLink to='/contact' className="nav-avoid-blue">Book Your Free Strategy Call</NavLink></button>
+        <button>
+          <NavLink to="/contact" className="nav-avoid-blue">
+            Book Your Free Strategy Call
+          </NavLink>
+        </button>
       </section>
     </main>
   );

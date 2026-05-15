@@ -129,37 +129,44 @@ const Page2 = () => {
           viewport={{ once: false, amount: 0.3 }}
         >
           <p className="second-text">
-            HRMS solutions at Visiomatix Media go beyond basic HR management we develop scalable, secure, and high performance HRMS platforms that drive long term workforce efficiency and organizational growth. Our strategic, performance driven HRMS approach ensures every solution aligns with business objectives, enhances employee experience, streamlines HR operations, and delivers measurable impact.
-            <br /><br />
+            HRMS solutions at Visiomatix Media go beyond basic HR management we
+            develop scalable, secure, and high performance HRMS platforms that
+            drive long term workforce efficiency and organizational growth. Our
+            strategic, performance driven HRMS approach ensures every solution
+            aligns with business objectives, enhances employee experience,
+            streamlines HR operations, and delivers measurable impact.
+            <br />
+            <br />
             <span className="second-text">Key Highlights</span>
           </p>
 
-          <motion.ul style={{width:'100%'}} variants={containerVariant}>
-
+          <motion.ul style={{ width: "100%" }} variants={containerVariant}>
             <motion.li className="second-text" variants={fadeUp}>
-              Strategic HR Architecture Future ready HR systems aligned with business goals, employee behavior, and scalability.
+              Strategic HR Architecture Future ready HR systems aligned with
+              business goals, employee behavior, and scalability.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Performance Driven Development Focused on efficiency and measurable HR outcomes to deliver optimized performance.
+              Performance Driven Development Focused on efficiency and
+              measurable HR outcomes to deliver optimized performance.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Consistent Systems & Standards Standardized frameworks and HR practices ensure consistency, maintainability, and compliance.
+              Consistent Systems & Standards Standardized frameworks and HR
+              practices ensure consistency, maintainability, and compliance.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              High Impact HR Functionality & Experience Comprehensive HR tools and employee friendly interface that enhance usability.
+              High Impact HR Functionality & Experience Comprehensive HR tools
+              and employee friendly interface that enhance usability.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Security, Stability & Data Credibility Secure data handling and reliable system performance ensure trust and long term stability.
+              Security, Stability & Data Credibility Secure data handling and
+              reliable system performance ensure trust and long term stability.
             </motion.li>
-
           </motion.ul>
-
         </motion.div>
-
       </section>
     </div>
   );
@@ -169,13 +176,13 @@ const Benefit = ({ img, title, text }) => (
   <motion.div
     className="e-commerce-services-benefits-div"
     variants={fadeUp}
-  
     whileHover={{
       y: -8,
       scale: 1.03,
       boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 }
-    }}>
+      transition: { type: "spring", stiffness: 260 },
+    }}
+  >
     <motion.img
       src={img}
       alt=""
@@ -183,7 +190,11 @@ const Benefit = ({ img, title, text }) => (
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: false }}
-      whileHover={{ rotate: [0, -6, 6, 0], scale: 1.15, transition: { duration: 0.4 } }}
+      whileHover={{
+        rotate: [0, -6, 6, 0],
+        scale: 1.15,
+        transition: { duration: 0.4 },
+      }}
     />
     <h3 className="benefit-title">{title}</h3>
     <p className="benefit-text">{text}</p>

@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion'
+﻿import { motion } from "framer-motion";
 import React from "react";
 
 import "../../page2.css";
@@ -14,13 +14,33 @@ const Page2 = () => {
   return (
     <div>
       <section className="digital-marketing-services-2-2">
-        <motion.div className="benefites-2" initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.3 }} transition={{ duration: 0.7 }}>BENEFITS</motion.div>
+        <motion.div
+          className="benefites-2"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.7 }}
+        >
+          BENEFITS
+        </motion.div>
 
-        <motion.div className="sub-title-2" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.3 }} transition={{ duration: 0.7, delay: 0.15 }}>
+        <motion.div
+          className="sub-title-2"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.7, delay: 0.15 }}
+        >
           Enterprise & Internal Systems Strategic Business Advantages
         </motion.div>
 
-        <motion.div className="benefites-containr-2" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 0.75, delay: 0.2 }}>
+        <motion.div
+          className="benefites-containr-2"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.2 }}
+          transition={{ duration: 0.75, delay: 0.2 }}
+        >
           <div className="column-2 custom-border-2 right-pad-30">
             <div>
               <img src={frame1} alt="Icon" />
@@ -100,7 +120,13 @@ const Page2 = () => {
           </div>
         </motion.div>
 
-        <motion.div className="second-container-2" initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false, amount: 0.3 }} transition={{ duration: 0.75, delay: 0.25 }}>
+        <motion.div
+          className="second-container-2"
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.75, delay: 0.25 }}
+        >
           <p className="second-text">
             Enterprise & Internal Systems at Visiomatix Media go beyond
             operational tools — we build scalable, secure, and high-performance
@@ -148,4 +174,3 @@ const Page2 = () => {
 };
 
 export default Page2;
-

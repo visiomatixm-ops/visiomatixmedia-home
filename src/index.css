@@ -22,7 +22,6 @@
   font-weight: 700;
   font-style: normal;
 } */
- 
 
 @font-face {
   font-family: "decalotype-light";
@@ -42,29 +41,29 @@
 }
 
 @font-face {
-  font-family: 'decalotype-semibold';
-  src: url('./assets/fonts/decalotype.semibold.ttf');
+  font-family: "decalotype-semibold";
+  src: url("./assets/fonts/decalotype.semibold.ttf");
 }
 
 @font-face {
-  font-family: 'Commissioner-ExtraLight';
-  src: url('./assets/fonts/Commissioner-ExtraLight.ttf');
+  font-family: "Commissioner-ExtraLight";
+  src: url("./assets/fonts/Commissioner-ExtraLight.ttf");
 }
 @font-face {
-  font-family: 'Commissioner-Light';
-  src: url('./assets/fonts/Commissioner-Light.ttf');
+  font-family: "Commissioner-Light";
+  src: url("./assets/fonts/Commissioner-Light.ttf");
 }
 @font-face {
-  font-family: 'Commissioner-Medium';
-  src: url('./assets/fonts/Commissioner-Medium.ttf');
+  font-family: "Commissioner-Medium";
+  src: url("./assets/fonts/Commissioner-Medium.ttf");
 }
 @font-face {
-  font-family: 'Commissioner-Regular';
-  src: url('./assets/fonts/Commissioner-Regular.ttf');
+  font-family: "Commissioner-Regular";
+  src: url("./assets/fonts/Commissioner-Regular.ttf");
 }
 @font-face {
-  font-family: 'Commissioner-SemiBold';
-  src: url('./assets/fonts/Commissioner-SemiBold.ttf');
+  font-family: "Commissioner-SemiBold";
+  src: url("./assets/fonts/Commissioner-SemiBold.ttf");
 }
 
 /* ===============================
@@ -93,13 +92,7 @@ body {
   background-color: #ffffff;
   color: #111111;
   line-height: 1.5;
-  background: linear-gradient(
-    90deg,
-    #000103,
-    #000814,
-    #01112c,
-    #00307c
-  );
+  background: linear-gradient(90deg, #000103, #000814, #01112c, #00307c);
 }
 
 /* Typography defaults */
@@ -159,8 +152,12 @@ html {
 }
 /* ── Shimmer gradient — animated background sweep ── */
 @keyframes shimmer-sweep {
-  0%   { background-position: 200% center; }
-  100% { background-position: -200% center; }
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
 }
 
 .shimmer-text {
@@ -181,7 +178,8 @@ html {
 
 /* ── Gradient text pulse ── */
 @keyframes gradient-pulse {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0% 50%;
   }
   50% {
@@ -191,8 +189,13 @@ html {
 
 /* ── Gentle floating ── */
 @keyframes float-gentle {
-  0%, 100% { transform: translateY(0px); }
-  50%       { transform: translateY(-12px); }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
 }
 
 .float-anim {
@@ -202,8 +205,12 @@ html {
 
 /* ── Slow rotate ── */
 @keyframes spin-slow {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .spin-slow {
@@ -213,8 +220,13 @@ html {
 
 /* ── Glow pulse ── */
 @keyframes glow-pulse {
-  0%, 100% { box-shadow: 0 0 0px rgba(0, 200, 255, 0); }
-  50%       { box-shadow: 0 0 28px rgba(0, 200, 255, 0.5); }
+  0%,
+  100% {
+    box-shadow: 0 0 0px rgba(0, 200, 255, 0);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(0, 200, 255, 0.5);
+  }
 }
 
 .glow-btn {
@@ -223,14 +235,26 @@ html {
 
 /* ── Draw-in line ── */
 @keyframes draw-line {
-  from { transform: scaleX(0); opacity: 0; }
-  to   { transform: scaleX(1); opacity: 1; }
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
 }
 
 /* ── Fade-up on load ── */
 @keyframes fade-up-load {
-  from { opacity: 0; transform: translateY(50px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .fade-up-anim {
@@ -239,16 +263,31 @@ html {
 
 /* ── Blink cursor (for text effects) ── */
 @keyframes blink-cursor {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 /* ── Stagger delay utilities ── */
-.anim-delay-1 { animation-delay: 0.1s !important; }
-.anim-delay-2 { animation-delay: 0.2s !important; }
-.anim-delay-3 { animation-delay: 0.3s !important; }
-.anim-delay-4 { animation-delay: 0.4s !important; }
-.anim-delay-5 { animation-delay: 0.5s !important; }
+.anim-delay-1 {
+  animation-delay: 0.1s !important;
+}
+.anim-delay-2 {
+  animation-delay: 0.2s !important;
+}
+.anim-delay-3 {
+  animation-delay: 0.3s !important;
+}
+.anim-delay-4 {
+  animation-delay: 0.4s !important;
+}
+.anim-delay-5 {
+  animation-delay: 0.5s !important;
+}
 
 /* ── Will-change hints for compositor ── */
 .motion-safe {
@@ -262,7 +301,9 @@ html {
 
 /* ── Smooth image transitions ── */
 img {
-  transition: filter 0.35s ease, transform 0.35s ease;
+  transition:
+    filter 0.35s ease,
+    transform 0.35s ease;
 }
 
 /* ── Reduce motion: respect user preference ── */

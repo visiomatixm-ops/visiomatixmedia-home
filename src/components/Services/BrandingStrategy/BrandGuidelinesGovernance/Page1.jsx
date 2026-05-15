@@ -8,7 +8,6 @@ const Page1 = () => {
     <div className="service_1_root">
       <main className="hero-box-service1">
         <div className="title-box-service1">
-
           <motion.h1
             className="title2-service1"
             initial={{ opacity: 0, y: -60 }}
@@ -26,7 +25,8 @@ const Page1 = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: false, amount: 0.3 }}
           >
-            Brand Guidelines & Governance Built for Consistency, Control & Long-Term Brand Integrity
+            Brand Guidelines & Governance Built for Consistency, Control &
+            Long-Term Brand Integrity
           </motion.p>
 
           <motion.p
@@ -36,13 +36,18 @@ const Page1 = () => {
             transition={{ duration: 0.9 }}
             viewport={{ once: false, amount: 0.3 }}
           >
-            At Visiomatix Media, brand governance is treated as a strategic business safeguard  not just a documentation exercise. We build structured guideline systems that protect brand integrity, ensure consistency, & maintain clarity across every platform & touchpoint.Our research-led & process-driven approach establishes clear usage standards, communication rules, & implementation controls enabling organizations to execute confidently while preserving brand credibility & long-term market strength.
+            At Visiomatix Media, brand governance is treated as a strategic
+            business safeguard not just a documentation exercise. We build
+            structured guideline systems that protect brand integrity, ensure
+            consistency, & maintain clarity across every platform &
+            touchpoint.Our research-led & process-driven approach establishes
+            clear usage standards, communication rules, & implementation
+            controls enabling organizations to execute confidently while
+            preserving brand credibility & long-term market strength.
           </motion.p>
-
         </div>
 
         <div className="logo-box2-service1">
-
           <motion.img
             src={brand}
             alt="Brand Guidelines Governance"
@@ -53,7 +58,6 @@ const Page1 = () => {
           />
 
           <div>
-
             <motion.div
               className="social-media-service1"
               initial={{ opacity: 0, x: -120 }}
@@ -68,7 +72,6 @@ const Page1 = () => {
             </motion.div>
 
             <div className="content-box-service1">
-
               <motion.div
                 className="content-service1"
                 initial={{ opacity: 0, y: 60 }}
@@ -80,7 +83,10 @@ const Page1 = () => {
                   <span>01.</span> Brand Standards & Planning
                 </h2>
                 <p>
-                  We define governance objectives by analyzing brand positioning, communication needs, and workflows. This establishes a structured guideline roadmap focused on clarity, consistency, and long-term protection.
+                  We define governance objectives by analyzing brand
+                  positioning, communication needs, and workflows. This
+                  establishes a structured guideline roadmap focused on clarity,
+                  consistency, and long-term protection.
                 </p>
               </motion.div>
 
@@ -95,7 +101,9 @@ const Page1 = () => {
                   <span>02.</span> Guidelines Development & Implementation
                 </h2>
                 <p>
-                  We develop comprehensive brand guideline documents, usage standards, tone-of-voice rules, and execution protocols engineered for consistency and cross-channel alignment.
+                  We develop comprehensive brand guideline documents, usage
+                  standards, tone-of-voice rules, and execution protocols
+                  engineered for consistency and cross-channel alignment.
                 </p>
               </motion.div>
 
@@ -110,10 +118,12 @@ const Page1 = () => {
                   <span>03.</span> Governance & Compliance
                 </h2>
                 <p>
-                 We implement monitoring systems, quality checks, and governance controls that ensure long-term brand stability, consistent execution, and sustained market credibility as your organization grows
+                  We implement monitoring systems, quality checks, and
+                  governance controls that ensure long-term brand stability,
+                  consistent execution, and sustained market credibility as your
+                  organization grows
                 </p>
               </motion.div>
-
             </div>
 
             <motion.p
@@ -122,11 +132,15 @@ const Page1 = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: false, amount: 0.3 }}
             >
-              With Visiomatix Media, brand governance goes beyond documentation  it establishes structured standards that protect brand integrity and ensure consistent execution across every touchpoint. We develop comprehensive guideline systems that align communication, design, and operations with strategic brand objectives  helping businesses maintain clarity, strengthen credibility, and translate brand standards into sustained market performance.
+              With Visiomatix Media, brand governance goes beyond documentation
+              it establishes structured standards that protect brand integrity
+              and ensure consistent execution across every touchpoint. We
+              develop comprehensive guideline systems that align communication,
+              design, and operations with strategic brand objectives helping
+              businesses maintain clarity, strengthen credibility, and translate
+              brand standards into sustained market performance.
             </motion.p>
-
           </div>
-
         </div>
       </main>
     </div>

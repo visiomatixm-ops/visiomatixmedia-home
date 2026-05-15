@@ -22,7 +22,7 @@ const Page5 = () => {
         </h1>
       </section>
 
-        <section className="slider-bss5">
+      <section className="slider-bss5">
         <div className="slider-track-bss5">
           {[...logos, ...logos].map((img, index) => (
             <img src={img} alt="youtube-thumbnail-video-icon" key={index} />
@@ -46,7 +46,11 @@ const Page5 = () => {
           strengthening long-term channel credibility and trust.
         </p>
 
-                              <button><NavLink to='/contact' className="nav-avoid-blue">Book Your Free Strategy Call</NavLink></button>
+        <button>
+          <NavLink to="/contact" className="nav-avoid-blue">
+            Book Your Free Strategy Call
+          </NavLink>
+        </button>
       </section>
     </main>
   );

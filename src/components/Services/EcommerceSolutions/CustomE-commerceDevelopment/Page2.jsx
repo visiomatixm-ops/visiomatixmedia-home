@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import "../../page2.css";
 import { motion } from "framer-motion";
 
@@ -50,13 +50,12 @@ const Page2 = () => {
   return (
     <>
       <section className="digital-marketing-services-2-2">
-
         <motion.div
           className="benefites-2"
           variants={fadeDown}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once:false, amount:0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           BENEFITS
         </motion.div>
@@ -66,7 +65,7 @@ const Page2 = () => {
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once:false, amount:0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           Benefits of Custom E-commerce Development with Visiomatix Media
         </motion.div>
@@ -76,39 +75,49 @@ const Page2 = () => {
           variants={containerVariant}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once:false, amount:0.2 }}
+          viewport={{ once: false, amount: 0.2 }}
         >
-
           <div className="column-2 custom-border-2 right-pad-30">
+            <Benefit
+              img={frame1}
+              title="Strategic Commerce Architecture"
+              text="Custom-built e-commerce frameworks designed around your brand strategy, product positioning, and customer journey  ensuring alignment between technology, operations, and revenue goals."
+            />
 
-            <Benefit img={frame1} title="Strategic Commerce Architecture"
-              text="Custom-built e-commerce frameworks designed around your brand strategy, product positioning, and customer journey  ensuring alignment between technology, operations, and revenue goals." />
-
-            <Benefit img={frame2} title="Secure & Compliant E-commerce Ecosystems"
-              text="Advanced security protocols, secure payment integrations, and data protection measures ensure safe transactions and regulatory compliance." />
-
+            <Benefit
+              img={frame2}
+              title="Secure & Compliant E-commerce Ecosystems"
+              text="Advanced security protocols, secure payment integrations, and data protection measures ensure safe transactions and regulatory compliance."
+            />
           </div>
 
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
+            <Benefit
+              img={frame6}
+              title="Scalable & Growth-Ready Platforms"
+              text="Flexible, modular e-commerce systems engineered to scale effortlessly as your business expands  supporting new products, markets, and integrations without compromising performance."
+            />
 
-            <Benefit img={frame6} title="Scalable & Growth-Ready Platforms"
-              text="Flexible, modular e-commerce systems engineered to scale effortlessly as your business expands  supporting new products, markets, and integrations without compromising performance." />
-
-            <Benefit img={frame5} title="Seamless Commerce Integrations"
-              text="Smooth integration with CRMs, ERPs, payment gateways, inventory systems, logistics partners, and third-party tools creating a unified digital commerce ecosystem." />
-
+            <Benefit
+              img={frame5}
+              title="Seamless Commerce Integrations"
+              text="Smooth integration with CRMs, ERPs, payment gateways, inventory systems, logistics partners, and third-party tools creating a unified digital commerce ecosystem."
+            />
           </div>
 
           <div className="column-2 left-pad-50 right-pad-30">
+            <Benefit
+              img={frame3}
+              title="High-Performance & Conversion Optimization"
+              text="Platforms optimized for speed, seamless navigation, and frictionless checkout experiences  maximizing engagement, reducing drop-offs, and increasing revenue."
+            />
 
-            <Benefit img={frame3} title="High-Performance & Conversion Optimization"
-              text="Platforms optimized for speed, seamless navigation, and frictionless checkout experiences  maximizing engagement, reducing drop-offs, and increasing revenue." />
-
-            <Benefit img={frame4} title="Operational Automation & Efficiency"
-              text="Automated order processing, inventory management, payment workflows, and reporting systems enhance operational efficiency and minimize manual intervention." />
-
+            <Benefit
+              img={frame4}
+              title="Operational Automation & Efficiency"
+              text="Automated order processing, inventory management, payment workflows, and reporting systems enhance operational efficiency and minimize manual intervention."
+            />
           </div>
-
         </motion.div>
 
         <motion.div
@@ -116,65 +125,81 @@ const Page2 = () => {
           variants={slideLeft}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once:false, amount:0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
         >
-
           <p className="second-text">
-            Custom E-commerce Development at Visiomatix Media goes beyond standard online stores  we architect scalable, secure, and high-performance commerce ecosystems tailored to your brand and growth strategy. Our strategic, performance-driven approach ensures every platform aligns with revenue objectives, enhances customer journeys, optimizes operations, and delivers measurable commercial impact.
-            <br /><br />
+            Custom E-commerce Development at Visiomatix Media goes beyond
+            standard online stores we architect scalable, secure, and
+            high-performance commerce ecosystems tailored to your brand and
+            growth strategy. Our strategic, performance-driven approach ensures
+            every platform aligns with revenue objectives, enhances customer
+            journeys, optimizes operations, and delivers measurable commercial
+            impact.
+            <br />
+            <br />
             <span className="second-text">Key Highlights</span>
           </p>
 
-          <motion.ul style={{ width: '100%' }} variants={containerVariant}>
-
+          <motion.ul style={{ width: "100%" }} variants={containerVariant}>
             <motion.li className="second-text" variants={fadeUp}>
-              Strategic Commerce Architecture Future-ready e-commerce frameworks designed around business goals, customer behavior, and long-term scalability.
+              Strategic Commerce Architecture Future-ready e-commerce frameworks
+              designed around business goals, customer behavior, and long-term
+              scalability.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Performance Optimized Development Engineered for speed, stability, and conversion efficiency ensuring seamless transactions & reliable platform performance.
+              Performance Optimized Development Engineered for speed, stability,
+              and conversion efficiency ensuring seamless transactions &
+              reliable platform performance.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Standardized frameworks and disciplined development practices ensure consistency, maintainability, and enterprise-grade execution.
+              Standardized frameworks and disciplined development practices
+              ensure consistency, maintainability, and enterprise-grade
+              execution.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Conversion Focused User Experience Optimized storefront experiences & intuitive admin workflows that enhance usability, engagement, & operational efficiency.
+              Conversion Focused User Experience Optimized storefront
+              experiences & intuitive admin workflows that enhance usability,
+              engagement, & operational efficiency.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Secure payment integrations, protected customer data, and reliable infrastructure ensure compliance, trust, and long-term platform stability.
+              Secure payment integrations, protected customer data, and reliable
+              infrastructure ensure compliance, trust, and long-term platform
+              stability.
             </motion.li>
-
           </motion.ul>
-
         </motion.div>
-
       </section>
     </>
-  )
+  );
 };
 
 // 🔥 SAME reusable component
 const Benefit = ({ img, title, text }) => (
   <motion.div
-    className='e-commerce-services-benefits-div'
+    className="e-commerce-services-benefits-div"
     variants={fadeUp}
-  
     whileHover={{
       y: -8,
       scale: 1.03,
       boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 }
-    }}>
+      transition: { type: "spring", stiffness: 260 },
+    }}
+  >
     <motion.img
       src={img}
       alt="Icon"
-      initial={{ opacity:0, scale:0.6 }}
-      whileInView={{ opacity:1, scale:1 }}
-      transition={{ duration:0.6, ease:"easeOut" }}
-      whileHover={{ rotate: [0, -6, 6, 0], scale: 1.15, transition: { duration: 0.4 } }}
+      initial={{ opacity: 0, scale: 0.6 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      whileHover={{
+        rotate: [0, -6, 6, 0],
+        scale: 1.15,
+        transition: { duration: 0.4 },
+      }}
     />
     <h3 className="benefit-title">{title}</h3>
     <p className="benefit-text">{text}</p>

@@ -48,13 +48,12 @@ const Service3_2 = () => {
   return (
     <div>
       <section className="digital-marketing-services-2-2">
-
         <motion.div
           className="benefites-2"
           variants={fadeDown}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once:false, amount:0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           BENEFITS
         </motion.div>
@@ -64,7 +63,7 @@ const Service3_2 = () => {
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once:false, amount:0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           Benefits of Online Reputation Management with Visiomatix Media
         </motion.div>
@@ -74,39 +73,49 @@ const Service3_2 = () => {
           variants={containerVariant}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once:false, amount:0.2 }}
+          viewport={{ once: false, amount: 0.2 }}
         >
-
           <div className="column-2 custom-border-2 right-pad-30">
+            <Benefit
+              img={frame1}
+              title="Strategic Reputation Positioning"
+              text="We align ORM initiatives with clear brand objectives, audience sentiment, and platform dynamics ensuring every action strengthens credibility, trust, and market perception."
+            />
 
-            <Benefit img={frame1} title="Strategic Reputation Positioning"
-              text="We align ORM initiatives with clear brand objectives, audience sentiment, and platform dynamics ensuring every action strengthens credibility, trust, and market perception." />
-
-            <Benefit img={frame2} title="Credibility & Authority Building"
-              text="We design structured reputation frameworks that transform customer feedback, reviews, and brand mentions into long-term trust assets supporting sustained brand authority and confidence." />
-
+            <Benefit
+              img={frame2}
+              title="Credibility & Authority Building"
+              text="We design structured reputation frameworks that transform customer feedback, reviews, and brand mentions into long-term trust assets supporting sustained brand authority and confidence."
+            />
           </div>
 
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
+            <Benefit
+              img={frame3}
+              title="Trust Driven Visibility & Influence"
+              text="Our ORM strategies focus on amplifying positive narratives and authoritative signals rather than reactive damage control, helping your brand influence perception across high impact digital channels."
+            />
 
-            <Benefit img={frame3} title="Trust Driven Visibility & Influence"
-              text="Our ORM strategies focus on amplifying positive narratives and authoritative signals rather than reactive damage control, helping your brand influence perception across high impact digital channels." />
-
-            <Benefit img={frame4} title="Data Backed Sentiment Intelligence"
-              text="Every ORM action is guided by real-time monitoring, sentiment analysis, and visibility metrics enabling proactive decision making, faster response, and reputation stability." />
-
+            <Benefit
+              img={frame4}
+              title="Data Backed Sentiment Intelligence"
+              text="Every ORM action is guided by real-time monitoring, sentiment analysis, and visibility metrics enabling proactive decision making, faster response, and reputation stability."
+            />
           </div>
 
           <div className="column-2 left-pad-50 right-pad-30">
+            <Benefit
+              img={frame5}
+              title="CConsistent Brand Narrative Control"
+              text="From reviews and search results to social mentions and Media presence, we maintain message consistency across platforms protecting brand equity and delivering a reliable, trustworthy brand experience."
+            />
 
-            <Benefit img={frame5} title="CConsistent Brand Narrative Control"
-              text="From reviews and search results to social mentions and media presence, we maintain message consistency across platforms protecting brand equity and delivering a reliable, trustworthy brand experience." />
-
-            <Benefit img={frame6} title="Scalable Reputation Protection & Growth"
-              text="Through disciplined monitoring, content optimization, and narrative reinforcement, we ensure reputation growth remains scalable, cost efficient, and resilient over time." />
-
+            <Benefit
+              img={frame6}
+              title="Scalable Reputation Protection & Growth"
+              text="Through disciplined monitoring, content optimization, and narrative reinforcement, we ensure reputation growth remains scalable, cost efficient, and resilient over time."
+            />
           </div>
-
         </motion.div>
 
         <motion.div
@@ -114,7 +123,7 @@ const Service3_2 = () => {
           variants={slideLeft}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once:false, amount:0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           <p className="second-text">
             Online Reputation Management with Visiomatix Media is built for
@@ -134,31 +143,35 @@ const Service3_2 = () => {
           </p>
 
           <motion.ul style={{ width: "100%" }} variants={containerVariant}>
-
             <motion.li className="second-text" variants={fadeUp}>
-              Strategic Reputation Control Proactively shape public perception by targeting high impact platforms with precision and relevance.
+              Strategic Reputation Control Proactively shape public perception
+              by targeting high impact platforms with precision and relevance.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Trust Led Brand Growth Data driven reputation strategies focused on long term credibility, confidence, and brand equity.
+              Trust Led Brand Growth Data driven reputation strategies focused
+              on long term credibility, confidence, and brand equity.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Controlled Brand Narrative Maintain message consistency and brand integrity across reviews, search results, media, and social channels.
+              Controlled Brand Narrative Maintain message consistency and brand
+              integrity across reviews, search results, Media, and social
+              channels.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Positive Signals & Authority Building Convert customer feedback, mentions, and sentiment into measurable trust and reputation strength.
+              Positive Signals & Authority Building Convert customer feedback,
+              mentions, and sentiment into measurable trust and reputation
+              strength.
             </motion.li>
 
             <motion.li className="second-text" variants={fadeUp}>
-              Scalable & Sustainable Reputation Growth Optimize monitoring, response frameworks, and visibility to ensure cost efficient, long term reputation stability.
+              Scalable & Sustainable Reputation Growth Optimize monitoring,
+              response frameworks, and visibility to ensure cost efficient, long
+              term reputation stability.
             </motion.li>
-
           </motion.ul>
-
         </motion.div>
-
       </section>
     </div>
   );
@@ -169,20 +182,24 @@ const Benefit = ({ img, title, text }) => (
   <motion.div
     className="e-commerce-services-benefits-div"
     variants={fadeUp}
-  
     whileHover={{
       y: -8,
       scale: 1.03,
       boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 }
-    }}>
+      transition: { type: "spring", stiffness: 260 },
+    }}
+  >
     <motion.img
       src={img}
       alt="Icon"
-      initial={{ opacity:0, scale:0.6 }}
-      whileInView={{ opacity:1, scale:1 }}
-      transition={{ duration:0.6, ease:"easeOut" }}
-      whileHover={{ rotate: [0, -6, 6, 0], scale: 1.15, transition: { duration: 0.4 } }}
+      initial={{ opacity: 0, scale: 0.6 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      whileHover={{
+        rotate: [0, -6, 6, 0],
+        scale: 1.15,
+        transition: { duration: 0.4 },
+      }}
     />
     <h3 className="benefit-title">{title}</h3>
     <p className="benefit-text">{text}</p>

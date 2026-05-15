@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion'
+﻿import { motion } from "framer-motion";
 import frame1 from "../../../../assets/Post-Production/images/image1.png";
 import frame3 from "../../../../assets/Post-Production/images/image2.png";
 import frame5 from "../../../../assets/Post-Production/images/image3.png";
@@ -11,13 +11,33 @@ const Service3_2 = () => {
   return (
     <div>
       <section className="digital-marketing-services-2-2">
-        <motion.div className="benefites-2" initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.3 }} transition={{ duration: 0.7 }}>BENEFITS</motion.div>
+        <motion.div
+          className="benefites-2"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.7 }}
+        >
+          BENEFITS
+        </motion.div>
 
-        <motion.div className="sub-title-2" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.3 }} transition={{ duration: 0.7, delay: 0.15 }}>
+        <motion.div
+          className="sub-title-2"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.7, delay: 0.15 }}
+        >
           Benefits of Post-Production with Visiomatix Media
         </motion.div>
 
-        <motion.div className="benefites-containr-2" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 0.75, delay: 0.2 }}>
+        <motion.div
+          className="benefites-containr-2"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.2 }}
+          transition={{ duration: 0.75, delay: 0.2 }}
+        >
           <div className="column-2 custom-border-2 right-pad-30">
             <div className="e-commerce-services-benefits-div">
               <img src={frame1} alt="Icon" />
@@ -99,7 +119,13 @@ const Service3_2 = () => {
           </div>
         </motion.div>
 
-        <motion.div className="second-container-2" initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false, amount: 0.3 }} transition={{ duration: 0.75, delay: 0.25 }}>
+        <motion.div
+          className="second-container-2"
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 0.75, delay: 0.25 }}
+        >
           <p className="second-text">
             Post-Production with Visiomatix Media is built for brands that
             demand clarity, consistency, and measurable creative impact. We move
@@ -152,4 +178,3 @@ const Service3_2 = () => {
 };
 
 export default Service3_2;
-

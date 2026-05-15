@@ -16,8 +16,8 @@ const Page3 = () => {
           viewport={{ once: false, amount: 0.3 }}
         >
           <p>
-            A Trusted Maintenance & Support Agency in Nashik<br />{" "} Ensuring
-            Reliability, Performance & Business Continuity
+            A Trusted Maintenance & Support Agency in Nashik
+            <br /> Ensuring Reliability, Performance & Business Continuity
           </p>
           At Visiomatix Media, a trusted Maintenance & Support partner in
           Nashik, we specialize in safeguarding and optimizing digital platforms

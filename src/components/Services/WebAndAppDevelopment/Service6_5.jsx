@@ -20,36 +20,44 @@ import api from "../../../assets/business-software-solutions/icon/Group 235.png"
 import { NavLink } from "react-router-dom";
 
 const logos = [
-  erp, crm, bpm, a, dot, hr, camel,
-  finance, saas, ppt, ecom, ssas, nitro, api
+  erp,
+  crm,
+  bpm,
+  a,
+  dot,
+  hr,
+  camel,
+  finance,
+  saas,
+  ppt,
+  ecom,
+  ssas,
+  nitro,
+  api,
 ];
 
 const Service6_5 = () => {
   return (
     <section className="bss5">
       <div className="bss5-container">
-
         <div className="blue-title-bss5">
-
           <motion.h1
-            initial={{ opacity:0, y:-60 }}
-            whileInView={{ opacity:1, y:0 }}
-            transition={{ duration:0.8 }}
-            viewport={{ once:false, amount:0.3 }}
+            initial={{ opacity: 0, y: -60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: false, amount: 0.3 }}
           >
             Web & App Platforms We Develop
             <span>Strategic Technology Partnerships</span>
           </motion.h1>
-
         </div>
-
 
         <motion.section
           className="slider-bss5"
-          initial={{ opacity:0 }}
-          whileInView={{ opacity:1 }}
-          transition={{ duration:0.8 }}
-          viewport={{ once:false, amount:0.3 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           <div className="slider-track-bss5">
             {[...logos, ...logos].map((img, index) => (
@@ -58,32 +66,39 @@ const Service6_5 = () => {
           </div>
         </motion.section>
 
-
         <motion.div
           className="para-bss5"
-          initial={{ opacity:0, x:-120 }}
-          whileInView={{ opacity:1, x:0 }}
-          transition={{ duration:0.9 }}
-          viewport={{ once:false, amount:0.3 }}
+          initial={{ opacity: 0, x: -120 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.9 }}
+          viewport={{ once: false, amount: 0.3 }}
         >
-
           <p>
-            At Visiomatix Media, our Web & App Development services are engineered to perform seamlessly across a wide range of digital platforms and devices. We build platform specific web and mobile solutions aligned with technical requirements, user behavior, and business objectives ensuring consistency, performance, and scalability wherever your digital product is accessed. We specialize in developing high quality digital solutions for websites, web applications, mobile apps (Android & iOS), e-commerce platforms, admin dashboards, SaaS platforms, and integrated systems. Every solution is optimized for performance, security, responsiveness, and user experience helping businesses maintain a strong, reliable, and professional digital presence across all platforms and devices.
+            At Visiomatix Media, our Web & App Development services are
+            engineered to perform seamlessly across a wide range of digital
+            platforms and devices. We build platform specific web and mobile
+            solutions aligned with technical requirements, user behavior, and
+            business objectives ensuring consistency, performance, and
+            scalability wherever your digital product is accessed. We specialize
+            in developing high quality digital solutions for websites, web
+            applications, mobile apps (Android & iOS), e-commerce platforms,
+            admin dashboards, SaaS platforms, and integrated systems. Every
+            solution is optimized for performance, security, responsiveness, and
+            user experience helping businesses maintain a strong, reliable, and
+            professional digital presence across all platforms and devices.
           </p>
 
           <motion.button
-            initial={{ opacity:0, scale:0.9 }}
-            whileInView={{ opacity:1, scale:1 }}
-            transition={{ duration:0.5 }}
-            viewport={{ once:false, amount:0.3 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: false, amount: 0.3 }}
           >
-            <NavLink to='/contact' className="nav-avoid-blue">
+            <NavLink to="/contact" className="nav-avoid-blue">
               Book Your Free Strategy Call
             </NavLink>
           </motion.button>
-
         </motion.div>
-
       </div>
     </section>
   );

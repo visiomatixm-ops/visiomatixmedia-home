@@ -59,7 +59,7 @@ const Service6_1 = () => {
 
           <div>
             <motion.div
-              className="social-media-service1"
+              className="social-Media-service1"
               initial={{ opacity: 0, x: -120 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}

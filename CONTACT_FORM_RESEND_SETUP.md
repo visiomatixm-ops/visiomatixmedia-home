@@ -2,7 +2,7 @@
 
 ## Overview
 
-The contact form has been successfully configured to send emails to **info@visiomatix.in** using **Resend** as the email service provider.
+The contact form has been successfully configured to send emails to **info@Visiomatix.in** using **Resend** as the email service provider.
 
 ## Files Created/Modified
 
@@ -24,12 +24,12 @@ The contact form has been successfully configured to send emails to **info@visio
 1. **Frontend (Contact Form)**: Located at `src/components/Home/HomePage8/Contact.jsx`
    - Collects user information (name, email, business name, phone, service, message)
    - Validates form data locally
-   - Sends POST request to `https://visiomatix.onrender.com/api/contact`
+   - Sends POST request to `https://Visiomatix.onrender.com/api/contact`
 
 2. **Backend (API Endpoint)**: `/api/contact` (POST)
    - Validates all required fields
    - Validates email and phone number formats
-   - Sends formatted email to info@visiomatix.in via Resend
+   - Sends formatted email to info@Visiomatix.in via Resend
    - Includes reply-to address so you can easily respond to the user
    - Returns success/error response to frontend
 
@@ -50,7 +50,7 @@ Add the following environment variables to your `.env` file in the `Contact-back
 RESEND_API_KEY=your_resend_api_key_here
 
 # Email Configuration
-CONTACT_EMAIL=info@visiomatix.in
+CONTACT_EMAIL=info@Visiomatix.in
 RESEND_FROM_EMAIL=noreply@yourdomain.com  # Optional: defaults to onboarding@resend.dev
 
 # Other existing variables...
@@ -75,7 +75,7 @@ By default, emails are sent from `onboarding@resend.dev` (Resend's test domain).
 **For production**, you should:
 
 1. Verify your own domain with Resend
-2. Set `RESEND_FROM_EMAIL` in your .env to your verified domain email (e.g., `noreply@visiomatix.in`)
+2. Set `RESEND_FROM_EMAIL` in your .env to your verified domain email (e.g., `noreply@Visiomatix.in`)
 
 ## Testing the Integration
 
@@ -89,7 +89,7 @@ By default, emails are sent from `onboarding@resend.dev` (Resend's test domain).
 
 2. Fill out the contact form at the contact page
 3. Submit the form
-4. Check info@visiomatix.in for the received email
+4. Check info@Visiomatix.in for the received email
 
 ## Error Handling
 
@@ -136,4 +136,4 @@ If emails aren't being sent, check:
 
 **Setup Date**: March 16, 2026
 **Integration**: Resend Email Service
-**Recipient**: info@visiomatix.in
+**Recipient**: info@Visiomatix.in

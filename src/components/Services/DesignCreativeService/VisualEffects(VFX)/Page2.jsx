@@ -10,7 +10,13 @@ import "../../page2.css";
 const Page2 = () => {
   return (
     <div>
-      <motion.section className="digital-marketing-services-2-2" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 1 }}>
+      <motion.section
+        className="digital-marketing-services-2-2"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+      >
         <div className="benefites-2">BENEFITS</div>
 
         <div className="sub-title-2">
@@ -20,7 +26,7 @@ const Page2 = () => {
         <div className="benefites-containr-2">
           {/* Column 1 */}
           <div className="column-2 custom-border-2 right-pad-30">
-            <div className='e-commerce-services-benefits-div'>
+            <div className="e-commerce-services-benefits-div">
               <img src={frame1} alt="Icon" />
               <h3 className="benefit-title">
                 Strategic Visual Impact Planning
@@ -32,7 +38,7 @@ const Page2 = () => {
               </p>
             </div>
 
-            <div className='e-commerce-services-benefits-div'>
+            <div className="e-commerce-services-benefits-div">
               <img src={frame2} alt="Icon" />
               <h3 className="benefit-title">
                 Credibility Through Visual Realism & Detail
@@ -47,17 +53,20 @@ const Page2 = () => {
 
           {/* Column 2 */}
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
-            <div className='e-commerce-services-benefits-div'>
+            <div className="e-commerce-services-benefits-div">
               <img src={frame6} alt="Icon" />
               <h3 className="benefit-title">
                 High-Impact Visual Influence & Immersion
               </h3>
               <p className="benefit-text">
-                Our VFX strategies focus on elevating audience immersion and emotional connection rather than surface-level effects, helping content leave a lasting impression across films, ads, and digital platforms.
+                Our VFX strategies focus on elevating audience immersion and
+                emotional connection rather than surface-level effects, helping
+                content leave a lasting impression across films, ads, and
+                digital platforms.
               </p>
             </div>
 
-            <div className='e-commerce-services-benefits-div'>
+            <div className="e-commerce-services-benefits-div">
               <img src={frame5} alt="Icon" />
               <h3 className="benefit-title">
                 Data-Informed Quality & Performance Refinement
@@ -72,7 +81,7 @@ const Page2 = () => {
 
           {/* Column 3 */}
           <div className="column-2 left-pad-50 right-pad-30">
-            <div className='e-commerce-services-benefits-div'>
+            <div className="e-commerce-services-benefits-div">
               <img src={frame3} alt="Icon" />
               <h3 className="benefit-title">
                 Consistent Visual Narrative & Brand Control
@@ -84,7 +93,7 @@ const Page2 = () => {
               </p>
             </div>
 
-            <div className='e-commerce-services-benefits-div'>
+            <div className="e-commerce-services-benefits-div">
               <img src={frame4} alt="Icon" />
               <h3 className="benefit-title">
                 Scalable VFX Execution & Long Term Visual Value

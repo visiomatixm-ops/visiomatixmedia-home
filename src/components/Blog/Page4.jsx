@@ -56,7 +56,6 @@ const Service_4 = () => {
   return (
     <section className="service4-container-blog">
       <div className="service4-content-wrapper-blog">
-
         {/* ── Tag — letter-spacing expand (matches AboutUs2/Page2 tags) ── */}
         <motion.p
           className="service4-tagline-blog"
@@ -151,10 +150,7 @@ const Service_4 = () => {
           viewport={viewport}
         >
           {/* Col 1 — fade left */}
-          <motion.div
-            className="service4-tl-col-blog"
-            variants={fadeLeft}
-          >
+          <motion.div className="service4-tl-col-blog" variants={fadeLeft}>
             <motion.h3
               initial={{ opacity: 0, y: -30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -178,10 +174,7 @@ const Service_4 = () => {
           </motion.div>
 
           {/* Col 2 — fade up */}
-          <motion.div
-            className="service4-tl-col-blog"
-            variants={fadeUp}
-          >
+          <motion.div className="service4-tl-col-blog" variants={fadeUp}>
             <motion.p variants={staggerItem}>
               Beyond insights, our content is structured to guide decision
               making at every stage of digital growth. We focus on real
@@ -199,10 +192,7 @@ const Service_4 = () => {
           </motion.div>
 
           {/* Col 3 — fade right */}
-          <motion.div
-            className="service4-tl-col-blog"
-            variants={fadeRight}
-          >
+          <motion.div className="service4-tl-col-blog" variants={fadeRight}>
             <motion.p variants={staggerItem}>
               Ultimately, our goal is to equip businesses with the confidence to
               make smarter, faster, and more informed decisions in an

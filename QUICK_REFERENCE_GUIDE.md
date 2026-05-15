@@ -50,7 +50,7 @@ Expected: "Please enter a valid email address"
 # Login first
 curl -X POST http://localhost:5000/admin/login \
   -H "Content-Type: application/json" \
-  -d '{"email":"admin@visiomatix.com","password":"your_password"}' \
+  -d '{"email":"admin@Visiomatix.com","password":"your_password"}' \
   | jq '.token'
 
 # Use token to create blog
@@ -96,7 +96,7 @@ Expected: "You have been unsubscribed successfully"
 
 ```bash
 # Connect to MongoDB
-mongosh mongodb://localhost:27017/visiomatix
+mongosh mongodb://localhost:27017/Visiomatix
 
 # See all subscribers
 db.subscribers.find()

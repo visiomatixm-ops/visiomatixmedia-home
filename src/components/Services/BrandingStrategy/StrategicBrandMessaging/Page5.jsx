@@ -17,40 +17,58 @@ import img7 from "../../../../assets/StrategicBrandMessaging/image9.png";
 // import img14 from "../../../../assets/branding-and-strategy/images/5-14.png";
 
 const logos = [
-    img1, img2, img3, img4, img5, img6, img7, 
-    // img8, img9, img10, img11, img12, img13, img14,
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  // img8, img9, img10, img11, img12, img13, img14,
 ];
 
 const Page5 = () => {
-    return (
-        <main className="bss5">
-            <section className="blue-title-bss5">
-                <h1>
-                    Brand Messaging Strategy Solutions
-                    <div>Strategic Messaging Systems</div>
-                </h1>
-            </section>
+  return (
+    <main className="bss5">
+      <section className="blue-title-bss5">
+        <h1>
+          Brand Messaging Strategy Solutions
+          <div>Strategic Messaging Systems</div>
+        </h1>
+      </section>
 
-            <section className="slider-bss5">
-                <div className="slider-track-bss5">
-                    {[...logos, ...logos].map((img, index) => (
-                        <img width="130px" src={img} alt="logo" key={index} />
-                    ))}
-                </div>
-            </section>
+      <section className="slider-bss5">
+        <div className="slider-track-bss5">
+          {[...logos, ...logos].map((img, index) => (
+            <img width="130px" src={img} alt="logo" key={index} />
+          ))}
+        </div>
+      </section>
 
+      <section className="para-bss5">
+        <p>
+          At Visiomatix Media, our Strategic Brand Messaging solutions are
+          designed to perform across complex communication ecosystems and
+          evolving market touchpoints. We develop structured messaging
+          frameworks aligned with business vision, audience intelligence, and
+          positioning strategy ensuring clarity, consistency, and scalability
+          across digital and marketing channels. We deliver high-impact
+          messaging solutions, including brand positioning narratives, value
+          proposition frameworks, tone-of-voice systems, audience research,
+          communication guidelines, and multi-channel implementation. Every
+          framework is crafted for clarity, differentiation, and measurable
+          influence helping businesses build credible, aligned communication
+          that performs across competitive markets.
+        </p>
 
-            <section className="para-bss5">
-                <p>
-                    At Visiomatix Media, our Strategic Brand Messaging solutions are designed to perform across complex communication ecosystems and evolving market touchpoints. We develop structured messaging frameworks aligned with business vision, audience intelligence, and positioning strategy ensuring clarity, consistency, and scalability across digital and marketing channels.
-                    We deliver high-impact messaging solutions, including brand positioning narratives, value proposition frameworks, tone-of-voice systems, audience research, communication guidelines, and multi-channel implementation. Every framework is crafted for clarity, differentiation, and measurable influence helping businesses build credible, aligned communication that performs across competitive markets.
-                </p>
-
-                <button><NavLink to='/contact' className="nav-avoid-blue">Book Your Free Strategy Call</NavLink></button>
-
-            </section>
-        </main>
-    );
+        <button>
+          <NavLink to="/contact" className="nav-avoid-blue">
+            Book Your Free Strategy Call
+          </NavLink>
+        </button>
+      </section>
+    </main>
+  );
 };
 
 export default Page5;

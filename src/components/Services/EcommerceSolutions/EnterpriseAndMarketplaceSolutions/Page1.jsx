@@ -9,7 +9,6 @@ const Page1 = () => {
     <div className="service_1_root">
       <main className="hero-box-service1">
         <div className="title-box-service1">
-
           <motion.h1
             className="title2-service1"
             initial={{ opacity: 0, y: -60 }}
@@ -47,11 +46,9 @@ const Page1 = () => {
             enterprises to streamline operations, expand market reach, and drive
             sustainable revenue growth.
           </motion.p>
-
         </div>
 
         <div className="logo-box2-service1">
-
           <motion.img
             src={digimart}
             alt=""
@@ -62,7 +59,6 @@ const Page1 = () => {
           />
 
           <div>
-
             <motion.div
               className="social-media-service1"
               initial={{ opacity: 0, x: -120 }}
@@ -78,7 +74,6 @@ const Page1 = () => {
             </motion.div>
 
             <div className="content-box-service1">
-
               <motion.div
                 className="content-service1"
                 initial={{ opacity: 0, y: 60 }}
@@ -133,7 +128,6 @@ const Page1 = () => {
                   marketplace growth.
                 </p>
               </motion.div>
-
             </div>
 
             <motion.p
@@ -150,7 +144,6 @@ const Page1 = () => {
               transform digital ecosystems into high-performing revenue networks
               with long-term market impact.
             </motion.p>
-
           </div>
         </div>
       </main>

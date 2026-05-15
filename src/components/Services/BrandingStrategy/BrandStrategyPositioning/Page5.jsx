@@ -32,58 +32,67 @@ const logos = [
   be,
   ball,
   reddit,
-  quora
+  quora,
 ];
 
 const Page5 = () => {
   return (
-
     <main className="bss5">
-
       <section className="blue-title-bss5">
-
         <h1>
-         Strategic Brand Positioning Solutions
+          Strategic Brand Positioning Solutions
           <div>Partnering to Build Market Leaders</div>
         </h1>
-
       </section>
 
       <section className="slider-bss5">
-
         <div className="slider-track-bss5">
-
-       {[...logos, ...logos].map((img, index) => (
-  <motion.img
-    src={img}
-    alt="logo"
-    key={index}
-    whileHover={{ scale: 1.15, filter: "brightness(1.15) drop-shadow(0 0 10px rgba(0,200,255,0.5))", transition: { duration: 0.3 } }}
-  />
-))}
-
+          {[...logos, ...logos].map((img, index) => (
+            <motion.img
+              src={img}
+              alt="logo"
+              key={index}
+              whileHover={{
+                scale: 1.15,
+                filter:
+                  "brightness(1.15) drop-shadow(0 0 10px rgba(0,200,255,0.5))",
+                transition: { duration: 0.3 },
+              }}
+            />
+          ))}
         </div>
-
       </section>
 
       <section className="para-bss5">
-
         <p>
-         At Visiomatix Media, our Brand Strategy & Positioning solutions are engineered to perform across complex markets and evolving competitive landscapes. We develop data-driven positioning frameworks and cohesive brand systems aligned with business vision, audience intelligence, and strategic communication  ensuring clarity, consistency, and scalable market presence across digital and organizational channels. We specialize in delivering high-impact positioning solutions, including brand positioning strategy, identity architecture, messaging frameworks, audience and market research, brand governance systems, and multi-channel implementation. Every framework is built for differentiation, authority, and measurable performance  helping businesses establish credible, recognizable, and future-ready market positions.
+          At Visiomatix Media, our Brand Strategy & Positioning solutions are
+          engineered to perform across complex markets and evolving competitive
+          landscapes. We develop data-driven positioning frameworks and cohesive
+          brand systems aligned with business vision, audience intelligence, and
+          strategic communication ensuring clarity, consistency, and scalable
+          market presence across digital and organizational channels. We
+          specialize in delivering high-impact positioning solutions, including
+          brand positioning strategy, identity architecture, messaging
+          frameworks, audience and market research, brand governance systems,
+          and multi-channel implementation. Every framework is built for
+          differentiation, authority, and measurable performance helping
+          businesses establish credible, recognizable, and future-ready market
+          positions.
         </p>
 
-<motion.button
-  whileHover={{ scale: 1.07, boxShadow: "0 0 24px rgba(0,200,255,0.45)" }}
-  whileTap={{ scale: 0.93 }}
->
-  <NavLink to="/contact" className="nav-avoid-blue">
-    Book Your Free Strategy Call
-  </NavLink>
-</motion.button>
+        <motion.button
+          whileHover={{
+            scale: 1.07,
+            boxShadow: "0 0 24px rgba(0,200,255,0.45)",
+          }}
+          whileTap={{ scale: 0.93 }}
+        >
+          <NavLink to="/contact" className="nav-avoid-blue">
+            Book Your Free Strategy Call
+          </NavLink>
+        </motion.button>
       </section>
-
     </main>
-
   );
 };
 

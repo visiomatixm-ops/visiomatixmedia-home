@@ -20,7 +20,7 @@ const Service3_3 = () => {
           At Visiomatix Media, a trusted Pay Per Click (PPC) advertising agency,
           we specialize in driving high intent visibility, controlled
           acquisition, and measurable growth through strategically engineered
-          paid media ecosystems. Our focus goes beyond simply running ads we
+          paid Media ecosystems. Our focus goes beyond simply running ads we
           design precision led PPC frameworks that target the right audience at
           the right moment with clear commercial intent. As a performance driven
           PPC agency, we believe paid advertising is about capturing demand,

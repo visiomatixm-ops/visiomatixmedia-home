@@ -111,7 +111,7 @@ Create `.env` file in `Contact-backend/`:
 RESEND_API_KEY=your_api_key_here
 CONTACT_EMAIL=your_email@company.com
 WEBSITE_URL=http://localhost:3000
-MONGODB_URI=mongodb://localhost:27017/visiomatix
+MONGODB_URI=mongodb://localhost:27017/Visiomatix
 ```
 
 ### 2. Start Backend Server

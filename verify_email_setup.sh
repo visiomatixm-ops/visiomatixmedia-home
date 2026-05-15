@@ -55,7 +55,7 @@ done
 echo ""
 echo "HOW TO SET VARIABLES:"
 echo "1. Go to https://render.com/dashboard"
-echo "2. Select your backend service (visiomatix-backend or similar)"
+echo "2. Select your backend service (Visiomatix-backend or similar)"
 echo "3. Click 'Settings' tab"
 echo "4. Scroll to 'Environment' section"
 echo "5. Click 'Add Environment Variable' for each:"
@@ -63,9 +63,9 @@ echo ""
 echo "   Variable                Value"
 echo "   ───────────────────────────────────────────────────"
 echo "   RESEND_API_KEY         re_xxxxxxxxxxxxxxxxxxxx"
-echo "   CONTACT_EMAIL          info@visiomatix.in"
+echo "   CONTACT_EMAIL          info@Visiomatix.in"
 echo "   RESEND_FROM_EMAIL      onboarding@resend.dev (or your verified domain)"
-echo "   WEBSITE_URL            https://visiomatix.com"
+echo "   WEBSITE_URL            https://Visiomatix.com"
 echo ""
 echo "6. Click 'Save Changes'"
 echo "7. Your service will auto-restart with new variables"
@@ -91,10 +91,10 @@ echo ""
 
 # Test 1: Check if endpoint responds
 echo -e "${YELLOW}TEST 1: API Endpoint Availability${NC}"
-echo "Checking: https://visiomatix.onrender.com/api/contact"
+echo "Checking: https://Visiomatix.onrender.com/api/contact"
 echo ""
 
-http_code=$(curl -s -o /dev/null -w "%{http_code}" -X POST "https://visiomatix.onrender.com/api/contact" \
+http_code=$(curl -s -o /dev/null -w "%{http_code}" -X POST "https://Visiomatix.onrender.com/api/contact" \
   -H "Content-Type: application/json" \
   -d '{"name":"Test","email":"test@test.com","message":"test"}')
 
@@ -125,7 +125,7 @@ echo -e "${YELLOW}TEST 2: Full Contact Form Test${NC}"
 echo "Sending test contact form submission..."
 echo ""
 
-response=$(curl -s -X POST "https://visiomatix.onrender.com/api/contact" \
+response=$(curl -s -X POST "https://Visiomatix.onrender.com/api/contact" \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Integration Test",
@@ -141,7 +141,7 @@ echo "$response" | jq . 2>/dev/null || echo "$response"
 
 if echo "$response" | grep -q '"success":true'; then
     echo -e "${GREEN}✓ PASS: Email submission successful!${NC}"
-    echo "   Check your email inbox at info@visiomatix.in"
+    echo "   Check your email inbox at info@Visiomatix.in"
 elif echo "$response" | grep -q '"success":false'; then
     if echo "$response" | grep -q RESEND_API_KEY; then
         echo -e "${RED}✗ FAIL: RESEND_API_KEY not configured${NC}"
@@ -160,7 +160,7 @@ echo ""
 echo "1. CHECK RESEND DASHBOARD:"
 echo "   - Go to https://resend.com/dashboard"
 echo "   - View 'Recent emails' section"
-echo "   - Look for email sent to info@visiomatix.in"
+echo "   - Look for email sent to info@Visiomatix.in"
 echo ""
 echo "2. CHECK RENDER LOGS:"
 echo "   - Go to https://render.com/dashboard"
@@ -169,7 +169,7 @@ echo "   - Click 'Logs' tab"
 echo "   - Look for: 'Email sent successfully' or error messages"
 echo ""
 echo "3. CHECK INBOX:"
-echo "   - Go to info@visiomatix.in email"
+echo "   - Go to info@Visiomatix.in email"
 echo "   - Look for: 'New Lead from Integration Test'"
 echo "   - Check spam/promotions folder if not in inbox"
 echo ""
@@ -180,10 +180,10 @@ echo ""
 echo "After confirming environment variables are set and deployment is complete:"
 echo ""
 echo -e "${YELLOW}Test A: Contact Form Submission${NC}"
-echo "  1. Go to: https://visiomatix.com/contact"
+echo "  1. Go to: https://Visiomatix.com/contact"
 echo "  2. Fill out the form with valid data"
 echo "  3. Submit and verify success message"
-echo "  4. Check info@visiomatix.in for the email"
+echo "  4. Check info@Visiomatix.in for the email"
 echo ""
 echo -e "${YELLOW}Test B: Blog Notification Emails${NC}"
 echo "  1. Go to admin panel"
@@ -219,7 +219,7 @@ Solution:
 ISSUE 3: Email sent but not received
 Solution:
   - Check email spam/promotions folder
-  - Verify CONTACT_EMAIL is correct (info@visiomatix.in)
+  - Verify CONTACT_EMAIL is correct (info@Visiomatix.in)
   - Check Resend dashboard for bounce/block notifications
   - Verify RESEND_FROM_EMAIL is verified in Resend
 
@@ -255,7 +255,7 @@ echo "# Check latest git commit:"
 echo "git log --oneline -1"
 echo ""
 echo "# Tail Render logs (if you have Render CLI):"
-echo "render logs --service visiomatix-backend"
+echo "render logs --service Visiomatix-backend"
 echo ""
 
 echo ""
@@ -264,7 +264,7 @@ echo "=============="
 echo ""
 echo "✓ Code fixes have been deployed"
 echo "✓ All three email features are now properly configured:"
-echo "  - Contact Form Submissions → info@visiomatix.in"
+echo "  - Contact Form Submissions → info@Visiomatix.in"
 echo "  - New Blog Posts → All Subscribers"
 echo "  - New Career Posts → All Subscribers"
 echo ""
@@ -272,7 +272,7 @@ echo "NEXT ACTION REQUIRED:"
 echo "Add these environment variables to Render Dashboard:"
 echo ""
 echo "  1. RESEND_API_KEY (get from https://resend.com)"
-echo "  2. CONTACT_EMAIL = info@visiomatix.in"
+echo "  2. CONTACT_EMAIL = info@Visiomatix.in"
 echo "  3. RESEND_FROM_EMAIL = onboarding@resend.dev (or your domain)"
 echo ""
 echo "After setting variables, wait 2-3 minutes for deployment,"

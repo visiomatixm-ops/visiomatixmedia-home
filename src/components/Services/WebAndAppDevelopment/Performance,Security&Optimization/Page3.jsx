@@ -13,14 +13,22 @@ const Page3 = () => {
         viewport={{ once: false, amount: 0.3 }}
       >
         <p className="bss3-heading">
-          Performance & Security Driven Digital Solutions Partner in Nashik Focused on Stability, Scalability & Long Term Growth
+          Performance & Security Driven Digital Solutions Partner in Nashik
+          Focused on Stability, Scalability & Long Term Growth
         </p>
-        At Visiomatix Media, a trusted Performance, Security & Optimization partner in Nashik, we specialize in strengthening digital platforms to operate at peak speed, resilience, and protection.
-        Our expertise goes beyond routine technical fixes  we engineer high performance environments that ensure seamless user experiences, robust data security, and long term operational stability across evolving digital ecosystems.
-        As a performance- driven solutions provider in Nashik, we believe sustainable digital growth is built on intelligent system architecture, proactive security frameworks, and continuous optimization. This structured approach enhances platform reliability, safeguards critical assets, and enables businesses to scale confidently with measurable efficiency and long term digital credibility.
-
+        At Visiomatix Media, a trusted Performance, Security & Optimization
+        partner in Nashik, we specialize in strengthening digital platforms to
+        operate at peak speed, resilience, and protection. Our expertise goes
+        beyond routine technical fixes we engineer high performance environments
+        that ensure seamless user experiences, robust data security, and long
+        term operational stability across evolving digital ecosystems. As a
+        performance- driven solutions provider in Nashik, we believe sustainable
+        digital growth is built on intelligent system architecture, proactive
+        security frameworks, and continuous optimization. This structured
+        approach enhances platform reliability, safeguards critical assets, and
+        enables businesses to scale confidently with measurable efficiency and
+        long term digital credibility.
       </motion.div>
-
 
       <motion.img
         src={image3}
@@ -31,7 +39,6 @@ const Page3 = () => {
         transition={{ duration: 0.8 }}
         viewport={{ once: false, amount: 0.3 }}
       />
-
     </section>
   );
 };

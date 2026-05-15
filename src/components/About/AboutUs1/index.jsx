@@ -70,9 +70,11 @@ const HeadingReveal = ({ text, className }) => {
         <motion.span
           key={i}
           variants={{
-            hidden:  { opacity: 0, y: 50, rotate: 5 },
+            hidden: { opacity: 0, y: 50, rotate: 5 },
             visible: {
-              opacity: 1, y: 0, rotate: 0,
+              opacity: 1,
+              y: 0,
+              rotate: 0,
               transition: { duration: 0.7, ease: EASE, delay: i * 0.06 },
             },
           }}
@@ -89,7 +91,6 @@ const AboutUs1 = () => {
   return (
     <section className="about-section-about1">
       <div className="about-container-about1">
-
         {/* PAGE HERO HEADING — word-by-word entrance on load */}
         <motion.h1
           className="page1-about-heading"
@@ -97,10 +98,7 @@ const AboutUs1 = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.4 }}
         >
-          <HeadingReveal
-            text="About Us"
-            className="gradient-text-about1"
-          />
+          <HeadingReveal text="About Us" className="gradient-text-about1" />
         </motion.h1>
 
         {/* Sub-title — clip reveal */}

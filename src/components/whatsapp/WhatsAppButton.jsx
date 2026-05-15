@@ -17,11 +17,7 @@ const WhatsAppButton = () => {
       rel="noopener noreferrer"
       className="whatsapp-btn"
     >
-      <img
-        src={whatsappIcon}
-        alt="WhatsApp"
-        className="whatsapp-icon"
-      />
+      <img src={whatsappIcon} alt="WhatsApp" className="whatsapp-icon" />
     </a>
   );
 };

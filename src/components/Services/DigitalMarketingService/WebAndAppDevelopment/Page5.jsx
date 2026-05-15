@@ -16,8 +16,18 @@ import ssas from "../../../../assets/WebAndApp/icon/12.png";
 import { NavLink } from "react-router-dom";
 
 const logos = [
-  erp, crm, bpm, a, dot, hr,
-  camel, finance, saas, ppt, ecom, ssas
+  erp,
+  crm,
+  bpm,
+  a,
+  dot,
+  hr,
+  camel,
+  finance,
+  saas,
+  ppt,
+  ecom,
+  ssas,
 ];
 
 const Page5 = () => {
@@ -52,7 +62,11 @@ const Page5 = () => {
           into measurable growth while supporting long term brand value.
         </p>
 
-                              <button><NavLink to='/contact' className="nav-avoid-blue">Book Your Free Strategy Call</NavLink></button>
+        <button>
+          <NavLink to="/contact" className="nav-avoid-blue">
+            Book Your Free Strategy Call
+          </NavLink>
+        </button>
       </section>
     </main>
   );

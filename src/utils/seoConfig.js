@@ -23,9 +23,9 @@ export const updateMetaTags = (
     'meta[property="og:description"]':
       description || "Comprehensive digital services",
     'meta[property="og:url"]':
-      canonicalUrl || "https://visiomatix.onrender.com/",
+      canonicalUrl || "https://Visiomatix.onrender.com/",
     'meta[property="og:image"]':
-      ogImage || "https://visiomatix.onrender.com/Logo PNG.png",
+      ogImage || "https://Visiomatix.onrender.com/Logo PNG.png",
   };
 
   Object.entries(metaTags).forEach(([selector, content]) => {
@@ -48,7 +48,7 @@ export const updateMetaTags = (
     canonical.rel = "canonical";
     document.head.appendChild(canonical);
   }
-  canonical.href = canonicalUrl || "https://visiomatix.onrender.com/";
+  canonical.href = canonicalUrl || "https://Visiomatix.onrender.com/";
 };
 
 export const structuredData = {
@@ -57,8 +57,8 @@ export const structuredData = {
     "@type": "LocalBusiness",
     name: "Visiomatix Media",
     description: "Digital Marketing & Creative Services Agency",
-    url: "https://visiomatix.onrender.com",
-    logo: "https://visiomatix.onrender.com/Logo PNG.png",
+    url: "https://Visiomatix.onrender.com",
+    logo: "https://Visiomatix.onrender.com/Logo PNG.png",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Om Sai Apartment, Road, Manmad - Chandwad Rd",
@@ -75,10 +75,10 @@ export const structuredData = {
     },
     areaServed: ["IN", "Global"],
     sameAs: [
-      "https://www.facebook.com/visiomatixmedia",
-      "https://www.instagram.com/visiomatixmedia",
-      "https://www.linkedin.com/company/visiomatixmedia",
-      "https://twitter.com/visiomatixmedia",
+      "https://www.facebook.com/Visiomatixmedia",
+      "https://www.instagram.com/Visiomatixmedia",
+      "https://www.linkedin.com/company/Visiomatixmedia",
+      "https://twitter.com/Visiomatixmedia",
     ],
   },
 
@@ -90,7 +90,7 @@ export const structuredData = {
     provider: {
       "@type": "LocalBusiness",
       name: "Visiomatix Media",
-      url: "https://visiomatix.onrender.com",
+      url: "https://Visiomatix.onrender.com",
     },
   }),
 
@@ -115,23 +115,23 @@ export const pageConfigs = {
       "Award-winning digital agency offering web development, SEO, branding, graphic design, and creative solutions.",
     keywords:
       "digital marketing, web design, SEO, branding, graphic design, web development, Nashik",
-    canonicalUrl: "https://visiomatix.onrender.com/",
+    canonicalUrl: "https://Visiomatix.onrender.com/",
   },
   about: {
     title: "About Us - Visiomatix Media | Digital Agency Nashik",
     description:
       "Learn about Visiomatix Media's mission, team, and approach to delivering innovative digital solutions.",
     keywords:
-      "about visiomatix, digital agency, web design company, creative team, Nashik",
-    canonicalUrl: "https://visiomatix.onrender.com/about",
+      "about Visiomatix, digital agency, web design company, creative team, Nashik",
+    canonicalUrl: "https://Visiomatix.onrender.com/about",
   },
   contact: {
     title: "Contact Us - Visiomatix Media | Get Your Digital Solution",
     description:
       "Contact Visiomatix Media for digital marketing, web development, and creative services.",
     keywords:
-      "contact us, visiomatix media, web design agency, branding services",
-    canonicalUrl: "https://visiomatix.onrender.com/contact",
+      "contact us, Visiomatix media, web design agency, branding services",
+    canonicalUrl: "https://Visiomatix.onrender.com/contact",
   },
   blog: {
     title: "Blog - Visiomatix Media | Digital Marketing Tips & Insights",
@@ -139,14 +139,14 @@ export const pageConfigs = {
       "Read latest blog posts on digital marketing, web design, SEO, and creative strategies.",
     keywords:
       "blog, digital marketing tips, web design, SEO guide, marketing strategy",
-    canonicalUrl: "https://visiomatix.onrender.com/blog",
+    canonicalUrl: "https://Visiomatix.onrender.com/blog",
   },
   career: {
     title: "Careers - Visiomatix Media | Join Our Team",
     description:
       "Join our dynamic team at Visiomatix Media. We're hiring talented professionals in web development, design, and marketing.",
     keywords: "careers, jobs, hiring, web developer, designer, marketer",
-    canonicalUrl: "https://visiomatix.onrender.com/career",
+    canonicalUrl: "https://Visiomatix.onrender.com/career",
   },
 };
 
