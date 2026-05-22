@@ -1,0 +1,94 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/services/design-Creative-Services"
+  to = "/services/design-creative-services"
+  status = 301
+
+[[redirects]]
+  from = "/services/design-creative"
+  to = "/services/design-creative-services"
+  status = 301
+
+[[redirects]]
+  from = "/services/scalable-bradn-architecture"
+  to = "/services/scalable-brand-architecture"
+  status = 301
+
+[[redirects]]
+  from = "/services/post-product"
+  to = "/services/post-production"
+  status = 301
+
+[[redirects]]
+  from = "/services/visual-effests"
+  to = "/services/visual-effects"
+  status = 301
+
+[[redirects]]
+  from = "/services/visual-effects-vfx"
+  to = "/services/visual-effects"
+  status = 301
+
+[[redirects]]
+  from = "/services/Mobile-App-Development"
+  to = "/services/mobile-app-development"
+  status = 301
+
+[[redirects]]
+  from = "/services/Maintenance-Support"
+  to = "/services/maintenance-support"
+  status = 301
+
+[[redirects]]
+  from = "/services/performance-sercurity-optimization"
+  to = "/services/performance-security-optimization"
+  status = 301
+
+[[redirects]]
+  from = "/services/analytics-roi"
+  to = "/services/analytics-and-roi-tracking"
+  status = 301
+
+[[redirects]]
+  from = "/services/ecommerce-marketing"
+  to = "/services/ecommerce-and-marketing"
+  status = 301
+
+[[redirects]]
+  from = "/services/web-app-development"
+  to = "/services/web-and-app-development-services"
+  status = 301
+
+[[redirects]]
+  from = "/services/motion-graphics-animation"
+  to = "/services/motion-graphics"
+  status = 301
+
+[[redirects]]
+  from = "/services/enterprise-internal-systems"
+  to = "/services/enterprise-internal-system"
+  status = 301
+
+# React SPA routing fix
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Cache optimization
+[[headers]]
+  for = "/*"
+  [headers.values]
+  X-Frame-Options = "DENY"
+  X-XSS-Protection = "1; mode=block"
+  X-Content-Type-Options = "nosniff"
+  Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache static assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+  Cache-Control = "public, max-age=31536000, immutable"

@@ -1,0 +1,247 @@
+/* ======================================================
+   PAGE 5 – FINAL CSS (BUTTON FIX INCLUDED)
+====================================================== */
+
+.bss5 {
+  margin-top: -3px;
+
+  background-image:
+    url("../../assets/images/Vector 3.png"),
+    radial-gradient(
+      circle at right center,
+      rgba(0, 123, 255, 0.6),
+      rgba(0, 123, 255, 0.3) 10%,
+      transparent 18%
+    );
+
+  background-repeat: no-repeat, no-repeat;
+
+  background-position:
+    right 0px top 0px,
+    center;
+
+  background-size:
+    80.5% 100%,
+    cover;
+
+  width: 100%;
+}
+
+/* ================= TITLE ================= */
+
+.blue-title-bss5 {
+  text-align: right;
+
+  padding: 3%;
+}
+
+.blue-title-bss5 > h1 {
+  background:
+    linear-gradient(
+      135deg,
+      #00c8ff,
+      #0077ff
+    );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 50px;
+  line-height: 112%;
+
+  font-family: "commissioner-medium";
+}
+
+.blue-title-bss5 > h1 > div {
+  font-family: "commissioner-extralight";
+
+  font-size: 36px;
+  line-height: 112.9%;
+
+  -webkit-text-fill-color: #ffffff;
+
+  text-align: right;
+}
+
+/* ================= SLIDER ================= */
+
+.slider-bss5 {
+  overflow: hidden;
+
+  width: 100%;
+
+  position: relative;
+}
+
+.slider-track-bss5 {
+  display: flex;
+  align-items: center;
+
+  gap: 60px;
+
+  width: max-content;
+
+  animation:
+    scroll 25s linear infinite;
+}
+
+.slider-track-bss5 img {
+  flex-shrink: 0;
+
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.slider-bss5:hover .slider-track-bss5 {
+  animation-play-state: paused;
+}
+
+.slider-track-bss5 img:hover {
+  transform: scale(1.08);
+
+  filter:
+    drop-shadow(
+      0 0 14px rgba(0, 200, 255, 0.4)
+    );
+}
+
+@keyframes scroll {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ================= TEXT ================= */
+
+.para-bss5 {
+  font-family: "decalotype-light";
+
+  font-size: 22px;
+
+  color: #ffffff;
+
+  width: 95%;
+
+  padding: 3%;
+}
+
+/* ======================================================
+   BUTTON
+====================================================== */
+
+.para-bss5 button {
+  background:
+    linear-gradient(
+      90deg,
+      #00c8ff,
+      #0e5dda
+    );
+
+  width: 344px;
+  height: 61px;
+
+  border-radius: 10px;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 40px;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    filter 0.3s ease,
+    opacity 0.3s ease;
+}
+
+/* BUTTON HOVER */
+
+.para-bss5 button:hover {
+  opacity: 0.95;
+
+  transform: translateY(-3px);
+
+  filter: brightness(1.08);
+
+  box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.35),
+    0 0 16px rgba(0, 200, 255, 0.35);
+}
+
+/* ================= NAVLINK FIX ================= */
+
+.para-bss5 button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 20px 30px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 20px;
+
+  font-family: "commissioner-semibold";
+}
+
+/* ================= EXTRA ================= */
+
+.nav-avoid-blue {
+  color: white;
+}
+
+/* ================= LARGE SCREEN ================= */
+
+@media (min-width: 1550px) {
+
+  .bss5 {
+    flex-wrap: wrap;
+
+    gap: 20px;
+  }
+
+  .para-bss5 {
+    max-width: 100vw;
+  }
+
+  .slider-box-bss5 {
+    flex-wrap: wrap;
+
+    gap: 20px;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+  .bss5 {
+    background-image: none;
+
+    background:
+      linear-gradient(
+        to right,
+        #000103,
+        #000814,
+        #01112c,
+        #00307c
+      );
+  }
+}

@@ -1,0 +1,343 @@
+/* ======================================================
+   HOMEPAGE 4 – SERVICES + FOUNDER (FINAL SVG VERSION)
+====================================================== */
+
+.homepage-4,
+.about-page-home4 {
+  font-family: "Decalotype", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff;
+  width: 100%;
+  position: relative;
+
+  background-image:
+    url("../../../assets/images/Vector 3-1.png"),
+    url("../../../assets/images/Ellipse 5.png"),
+    linear-gradient(90deg, #000103, #000814, #01112c, #00307c);
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+
+  background-position:
+    right 0px bottom 0%,
+    left 0% bottom 0%,
+    center;
+
+  background-size:
+    89% 50%,
+    300px auto,
+    cover;
+}
+
+.about-inner-home4 {
+  margin: 0 auto;
+  padding: clamp(40px, 6vw, 80px) clamp(20px, 5vw, 40px);
+  padding-top: 0;
+}
+
+/* ================= ARROWS (TOP) ================= */
+
+.arrow-home4 {
+  width: 100%;
+  min-height: 56px;
+  margin-bottom: clamp(24px, 4vw, 40px);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow-btn {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-btn svg {
+  transition: all 0.3s ease;
+}
+
+.arrow-btn:hover svg {
+  opacity: 0.6;
+}
+
+/* ================= SERVICES GRID ================= */
+
+.services-grid-home4 {
+  width: 100%;
+  margin-bottom: clamp(60px, 8vw, 100px);
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: clamp(14px, 2vw, 20px);
+}
+
+/* ================= CARD ================= */
+
+.feature-card-1-home4 {
+  width: 100%;
+  height: 274px;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 16px;
+
+  border-radius: 50px;
+
+  background: transparent;
+  position: relative;
+
+  border: 2px solid transparent;
+  background-clip: padding-box;
+
+  flex-shrink: 0;
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* Gradient Border */
+
+.feature-card-1-home4::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  border-radius: 50px;
+  padding: 2px;
+
+  background: linear-gradient(
+    135deg,
+    #4871F0,
+    #0BBAFC
+  );
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  pointer-events: none;
+}
+
+/* Hover */
+
+.feature-card-1-home4:hover {
+  transform: translateY(-10px);
+
+  border-color: rgb(0, 150, 255);
+
+  box-shadow:
+    0 16px 48px rgba(0, 100, 255, 0.25);
+}
+
+/* ================= SERVICE CONTENT ================= */
+
+.service-icon-home4 {
+  width: 76px;
+  height: 66px;
+
+  margin: 0 auto 20px;
+}
+
+.service-icon-home4 img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.service-title-home4 {
+  font-size: 15px;
+  font-weight: 600;
+
+  margin-bottom: 10px;
+}
+
+.service-desc-home4 {
+  font-size: 13px;
+  color: #d1d5db;
+}
+
+/* ================= READ MORE ================= */
+
+.read-more-wrapper-home4 {
+  margin: 22px 0 0;
+
+  width: 148px;
+  height: 38px;
+
+  padding: 1.5px;
+
+  border-radius: 50px;
+
+  background: linear-gradient(
+    135deg,
+    #00c8ff,
+    #023a90,
+    #00c3fb
+  );
+
+  position: relative;
+  flex-shrink: 0;
+
+  transition: box-shadow 0.3s ease;
+}
+
+.read-more-wrapper-home4:hover {
+  box-shadow:
+    0 0 20px rgba(0, 200, 255, 0.45);
+}
+
+.read-more-btn-home4 {
+  width: 100%;
+  height: 100%;
+
+  background: #012d7a;
+  border: none;
+
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+  padding: 0 14px;
+
+  font-size: 12.5px;
+  color: #ffffff;
+
+  cursor: pointer;
+  text-decoration: none;
+
+  font-family: "decalotype-light";
+
+  white-space: nowrap;
+  overflow: hidden;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    color 0.3s ease;
+}
+
+.read-more-btn-home4:hover {
+  background: #014cb0;
+  color: #ccc;
+
+  transform: translateX(4px);
+
+  box-shadow:
+    0 0 18px rgba(0, 200, 255, 0.4);
+}
+
+/* Arrow */
+
+.read-more-icon-home4 {
+  width: 12px;
+  min-width: 12px;
+
+  flex-shrink: 0;
+
+  transform: rotate(-45deg);
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.read-more-btn-home4:hover .read-more-icon-home4 {
+  transform:
+    rotate(-45deg)
+    translate(3px, -3px);
+}
+
+.read-more-btn-home4:hover svg {
+  opacity: 0.6;
+}
+
+/* ================= FOUNDER ================= */
+
+.founder-section-home4 {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr 1fr;
+
+  gap: clamp(30px, 5vw, 60px);
+}
+
+/* Founder Image */
+
+.founder-image-home4 img {
+  width: 100%;
+  max-width: 380px;
+
+  border-radius: 18px;
+
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+.founder-image-home4:hover img {
+  transform: scale(1.03);
+
+  box-shadow:
+    0 20px 60px rgba(0, 100, 255, 0.3);
+}
+
+/* Text */
+
+.homepage-4-title-home4 {
+  font-size: 35px;
+}
+
+.homepage-4-subTitle-home4 {
+  font-size: 20px;
+}
+
+.homepage-4-text-home4 {
+  font-size: 14px;
+}
+
+/* Button */
+
+.home4-main-btn {
+  position: relative;
+  left: 0;
+
+  margin-top: 24px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  .about-page-home4 {
+    background-image: none;
+  }
+
+  .founder-image-home4 img {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .read-more-wrapper-home4 {
+    left: 0;
+  }
+}

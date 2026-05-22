@@ -1,0 +1,88 @@
+{
+  "hosting": {
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/services/design-Creative-Services",
+        "destination": "/services/design-creative-services",
+        "type": 301
+      },
+      {
+        "source": "/services/design-creative",
+        "destination": "/services/design-creative-services",
+        "type": 301
+      },
+      {
+        "source": "/services/scalable-bradn-architecture",
+        "destination": "/services/scalable-brand-architecture",
+        "type": 301
+      },
+      {
+        "source": "/services/post-product",
+        "destination": "/services/post-production",
+        "type": 301
+      },
+      {
+        "source": "/services/visual-effests",
+        "destination": "/services/visual-effects",
+        "type": 301
+      },
+      {
+        "source": "/services/visual-effects-vfx",
+        "destination": "/services/visual-effects",
+        "type": 301
+      },
+      {
+        "source": "/services/Mobile-App-Development",
+        "destination": "/services/mobile-app-development",
+        "type": 301
+      },
+      {
+        "source": "/services/Maintenance-Support",
+        "destination": "/services/maintenance-support",
+        "type": 301
+      },
+      {
+        "source": "/services/performance-sercurity-optimization",
+        "destination": "/services/performance-security-optimization",
+        "type": 301
+      },
+      {
+        "source": "/services/analytics-roi",
+        "destination": "/services/analytics-and-roi-tracking",
+        "type": 301
+      },
+      {
+        "source": "/services/ecommerce-marketing",
+        "destination": "/services/ecommerce-and-marketing",
+        "type": 301
+      },
+      {
+        "source": "/services/web-app-development",
+        "destination": "/services/web-and-app-development-services",
+        "type": 301
+      },
+      {
+        "source": "/services/motion-graphics-animation",
+        "destination": "/services/motion-graphics",
+        "type": 301
+      },
+      {
+        "source": "/services/enterprise-internal-systems",
+        "destination": "/services/enterprise-internal-system",
+        "type": 301
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

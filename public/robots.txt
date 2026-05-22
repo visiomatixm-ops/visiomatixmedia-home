@@ -1,0 +1,22 @@
+# Visiomatix Media - SEO Robots Configuration
+# Last Updated: 2026-05-08
+
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.webp$
+Allow: /*.svg$
+Disallow: /admin/
+
+# Allow search engines to index images and media
+User-agent: Googlebot-Image
+Allow: /
+
+# Sitemaps
+Sitemap: https://visiomatix.in/sitemap.xml
+Sitemap: https://visiomatix.in/image-sitemap.xml

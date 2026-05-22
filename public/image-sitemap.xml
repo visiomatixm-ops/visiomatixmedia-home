@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- HOME PAGE IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/Logo.png</image:loc>
+      <image:title>Visiomatix Media Logo</image:title>
+      <image:caption>Visiomatix Media - Digital Marketing Agency Logo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-home.jpg</image:loc>
+      <image:title>Visiomatix Media - Digital Marketing Services</image:title>
+      <image:caption>Award-winning digital agency offering web development, SEO, branding, and creative solutions</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://visiomatix.in/assets/images/hero-home.jpg</image:loc>
+      <image:title>Digital Marketing Agency Nashik</image:title>
+      <image:caption>Professional digital marketing services in Nashik, Maharashtra</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://visiomatix.in/assets/images/services-overview.jpg</image:loc>
+      <image:title>Digital Services Overview</image:title>
+      <image:caption>Comprehensive digital services including web development, SEO, design, and marketing</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ABOUT PAGE IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/about</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-about.jpg</image:loc>
+      <image:title>About Visiomatix Media Team</image:title>
+      <image:caption>Meet the creative team at Visiomatix Media</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://visiomatix.in/assets/images/team-photo.jpg</image:loc>
+      <image:title>Visiomatix Media Team</image:title>
+      <image:caption>Talented professionals in digital marketing, web development, and creative design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://visiomatix.in/assets/images/office-nashik.jpg</image:loc>
+      <image:title>Visiomatix Media Office in Nashik</image:title>
+      <image:caption>Our office location in Nashik, Maharashtra</image:caption>
+    </image:image>
+  </url>
+
+  <!-- CONTACT PAGE IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/contact</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-contact.jpg</image:loc>
+      <image:title>Contact Visiomatix Media</image:title>
+      <image:caption>Get in touch with our digital agency team</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://visiomatix.in/assets/images/contact-form.jpg</image:loc>
+      <image:title>Contact Form - Visiomatix Media</image:title>
+      <image:caption>Reach out to discuss your digital marketing and web development needs</image:caption>
+    </image:image>
+  </url>
+
+  <!-- BLOG PAGE IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/blog</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-blog.jpg</image:loc>
+      <image:title>Visiomatix Media Blog</image:title>
+      <image:caption>Digital marketing tips, SEO guides, and web design insights</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://visiomatix.in/assets/images/blog-hero.jpg</image:loc>
+      <image:title>Blog - Digital Marketing Insights</image:title>
+      <image:caption>Learn digital marketing, SEO, and creative strategies</image:caption>
+    </image:image>
+  </url>
+
+  <!-- CAREER PAGE IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/careers</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-career.jpg</image:loc>
+      <image:title>Careers at Visiomatix Media</image:title>
+      <image:caption>Join our team in Nashik and grow your career in digital marketing and web development</image:caption>
+    </image:image>
+  </url>
+
+  <!-- DIGITAL MARKETING SERVICES IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/services/digital-marketing</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-digital-marketing.jpg</image:loc>
+      <image:title>Digital Marketing Services</image:title>
+      <image:caption>Comprehensive digital marketing services including SEO, PPC, and social media marketing</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://visiomatix.in/assets/Digital_Marketing_Services/digital-marketing-banner.jpg</image:loc>
+      <image:title>Digital Marketing Services Banner</image:title>
+      <image:caption>Professional digital marketing services for businesses in Nashik</image:caption>
+    </image:image>
+  </url>
+
+  <!-- SEO & CONTENT WRITING SERVICES IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/services/seo-content-writing</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-seo.jpg</image:loc>
+      <image:title>SEO and Content Writing Services</image:title>
+      <image:caption>Professional SEO services to improve your website rankings on Google</image:caption>
+    </image:image>
+  </url>
+
+  <!-- PPC SERVICES IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/services/pay-per-click</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-ppc.jpg</image:loc>
+      <image:title>PPC Services - Google Ads and Facebook Ads</image:title>
+      <image:caption>Effective PPC advertising campaigns for maximum ROI</image:caption>
+    </image:image>
+  </url>
+
+  <!-- EMAIL & INFLUENCER MARKETING IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/services/email-influencer-marketing</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-email-influencer.jpg</image:loc>
+      <image:title>Email and Influencer Marketing Services</image:title>
+      <image:caption>Email marketing campaigns and influencer partnerships to grow your brand</image:caption>
+    </image:image>
+  </url>
+
+  <!-- CONTENT & VIDEO MARKETING IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/services/content-video-marketing</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-content-video.jpg</image:loc>
+      <image:title>Content and Video Marketing Services</image:title>
+      <image:caption>Professional video marketing and content creation services</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ANALYTICS & ROI IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/services/analytics-roi</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-analytics.jpg</image:loc>
+      <image:title>Analytics and ROI Services</image:title>
+      <image:caption>Data analytics and ROI tracking services to measure your marketing success</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ONLINE REPUTATION MANAGEMENT IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/services/online-reputation-management</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-reputation.jpg</image:loc>
+      <image:title>Online Reputation Management Services</image:title>
+      <image:caption>Protect and enhance your online reputation with our services</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ECOMMERCE MARKETING IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/services/ecommerce-marketing</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-ecommerce-marketing.jpg</image:loc>
+      <image:title>E-commerce Marketing Services</image:title>
+      <image:caption>Specialized e-commerce marketing services to boost online sales</image:caption>
+    </image:image>
+  </url>
+
+  <!-- WEB & APP DEVELOPMENT IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/services/web-app-development</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-web-app.jpg</image:loc>
+      <image:title>Web and App Development Services</image:title>
+      <image:caption>Custom web development and responsive design solutions</image:caption>
+    </image:image>
+  </url>
+
+  <!-- MOBILE APP DEVELOPMENT IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/services/mobile-app-development</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-mobile-app.jpg</image:loc>
+      <image:title>Mobile App Development - iOS and Android</image:title>
+      <image:caption>Professional mobile app development for iOS and Android platforms</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ECOMMERCE SOLUTIONS IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/services/ecommerce-solutions</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-ecommerce-solutions.jpg</image:loc>
+      <image:title>E-commerce Solutions - Shopify and WooCommerce</image:title>
+      <image:caption>Complete e-commerce solutions with Shopify and WooCommerce</image:caption>
+    </image:image>
+  </url>
+
+  <!-- BUSINESS SOFTWARE SOLUTIONS IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/services/business-software-solutions</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-business-software.jpg</image:loc>
+      <image:title>Business Software Solutions</image:title>
+      <image:caption>Custom software development for enterprise solutions</image:caption>
+    </image:image>
+  </url>
+
+  <!-- MAINTENANCE & SUPPORT IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/services/maintenance-support</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-maintenance.jpg</image:loc>
+      <image:title>Website Maintenance and Support Services</image:title>
+      <image:caption>Ongoing website maintenance and technical support</image:caption>
+    </image:image>
+  </url>
+
+  <!-- DESIGN & CREATIVE SERVICES IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/services/design-creative</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-design.jpg</image:loc>
+      <image:title>Design and Creative Services</image:title>
+      <image:caption>Graphic design, UI/UX, branding, and visual design services</image:caption>
+    </image:image>
+  </url>
+
+  <!-- GRAPHIC DESIGN IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/services/graphic-design</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-graphic-design.jpg</image:loc>
+      <image:title>Graphic Design Services - Logo and Branding</image:title>
+      <image:caption>Professional graphic design for logos, branding, and marketing materials</image:caption>
+    </image:image>
+  </url>
+
+  <!-- UI/UX DESIGN IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/services/ui-ux-design</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-ui-ux.jpg</image:loc>
+      <image:title>UI/UX Design Services - User Experience Design</image:title>
+      <image:caption>Professional UI/UX design for web and mobile applications</image:caption>
+    </image:image>
+  </url>
+
+  <!-- MOTION GRAPHICS & ANIMATION IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/services/motion-graphics-animation</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-motion-graphics.jpg</image:loc>
+      <image:title>Motion Graphics and Animation Services</image:title>
+      <image:caption>Professional motion graphics and animation services</image:caption>
+    </image:image>
+  </url>
+
+  <!-- BRANDING & STRATEGY IMAGES -->
+  <url>
+    <loc>https://visiomatix.in/services/branding-strategy</loc>
+    <image:image>
+      <image:loc>https://visiomatix.in/og-branding.jpg</image:loc>
+      <image:title>Branding and Strategy Services</image:title>
+      <image:caption>Complete branding and business strategy services</image:caption>
+    </image:image>
+  </url>
+</urlset>

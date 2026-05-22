@@ -1,0 +1,257 @@
+.testimonial-section {
+  margin: 60px auto;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-section h2 {
+  color: #2da8ff;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  font-family: 'commissioner-regular';
+  font-size: 50px;
+  background: linear-gradient(90deg,
+      #02C6FF,
+      #4B6DEF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.divider {
+  height: 1px;
+  margin: 1px 0;
+  background: linear-gradient(90deg,
+      rgba(45, 168, 255, 0),
+      rgba(45, 168, 255, 0.98),
+      rgba(45, 168, 255, 0));
+  box-shadow: 0 0 8px rgba(45, 168, 255, 0.45);
+}
+
+/* 1. Centered arrows vertically to match the image */
+.arrow-gap {
+  position: absolute;
+  top: 17%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.nav-btn img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  opacity: 0.72;
+}
+
+.nav-btn:hover {
+  transform: scale(1.1);
+}
+
+.carousel-frame {
+  position: relative;
+  width: 100%;
+  border-top: 1px solid rgba(45, 168, 255, 0.6);
+  border-bottom: 1px solid rgba(45, 168, 255, 0.6);
+  box-shadow:
+    inset 0 1px 0 rgba(45, 168, 255, 0.3),
+    inset 0 -1px 0 rgba(45, 168, 255, 0.3),
+    0 0 12px rgba(45, 168, 255, 0.35);
+  margin: 16px 0;
+}
+
+/* .carousel-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  padding: 12px 0 12px;
+} */
+.carousel-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  /* Increased vertical padding for more breathing room */
+  padding: 32px 0;
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonial-track {
+  display: flex;
+  flex-wrap: nowrap;
+  min-width: max-content;
+  gap: 30px;
+  width: max-content;
+}
+
+/* 2. Added gap between cards and side padding to clear the arrows */
+/* .carousel-track {
+  display: flex;
+  align-items: center;
+  gap: 40px; 
+  width: 100%;
+  padding: 0 80px; 
+} */
+.carousel-track {
+  display: flex;
+  align-items: stretch;
+  /* Ensures cards in a row have equal height */
+  gap: 40px;
+  width: 100%;
+  padding: 0 80px;
+}
+
+/* .testimonial-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 16px 0px;
+} */
+.testimonial-card {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  flex: 1 0 auto;
+  min-width: 450px;
+  padding: 24px 0;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+  /* Ensures identity section never compresses */
+  width: 200px;
+  /* Stable width for the left side */
+}
+
+.client-info {
+  margin-bottom: 0;
+  min-width: 120px;
+}
+
+/* .testimonial-card>div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-width: 0;
+  flex: 1;
+} */
+
+.testimonial-card img {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.client-info {
+  margin-bottom: 0;
+  min-width: 110px;
+}
+
+.client-info h4 {
+  margin: 0;
+  max-width: 110%;
+  width: 120px;
+  font-family: 'commissioner-light';
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.role {
+  font-size: 13px;
+  color: #02C5FE;
+  font-family: 'commissioner-light';
+}
+
+/* 3. Changed the left border to solid white and adjusted line height */
+.testimonial-text {
+  font-size: 13px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'commissioner-light';
+  margin: 0;
+  max-width: 340px;
+  min-width: 200px;
+  border-left: 1.5px solid #ffffff;
+  /* This is your white divider */
+  padding-left: 20px;
+  white-space: normal;
+}
+
+/* -------------------- */
+/* 📱 RESPONSIVE */
+/* -------------------- */
+@media (max-width: 992px) {
+  .testimonial-section h2 {
+    font-size: 40px;
+  }
+
+  .testimonial-card {
+    min-width: 300px;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonial-card>div {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .testimonial-section {
+    margin: 40px auto;
+  }
+
+  .testimonial-section h2 {
+    font-size: 32px;
+  }
+
+  .carousel-track {
+    gap: 20px;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .testimonial-card {
+    flex-direction: column;
+    min-width: 85vw;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .testimonial-text {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
