@@ -102,7 +102,6 @@ const Service3_1 = ({ blogs = [] }) => {
                   variants={cardReveal}
                   whileHover={{
                     y: -10,
-                    boxShadow: "0 20px 52px rgba(0,120,255,0.28)",
                     transition: { type: "spring", stiffness: 260, damping: 18 },
                   }}
                 >

@@ -122,20 +122,12 @@ const Testimonials = () => {
       >
         Feedback from the Clients
       </motion.h2>
-
       {/* Top Divider */}
-      <motion.div
-        className="divider"
-        initial={{ scaleX: 0, opacity: 0 }}
-        whileInView={{ scaleX: 1, opacity: 1 }}
-        transition={{ duration: 1.1, ease: EASE }}
-        viewport={viewport}
-        style={{ transformOrigin: "left" }}
-      />
+      <div className="divider" />
 
       {/* Three-up carousel wrapped in blue frame */}
       <div className="carousel-frame">
-        
+
         {/* Arrow controls MOVED INSIDE THE FRAME */}
         <motion.div
           className="arrow-gap"
@@ -147,20 +139,16 @@ const Testimonials = () => {
           <motion.button
             className="nav-btn prev"
             onClick={prev}
-            whileHover={{ scale: 1.25, x: -4, filter: "brightness(1.6)" }}
-            whileTap={{ scale: 0.85 }}
-            transition={{ type: "spring", stiffness: 280 }}
+
           >
-            <img src={leftarrow} alt="prev" />
+            <img src={leftarrow} alt="prev"/>
           </motion.button>
           <motion.button
             className="nav-btn next"
             onClick={next}
-            whileHover={{ scale: 1.25, x: 4, filter: "brightness(1.6)" }}
-            whileTap={{ scale: 0.85 }}
-            transition={{ type: "spring", stiffness: 280 }}
+
           >
-            <img src={rightarrow} alt="next" />
+            <img src={rightarrow} alt="next"/>
           </motion.button>
         </motion.div>
 
@@ -191,24 +179,24 @@ const Testimonials = () => {
                   transition: { duration: 0.3 },
                 }}
               >
-{visibleTestimonials.map((item) => (
-  <div className="testimonial-card" key={item.id}>
-    
-    {/* New wrapper for left-side profile content */}
-    <div className="profile-section">
-      <img src={item.img} alt={item.name} />
-      
-      <div className="client-info">
-        <h4>{item.name}</h4>
-        <span className="role">{item.role}</span>
-      </div>
-    </div>
+                {visibleTestimonials.map((item) => (
+                  <div className="testimonial-card" key={item.id}>
 
-    {/* Sibling to profile-section */}
-    <p className="testimonial-text">"{item.text}"</p>
-    
-  </div>
-))}
+                    {/* New wrapper for left-side profile content */}
+                    <div className="profile-section">
+                      <img src={item.img} alt={item.name} />
+
+                      <div className="client-info">
+                        <h4>{item.name}</h4>
+                        <span className="role">{item.role}</span>
+                      </div>
+                    </div>
+
+                    {/* Sibling to profile-section */}
+                    <p className="testimonial-text">"{item.text}"</p>
+
+                  </div>
+                ))}
               </motion.div>
             </AnimatePresence>
           </div>
@@ -216,14 +204,9 @@ const Testimonials = () => {
       </div>
 
       {/* Bottom Divider */}
-      <motion.div
-        className="divider"
-        initial={{ scaleX: 0, opacity: 0 }}
-        whileInView={{ scaleX: 1, opacity: 1 }}
-        transition={{ duration: 1.1, ease: EASE }}
-        viewport={viewport}
-        style={{ transformOrigin: "right" }}
-      />
+      <div className="divider bottom-divider" />
+
+
     </motion.section>
   );
 };

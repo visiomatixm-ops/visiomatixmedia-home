@@ -32,7 +32,7 @@ const Page1 = () => {
         {/* RIGHT CONTENT */}
        <div className="logo-box2-service1">
 
-          <img src={architecture} alt="Secure Scalable Architecture" />
+          <img src={architecture} alt="Secure Scalable Architecture"/>
 
           <div>
 

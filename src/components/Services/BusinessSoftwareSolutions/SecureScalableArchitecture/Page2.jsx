@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import React from 'react'
 
 import '../../page2.css'
@@ -28,7 +28,7 @@ const Page2 = () => {
           <div className="column-2 custom-border-2 right-pad-30">
 
             <div>
-              <img src={frame1} alt="Icon" />
+              <img src={frame1} alt="Icon"/>
               <h3 className="benefit-title">
                Security-First Architectural Design
               </h3>
@@ -38,7 +38,7 @@ const Page2 = () => {
             </div>
 
             <div>
-              <img src={frame2} alt="Icon" />
+              <img src={frame2} alt="Icon"/>
               <h3 className="benefit-title">
                 Operational Resilience & Continuity
               </h3>
@@ -52,7 +52,7 @@ const Page2 = () => {
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
 
             <div>
-              <img src={frame6} alt="Icon" />
+              <img src={frame6} alt="Icon"/>
               <h3 className="benefit-title">
               High-Performance & System Stability
               </h3>
@@ -62,7 +62,7 @@ const Page2 = () => {
             </div>
 
             <div>
-              <img src={frame5} alt="Icon" />
+              <img src={frame5} alt="Icon"/>
               <h3 className="benefit-title">
                 Seamless Platform Compatibility
               </h3>
@@ -76,7 +76,7 @@ const Page2 = () => {
           <div className="column-2 left-pad-50 right-pad-30">
 
             <div>
-              <img src={frame3} alt="Icon" />
+              <img src={frame3} alt="Icon"/>
               <h3 className="benefit-title">
                Compliance & Governance Alignment
               </h3>
@@ -86,7 +86,7 @@ const Page2 = () => {
             </div>
 
             <div>
-              <img src={frame4} alt="Icon" />
+              <img src={frame4} alt="Icon"/>
               <h3 className="benefit-title">
                 Scalable & Future-Ready Infrastructure
               </h3>

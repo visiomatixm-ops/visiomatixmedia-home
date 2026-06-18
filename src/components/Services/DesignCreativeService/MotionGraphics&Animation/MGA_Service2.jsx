@@ -77,7 +77,7 @@ const MGA_Service2 = () => {
 
 const Benefit = ({ img, title, text }) => (
   <div className="e-commerce-services-benefits-div">
-    <img src={img} alt="" />
+    <img src={img} alt=""/>
     <h3 className="benefit-title">{title}</h3>
     <p className="benefit-text">{text}</p>
   </div>

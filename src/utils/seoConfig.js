@@ -148,6 +148,13 @@ export const pageConfigs = {
     keywords: "careers, jobs, hiring, web developer, designer, marketer",
     canonicalUrl: "https://visiomatix.onrender.com/career",
   },
+  plans: {
+    title: "Pricing Plans - Visiomatix Media | Choose Your Growth Plan",
+    description:
+      "Explore Visiomatix Media's pricing plans for digital marketing, Meta & Google Ads, CGI, 3D visuals, and lead generation.",
+    keywords: "pricing plans, growth plans, digital marketing cost, ads management pricing",
+    canonicalUrl: "https://visiomatix.onrender.com/plans",
+  },
 };
 
 export const addSchemaMarkup = (schemaData) => {

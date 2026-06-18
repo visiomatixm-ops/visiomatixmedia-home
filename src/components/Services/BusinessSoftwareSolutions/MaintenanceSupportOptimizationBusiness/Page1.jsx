@@ -27,7 +27,7 @@ const Page1 = () => {
           </p>
         </div>
         <div className="logo-box2-service1">
-          <img src={digimart} alt="" />
+          <img src={digimart} alt=""/>
           <div>
             <div className="social-media-service1">
               <p>

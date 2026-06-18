@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { motion } from "framer-motion";
 
 import "../../page2.css";
@@ -82,19 +82,10 @@ const Page2 = () => {
 
           <div className="column-2 custom-border-2 right-pad-30">
 
-            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}
-    whileHover={{
-      y: -8,
-      scale: 1.03,
-      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 }
-    }}>
-              <motion.img
+            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}>
+              <img
                 src={frame1}
                 alt="Icon"
-                initial={{ opacity: 0, scale: 0.6 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
               />
               <h3 className="benefit-title">
                 Business-Driven Website Development
@@ -106,19 +97,10 @@ const Page2 = () => {
               </p>
             </motion.div>
 
-            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}
-    whileHover={{
-      y: -8,
-      scale: 1.03,
-      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 }
-    }}>
-              <motion.img
+            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}>
+              <img
                 src={frame2}
                 alt="Icon"
-                initial={{ opacity: 0, scale: 0.6 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
               />
               <h3 className="benefit-title">User-Centric UI/UX Engineering</h3>
               <p className="benefit-text">
@@ -132,19 +114,10 @@ const Page2 = () => {
 
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
 
-            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}
-    whileHover={{
-      y: -8,
-      scale: 1.03,
-      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 }
-    }}>
-              <motion.img
+            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}>
+              <img
                 src={frame6}
                 alt="Icon"
-                initial={{ opacity: 0, scale: 0.6 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
               />
               <h3 className="benefit-title">
                 Fully Custom & Scalable Website Solutions
@@ -156,19 +129,10 @@ const Page2 = () => {
               </p>
             </motion.div>
 
-            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}
-    whileHover={{
-      y: -8,
-      scale: 1.03,
-      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 }
-    }}>
-              <motion.img
+            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}>
+              <img
                 src={frame5}
                 alt="Icon"
-                initial={{ opacity: 0, scale: 0.6 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
               />
               <h3 className="benefit-title">
                 Secure & Robust Website Development
@@ -184,19 +148,10 @@ const Page2 = () => {
 
           <div className="column-2 left-pad-50 right-pad-30">
 
-            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}
-    whileHover={{
-      y: -8,
-      scale: 1.03,
-      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 }
-    }}>
-              <motion.img
+            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}>
+              <img
                 src={frame3}
                 alt="Icon"
-                initial={{ opacity: 0, scale: 0.6 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
               />
               <h3 className="benefit-title">
                 High-Performance Website Architecture
@@ -208,19 +163,10 @@ const Page2 = () => {
               </p>
             </motion.div>
 
-            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}
-    whileHover={{
-      y: -8,
-      scale: 1.03,
-      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 }
-    }}>
-              <motion.img
+            <motion.div className="e-commerce-services-benefits-div" variants={fadeUp}>
+              <img
                 src={frame4}
                 alt="Icon"
-                initial={{ opacity: 0, scale: 0.6 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
               />
               <h3 className="benefit-title">
                 Post Launch Support & Continuous Optimization

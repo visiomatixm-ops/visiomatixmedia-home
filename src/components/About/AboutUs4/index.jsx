@@ -27,7 +27,7 @@ const WordSplit = ({ text }) => {
         <motion.span
           key={i}
           variants={{
-            hidden:  { opacity: 0, y: 40, skewY: 6 },
+            hidden: { opacity: 0, y: 40, skewY: 6 },
             visible: {
               opacity: 1, y: 0, skewY: 0,
               transition: { duration: 0.65, ease: EASE },

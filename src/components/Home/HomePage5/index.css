@@ -12,11 +12,6 @@
   background: linear-gradient(135deg, #00c8ff, #023a90, #00c3fb);
   position: relative;
   flex-shrink: 0;
-  transition: box-shadow 0.3s ease;
-}
-
-.read-more-wrapper:hover {
-  box-shadow: 0 0 20px rgba(0, 200, 255, 0.45);
 }
 
 .read-more-wrapper .read-more-btn-home4 {
@@ -34,21 +29,31 @@
   gap: 6px;
   color: #ffffff;
   text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.read-more-wrapper .read-more-btn-home4:hover {
-  background: #014cb0;
 }
 
 .read-more-icon {
-  width: 12px;
-  min-width: 12px;
   flex-shrink: 0;
-  transform: rotate(-45deg);
-  transition: transform 0.3s ease;
 }
 
-.read-more-btn-home4:hover .read-more-icon {
-  transform: rotate(-45deg) translate(3px, -3px);
+@media (max-width: 768px) {
+  .about_us_2 {
+    border-top: none;
+    margin-top: -2px;
+    position: relative;
+    z-index: 1;
+    background-image: url("../../../assets/images/Vector 3.png"), linear-gradient(90deg, #000103, #000814, #01112c, #00307c) !important;
+    background-repeat: no-repeat, no-repeat !important;
+    background-position: right -120px top -26px, center !important;
+    background-size: 170% 100%, cover !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .about_us_2 {
+    margin-top: -2px;
+    background-image: url("../../../assets/images/Vector 3.png"), linear-gradient(90deg, #000103, #000814, #01112c, #00307c) !important;
+    background-repeat: no-repeat, no-repeat !important;
+    background-position: right -165px top -24px, center !important;
+    background-size: 200% 100%, cover !important;
+  }
 }

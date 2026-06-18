@@ -30,7 +30,7 @@ const Page3 = () => {
           achieve sustainable digital growth.
         </motion.div>
 
-        <img src={image3} alt="" className="image-bss3" />
+        <img src={image3} alt=""className="image-bss3" />
       </section>
     </>
   );

@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import React from "react";
 
 import "../../page2.css";
@@ -23,7 +23,7 @@ const Page2 = () => {
         <motion.div className="benefites-containr-2" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 0.75, delay: 0.2 }}>
           <div className="column-2 custom-border-2 right-pad-30">
             <div>
-              <img src={frame1} alt="Icon" />
+              <img src={frame1} alt="Icon"/>
               <h3 className="benefit-title">
                 Business-Aligned Data Architecture
               </h3>
@@ -35,7 +35,7 @@ const Page2 = () => {
             </div>
 
             <div>
-              <img src={frame2} alt="Icon" />
+              <img src={frame2} alt="Icon"/>
               <h3 className="benefit-title">
                 Advanced Analytics & Reporting Efficiency
               </h3>
@@ -49,7 +49,7 @@ const Page2 = () => {
 
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
             <div>
-              <img src={frame6} alt="Icon" />
+              <img src={frame6} alt="Icon"/>
               <h3 className="benefit-title">
                 Scalable & Future-Ready Data Systems
               </h3>
@@ -61,7 +61,7 @@ const Page2 = () => {
             </div>
 
             <div>
-              <img src={frame5} alt="Icon" />
+              <img src={frame5} alt="Icon"/>
               <h3 className="benefit-title">
                 Secure & Compliant Data Governance
               </h3>
@@ -75,7 +75,7 @@ const Page2 = () => {
 
           <div className="column-2 left-pad-50 right-pad-30">
             <div>
-              <img src={frame3} alt="Icon" />
+              <img src={frame3} alt="Icon"/>
               <h3 className="benefit-title">
                 High-Performance Data Processing & Reliability
               </h3>
@@ -87,7 +87,7 @@ const Page2 = () => {
             </div>
 
             <div>
-              <img src={frame4} alt="Icon" />
+              <img src={frame4} alt="Icon"/>
               <h3 className="benefit-title">Seamless Data Integrations</h3>
               <p className="benefit-text">
                 Smooth integration with ERPs, CRMs, financial tools, SaaS

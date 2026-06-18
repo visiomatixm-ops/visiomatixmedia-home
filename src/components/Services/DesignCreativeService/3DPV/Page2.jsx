@@ -22,7 +22,7 @@ const Page2 = () => {
         <div className="benefites-containr-2">
           <div className="column-2 custom-border-2 right-pad-30">
             <div className="e-commerce-services-benefits-div">
-              <img src={frame1} alt="Icon" />
+              <img src={frame1} alt="Icon"/>
               <h3 className="benefit-title">Strategic Product Storytelling</h3>
               <p className="benefit-text">
                 We align 3D visualization strategies with clear product
@@ -32,7 +32,7 @@ const Page2 = () => {
             </div>
 
             <div className="e-commerce-services-benefits-div">
-              <img src={frame2} alt="Icon" />
+              <img src={frame2} alt="Icon"/>
               <h3 className="benefit-title">
                 Qualified Buyer Interest & Conversion Support
               </h3>
@@ -46,7 +46,7 @@ const Page2 = () => {
 
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
             <div className="e-commerce-services-benefits-div">
-              <img src={frame6} alt="Icon" />
+              <img src={frame6} alt="Icon"/>
               <h3 className="benefit-title">
                 Performance Driven Attention & Engagement
               </h3>
@@ -58,7 +58,7 @@ const Page2 = () => {
             </div>
 
             <div className="e-commerce-services-benefits-div">
-              <img src={frame5} alt="Icon" />
+              <img src={frame5} alt="Icon"/>
               <h3 className="benefit-title">
                 Data-Informed Visualization Optimization
               </h3>
@@ -72,7 +72,7 @@ const Page2 = () => {
 
           <div className="column-2 left-pad-50 right-pad-30">
             <div className="e-commerce-services-benefits-div">
-              <img src={frame3} alt="Icon" />
+              <img src={frame3} alt="Icon"/>
               <h3 className="benefit-title">
                 Consistent Product Narrative & Visual Identity
               </h3>
@@ -85,7 +85,7 @@ const Page2 = () => {
             </div>
 
             <div className="e-commerce-services-benefits-div">
-              <img src={frame4} alt="Icon" />
+              <img src={frame4} alt="Icon"/>
               <h3 className="benefit-title">
                 Scalable Growth with Long-Term Product Value
               </h3>

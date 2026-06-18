@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import React from 'react'
 import '../../page2.css'
 
@@ -27,7 +27,7 @@ const Page2 = () => {
           <div className="column-2 custom-border-2 right-pad-30">
 
             <div>
-              <img width="100px" src={frame1} alt="Icon" />
+              <img width="100px" src={frame1} alt="Icon"/>
               <h3 className="benefit-title">
                Clear Market Positioning & Direction
               </h3>
@@ -37,7 +37,7 @@ const Page2 = () => {
             </div>
 
             <div>
-              <img width="100px" src={frame2} alt="Icon" />
+              <img width="100px" src={frame2} alt="Icon"/>
               <h3 className="benefit-title">
                 Structured Brand Governance & Control
               </h3>
@@ -51,7 +51,7 @@ const Page2 = () => {
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
 
             <div>
-              <img width="100px" src={frame6} alt="Icon" />
+              <img width="100px" src={frame6} alt="Icon"/>
               <h3 className="benefit-title">
                Stronger Market Authority & Perception
               </h3>
@@ -61,7 +61,7 @@ const Page2 = () => {
             </div>
 
             <div>
-              <img width="100px" src={frame5} alt="Icon" />
+              <img width="100px" src={frame5} alt="Icon"/>
               <h3 className="benefit-title">
                 Strategic Alignment & Business Impact
               </h3>
@@ -75,7 +75,7 @@ const Page2 = () => {
           <div className="column-2 left-pad-50 right-pad-30">
 
             <div>
-              <img width="100px" src={frame3} alt="Icon" />
+              <img width="100px" src={frame3} alt="Icon"/>
               <h3 className="benefit-title">
                Unified Brand Experience Across Touchpoints
               </h3>
@@ -85,7 +85,7 @@ const Page2 = () => {
             </div>
 
             <div>
-              <img width="100px" src={frame4} alt="Icon" />
+              <img width="100px" src={frame4} alt="Icon"/>
               <h3 className="benefit-title">
                 Scalable Positioning Architecture
               </h3>

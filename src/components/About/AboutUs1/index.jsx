@@ -164,17 +164,9 @@ const AboutUs1 = () => {
               className="feature-card-1-about1"
               key={index}
               variants={flipUp}
-              whileHover={{
-                y: -10,
-                scale: 1.04,
-                boxShadow: "0 14px 44px rgba(0,200,255,0.22)",
-                transition: { type: "spring", stiffness: 260 },
-              }}
             >
               <motion.div
                 className="icon-box-1-about1"
-                whileHover={{ rotate: [0, -8, 8, 0], scale: 1.2 }}
-                transition={{ duration: 0.5 }}
               >
                 <img src={item.img} alt={item.title} />
               </motion.div>

@@ -27,7 +27,7 @@ const Page1 = () => {
         </div>
 
         <div className="logo-box2-service1">
-          <img src={ecommerceImg} alt="Ecommerce" />
+          <img src={ecommerceImg} alt="Ecommerce"/>
 
           <div>
             <div className="social-media-service1">

@@ -14,7 +14,7 @@ const Service3_6 = () => {
   return (
     <div className="page-root-bss6 decalotype-font-bss6">
       {/* HERO */}
-       {/* <img src={eclipse} className="eclipse" alt="" /> */}
+       {/* <img src={eclipse} className="eclipse" alt=""/> */}
       <section className="hero-section-bss6">
         <div className="hero-header-row-bss6">
           <motion.h1
@@ -34,7 +34,7 @@ const Service3_6 = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: false, amount: 0.3 }}
           >
-            <img className="arrow-icon-bss6" src={arrow} alt="" />
+            <img className="arrow-icon-bss6" src={arrow} alt=""/>
           </motion.div>
         </div>
 
@@ -53,7 +53,7 @@ const Service3_6 = () => {
           {/* BRAND */}
           <div className="footer-col-bss6">
             <div className="logo-section-bss6">
-              <img src={logo} alt="Visiomatix" className="brand-logo-bss6" />
+              <img src={logo} alt="Visiomatix"className="brand-logo-bss6" />
               <h2 className="brand-name-bss6">
                 Visiomatix <br /> Media
               </h2>
@@ -182,11 +182,11 @@ const Service3_6 = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: false, amount: 0.3 }}
           >
-            <img src={igIcon} alt="Instagram" />
-            <img src={fbIcon} alt="Facebook" />
-            <img src={liIcon} alt="LinkedIn" />
-            <img src={xIcon} alt="X" />
-            <img src={ytIcon} alt="YouTube" />
+            <img src={igIcon} alt="Instagram"/>
+            <img src={fbIcon} alt="Facebook"/>
+            <img src={liIcon} alt="LinkedIn"/>
+            <img src={xIcon} alt="X"/>
+            <img src={ytIcon} alt="YouTube"/>
           </motion.div>
 
           <motion.p

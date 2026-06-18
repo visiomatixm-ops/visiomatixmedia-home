@@ -6,6 +6,7 @@ import collaboration from "../../../assets/icons/collaboration.png";
 import data from "../../../assets/icons/data.png";
 import rohitshinde from "../../../assets/images/rohitshinde.png";
 import { NavLink, useNavigate } from "react-router";
+import { ArrowUpRight } from "lucide-react";
 import {
   fadeLeft,
   fadeRight,
@@ -86,7 +87,7 @@ const AboutUs2 = () => {
                 <motion.span
                   key={i}
                   variants={{
-                    hidden:  { opacity: 0, y: 40 },
+                    hidden: { opacity: 0, y: 40 },
                     visible: {
                       opacity: 1, y: 0,
                       transition: { duration: 0.55, ease: EASE },
@@ -122,15 +123,10 @@ const AboutUs2 = () => {
               <motion.button
                 onClick={handleButton}
                 className="connect-btn-about2"
-                whileHover={{ scale: 1.07 }}
-                whileTap={{ scale: 0.93 }}
+                
               >
                 Let's connect
-                <img
-                  src={arrowupright}
-                  alt="arrow"
-                  className="btn-arrow-about2"
-                />
+                <ArrowUpRight size={20} color="#ffffff" className="read-more-icon-home4" />
               </motion.button>
             </motion.div>
           </div>
@@ -148,17 +144,9 @@ const AboutUs2 = () => {
                 className="feature-card-1-about2"
                 key={index}
                 variants={flipUp}
-                whileHover={{
-                  y: -8,
-                  scale: 1.04,
-                  boxShadow: "0 14px 40px rgba(0,200,255,0.2)",
-                  transition: { type: "spring", stiffness: 260 },
-                }}
               >
                 <motion.div
                   className="icon-box-1-about2"
-                  whileHover={{ rotate: [0, -8, 8, 0], scale: 1.18 }}
-                  transition={{ duration: 0.4 }}
                 >
                   <img src={item.img} alt={item.title} />
                 </motion.div>
@@ -199,7 +187,6 @@ const AboutUs2 = () => {
               alt="Rohit Shinde"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-              whileHover={{ scale: 1.05, filter: "brightness(1.12)" }}
             />
           </motion.div>
 
@@ -284,15 +271,10 @@ const AboutUs2 = () => {
                 <motion.button
                   onClick={handleButton}
                   className="connect-btn-about2"
-                  whileHover={{ scale: 1.07 }}
-                  whileTap={{ scale: 0.93 }}
+                  
                 >
                   Read More
-                  <img
-                    src={arrowupright}
-                    alt="arrow"
-                    className="btn-arrow-about2"
-                  />
+                  <ArrowUpRight size={20} color="#ffffff" className="read-more-icon-home4" />
                 </motion.button>
               </motion.div>
             </div>

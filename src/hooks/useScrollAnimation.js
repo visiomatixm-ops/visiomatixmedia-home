@@ -57,11 +57,7 @@ export const drawLine = {
 // ── GLOW PULSE (repeating border glow) ──────────────────────
 export const glowPulse = {
   pulse: {
-    boxShadow: [
-      "0 0 0px rgba(0,200,255,0)",
-      "0 0 24px rgba(0,200,255,0.55)",
-      "0 0 0px rgba(0,200,255,0)",
-    ],
+    boxShadow: "none",
     transition: { duration: 2.2, repeat: Infinity, ease: "easeInOut" },
   },
 };

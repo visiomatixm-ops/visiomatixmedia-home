@@ -54,7 +54,7 @@ const Page5 = () => {
             instagram, facebook, linkedin, youtube, x, pinterest, snapchat,
             whatsapp, google, telegram, be, ball, reddit, quora
           ].map((icon, index) => (
-            <img key={index} src={icon} alt="social-icon" />
+            <img key={index} src={icon} alt="social-icon"/>
           ))}
         </div>
 

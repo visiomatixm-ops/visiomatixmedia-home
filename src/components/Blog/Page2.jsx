@@ -3,6 +3,7 @@ import "./service_1.css";
 import arrow from "../../assets/business-software-solutions/icon/arrow1.png";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 import {
   fadeLeft,
   fadeRight,
@@ -143,17 +144,11 @@ const Service3_2 = ({ olderBlogs = [] }) => {
                   style={{ display: "inline-block", borderRadius: "20px" }}
                 >
                   <motion.button
-                    className="lets-connect-btn-blog"
-                    whileHover={{
-                      scale: 1.07,
-                      y: -3,
-                      boxShadow: "0 0 20px rgba(0,200,255,0.4)",
-                    }}
-                    whileTap={{ scale: 0.93 }}
-                    transition={{ type: "spring", stiffness: 300 }}
+                    className="lets-connect-btn-blog read-more-wrapper-blog"
+                    
                   >
                     Let's connect
-                    <img src={arrow} alt="arrow" className="connect-icon-blog" />
+                    <ArrowUpRight size={20} color="#ffffff" className="read-more-icon-blog" />
                   </motion.button>
                 </motion.div>
               </div>
@@ -213,7 +208,6 @@ const Service3_2 = ({ olderBlogs = [] }) => {
                   variants={cardReveal}
                   whileHover={{
                     y: -10,
-                    boxShadow: "0 20px 52px rgba(0,120,255,0.28)",
                     transition: { type: "spring", stiffness: 260, damping: 18 },
                   }}
                 >

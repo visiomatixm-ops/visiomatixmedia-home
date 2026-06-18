@@ -24,7 +24,7 @@ const Service6_3 = () => {
           approach ensures sustainable growth, stronger search positioning, and
           lasting digital impact.
         </p>
-        <img src={image3} alt="" className="image-bss3" />
+        <img src={image3} alt=""className="image-bss3" />
       </section>
     </>
   );

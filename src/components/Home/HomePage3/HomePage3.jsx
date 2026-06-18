@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./HomePage3.css";
 import { motion } from "framer-motion";
 
@@ -36,10 +36,93 @@ const stats = [
   { value: "20+", label: "Certifications & Awards" },
 ];
 
+const Counter = ({ value, duration = 2000 }) => {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    let observer;
+    let animationFrameId;
+    let timeoutId;
+    let isIntersecting = false;
+
+    const number = parseFloat(value);
+    const suffix = value.replace(/[0-9.]/g, "");
+    const startValue = Math.max(number - 20, 0.1);
+    const showDecimals = !Number.isInteger(number) || number < 10;
+
+    const formatValue = (num) =>
+      showDecimals ? num.toFixed(1) + suffix : Math.floor(num) + suffix;
+
+    const runAnimation = () => {
+      if (!isIntersecting) return;
+      let startTime = null;
+      const animate = (timestamp) => {
+        if (!startTime) startTime = timestamp;
+        const progress = timestamp - startTime;
+        const current = Math.min(
+          Math.max(startValue + (progress / duration) * (number - startValue), 0.1),
+          number,
+        );
+        if (ref.current) {
+          ref.current.textContent = formatValue(current);
+        }
+        if (progress < duration) {
+          animationFrameId = requestAnimationFrame(animate);
+        } else {
+          timeoutId = setTimeout(() => {
+            if (ref.current) {
+              ref.current.textContent = formatValue(startValue);
+            }
+            runAnimation();
+          }, 5000);
+        }
+      };
+      animationFrameId = requestAnimationFrame(animate);
+    };
+
+    observer = new IntersectionObserver(
+      ([entry]) => {
+        isIntersecting = entry.isIntersecting;
+        if (isIntersecting) {
+          runAnimation();
+        } else {
+          cancelAnimationFrame(animationFrameId);
+          clearTimeout(timeoutId);
+          if (ref.current) {
+            ref.current.textContent = formatValue(startValue);
+          }
+        }
+      },
+      { threshold: 0.3 },
+    );
+
+    observer.observe(el);
+
+    return () => {
+      observer.disconnect();
+      cancelAnimationFrame(animationFrameId);
+      clearTimeout(timeoutId);
+    };
+  }, [value, duration]);
+
+  return <span ref={ref}>{value}</span>;
+};
+
 const brands = [
-  brand1, brand2, brand3, brand4,
-  brand5, brand6, brand7, brand8,
-  brand9, brand10, brand11, brand12,
+  brand1,
+  brand2,
+  brand3,
+  brand4,
+  brand5,
+  brand6,
+  brand7,
+  brand8,
+  brand9,
+  brand10,
+  brand11,
+  brand12,
 ];
 
 export default function HomePage3() {
@@ -61,7 +144,12 @@ export default function HomePage3() {
               className="years-home3"
               initial={{ opacity: 0, scale: 0.3, rotate: -15 }}
               whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-              transition={{ type: "spring", stiffness: 150, damping: 12, delay: 0.25 }}
+              transition={{
+                type: "spring",
+                stiffness: 150,
+                damping: 12,
+                delay: 0.25,
+              }}
               viewport={viewport}
             >
               4+
@@ -146,19 +234,19 @@ export default function HomePage3() {
           whileInView="visible"
           viewport={viewport}
         >
-          {stats.map((item, i) => (
-            <motion.div
-              className="stat-box-home3"
-              key={i}
-              variants={countReveal}
-              whileHover={{ y: -8, scale: 1.05 }}
-            >
-              <div className="stats-text-container-home3">
-                <h1>{item.value}</h1>
-                <span>{item.label}</span>
-              </div>
-            </motion.div>
-          ))}
+       {stats.map((item, i) => (
+  <motion.div
+    className="stat-box-home3"
+    key={i}
+    variants={countReveal}
+    whileHover={{ y: -8, scale: 1.05 }}
+  >
+    <div className="stats-text-container-home3">
+      <h1><Counter value={item.value} /></h1>
+      <span>{item.label}</span>
+    </div>
+  </motion.div>
+))}
         </motion.div>
       </div>
 
@@ -188,7 +276,7 @@ export default function HomePage3() {
         <div className="brands-marquee-home3">
           {[...brands, ...brands].map((logo, i) => (
             <div className="brand-card-home3" key={i}>
-              <img src={logo} alt="Brand Logo" />
+              <img src={logo} alt="Brand Logo"/>
             </div>
           ))}
         </div>

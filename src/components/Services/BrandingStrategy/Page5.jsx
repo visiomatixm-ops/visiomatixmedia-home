@@ -1,4 +1,4 @@
-// import React from 'react'
+﻿// import React from 'react'
 // import './service5.css';
 
 // import erp from "../assets/business-software-solutions/icon/Group 196.png";
@@ -26,20 +26,20 @@
 //             </section>
 //             <section className="slider-bss5">
 //                 <div className="slider-box-bss5">
-//                     <img src={erp} alt="" />
-//                     <img src={crm} alt="" />
-//                     <img src={bpm} alt="" />
-//                     <img src={a} alt="" />
-//                     <img src={dot} alt="" />
-//                     <img src={hr} alt="" />
-//                     <img src={camel} alt="" />
-//                     <img src={finance} alt="" />
-//                     <img src={saas} alt="" />
-//                     <img src={ppt} alt="" />
-//                     <img src={ecom} alt="" />
-//                     <img src={ssas} alt="" />
-//                     <img src={nitro} alt="" />
-//                     <img src={api} alt="" />
+//                     <img src={erp} alt=""/>
+//                     <img src={crm} alt=""/>
+//                     <img src={bpm} alt=""/>
+//                     <img src={a} alt=""/>
+//                     <img src={dot} alt=""/>
+//                     <img src={hr} alt=""/>
+//                     <img src={camel} alt=""/>
+//                     <img src={finance} alt=""/>
+//                     <img src={saas} alt=""/>
+//                     <img src={ppt} alt=""/>
+//                     <img src={ecom} alt=""/>
+//                     <img src={ssas} alt=""/>
+//                     <img src={nitro} alt=""/>
+//                     <img src={api} alt=""/>
 
 //                 </div>
 //             </section>
@@ -123,12 +123,6 @@ const Page5 = () => {
               src={img}
               alt="logo"
               key={index}
-              whileHover={{
-                scale: 1.15,
-                filter:
-                  "brightness(1.15) drop-shadow(0 0 10px rgba(0,200,255,0.5))",
-                transition: { duration: 0.3 },
-              }}
             />
           ))}
         </div>
@@ -160,11 +154,7 @@ const Page5 = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          whileHover={{
-            scale: 1.07,
-            boxShadow: "0 0 24px rgba(0,200,255,0.45)",
-          }}
-          whileTap={{ scale: 0.93 }}
+          
         >
           <NavLink to="/contact" className="nav-avoid-blue">
             Book Your Free Strategy Call

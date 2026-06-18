@@ -1,4 +1,4 @@
-import "../animation.css";
+﻿import "../animation.css";
 import "../page1.css";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
@@ -59,7 +59,6 @@ const Page1 = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: false, amount: 0.3 }}
-            whileHover={{ scale: 1.04, filter: "brightness(1.1)" }}
           />
 
           <div>
@@ -84,11 +83,6 @@ const Page1 = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: false, amount: 0.3 }}
-                whileHover={{
-                  y: -6,
-                  boxShadow: "0 8px 28px rgba(0,200,255,0.18)",
-                  transition: { type: "spring", stiffness: 260 },
-                }}
               >
                 <h2>
                   <span>01.</span> Strategic Brand Discovery & Planning
@@ -107,11 +101,6 @@ const Page1 = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9 }}
                 viewport={{ once: false, amount: 0.3 }}
-                whileHover={{
-                  y: -6,
-                  boxShadow: "0 8px 28px rgba(0,200,255,0.18)",
-                  transition: { type: "spring", stiffness: 260 },
-                }}
               >
                 <h2>
                   <span>02.</span> Brand Strategy Development & Execution
@@ -130,11 +119,6 @@ const Page1 = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: false, amount: 0.3 }}
-                whileHover={{
-                  y: -6,
-                  boxShadow: "0 8px 28px rgba(0,200,255,0.18)",
-                  transition: { type: "spring", stiffness: 260 },
-                }}
               >
                 <h2>
                   <span>03.</span> Brand Governance, Consistency & Scalability

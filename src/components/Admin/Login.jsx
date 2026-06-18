@@ -37,7 +37,7 @@ const Login = () => {
   return (
     <div className="admin-login">
       <div className="logo">
-        <img src="/Logo.png" alt="Visiomatix Media" />
+        <img src="/Logo.png" alt="Visiomatix Media"/>
       </div>
       <h2>Admin Login</h2>
       <form onSubmit={handleSubmit}>

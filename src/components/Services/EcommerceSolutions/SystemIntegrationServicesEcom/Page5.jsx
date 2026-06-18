@@ -25,7 +25,7 @@ const Service3_5 = () => {
       <section className="slider-bss5">
         <div className="slider-track-bss5">
           {[...logos, ...logos].map((img, index) => (
-            <img width="150px" src={img} alt="logo" key={index} />
+            <img width="150px" src={img} alt="logo"key={index} />
           ))}
         </div>
       </section>

@@ -26,20 +26,20 @@
 //             </section>
 //             <section className="slider-bss5">
 //                 <div className="slider-box-bss5">
-//                     <img src={erp} alt="" />
-//                     <img src={crm} alt="" />
-//                     <img src={bpm} alt="" />
-//                     <img src={a} alt="" />
-//                     <img src={dot} alt="" />
-//                     <img src={hr} alt="" />
-//                     <img src={camel} alt="" />
-//                     <img src={finance} alt="" />
-//                     <img src={saas} alt="" />
-//                     <img src={ppt} alt="" />
-//                     <img src={ecom} alt="" />
-//                     <img src={ssas} alt="" />
-//                     <img src={nitro} alt="" />
-//                     <img src={api} alt="" />
+//                     <img src={erp} alt=""/>
+//                     <img src={crm} alt=""/>
+//                     <img src={bpm} alt=""/>
+//                     <img src={a} alt=""/>
+//                     <img src={dot} alt=""/>
+//                     <img src={hr} alt=""/>
+//                     <img src={camel} alt=""/>
+//                     <img src={finance} alt=""/>
+//                     <img src={saas} alt=""/>
+//                     <img src={ppt} alt=""/>
+//                     <img src={ecom} alt=""/>
+//                     <img src={ssas} alt=""/>
+//                     <img src={nitro} alt=""/>
+//                     <img src={api} alt=""/>
 
 //                 </div>
 //             </section>
@@ -104,7 +104,7 @@ const Page5 = () => {
       <section className="slider-bss5">
         <div className="slider-track-bss5">
           {[...logos, ...logos].map((img, index) => (
-            <img src={img} alt="UI&UX-icon" key={index} />
+            <img src={img} alt="UI&UX-icon"key={index} />
           ))}
         </div>
       </section>

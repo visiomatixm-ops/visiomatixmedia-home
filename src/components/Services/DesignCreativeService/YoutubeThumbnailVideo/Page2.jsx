@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import frame1 from "../../../../assets/Youtube_Thumbnail&Video/images/image1.png";
 import frame3 from "../../../../assets/Youtube_Thumbnail&Video/images/image2.png";
 import frame5 from "../../../../assets/Youtube_Thumbnail&Video/images/image3.png";
@@ -20,7 +20,7 @@ const Page2 = () => {
         <motion.div className="benefites-containr-2" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false, amount: 0.2 }} transition={{ duration: 0.75, delay: 0.2 }}>
           <div className="column-2 custom-border-2 right-pad-30">
             <div className="e-commerce-services-benefits-div">
-              <img src={frame1} alt="Icon" />
+              <img src={frame1} alt="Icon"/>
               <h3 className="benefit-title">Strategic Channel Positioning</h3>
               <p className="benefit-text">
                 We align thumbnails and video strategy with clear channel goals,
@@ -31,7 +31,7 @@ const Page2 = () => {
             </div>
 
             <div className="e-commerce-services-benefits-div">
-              <img src={frame2} alt="Icon" />
+              <img src={frame2} alt="Icon"/>
               <h3 className="benefit-title">
                 Qualified Viewership & Conversion Impact
               </h3>
@@ -45,7 +45,7 @@ const Page2 = () => {
 
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
             <div className="e-commerce-services-benefits-div">
-              <img src={frame3} alt="Icon" />
+              <img src={frame3} alt="Icon"/>
               <h3 className="benefit-title">
                 Performance Driven Views & Engagement
               </h3>
@@ -58,7 +58,7 @@ const Page2 = () => {
             </div>
 
             <div className="e-commerce-services-benefits-div">
-              <img src={frame4} alt="Icon" />
+              <img src={frame4} alt="Icon"/>
               <h3 className="benefit-title">
                 Data Backed Video Optimization & Intelligence
               </h3>
@@ -72,7 +72,7 @@ const Page2 = () => {
 
           <div className="column-2 left-pad-50 right-pad-30">
             <div className="e-commerce-services-benefits-div">
-              <img src={frame5} alt="Icon" />
+              <img src={frame5} alt="Icon"/>
               <h3 className="benefit-title">
                 Consistent Visual Identity & Content Authority
               </h3>
@@ -84,7 +84,7 @@ const Page2 = () => {
             </div>
 
             <div className="e-commerce-services-benefits-div">
-              <img src={frame6} alt="Icon" />
+              <img src={frame6} alt="Icon"/>
               <h3 className="benefit-title">
                 Scalable Growth with Long Term Channel ROI
               </h3>

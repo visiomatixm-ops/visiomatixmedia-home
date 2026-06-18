@@ -1,4 +1,4 @@
-
+﻿
 import React from 'react'
 
 import '../page2.css'
@@ -46,21 +46,10 @@ const Page2 = () => {
               initial={{ opacity: 0, y: 80 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.3 }}
-            
-    whileHover={{
-      y: -8,
-      scale: 1.03,
-      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 }
-    }}>
-              <motion.img
+              viewport={{ once: false, amount: 0.3 }}>
+              <img
                 src={frame1}
                 alt="Icon"
-                initial={{ opacity: 0, scale: 0.6 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6 }}
-                whileHover={{ rotate: [0, -6, 6, 0], scale: 1.15, transition: { duration: 0.4 } }}
               />
               <h3 className="benefit-title">
                 Business Centric Software Architecture
@@ -75,21 +64,10 @@ const Page2 = () => {
               initial={{ opacity: 0, y: 80 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9 }}
-              viewport={{ once: false, amount: 0.3 }}
-            
-    whileHover={{
-      y: -8,
-      scale: 1.03,
-      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 }
-    }}>
-              <motion.img
+              viewport={{ once: false, amount: 0.3 }}>
+              <img
                 src={frame2}
                 alt="Icon"
-                initial={{ opacity: 0, scale: 0.6 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6 }}
-                whileHover={{ rotate: [0, -6, 6, 0], scale: 1.15, transition: { duration: 0.4 } }}
               />
               <h3 className="benefit-title">
                 Process Automation & Efficiency
@@ -108,21 +86,10 @@ const Page2 = () => {
               initial={{ opacity: 0, y: 80 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.3 }}
-            
-    whileHover={{
-      y: -8,
-      scale: 1.03,
-      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 }
-    }}>
-              <motion.img
+              viewport={{ once: false, amount: 0.3 }}>
+              <img
                 src={frame6}
                 alt="Icon"
-                initial={{ opacity: 0, scale: 0.6 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6 }}
-                whileHover={{ rotate: [0, -6, 6, 0], scale: 1.15, transition: { duration: 0.4 } }}
               />
               <h3 className="benefit-title">
                 Scalable & Future Ready Systems
@@ -137,21 +104,10 @@ const Page2 = () => {
               initial={{ opacity: 0, y: 80 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9 }}
-              viewport={{ once: false, amount: 0.3 }}
-            
-    whileHover={{
-      y: -8,
-      scale: 1.03,
-      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 }
-    }}>
-              <motion.img
+              viewport={{ once: false, amount: 0.3 }}>
+              <img
                 src={frame5}
                 alt="Icon"
-                initial={{ opacity: 0, scale: 0.6 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6 }}
-                whileHover={{ rotate: [0, -6, 6, 0], scale: 1.15, transition: { duration: 0.4 } }}
               />
               <h3 className="benefit-title">
                 Secure & Compliant Development
@@ -170,21 +126,10 @@ const Page2 = () => {
               initial={{ opacity: 0, y: 80 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              viewport={{ once: false, amount: 0.3 }}
-            
-    whileHover={{
-      y: -8,
-      scale: 1.03,
-      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 }
-    }}>
-              <motion.img
+              viewport={{ once: false, amount: 0.3 }}>
+              <img
                 src={frame3}
                 alt="Icon"
-                initial={{ opacity: 0, scale: 0.6 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6 }}
-                whileHover={{ rotate: [0, -6, 6, 0], scale: 1.15, transition: { duration: 0.4 } }}
               />
               <h3 className="benefit-title">
                 High Performance & Reliability
@@ -199,21 +144,10 @@ const Page2 = () => {
               initial={{ opacity: 0, y: 80 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9 }}
-              viewport={{ once: false, amount: 0.3 }}
-            
-    whileHover={{
-      y: -8,
-      scale: 1.03,
-      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 }
-    }}>
-              <motion.img
+              viewport={{ once: false, amount: 0.3 }}>
+              <img
                 src={frame4}
                 alt="Icon"
-                initial={{ opacity: 0, scale: 0.6 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6 }}
-                whileHover={{ rotate: [0, -6, 6, 0], scale: 1.15, transition: { duration: 0.4 } }}
               />
               <h3 className="benefit-title">
                 Seamless System Integrations

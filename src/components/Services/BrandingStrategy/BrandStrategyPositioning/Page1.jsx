@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import "../../page1.css";
 import cloud from "../../../../assets/BrandStrategyPositioning/images/1.png";
 
@@ -34,7 +34,6 @@ const Page1 = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: false, amount: 0.3 }}
-            whileHover={{ scale: 1.04, filter: "brightness(1.1)" }}
           />
           <div>
             <motion.div
@@ -59,11 +58,6 @@ const Page1 = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: false, amount: 0.3 }}
-                whileHover={{
-                  y: -6,
-                  boxShadow: "0 8px 28px rgba(0,200,255,0.18)",
-                  transition: { type: "spring", stiffness: 260 },
-                }}
               >
                 {" "}
                 <h2>
@@ -83,11 +77,6 @@ const Page1 = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9 }}
                 viewport={{ once: false, amount: 0.3 }}
-                whileHover={{
-                  y: -6,
-                  boxShadow: "0 8px 28px rgba(0,200,255,0.18)",
-                  transition: { type: "spring", stiffness: 260 },
-                }}
               >
                 {" "}
                 <h2>
@@ -106,11 +95,6 @@ const Page1 = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: false, amount: 0.3 }}
-                whileHover={{
-                  y: -6,
-                  boxShadow: "0 8px 28px rgba(0,200,255,0.18)",
-                  transition: { type: "spring", stiffness: 260 },
-                }}
               >
                 {" "}
                 <h2>

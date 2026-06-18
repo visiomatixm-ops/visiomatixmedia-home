@@ -129,8 +129,8 @@ const Contact = () => {
             <div>
               <h4>Address</h4>
               <p>
-                Om Sai Apartment, Road, Manmad -<br />
-                Chandwad Rd, Dawkhar Nagar, Ganur,
+                Office No. 3, Om Sai Apartment, Near Petrol Pump, 
+                Ganur Road, Davkhar Nagar, Chandwad,
                 <br />
                 Nashik, Maharashtra - 423101
               </p>
@@ -151,19 +151,19 @@ const Contact = () => {
               href="https://www.instagram.com/visiomatix_media/"
               target="_blank"
             >
-              <img src={instagram} alt="Instagram" />
+              <img src={instagram} alt="Instagram"/>
             </a>
             <a href="https://www.facebook.com/visiomatixmedia" target="_blank">
-              <img src={facebook} alt="Facebook" />
+              <img src={facebook} alt="Facebook"/>
             </a>
             <a
               href="https://www.linkedin.com/company/visiomatix-media/posts/?feedView=all"
               target="_blank"
             >
-              <img src={linkedin} alt="LinkedIn" />
+              <img src={linkedin} alt="LinkedIn"/>
             </a>
             <a href="https://x.com/visiomatixmedia" target="_blank">
-              <img src={x} alt="X" />
+              <img src={x} alt="X"/>
             </a>
           </div>
         </motion.div>
@@ -243,32 +243,56 @@ const Contact = () => {
               </div>
             </div>
 
-            <select
-              name="service"
-              onChange={(e) => {
-                if (e.target.value) {
-                  setErrors((prev) => {
-                    if (!prev || !prev.service) return prev;
-                    const copy = { ...prev };
-                    delete copy.service;
-                    return copy;
-                  });
-                }
-              }}
-            >
-              <option value="">Which service are you interested in?</option>
-              <option value="digital-marketing">Digital Marketing</option>
-              <option value="design-creative">Design & Creative</option>
-              <option value="webapp-development">Web App Development</option>
-              <option value="business-software-solutions">
-                Business Software Solutions
-              </option>
-              <option value="ecommerce-solutions">E-Commerce Solutions</option>
-              <option value="branding-strategy">Branding & Strategy</option>
-            </select>
-            {errors.service && (
-              <small className="error">{errors.service}</small>
-            )}
+          <select
+  name="service"
+  defaultValue=""
+  onChange={(e) => {
+    if (e.target.value) {
+      setErrors((prev) => {
+        if (!prev || !prev.service) return prev;
+
+        const copy = { ...prev };
+        delete copy.service;
+
+        return copy;
+      });
+    }
+  }}
+>
+  {/* Placeholder */}
+  <option value="" disabled hidden>
+    Which service are you interested in ?
+  </option>
+
+  {/* Services */}
+  <option value="digital-marketing">
+    Digital Marketing
+  </option>
+
+  <option value="design-creative">
+    Design & Creative
+  </option>
+
+  <option value="webapp-development">
+    Web App Development
+  </option>
+
+  <option value="business-software-solutions">
+    Business Software Solutions
+  </option>
+
+  <option value="ecommerce-solutions">
+    E-Commerce Solutions
+  </option>
+
+  <option value="branding-strategy">
+    Branding & Strategy
+  </option>
+</select>
+
+{errors.service && (
+  <small className="error">{errors.service}</small>
+)}
 
             <textarea name="message" placeholder="Message"></textarea>
 

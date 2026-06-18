@@ -155,16 +155,10 @@ const Service3_3 = () => {
               >
                 <motion.button
                   className="sc3-read-more-btn-blog"
-                  whileHover={{
-                    scale: 1.06,
-                    x: 4,
-                    boxShadow: "0 0 18px rgba(0,200,255,0.45)",
-                  }}
-                  whileTap={{ scale: 0.93 }}
-                  transition={{ type: "spring", stiffness: 300 }}
+                  
                 >
                   Read More
-                  <img src={arrow} alt="arrow" className="sc3-btn-icon-blog" />
+                  <img src={arrow} alt="arrow"className="sc3-btn-icon-blog" />
                 </motion.button>
               </motion.div>
             </div>

@@ -28,7 +28,7 @@ const Page2 = () => {
           <div className="column-2 custom-border-2 right-pad-30">
 
             <div>
-              <img width="90px" src={frame1} alt="Icon" />
+              <img width="90px" src={frame1} alt="Icon"/>
               <h3 className="benefit-title">
                Conversion-Centric Checkout Architecture
               </h3>
@@ -40,7 +40,7 @@ const Page2 = () => {
             </div>
 
             <div>
-              <img width="90px" src={frame2} alt="Icon" />
+              <img width="90px" src={frame2} alt="Icon"/>
               <h3 className="benefit-title">
                 Secure & Trust-Driven Payment Systems
               </h3>
@@ -56,7 +56,7 @@ const Page2 = () => {
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
 
             <div>
-              <img width="90px" src={frame6} alt="Icon" />
+              <img width="90px" src={frame6} alt="Icon"/>
               <h3 className="benefit-title">
                High Performance & Transaction Stability
               </h3>
@@ -67,7 +67,7 @@ const Page2 = () => {
             </div>
 
             <div>
-              <img width="90px" src={frame5} alt="Icon" />
+              <img width="90px" src={frame5} alt="Icon"/>
               <h3 className="benefit-title">
                 Data-Driven Optimization & Revenue Growth
               </h3>
@@ -82,7 +82,7 @@ const Page2 = () => {
           <div className="column-2 left-pad-50 right-pad-30">
 
             <div>
-              <img width="90px" src={frame3} alt="Icon" />
+              <img width="90px" src={frame3} alt="Icon"/>
               <h3 className="benefit-title">
                Seamless System Integrations
               </h3>
@@ -94,7 +94,7 @@ const Page2 = () => {
             </div>
 
             <div>
-              <img width="90px" src={frame4} alt="Icon" />
+              <img width="90px" src={frame4} alt="Icon"/>
               <h3 className="benefit-title">
                 Scalable & Performance-Optimized Checkout Flows
               </h3>

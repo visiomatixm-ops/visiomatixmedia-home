@@ -3,9 +3,10 @@
    HEADER WRAPPER
 ================================ */
 .header-wrapper {
-  position: absolute;
+  position: fixed;
   top: 0px;
   width: 100%;
+  z-index: 1000;
 }
 
 /* ===============================
@@ -13,21 +14,24 @@
 ================================ */
 .header {
   width: 100%;
-  background: linear-gradient(90deg,
-      #0e5bbf 30%,
-      #0b3d91 50%,
-      #061a3a 100%);
+  background: linear-gradient(
+    90deg,
+    #0e5bbf 30%,
+    #0b3d91 50%,
+    #061a3a 100%
+  );
   padding: clamp(12px, 2vw, 14px) clamp(20px, 5vw, 70px);
   position: relative;
   z-index: 100;
 }
 
 .header-container {
-  /* max-width: 1400px; */
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1400px;
+  width: 100%;
 }
 
 /* ===============================
@@ -71,19 +75,7 @@
 }
 
 .nav-link.active {
-  border-bottom: 2px solid rgb(255, 255, 255);  
-}
-
-.dropdown-toggle {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  transition: background 0.2s ease;
-}
-
-.dropdown-toggle.active {
-  background: rgba(253, 251, 251, 0.3);
-  border-radius: 8px;
+  border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 /* ===============================
@@ -97,72 +89,48 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  transition: background 0.2s ease;
+  transition: all 0.25s ease;
 }
 
 .dropdown-toggle.active {
   background: rgba(255, 255, 255, 0.12);
   border: 2px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 2px solid white;
   border-radius: 15px 15px 0px 0px;
   height: 45px;
   padding: 10px 12px;
-  
 }
 
-/* 🔑 FIXED DROPDOWN ITEM STYLING */
-.dropdown-menu a {
-  display: block;
-  width: 100%;
-  padding: 14px 18px;
-  min-height: 48px;
-  font-size: 15px;
-  color: #ffffff !important;
-  text-decoration: none !important;
-  font-family: "Decalotype", sans-serif;
-  transition: background 0.2s ease, opacity 0.2s ease;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
+.dropdown-toggle.visited:not(.active) {
+  border: none;
+  border-bottom: 2px solid white;
+  background: none;
 }
 
-/* 🔑 HOVER BACKGROUND */
-.dropdown-menu a:hover {
-  background: rgba(255, 255, 255, 0.15);
-  opacity: 1;
-}
-
-/* 🔑 ACTIVE / CLICKED BACKGROUND */
-.dropdown-menu a:active,
-.dropdown-menu a:focus {
-  background: rgba(253, 251, 251, 0.3);
-  opacity: 1;
-}
-
-/* Dropdown container */
+/* ===============================
+   DROPDOWN MENU
+================================ */
 .dropdown-menu {
   position: absolute;
   top: 100%;
   right: 0;
-  background: rgba(255, 255, 255, 0.10);
-  
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(18px);
-  min-width: 280px;
+  min-width: 300px;
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-top: none;
   border-radius: 15px 0 15px 15px;
-  padding: 10px 0;
+  padding: 10px;
   display: flex;
   flex-direction: column;
+  gap: 4px;
   box-shadow: 0 24px 44px rgba(0, 0, 0, 0.25);
+
   opacity: 0;
   transform: translateY(10px);
   pointer-events: none;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.25s ease, transform 0.25s ease;
   z-index: 20;
-  
 }
-
 
 .dropdown-menu.open {
   opacity: 1;
@@ -170,6 +138,40 @@
   pointer-events: auto;
 }
 
+/* ===============================
+   DROPDOWN ITEMS
+================================ */
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 14px 18px;
+  min-height: 48px;
+  font-size: 15px;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-family: "Decalotype", sans-serif;
+
+  border-radius: 12px;
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+
+/* HOVER EFFECT */
+.dropdown-menu a:hover {
+  background: linear-gradient(90deg, #0e5bbf, #1d74e7);
+  color: #ffffff !important;
+  transform: translateX(5px);
+  box-shadow: 0 8px 20px rgba(14, 91, 191, 0.35);
+}
+
+/* ACTIVE / CLICKED */
+.dropdown-menu a:active,
+.dropdown-menu a:focus,
+.dropdown-menu a.active {
+  background: #0b3d91;
+  color: #ffffff !important;
+}
 
 /* ===============================
    HAMBURGER
@@ -259,6 +261,7 @@
     opacity: 1;
     transform: none;
     pointer-events: auto;
+    border: none;
   }
 }
 

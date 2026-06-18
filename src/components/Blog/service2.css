@@ -153,21 +153,17 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  transition: all 0.3s ease;
 }
 .lets-connect-btn-blog {
-  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-}
-.lets-connect-btn-blog:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 20px rgba(0, 200, 255, 0.4);
 }
 
 .connect-icon-blog {
   width: 14px;
-  transform: rotate(-45deg);
-  filter: drop-shadow(0.3px 0 white) drop-shadow(0.5px 0 0 white)
-    drop-shadow(0 0.5px 0 white) drop-shadow(0 0.5px 0 white);
+}
+
+/* ─── Read More Icon Hover Effect ─── */
+.read-more-icon-blog {
+  flex-shrink: 0;
 }
 
 /* --- Right Cards Section --- */
@@ -236,11 +232,6 @@
   border-radius: 10px;
 }
 .blog-icon-box-blog img {
-  transition: transform 0.35s ease, filter 0.35s ease;
-}
-.blog-feature-card-blog:hover .blog-icon-box-blog img {
-  transform: scale(1.18) rotate(-6deg);
-  filter: drop-shadow(0 0 10px rgba(0, 200, 255, 0.45));
 }
 
 .blog-feature-card-blog h4 {
@@ -275,9 +266,28 @@
 
 @media (max-width: 768px) {
   .cards-bss4-blog {
-    grid-template-columns: 1fr !important; /* Stack cards on mobile */
-    max-width: 400px;
-    margin: 0 auto !important;
+    display: flex !important;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 16px !important;
+    max-width: 100%;
+    margin: 0 !important;
+    padding: 0 0 12px;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  .cards-bss4-blog::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  .cards-bss4-blog > * {
+    flex: 0 0 auto;
+    width: clamp(240px, 82vw, 320px);
+    scroll-snap-align: start;
   }
 
   .blog-features-blog {

@@ -49,7 +49,7 @@ const Header = () => {
           {/* Logo */}
           <div className="logo-wrapper">
             <NavLink to="/" onClick={closeMobileMenu}>
-              <img src={logo} alt="Visiomatix" className="logo-image" />
+              <img src={logo} alt="Visiomatix"className="logo-image" />
             </NavLink>
             <span className="logo-text">Visiomatix Media</span>
           </div>
@@ -81,7 +81,7 @@ const Header = () => {
               ref={desktopDropdownRef}
             >
               <span
-                className={`nav-link dropdown-toggle ${desktopServicesOpen || isServiceActive ? "active" : ""}`}
+                className={`nav-link dropdown-toggle ${desktopServicesOpen ? "active" : ""} ${!desktopServicesOpen && isServiceActive ? "visited" : ""}`}
                 onClick={() => setDesktopServicesOpen((prev) => !prev)}
               >
                 Services ▾
@@ -117,6 +117,9 @@ const Header = () => {
             <NavLink to="/careers" className="nav-link">
               Careers
             </NavLink>
+            <NavLink to="/plans" className="nav-link">
+              Plans
+            </NavLink>
             <NavLink to="/contact" className="nav-link">
               Contact
             </NavLink>
@@ -141,7 +144,7 @@ const Header = () => {
 
           <div className="nav-dropdown">
             <span
-              className={`nav-link dropdown-toggle ${mobileServicesOpen || isServiceActive ? "active" : ""}`}
+              className={`nav-link dropdown-toggle ${mobileServicesOpen ? "active" : ""} ${!mobileServicesOpen && isServiceActive ? "visited" : ""}`}
               onClick={() => setMobileServicesOpen((prev) => !prev)}
             >
               Services ▾
@@ -194,6 +197,9 @@ const Header = () => {
           </NavLink>
           <NavLink to="/careers" className="nav-link" onClick={closeMobileMenu}>
             Careers
+          </NavLink>
+          <NavLink to="/plans" className="nav-link" onClick={closeMobileMenu}>
+            Plans
           </NavLink>
           <NavLink to="/contact" className="nav-link" onClick={closeMobileMenu}>
             Contact

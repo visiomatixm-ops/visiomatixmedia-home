@@ -65,7 +65,7 @@
 .about-container-about1 {
   position: relative;
   z-index: 1;
-  /* max-width: min(93%, 1400px); */
+  max-width: min(93%, 1400px);
   margin: 0 auto;
   text-align: center;
 }
@@ -172,6 +172,9 @@
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
           mask-composite: exclude;
   pointer-events: none;
@@ -208,7 +211,7 @@
 
 .feature-card-1-about1 p {
   font-family: "Decalotype", sans-serif;
-  font-size: clamp(10px, 0.85vw, 11px);
+  font-size: clamp(10.5px, 0.95vw, 12px);
   font-weight: 300;
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.78);
@@ -216,7 +219,8 @@
   letter-spacing: 0.5px;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  line-clamp: 8;
+  -webkit-line-clamp: 8;
   -webkit-box-orient: vertical;
 }
 
@@ -231,8 +235,28 @@
 }
 @media (max-width: 1100px) {
   .cards-about1 {
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 16px;
+    padding-bottom: 12px;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
   }
+
+  .cards-about1::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  .cards-about1 > * {
+    flex: 0 0 auto;
+    width: clamp(240px, 30vw, 280px);
+    scroll-snap-align: start;
+  }
+
   .feature-card-1-about1 {
     height: auto;
     min-height: 260px;
@@ -240,14 +264,14 @@
 }
 
 @media (max-width: 700px) {
-  .cards-about1 {
-    grid-template-columns: repeat(2, 1fr);
+  .cards-about1 > * {
+    width: clamp(220px, 78vw, 300px);
   }
 }
 
 @media (max-width: 480px) {
-  .cards-about1 {
-    grid-template-columns: 1fr;
+  .cards-about1 > * {
+    width: 84vw;
   }
   .feature-card-1-about1 {
     min-height: auto;

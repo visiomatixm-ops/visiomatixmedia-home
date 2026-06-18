@@ -15,13 +15,13 @@ const AboutUs5 = () => {
   return (
     <div className="page-root decalotype-font">
       {/* HERO */}
-      {/* <img src={eclipse} className="eclipse" alt="" /> */}
+      {/* <img src={eclipse} className="eclipse" alt=""/> */}
       <section className="hero-section">
         <div className="hero-header-row">
           <h1 className="hero-title">Let’s Build Your Growth Strategy</h1>
 
           <div className="arrow-box">
-            <img className="arrow-icon" src={arrow} alt="" />
+            <img className="arrow-icon" src={arrow} alt=""/>
           </div>
         </div>
 
@@ -34,7 +34,7 @@ const AboutUs5 = () => {
           {/* BRAND */}
           <div className="footer-col">
             <div className="logo-section">
-              <img src={logo} alt="Visiomatix" className="brand-logo" />
+              <img src={logo} alt="Visiomatix"className="brand-logo" />
               <h2 className="brand-name">
                 Visiomatix <br /> Media
               </h2>
@@ -158,19 +158,19 @@ const AboutUs5 = () => {
         <div className="footer-bottom">
           <div className="socials">
             <a href="https://www.instagram.com/">
-              <img src={igIcon} alt="Instagram" />
+              <img src={igIcon} alt="Instagram"/>
             </a>
             <a href="https://www.facebook.com">
-              <img src={fbIcon} alt="Facebook" />
+              <img src={fbIcon} alt="Facebook"/>
             </a>
             <a href="https://www.linkedin.com">
-              <img src={liIcon} alt="LinkedIn" />
+              <img src={liIcon} alt="LinkedIn"/>
             </a>
             <a href="https://x.com/">
-              <img src={xIcon} alt="X" />
+              <img src={xIcon} alt="X"/>
             </a>
             <a href="https:/www.youtube.com">
-              <img src={ytIcon} alt="YouTube" />
+              <img src={ytIcon} alt="YouTube"/>
             </a>
           </div>
 

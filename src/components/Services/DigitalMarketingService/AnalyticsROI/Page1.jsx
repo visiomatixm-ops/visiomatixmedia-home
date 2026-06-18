@@ -21,7 +21,7 @@ const Page1 = () => {
 Our performance led approach ensures every metric and dashboard helps track impact, guide decisions, and support sustainable growth and ROI.</p>
                 </div>
                 <div className="logo-box2-service1">
-                    <img src={digimart} alt="Image" />
+                    <img src={digimart} alt="Image"/>
                     <div>
                         <div className="social-media-service1">
                             <p>HOW ANALYTICS & ROI TRACKING WORKS<br /> <span>HOW DATA-DRIVEN ANALYTICS & ROI TRACKING WORKS</span></p>

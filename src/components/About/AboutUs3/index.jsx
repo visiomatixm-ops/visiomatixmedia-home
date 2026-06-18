@@ -37,42 +37,70 @@ const Counter = ({ value, duration = 2000 }) => {
 
   useEffect(() => {
     const el = ref.current;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          let startTime = null;
-          const number = parseFloat(value);
-          const suffix = value.replace(/[0-9.]/g, "");
-          const startValue = number - 20;
+    if (!el) return;
+    let observer;
+    let animationFrameId;
+    let timeoutId;
+    let isIntersecting = false;
 
-          const animate = (timestamp) => {
-            if (!startTime) startTime = timestamp;
-            const progress = timestamp - startTime;
-            const current = Math.min(
-              startValue + (progress / duration) * 20,
-              number
-            );
-            if (ref.current) {
-              ref.current.textContent =
-                Number.isInteger(number)
-                  ? Math.floor(current) + suffix
-                  : current.toFixed(1) + suffix;
-            }
-            if (progress < duration) {
-              requestAnimationFrame(animate);
-            }
-          };
-          requestAnimationFrame(animate);
+    const number = parseFloat(value);
+    const suffix = value.replace(/[0-9.]/g, "");
+    const startValue = Math.max(number - 20, 0.1);
+    const showDecimals = !Number.isInteger(number) || number < 10;
+
+    const formatValue = (num) =>
+      showDecimals ? num.toFixed(1) + suffix : Math.floor(num) + suffix;
+
+    const runAnimation = () => {
+      if (!isIntersecting) return;
+      let startTime = null;
+      const animate = (timestamp) => {
+        if (!startTime) startTime = timestamp;
+        const progress = timestamp - startTime;
+        const current = Math.min(
+          Math.max(startValue + (progress / duration) * (number - startValue), 0.1),
+          number,
+        );
+        if (ref.current) {
+          ref.current.textContent = formatValue(current);
+        }
+        if (progress < duration) {
+          animationFrameId = requestAnimationFrame(animate);
         } else {
+          timeoutId = setTimeout(() => {
+            if (ref.current) {
+              ref.current.textContent = formatValue(startValue);
+            }
+            runAnimation();
+          }, 5000);
+        }
+      };
+      animationFrameId = requestAnimationFrame(animate);
+    };
+
+    observer = new IntersectionObserver(
+      ([entry]) => {
+        isIntersecting = entry.isIntersecting;
+        if (isIntersecting) {
+          runAnimation();
+        } else {
+          cancelAnimationFrame(animationFrameId);
+          clearTimeout(timeoutId);
           if (ref.current) {
-            ref.current.textContent = Math.floor(number - 20) + value.replace(/[0-9.]/g, "");
+            ref.current.textContent = formatValue(startValue);
           }
         }
       },
       { threshold: 0.3 }
     );
-    if (el) observer.observe(el);
-    return () => observer.disconnect();
+
+    observer.observe(el);
+
+    return () => {
+      observer.disconnect();
+      cancelAnimationFrame(animationFrameId);
+      clearTimeout(timeoutId);
+    };
   }, [value, duration]);
 
   return <span ref={ref}>{value}</span>;
@@ -88,7 +116,6 @@ const FeatureCard = ({ src, alt, label, delay }) => (
       initial="hidden"
       whileInView="visible"
       viewport={viewport}
-      whileHover={{ scale: 1.15, rotate: [0, -6, 6, 0] }}
       transition={{ duration: 0.4, delay }}
     />
     <motion.p
@@ -137,7 +164,7 @@ const AboutUs3 = () => {
           <div className="read-more-wrapper">
             <NavLink to="/contact" className="read-more-btn">
               Read More
-              <img src={arrow} alt="arrow" className="read-more-icon" />
+              <img src={arrow} alt="arrow"className="read-more-icon" />
             </NavLink>
           </div>
         </motion.div>
@@ -200,7 +227,6 @@ const AboutUs3 = () => {
             className="hero_img"
             animate={{ y: [0, -14, 0] }}
             transition={{ duration: 4.8, repeat: Infinity, ease: "easeInOut" }}
-            whileHover={{ scale: 1.04, filter: "brightness(1.1)" }}
           />
         </motion.div>
       </main>
@@ -234,10 +260,10 @@ const AboutUs3 = () => {
         whileInView="visible"
         viewport={viewport}
       >
-        <FeatureCard src={star}  alt="star"  label="6+ Years of Delivering Smart Digital Solutions" delay={0} />
-        <FeatureCard src={hand}  alt="hand"  label="A Team Driving Creative Intelligence"           delay={0.1} />
-        <FeatureCard src={bulb}  alt="bulb"  label="Smart Execution for Smarter Results"            delay={0.2} />
-        <FeatureCard src={human} alt="human" label="Turning Ambition Into Measurable Success"       delay={0.3} />
+        <FeatureCard src={star}  alt="star"label="6+ Years of Delivering Smart Digital Solutions" delay={0} />
+        <FeatureCard src={hand}  alt="hand"label="A Team Driving Creative Intelligence"           delay={0.1} />
+        <FeatureCard src={bulb}  alt="bulb"label="Smart Execution for Smarter Results"            delay={0.2} />
+        <FeatureCard src={human} alt="human"label="Turning Ambition Into Measurable Success"       delay={0.3} />
       </motion.div>
 
       {/* DIVIDER */}
@@ -313,11 +339,6 @@ const AboutUs3 = () => {
             className="div-end"
             key={i}
             variants={flipUp}
-            whileHover={{
-              scale: 1.08,
-              boxShadow: "0 8px 32px rgba(0,200,255,0.25)",
-              transition: { type: "spring", stiffness: 260 },
-            }}
           >
             <motion.h1
               initial={{ opacity: 0, scale: 0.4 }}

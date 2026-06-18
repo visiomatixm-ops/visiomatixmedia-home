@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import "./HomePage1.css";
@@ -24,32 +24,40 @@ import {
 
 /* ── hero section entrance (page-load, not scroll) ── */
 const heroSectionEntrance = {
-  hidden:  {},
+  hidden: {},
   visible: {
     transition: { staggerChildren: 0.18, delayChildren: 0.1 },
   },
 };
 
 const heroChild = {
-  hidden:  { opacity: 0, y: 55 },
+  hidden: { opacity: 0, y: 55 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.85, ease: EASE } },
 };
 
 /* ── slide content — plays every slide change ── */
 const contentSlide = {
-  initial:  { opacity: 0, x: -70, filter: "blur(6px)" },
-  animate:  { opacity: 1, x: 0,   filter: "blur(0px)",
-              transition: { duration: 0.7, ease: EASE } },
-  exit:     { opacity: 0, x: 30, filter: "blur(4px)",
-              transition: { duration: 0.3, ease: EASE } },
+  initial: { opacity: 0, x: -70, filter: "blur(6px)" },
+  animate: {
+    opacity: 1, x: 0, filter: "blur(0px)",
+    transition: { duration: 0.7, ease: EASE }
+  },
+  exit: {
+    opacity: 0, x: 30, filter: "blur(4px)",
+    transition: { duration: 0.3, ease: EASE }
+  },
 };
 
 const imageSlide = {
-  initial:  { opacity: 0, scale: 0.72, x: 80, rotate: 4 },
-  animate:  { opacity: 1, scale: 1,    x: 0,  rotate: 0,
-              transition: { duration: 0.85, ease: EASE } },
-  exit:     { opacity: 0, scale: 0.85, x: -40,
-              transition: { duration: 0.3 } },
+  initial: { opacity: 0, scale: 0.72, x: 80, rotate: 4 },
+  animate: {
+    opacity: 1, scale: 1, x: 0, rotate: 0,
+    transition: { duration: 0.85, ease: EASE }
+  },
+  exit: {
+    opacity: 0, scale: 0.85, x: -40,
+    transition: { duration: 0.3 }
+  },
 };
 
 const HomePage1 = () => {
@@ -128,7 +136,7 @@ const HomePage1 = () => {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [currentIndex]);
 
   // Seamless infinite reset
   useEffect(() => {
@@ -156,8 +164,21 @@ const HomePage1 = () => {
     }
   }, [isTransition]);
 
-  const handleNext = () => setCurrentIndex((prev) => prev + 1);
-  const handlePrev = () => setCurrentIndex((prev) => prev - 1);
+  const isClickDisabled = useRef(false);
+
+  const handleNext = () => {
+    if (isClickDisabled.current) return;
+    isClickDisabled.current = true;
+    setTimeout(() => { isClickDisabled.current = false; }, 600);
+    setCurrentIndex((prev) => prev + 1);
+  };
+
+  const handlePrev = () => {
+    if (isClickDisabled.current) return;
+    isClickDisabled.current = true;
+    setTimeout(() => { isClickDisabled.current = false; }, 600);
+    setCurrentIndex((prev) => prev - 1);
+  };
 
   const getActiveDotIndex = (index) => {
     const realIndex = (index - 1 + slides.length) % slides.length;
@@ -188,7 +209,7 @@ const HomePage1 = () => {
                   {/* CONTENT — entrance animation on every slide change */}
                   <AnimatePresence mode="wait">
                     <motion.div
-                      key={`content-${currentIndex}`}
+                      key={`content-${extendedSlides[currentIndex]?.id}`}
                       {...contentSlide}
                       className="content-home1"
                     >
@@ -227,13 +248,9 @@ const HomePage1 = () => {
                           variants={heroChild}
                           className="button-home1"
                           onClick={handleCallClick}
-                          animate="pulse"
-                          {...glowPulse}
-                          whileHover={{
-                            scale: 1.07,
-                            boxShadow: "0 8px 36px rgba(0,200,255,0.5)",
-                          }}
-                          whileTap={{ scale: 0.95 }}
+                          
+                          
+                          
                         >
                           Get Your Free Call
                         </motion.button>
@@ -244,7 +261,7 @@ const HomePage1 = () => {
                   {/* IMAGE — floating + entrance per slide */}
                   <AnimatePresence mode="wait">
                     <motion.div
-                      key={`image-${currentIndex}`}
+                      key={`image-${extendedSlides[currentIndex]?.id}`}
                       {...imageSlide}
                       className="image-container-home1"
                       animate={["animate", "float"]}

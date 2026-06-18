@@ -94,23 +94,16 @@
   flex: 1;
 }
 
-/* Card hover lift and glassmorphism */
+/* Card hover lift */
 .blog-card-sb1-blog {
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: pointer;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.01) 100%);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
   border-radius: 23px;
   padding: 24px;
 }
 .blog-card-sb1-blog:hover {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.15) 0%, rgba(0, 120, 255, 0.1) 100%);
-  border-top: 1px solid rgba(255, 255, 255, 0.4);
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
 }
 
 /* .blog-card-sb1 img {
@@ -132,9 +125,6 @@
 .blog-img-container-sb1-blog img {
   transition: transform 0.55s ease !important;
   transform: none !important;
-}
-.blog-card-sb1-blog:hover .blog-img-container-sb1-blog img {
-  transform: scale(1.05) !important;
 }
 
 .blog-meta-sb1-blog {
@@ -233,23 +223,14 @@
   justify-content: center;
   gap: 10px;
   white-space: nowrap;
-  transition: all 0.3s ease;
 }
 /* Read more button */
 .read-more-btn-sb1-blog {
-  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-.read-more-btn-sb1-blog:hover {
-  background: #00c8ff;
-  color: #013992;
-  transform: translateX(4px);
-  box-shadow: 0 0 16px rgba(0, 200, 255, 0.4);
 }
 
 .read-more-icon-sb1-blog {
   width: 14px !important;
   height: 14px !important;
-  transform: rotate(-45deg);
   flex-shrink: 0;
   display: block;
 }

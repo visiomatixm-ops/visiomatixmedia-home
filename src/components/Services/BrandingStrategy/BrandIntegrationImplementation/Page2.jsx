@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import React from 'react'
 import '../../page2.css'
 
@@ -27,7 +27,7 @@ const Page2 = () => {
           <div className="column-2 custom-border-2 right-pad-30">
 
             <div>
-              <img width="95px" src={frame1} alt="Icon" />
+              <img width="95px" src={frame1} alt="Icon"/>
               <h3 className="benefit-title">
                 Strategy-to-Execution Alignment
               </h3>
@@ -39,7 +39,7 @@ const Page2 = () => {
             </div>
 
             <div>
-              <img width="95px" src={frame2} alt="Icon" />
+              <img width="95px" src={frame2} alt="Icon"/>
               <h3 className="benefit-title">
                 Structured Governance & Control
               </h3>
@@ -54,7 +54,7 @@ const Page2 = () => {
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
 
             <div>
-              <img width="95px" src={frame6} alt="Icon" />
+              <img width="95px" src={frame6} alt="Icon"/>
               <h3 className="benefit-title">
                  Stronger Brand Consistency & Credibility
               </h3>
@@ -66,7 +66,7 @@ const Page2 = () => {
             </div>
 
             <div>
-              <img width="95px" src={frame5} alt="Icon" />
+              <img width="95px" src={frame5} alt="Icon"/>
               <h3 className="benefit-title">
                 Operational Efficiency & Performance
               </h3>
@@ -82,7 +82,7 @@ const Page2 = () => {
           <div className="column-2 left-pad-50 right-pad-30">
 
             <div>
-              <img width="95px" src={frame3} alt="Icon" />
+              <img width="95px" src={frame3} alt="Icon"/>
               <h3 className="benefit-title">
                Unified Multi-Channel Implementation
               </h3>
@@ -94,7 +94,7 @@ const Page2 = () => {
             </div>
 
             <div>
-              <img width="95px" src={frame4} alt="Icon" />
+              <img width="95px" src={frame4} alt="Icon"/>
               <h3 className="benefit-title">
                 Scalable Integration Frameworks
               </h3>

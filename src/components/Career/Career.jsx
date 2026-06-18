@@ -487,9 +487,7 @@ const Career = () => {
                     href={social.href}
                     target="_blank"
                     rel="noreferrer"
-                    whileHover={{ y: -5, scale: 1.12, borderColor: "#00c8ff", boxShadow: "0 6px 20px rgba(0,200,255,0.35)" }}
-                    whileTap={{ scale: 0.9 }}
-                    transition={{ type: "spring", stiffness: 300 }}
+                    
                   >
                     <img src={social.src} alt={social.alt} />
                   </motion.a>
@@ -643,9 +641,7 @@ const Career = () => {
                     type="submit"
                     className="talk"
                     disabled={loading}
-                    whileHover={!loading ? { scale: 1.03, boxShadow: "0 8px 28px rgba(0,200,255,0.4)" } : {}}
-                    whileTap={!loading ? { scale: 0.97 } : {}}
-                    transition={{ type: "spring", stiffness: 300 }}
+                    
                   >
                     {loading ? "Sending..." : "Let's Talk"}
                   </motion.button>

@@ -241,7 +241,7 @@ const Dashboard = () => {
       {/* Header */}
       <header className="admin-header">
         <div className="admin-header-left">
-          <img src={logo} alt="Visiomatix" className="admin-header-logo" />
+          <img src={logo} alt="Visiomatix"className="admin-header-logo" />
         </div>
         <h1 className="admin-header-title">Admin Dashboard</h1>
         <button onClick={handleLogout} className="admin-logout-btn">

@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { ArrowUpRight } from 'lucide-react';
 import "./index.css";
 
 import hero from "../../../assets/images/image.png";
-
 import arrow from "../../../assets/images/Union-1.png";
 import { NavLink } from "react-router";
 import {
@@ -71,12 +71,12 @@ const AboutUs3 = () => {
 
           <motion.div
             className="read-more-wrapper"
-            animate="pulse"
-            variants={glowPulse}
+            
+            
           >
             <NavLink to="/contact" className="read-more-btn-home4">
               Read More
-              <img src={arrow} alt="arrow" className="read-more-icon" />
+              <img src={arrow} alt="arrow"className="read-more-icon" />
             </NavLink>
           </motion.div>
         </motion.div>

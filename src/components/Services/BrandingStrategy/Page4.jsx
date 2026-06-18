@@ -113,23 +113,12 @@ const Page4 = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: index * 0.15 }}
             viewport={{ once: false, amount: 0.2 }}
-            whileHover={{
-              y: -12,
-              scale: 1.03,
-              boxShadow: "0 20px 52px rgba(0,150,255,0.28)",
-              transition: { type: "spring", stiffness: 280, damping: 18 },
-            }}
           >
             <motion.div
               className="icon-box-bss4"
               initial={{ scale: 0.6, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.6 }}
-              whileHover={{
-                rotate: [0, -8, 8, 0],
-                scale: 1.2,
-                transition: { duration: 0.4 },
-              }}
             >
               <img src={item.img} alt={item.title} />
             </motion.div>
@@ -139,15 +128,11 @@ const Page4 = () => {
 
             <motion.div
               className="read-more-wrapper-bss4"
-              whileHover={{
-                scale: 1.07,
-                boxShadow: "0 0 18px rgba(0,200,255,0.4)",
-              }}
-              whileTap={{ scale: 0.93 }}
+              
             >
               <NavLink to={item.red} className="read-more-btn-bss4">
                 Read More
-                <img src={arrow} alt="arrow" className="read-more-icon-bss4" />
+                <img src={arrow} alt="arrow"className="read-more-icon-bss4" />
               </NavLink>
             </motion.div>
           </motion.div>

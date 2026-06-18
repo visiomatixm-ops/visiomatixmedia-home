@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./index.css";
 import { NavLink } from "react-router-dom";
-
 import logo from "../../../assets/images/logo.png";
 import igIcon from "../../../assets/images/instgram2.png";
 import fbIcon from "../../../assets/images/facebook3.png";
@@ -12,6 +11,7 @@ import ytIcon from "../../../assets/images/Youtube4.png";
 import arrow from "../../../assets/images/Union-1.png";
 import eclipse from "../../../assets/images/Ellipse.png";
 import WhatsAppButton from "../../../components/whatsapp/WhatsAppButton";
+import { Mail, Phone, MapPin } from 'lucide-react';
 import {
   fadeLeft,
   fadeRight,
@@ -61,7 +61,7 @@ const HomePage9 = () => {
   return (
     <div className="page-root decalotype-font">
       {/* HERO */}
-      {/* <img src={eclipse} className="eclipse" alt="" /> */}
+      {/* <img src={eclipse} className="eclipse" alt=""/> */}
       <section className="hero-section">
         <motion.div
           initial={{ y: -100 }}
@@ -72,7 +72,7 @@ const HomePage9 = () => {
           <h1 className="hero-title">Let’s Build Your Growth Strategy</h1>
 
           <div className="arrow-box">
-            <img className="arrow-icon" src={arrow} alt="" />
+            <img className="arrow-icon" src={arrow} alt=""/>
           </div>
         </motion.div>
 
@@ -89,12 +89,12 @@ const HomePage9 = () => {
             whileInView="visible"
             viewport={viewport}
             className="footer-col"
-            // initial={{ opacity: 0, x: -100 }}
-            // whileInView={{ opacity: 1, x: 0 }}
-            // transition={{ duration: 0.8 }}
+          // initial={{ opacity: 0, x: -100 }}
+          // whileInView={{ opacity: 1, x: 0 }}
+          // transition={{ duration: 0.8 }}
           >
             <div className="logo-section">
-              <img src={logo} alt="Visiomatix" className="brand-logo" />
+              <img src={logo} alt="Visiomatix"className="brand-logo" />
               <h2 className="brand-name">
                 Visiomatix <br /> Media
               </h2>
@@ -117,14 +117,6 @@ const HomePage9 = () => {
               digital presence turn into digital dominace.
               <br /> Think Global. Build Strong. Grow with Visiomatix.
             </p>
-
-            <div className="contact-block">
-              <span className="blue-label">For Sales</span>
-              <p className="brand-text brand-contact">+91 89991 01916</p>
-
-              <span className="blue-label">For Careers</span>
-              <p className="brand-text brand-contact">+91 92702 71916</p>
-            </div>
           </motion.div>
 
           {/* SERVICES */}
@@ -141,20 +133,12 @@ const HomePage9 = () => {
               viewport={viewport}
               className="footer-list"
             >
-              <li>
+             <li>
                 <NavLink
                   style={{ color: "#ffffff" }}
                   to="/services/digital-marketing"
                 >
-                  Social Media Marketing (SMM)
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  style={{ color: "#ffffff" }}
-                  to="/services/seo-and-content-writing"
-                >
-                  Search Engine Optimization (SEO)
+                    Digital Marketing Services
                 </NavLink>
               </li>
               <li>
@@ -165,30 +149,9 @@ const HomePage9 = () => {
                   Design & Creative Services
                 </NavLink>
               </li>
-              <li>
-                <NavLink
-                  style={{ color: "#ffffff" }}
-                  to="/services/visual-effests"
-                >
-                  Visual Effects (VFX) & Post–Production
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  style={{ color: "#ffffff" }}
-                  to="/services/product-visualisation"
-                >
-                  3D Product Visualization
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  style={{ color: "#ffffff" }}
-                  to="/services/ui-ux-design"
-                >
-                  UI/UX Design
-                </NavLink>
-              </li>
+        
+        
+         
               <li>
                 <NavLink
                   style={{ color: "#ffffff" }}
@@ -197,11 +160,7 @@ const HomePage9 = () => {
                   Web & App Development
                 </NavLink>
               </li>
-              <li>
-                <NavLink style={{ color: "#ffffff" }} to="">
-                  Custom Web Solutions
-                </NavLink>
-              </li>
+          
               <li>
                 <NavLink
                   style={{ color: "#ffffff" }}
@@ -210,11 +169,7 @@ const HomePage9 = () => {
                   Business Software Solutions
                 </NavLink>
               </li>
-              <li>
-                <NavLink style={{ color: "#ffffff" }} to="">
-                  AI Voice Sales Assistant Integration
-                </NavLink>
-              </li>
+       
               <li>
                 <NavLink
                   style={{ color: "#ffffff" }}
@@ -231,16 +186,7 @@ const HomePage9 = () => {
                   Branding & Strategy
                 </NavLink>
               </li>
-              <li>
-                <NavLink style={{ color: "#ffffff" }} to="">
-                  Competitor & Market Research
-                </NavLink>
-              </li>
-              <li>
-                <NavLink style={{ color: "#ffffff" }} to="">
-                  E-commerce Website Development
-                </NavLink>
-              </li>
+          
             </motion.ul>
           </div>
 
@@ -281,12 +227,12 @@ const HomePage9 = () => {
                   Blogs
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink style={{ color: "#ffffff" }} to="">
                   Company
                 </NavLink>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <NavLink style={{ color: "#ffffff" }} to="">
                   Our Team
                 </NavLink>
@@ -300,7 +246,7 @@ const HomePage9 = () => {
                 <NavLink style={{ color: "#ffffff" }} to="">
                   Privacy Policy
                 </NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink style={{ color: "#ffffff" }} to="/careers">
                   Careers
@@ -311,7 +257,7 @@ const HomePage9 = () => {
                   Contact Us
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink style={{ color: "#ffffff" }} to="">
                   Digital Services
                 </NavLink>
@@ -320,7 +266,7 @@ const HomePage9 = () => {
                 <NavLink style={{ color: "#ffffff" }} to="">
                   IT Services
                 </NavLink>
-              </li>
+              </li> */}
             </motion.ul>
           </div>
 
@@ -337,11 +283,7 @@ const HomePage9 = () => {
           >
             <h3 className="footer-header">Start Your Growth Journey</h3>
 
-            <p className="address-text">
-              Om Sai Apartment, Road, Manmad – Chandwad Rd, Davkhar Nagar,
-              Ganur, Nashik, Maharashtra – 423101
-            </p>
-            <p className="footer-para2">
+            {/* <p className="footer-para2">
               Our office serves as a hub for strategy, creativity, and digital
               innovation, where ideas are transformed into impactful digital
               solutions. From this central workspace, our team collaborates
@@ -351,14 +293,38 @@ const HomePage9 = () => {
               measurable results, and driving long-term growth through data
               driven insights, creative excellence, and performance oriented
               digital solutions.
+            </p> */}
+
+            <span className="blue-label">Address</span>
+            <p className="address-text" style={{ display: 'flex', alignItems: 'flex-start', gap: '6px' }}>
+              <MapPin size={16} color="#00c8ff" style={{ flexShrink: 0, marginTop: '3px' }} />
+              <span>Office No. 3, Om Sai Apartment, Near Petrol Pump, Ganur Road, Davkhar Nagar, Chandwad, Nashik, Maharashtra – India, 423101</span>
             </p>
 
             <div className="contact-block">
               <span className="blue-label">For Sales</span>
-              <p className="brand-text brand-contact">info@visiomatix.in</p>
+              <div className="brand-contact">
+                <p className="brand-text">
+                  <Phone size={14} style={{ marginRight: '8px', fill: '#00c8ff', color: '#00c8ff' }} />
+                  +91 89991 01916
+                </p>
+                <p className="brand-text">
+                  <Mail size={14} color="#00c8ff" style={{ marginRight: '8px' }} />
+                  info@visiomatix.in
+                </p>
+              </div>
 
               <span className="blue-label">For Careers</span>
-              <p className="brand-text brand-contact">rohit@visiomatix.in</p>
+              <div className="brand-contact">
+                <p className="brand-text">
+                  <Phone size={14} style={{ marginRight: '8px', fill: '#00c8ff', color: '#00c8ff' }} />
+                  +91 92702 71916
+                </p>
+                <p className="brand-text">
+                  <Mail size={14} color="#00c8ff" style={{ marginRight: '8px' }} />
+                  rohit@visiomatix.in
+                </p>
+              </div>
             </div>
           </motion.div>
           {/* FORM — CORRECT POSITION */}
@@ -416,22 +382,22 @@ const HomePage9 = () => {
               href="https://www.instagram.com/visiomatix_media/"
               target="_blank"
             >
-              <img src={igIcon} alt="Instagram" />
+              <img src={igIcon} alt="Instagram"/>
             </a>
             <a href="https://www.facebook.com/visiomatixmedia" target="_blank">
-              <img src={fbIcon} alt="Facebook" />
+              <img src={fbIcon} alt="Facebook"/>
             </a>
             <a
               href="https://www.linkedin.com/company/visiomatix-media/posts/?feedView=all"
               target="_blank"
             >
-              <img src={liIcon} alt="LinkedIn" />
+              <img src={liIcon} alt="LinkedIn"/>
             </a>
             <a href="https://x.com/visiomatixmedia" target="_blank">
-              <img src={xIcon} alt="X" />
+              <img src={xIcon} alt="X"/>
             </a>
             <a href="https://www.youtube.com/@visiomatixmedia" target="_blank">
-              <img src={ytIcon} alt="YouTube" />
+              <img src={ytIcon} alt="YouTube"/>
             </a>
           </div>
 

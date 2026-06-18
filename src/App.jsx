@@ -31,6 +31,7 @@ import Contact from "./components/Home/HomePage8/Contact";
 
 // import Blog from "./components/Blog/Blog";
 import Career from "./components/Career/Career";
+import PlansPage from "./components/Plans/PlansPage";
 import AdminLogin from "./components/Admin/Login";
 import AdminDashboard from "./components/Admin/Dashboard";
 
@@ -155,6 +156,13 @@ function AppContent() {
         pageConfigs.career.keywords,
         pageConfigs.career.canonicalUrl,
       );
+    } else if (path === "/plans") {
+      updateMetaTags(
+        pageConfigs.plans.title,
+        pageConfigs.plans.description,
+        pageConfigs.plans.keywords,
+        pageConfigs.plans.canonicalUrl,
+      );
     }
   }, [location]);
 
@@ -180,6 +188,15 @@ function AppContent() {
           element={
             <>
               <Career />
+            </>
+          }
+        />
+        <Route
+          path="/plans"
+          element={
+            <>
+              <PlansPage />
+              <HomePage9 />
             </>
           }
         />

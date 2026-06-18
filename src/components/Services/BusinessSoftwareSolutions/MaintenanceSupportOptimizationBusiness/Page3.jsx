@@ -28,7 +28,7 @@ const Page3 = () => {
           organizations to operate confidently and achieve sustainable digital
           growth.
         </p>
-        <img src={image3} alt="" className="image-bss3" />
+        <img src={image3} alt=""className="image-bss3" />
       </section>
     </>
   );

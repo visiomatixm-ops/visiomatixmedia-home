@@ -39,7 +39,7 @@ const Service6_5 = () => {
       >
         <div className="slider-track-bss5">
           {[...logos, ...logos].map((img, index) => (
-            <img src={img} alt="logo" key={index} />
+            <img src={img} alt="logo"key={index} />
           ))}
         </div>
       </motion.section>

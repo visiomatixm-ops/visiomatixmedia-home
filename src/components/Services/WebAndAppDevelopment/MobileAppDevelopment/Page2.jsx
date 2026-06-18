@@ -1,4 +1,4 @@
-import frame3  from "../../../../assets/MobileAppDevelopment(iOS & Android)/icon2.png";
+﻿import frame3  from "../../../../assets/MobileAppDevelopment(iOS & Android)/icon2.png";
 import frame1 from "../../../../assets/MobileAppDevelopment(iOS & Android)/icon1.png";
 import frame5 from "../../../../assets/MobileAppDevelopment(iOS & Android)/icon3.png";
 import frame2 from "../../../../assets/MobileAppDevelopment(iOS & Android)/icon4.png";
@@ -153,21 +153,10 @@ const Page2 = () => {
 
 // 🔥 SAME Benefit component pattern
 const Benefit = ({ img, title, text }) => (
-  <motion.div className='e-commerce-services-benefits-div' variants={fadeUp}
-    whileHover={{
-      y: -8,
-      scale: 1.03,
-      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 }
-    }}>
-    <motion.img
+  <motion.div className='e-commerce-services-benefits-div' variants={fadeUp}>
+    <img
       src={img}
       alt="Icon"
-      initial={{ opacity: 0, scale: 0.6 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      viewport={{ once: false }}
-      whileHover={{ rotate: [0, -6, 6, 0], scale: 1.15, transition: { duration: 0.4 } }}
     />
     <h3 className="benefit-title">{title}</h3>
     <p className="benefit-text">{text}</p>

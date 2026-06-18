@@ -60,14 +60,14 @@ export default function HomePage6() {
         <div className="logo-track-home6">
           {[...logos, ...logos].map((logo, i) => (
             <div className="logo-pill-home6" key={i}>
-              <img src={logo} alt="partner" />
+              <img src={logo} alt="partner"/>
             </div>
           ))}
         </div>
       </div>
 
       <div className="cards-wrapper-home6">
-        <img src={growthArrow} className="arrow-bg-home6" alt="growth wave" />
+        <img src={growthArrow} className="arrow-bg-home6" alt="growth wave"/>
 
         <motion.div
           variants={staggerContainer}
@@ -91,14 +91,10 @@ export default function HomePage6() {
               }}
             >
               <div className="card-item-home6">
-                <motion.img
+                <img
                   src={card.icon}
                   className="card-dot-home6"
                   alt=""
-                  initial={{ opacity: 0, scale: 0.4, rotate: -20 }}
-                  whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-                  transition={{ delay: i * 0.1 + 0.2, type: "spring", stiffness: 220 }}
-                  viewport={viewport}
                 />
                 <div className={`info-card-home6${card.active ? " active-home6" : ""}`}>
                   <h3>{card.title}</h3>

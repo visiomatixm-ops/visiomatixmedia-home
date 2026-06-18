@@ -6,31 +6,15 @@
 ========================= */
 .global-stage {
   width: 100%;
-  min-height: auto;
+  min-height: 90vh;
 
-  background-image:
-    url("../../../assets/images/Ellipse 6.png"),
-    linear-gradient(
-      90deg,
-      #000103,
-      #000814,
-      #01112c,
-      #00307c
-    );
 
-  background-repeat: no-repeat, no-repeat;
-  background-position:
-    left 0 top 0,
-    center;
-  background-size:
-    clamp(200px, 30vw, 400px),
-    cover;
 
   position: relative;
 
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 
   overflow: hidden;
   padding: clamp(60px, 8vw, 100px) clamp(24px, 6vw, 48px);
@@ -39,9 +23,10 @@
 /* =========================
    INNER WIDTH CONTROL
 ========================= */
-.global-stage > * {
-  /* max-width: 1400px; */
+.global-stage>* {
+  max-width: 1400px;
   width: 100%;
+  position: relative;
 }
 
 /* =========================
@@ -77,7 +62,7 @@
 ========================= */
 .global-map {
   display: block;
-  margin: clamp(60px, 10vh, 120px) auto 0;
+  margin: clamp(40px, 6vw, 80px) auto 0;
   width: min(100%, 1200px);
   height: auto;
 
@@ -92,18 +77,39 @@
 }
 
 /* =========================
-   TABLET (≤ 768px)
+   SMALL LAPTOPS & TABLETS (≤ 1200px)
 ========================= */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .global-stage {
+    flex-direction: column;
+    align-items: center;
     padding-top: 60px;
   }
 
+  .global-text {
+    position: relative;
+    top: auto;
+    left: auto;
+    text-align: center;
+    margin-bottom: 24px;
+    max-width: 100%;
+  }
+
   .global-map {
+    margin-top: 28px;
     width: 100%;
     max-width: 100%;
     transform: none;
-    margin-top: 40px;
+  }
+}
+
+/* =========================
+   TABLET (≤ 768px)
+========================= */
+@media (max-width: 768px) {
+
+  .global-stage {
+    background-image: none;
   }
 }
 
@@ -113,8 +119,10 @@
 ========================= */
 @media (max-width: 480px) {
   .global-stage {
-    min-height: auto;        /* 🔑 remove fake vh height */
-    padding-bottom: 24px;   /* 🔑 controlled bottom */
+    min-height: auto;
+    /* 🔑 remove fake vh height */
+    padding-bottom: 24px;
+    /* 🔑 controlled bottom */
   }
 
   .global-text {
@@ -126,8 +134,10 @@
   }
 
   .global-map {
-    margin-top: 28px;       /* 🔑 reduce vertical push */
-    margin-bottom: 0;       /* 🔑 no bottom space */
+    margin-top: 28px;
+    /* 🔑 reduce vertical push */
+    margin-bottom: 0;
+    /* 🔑 no bottom space */
   }
 }
 
@@ -136,6 +146,7 @@
 ========================= */
 @supports (-webkit-touch-callout: none) {
   .global-stage {
-    min-height: 40vh;       /* 🔑 override iOS vh bug */
+    min-height: 40vh;
+    /* 🔑 override iOS vh bug */
   }
 }

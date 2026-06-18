@@ -79,11 +79,7 @@ const MGA_Service4 = () => {
 
             <motion.div
               className="read-more-wrapper-bss4"
-              whileHover={{
-                scale: 1.07,
-                boxShadow: "0 0 18px rgba(0,200,255,0.4)",
-              }}
-              whileTap={{ scale: 0.93 }}
+              
             >
               <button className="read-more-btn-bss4"
               onClick={
@@ -107,7 +103,7 @@ const MGA_Service4 = () => {
                         }
               >
                 Read More
-                <img src={arrow} alt="arrow" className="read-more-icon-bss4" />
+                <img src={arrow} alt="arrow"className="read-more-icon-bss4" />
               </button>
             </motion.div>
           </div>

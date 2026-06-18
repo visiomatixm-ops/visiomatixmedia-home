@@ -17,7 +17,7 @@ const MGA_Service3 = () => {
       </div>
 
     
-        <img src={image3} alt="E-commerce Solutions" />
+        <img src={image3} alt="E-commerce Solutions"/>
       
     </section>
   );

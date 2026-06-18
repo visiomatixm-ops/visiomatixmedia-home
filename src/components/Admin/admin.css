@@ -98,17 +98,10 @@
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
   margin-top: 10px;
 }
 
-.admin-login button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(36, 198, 220, 0.3);
-}
-
 .admin-login button:active {
-  transform: translateY(0);
 }
 
 .error {
@@ -176,13 +169,7 @@
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
   backdrop-filter: blur(10px);
-}
-
-.admin-logout-btn:hover {
-  background: rgba(255, 255, 255, 0.3);
-  transform: translateY(-2px);
 }
 
 /* Container Layout */
@@ -232,21 +219,14 @@
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
   color: #162d45;
   text-align: left;
-}
-
-.admin-tab-btn:hover {
-  background: #e9ecef;
-  border-color: #24c6dc;
 }
 
 .admin-tab-btn.active {
   background: linear-gradient(135deg, #24c6dc 0%, #162d45 100%);
   color: white;
   border-color: #24c6dc;
-  box-shadow: 0 5px 15px rgba(36, 198, 220, 0.3);
 }
 
 .admin-add-new-btn {
@@ -259,13 +239,7 @@
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
   margin-top: 20px;
-}
-
-.admin-add-new-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(36, 198, 220, 0.4);
 }
 
 /* Main Content */
@@ -637,13 +611,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.remove-image-btn:hover {
-  background: rgba(220, 53, 69, 1);
-  transform: scale(1.1);
 }
 
 .preview-label {
@@ -667,7 +634,6 @@
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 .btn-primary {
@@ -677,30 +643,18 @@
   overflow: hidden;
 }
 
-.btn-primary:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(36, 198, 220, 0.4);
-}
-
 .btn-primary:active:not(:disabled) {
-  transform: translateY(0);
 }
 
 .btn-primary:disabled {
   opacity: 0.6;
   cursor: not-allowed;
-  box-shadow: none;
 }
 
 .btn-secondary {
   background: #e9ecef;
   color: #162d45;
   border: 2px solid #dee2e6;
-}
-
-.btn-secondary:hover:not(:disabled) {
-  background: #dee2e6;
-  border-color: #adb5bd;
 }
 
 .btn-secondary:disabled {
@@ -782,11 +736,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.admin-item-card:hover .card-image img {
-  transform: scale(1.1);
 }
 
 .card-content {
@@ -841,7 +790,6 @@
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 .btn-edit {
@@ -849,21 +797,9 @@
   color: #1976d2;
 }
 
-.btn-edit:hover {
-  background: #1976d2;
-  color: white;
-  transform: translateY(-2px);
-}
-
 .btn-delete {
   background: #ffebee;
   color: #d32f2f;
-}
-
-.btn-delete:hover {
-  background: #d32f2f;
-  color: white;
-  transform: translateY(-2px);
 }
 
 /* Responsive Design */

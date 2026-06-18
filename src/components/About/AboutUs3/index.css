@@ -11,13 +11,11 @@
   background-image:
     url("../../../assets/images/Vector 3.png"),
     url("../../../assets/images/Ellipse 6.png"),
-    linear-gradient(
-      90deg,
+    linear-gradient(90deg,
       #000103,
       #000814,
       #01112c,
-      #00307c
-    );
+      #00307c);
 
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: right 10% top, left 0px top 0px, center;
@@ -36,6 +34,9 @@
   gap: 4%;
   text-align: right;
   padding: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .info {
@@ -62,11 +63,6 @@
   border-radius: 50px;
   background: linear-gradient(135deg, #00c8ff, #023a90, #00c3fb);
   position: relative;
-  transition: box-shadow 0.3s ease;
-}
-
-.read-more-wrapper:hover {
-  box-shadow: 0 0 20px rgba(0, 200, 255, 0.45);
 }
 
 .read-more-btn {
@@ -87,23 +83,12 @@
   font-family: 'decalotype-light';
   white-space: nowrap;
   overflow: hidden;
-  transition: background 0.3s ease;
-}
-
-.read-more-btn:hover {
-  background: #014cb0;
 }
 
 .read-more-icon {
   width: 12px;
   min-width: 12px;
   flex-shrink: 0;
-  transform: rotate(-45deg);
-  transition: transform 0.3s ease;
-}
-
-.read-more-btn:hover .read-more-icon {
-  transform: rotate(-45deg) translate(3px, -3px);
 }
 
 #hero_job {
@@ -116,6 +101,7 @@
 .first_letter::first-letter {
   font-size: 20px;
 }
+
 #hero_title {
   font-family: "decalotype-medium";
   font-size: 35px;
@@ -126,13 +112,6 @@
 .hero_img {
   border-radius: 10%;
   max-width: 1000px;
-  transition: transform 0.35s ease, box-shadow 0.35s ease, filter 0.35s ease;
-}
-
-.hero_box:hover .hero_img {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 16px 36px rgba(0, 200, 255, 0.28);
-  filter: brightness(1.08);
 }
 
 .blue {
@@ -143,24 +122,31 @@
   line-height: 160%;
   margin-bottom: 5px;
   padding-left: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .divider-about3 {
 
   height: 2px;
-  max-width: 100%;
+  max-width: 1400px;
   text-align: center;
   background-color: #00a5fa;
-  
-  margin: 2% 0%;
+
+  margin: 2% auto;
+  width: 100%;
 
 }
 
 .card_box {
   display: flex;
   gap: 2%;
-  margin: 0px 25px;
+  max-width: 1400px;
+  margin: 0px auto;
+  width: 100%;
 }
+
 .card {
   justify-content: center;
   align-items: center;
@@ -171,22 +157,11 @@
   font-size: 20px;
   line-height: 136%;
   color: #ffffff;
-  transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
+
 .card img {
   max-width: 98.47px;
   height: 93px;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  text-shadow: 0 0 16px rgba(0, 200, 255, 0.35);
-}
-
-.card:hover img {
-  transform: scale(1.08) rotate(-3deg);
-  filter: drop-shadow(0 0 14px rgba(0, 200, 255, 0.4));
 }
 
 #card4 {
@@ -211,11 +186,12 @@
   animation: scroll 12s linear infinite !important;
   animation-play-state: running !important;
   will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
   cursor: pointer;
 }
 
-.digital_mart:hover .marquee,
-.marquee:hover,
 .marquee:focus,
 .marquee:focus-within {
   animation-play-state: running !important;
@@ -233,13 +209,6 @@
 }
 
 .track span {
-  transition: transform 0.25s ease, color 0.25s ease, text-shadow 0.25s ease;
-}
-
-.track span:hover {
-  transform: translateY(-2px);
-  color: #8feaff;
-  text-shadow: 0 0 18px rgba(0, 200, 255, 0.4);
 }
 
 .star {
@@ -254,8 +223,15 @@
   from {
     transform: translate3d(0, 0, 0);
   }
+
   to {
     transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .marquee {
+    animation-duration: 18s !important;
   }
 }
 
@@ -264,23 +240,24 @@
 }
 
 .about_us3_end {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   padding: 20px;
-  
-  justify-content: space-around;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .div-end {
   display: flex;
-  gap: 10px;
-  justify-content: space-around;
+  gap: 12px;
+  justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease;
+  min-width: 0;
 }
 
-.div-end:hover {
-  transform: translateY(-3px);
-}
 .div-end h1 {
   background: linear-gradient(135deg, #02c5ff, #4b6def);
   -webkit-background-clip: text;
@@ -295,7 +272,7 @@
     "slnt" 0,
     "FLAR" 0,
     "VOLM" 0;
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .div-end p {
@@ -310,27 +287,74 @@
   color: #ffffff;
   font-style: normal;
   font-weight: 300;
+  line-height: 1.3;
+  text-align: left;
+  max-width: 140px;
 }
 
 
 @media (max-width: 1200px) {
   .about_us {
-    gap: 3%;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    gap: 20px;
   }
 
-  .read-more-wrapper{
-    width: 100px;
-    position: relative;
-    left: -30px;
+  .info {
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
   }
 
-  .read-more-btn{
-    /* border: 2px solid red; */
-    /* width: 100px; */
+  .info p {
+    text-align: center;
   }
-  .info,
+
   .title_box {
-    width: 360px;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .title_box p {
+    text-align: center;
+  }
+
+  .hero_box {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero_img {
+    width: 280px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .read-more-wrapper {
+    margin: 20px auto 0;
+    left: 0;
+    width: 148px;
+  }
+
+  .card_box {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .card,
+  #card4 {
+    width: 45%;
+    border-right: none;
+    border-bottom: 2px solid #00a5fa;
+    padding-bottom: 15px;
   }
 
   .track {
@@ -340,12 +364,35 @@
   .star {
     font-size: 100px;
   }
+
+  .about_us3_end {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px 20px;
+  }
+
+  .div-end {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .div-end h1 {
+    font-size: 38px;
+  }
+
+  .div-end p {
+    font-size: 15px;
+    text-align: center;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 992px) {
-  .about_us_2{
+  .about_us_2 {
     /* background-image: none; */
   }
+
   .about_us {
     flex-direction: column-reverse;
     align-items: center;
@@ -354,10 +401,11 @@
   }
 
   .info {
-    
+
     margin-top: 60px;
 
   }
+
   .info,
   .title_box {
     max-width: 100%;
@@ -388,14 +436,15 @@
     gap: 20px;
   }
 
-  .card,#card4 {
+  .card,
+  #card4 {
     width: 45%;
     border-right: none;
     border-bottom: 2px solid #00a5fa;
     padding-bottom: 15px;
   }
 
- 
+
 
   .track {
     font-size: 60px;
@@ -404,11 +453,24 @@
   .star {
     font-size: 90px;
   }
+
+  .about_us3_end {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px 20px;
+  }
 }
 
 @media (max-width: 768px) {
   .about_us_2 {
     width: 100vw;
+    border-top: none;
+    margin-top: -2px;
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat, no-repeat, no-repeat !important;
+    background-position: right -120px top -26px, left -24px top -10px, center !important;
+    background-size: 170% 100%, 180px auto, cover !important;
+    background-image: none;
   }
 
   .ellipse,
@@ -442,25 +504,36 @@
   }
 
   .about_us3_end {
-    flex-wrap: wrap;
-    gap: 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px 15px;
   }
 
   .div-end {
-    width: 45%;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
   }
 
   .div-end h1 {
-    font-size: 28px;
+    font-size: 38px;
   }
 
   .div-end p {
-    font-size: 14px;
+    font-size: 15px;
+    text-align: center;
+    max-width: 100%;
   }
 }
 
 @media (max-width: 480px) {
+
+  .about_us_2 {
+    margin-top: -2px;
+    background-position: right -165px top -24px, left -30px top -10px, center !important;
+    background-size: 200% 100%, 150px auto, cover !important;
+  }
+
   .info,
   .title_box {
     width: 100%;
@@ -483,11 +556,38 @@
     width: 100%;
   }
 
+  .about_us3_end {
+    gap: 30px 10px;
+  }
+
   .div-end {
-    width: 100%;
+    width: auto;
   }
 
   .div-end h1 {
-    font-size: 26px;
+    font-size: 32px;
+  }
+
+  .div-end p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #hero_title {
+    font-size: 48px;
+  }
+
+  #hero_job {
+    font-size: 28px;
+  }
+
+  .about_us p {
+    font-size: 18px;
+    line-height: 1.65;
+  }
+
+  .first_letter::first-letter {
+    font-size: 28px;
   }
 }

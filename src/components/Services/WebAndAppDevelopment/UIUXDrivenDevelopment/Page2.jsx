@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import '../../page2.css'
 
 import frame1 from '../../../../assets/UIUXDrivenDevelopment/images/Frame 103.png'
@@ -154,22 +154,11 @@ const Page2 = () => {
 const Benefit = ({ img, title, text }) => (
   <motion.div
     className='e-commerce-services-benefits-div'
-    variants={fadeUp}
-  
-    whileHover={{
-      y: -8,
-      scale: 1.03,
-      boxShadow: "0 14px 40px rgba(0,200,255,0.20)",
-      transition: { type: "spring", stiffness: 260 }
-    }}>
-    <motion.img
+    variants={fadeUp}>
+    <img
       width="100px"
       src={img}
       alt="Icon"
-      initial={{ opacity: 0, scale: 0.6 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      viewport={{ once: false }}
     />
     <h3 className="benefit-title">{title}</h3>
     <p className="benefit-text">{text}</p>

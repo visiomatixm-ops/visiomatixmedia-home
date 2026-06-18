@@ -31,14 +31,17 @@
   width: max-content;
   animation: scroll-content 30s linear infinite !important;
   will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
 }
 
 @keyframes scroll-content {
   from {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 .scroll-wrapper-home2:hover .scroll-track-home2 {
@@ -99,7 +102,7 @@
 
   .scroll-track-home2 {
     gap: 90px;
-    animation-duration: 35s;
+    animation-duration: 40s;
   }
 
   .header-item-home2 img {
@@ -125,7 +128,7 @@
 
   .scroll-track-home2 {
     gap: 60px;
-    animation-duration: 25s; /* slightly faster on mobile */
+    animation-duration: 34s;
   }
 
   .header-item-home2 img {

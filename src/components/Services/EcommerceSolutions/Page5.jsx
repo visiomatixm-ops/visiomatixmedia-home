@@ -53,7 +53,7 @@ const Page5 = () => {
       >
         <div className="slider-track-bss5">
           {[...logos, ...logos].map((img, index) => (
-            <img src={img} alt="creative-icon" key={index} />
+            <img src={img} alt="creative-icon"key={index} />
           ))}
         </div>
       </motion.section>

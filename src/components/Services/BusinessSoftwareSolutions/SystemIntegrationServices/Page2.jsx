@@ -22,7 +22,7 @@ const Page2 = () => {
         <div className="benefites-containr-2">
           <div className="column-2 custom-border-2 right-pad-30">
             <div>
-              <img src={frame1} alt="Icon" />
+              <img src={frame1} alt="Icon"/>
               <h3 className="benefit-title">Unified System Architecture</h3>
               <p className="benefit-text">
                 Integration frameworks designed around your business ecosystem
@@ -32,7 +32,7 @@ const Page2 = () => {
             </div>
 
             <div>
-              <img src={frame2} alt="Icon" />
+              <img src={frame2} alt="Icon"/>
               <h3 className="benefit-title">
                 Workflow Synchronization & Efficiency
               </h3>
@@ -46,7 +46,7 @@ const Page2 = () => {
 
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
             <div>
-              <img src={frame6} alt="Icon" />
+              <img src={frame6} alt="Icon"/>
               <h3 className="benefit-title">
                 Scalable & Future-Ready Integrations
               </h3>
@@ -58,7 +58,7 @@ const Page2 = () => {
             </div>
 
             <div>
-              <img src={frame5} alt="Icon" />
+              <img src={frame5} alt="Icon"/>
               <h3 className="benefit-title">
                 Secure & Compliant Data Exchange
               </h3>
@@ -72,7 +72,7 @@ const Page2 = () => {
 
           <div className="column-2 left-pad-50 right-pad-30">
             <div>
-              <img src={frame3} alt="Icon" />
+              <img src={frame3} alt="Icon"/>
               <h3 className="benefit-title">
                 High-Performance Connectivity & Reliability
               </h3>
@@ -84,7 +84,7 @@ const Page2 = () => {
             </div>
 
             <div>
-              <img src={frame4} alt="Icon" />
+              <img src={frame4} alt="Icon"/>
               <h3 className="benefit-title">
                 Seamless Cross-Platform Interoperability
               </h3>

@@ -6,45 +6,29 @@
 ========================= */
 .global-stage-about4 {
   width: 100%;
-  min-height: 100vh;
-
-  background-image:
-    /* url("../../../assets/images/Ellipse 6.png"), */
-    linear-gradient(
-      90deg,
-      #000103,
-      #000814,
-      #01112c,
-      #00307c
-    );
-
-  background-repeat: no-repeat;
-  background-position:
-    /* left 0 top 0, */
-    center;
-  background-size:
-    /* clamp(200px, 30vw, 400px), */
-    cover;
+  min-height: 90vh;
+  margin-top: -100px;
 
   position: relative;
 
   display: flex;
-  justify-content: center;      /* 🔒 container centering */
-  align-items: flex-start;
+  justify-content: center;
+  /* 🔒 container centering */
+  align-items: center;
 
   overflow: hidden;
   padding: clamp(60px, 8vw, 100px) clamp(24px, 6vw, 48px);
-  /* border: 2px solid red; */
-  min-height: 20%;
-  
 }
 
 /* =========================
 INNER WIDTH CONTROL (IMPLICIT)
 ========================= */
-.global-stage-about4 > * {
-  max-width: 1400px;            /* MATCH FOOTER / FAQ */
+.global-stage-about4>* {
+  max-width: 1400px;
+  /* MATCH FOOTER / FAQ */
   width: 100%;
+  position: relative;
+  /* Ensure absolute children align to this container */
 }
 
 /* =========================
@@ -80,8 +64,10 @@ INNER WIDTH CONTROL (IMPLICIT)
 ========================= */
 .global-map-about4 {
   display: block;
-  margin: clamp(60px, 10vh, 120px) auto 0; /* 🔒 center safely */
-  width: min(100%, 1200px);               /* 🔒 zoom safe */
+  margin: clamp(40px, 6vw, 80px) auto 0;
+  /* 🔒 center safely */
+  width: min(100%, 1200px);
+  /* 🔒 zoom safe */
   height: auto;
 
   opacity: 0.9;
@@ -91,22 +77,34 @@ INNER WIDTH CONTROL (IMPLICIT)
   pointer-events: none;
 
   transform: perspective(1000px) rotateX(2deg);
-  transform-origin: center top;            /* 🔒 alignment fix */
+  transform-origin: center top;
+  /* 🔒 alignment fix */
 }
 
 /* =========================
-   TABLET (≤ 768px)
+   SMALL LAPTOPS & TABLETS (≤ 1200px)
 ========================= */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .global-stage-about4 {
+    flex-direction: column;
+    align-items: center;
     padding-top: 60px;
   }
 
+  .global-text-about4 {
+    position: relative;
+    top: auto;
+    left: auto;
+    text-align: center;
+    margin-bottom: 24px;
+    max-width: 100%;
+  }
+
   .global-map-about4 {
+    margin-top: 28px;
     width: 100%;
     max-width: 100%;
     transform: none;
-    margin-top: 40px;
   }
 }
 

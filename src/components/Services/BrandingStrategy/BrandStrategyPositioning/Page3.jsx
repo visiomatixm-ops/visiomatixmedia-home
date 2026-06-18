@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { motion } from "framer-motion";
 import '../../page3.css'
 
@@ -41,7 +41,6 @@ const Page3 = () => {
   whileInView={{ opacity: 1, scale: 1 }}
   transition={{ duration: 0.8 }}
   viewport={{ once: false, amount: 0.3 }}
-  whileHover={{ scale: 1.04, filter: "brightness(1.08)", boxShadow: "0 20px 60px rgba(0,100,255,0.3)" }}
 />
 
     </section>

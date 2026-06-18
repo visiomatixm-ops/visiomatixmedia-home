@@ -39,7 +39,7 @@ const Page5 = () => {
       <section className="slider-bss5">
         <div className="slider-track-bss5">
           {[...logos, ...logos].map((img, index) => (
-            <img width="150px" src={img} alt="creative-icon" key={index} />
+            <img width="150px" src={img} alt="creative-icon"key={index} />
           ))}
         </div>
       </section>

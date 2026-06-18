@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import "../../page5.css";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -57,7 +57,6 @@ const Page5 = () => {
     src={img}
     alt="logo"
     key={index}
-    whileHover={{ scale: 1.15, filter: "brightness(1.15) drop-shadow(0 0 10px rgba(0,200,255,0.5))", transition: { duration: 0.3 } }}
   />
 ))}
 
@@ -82,8 +81,7 @@ const Page5 = () => {
         </p>
 
        <motion.button
-  whileHover={{ scale: 1.07, boxShadow: "0 0 24px rgba(0,200,255,0.45)" }}
-  whileTap={{ scale: 0.93 }}
+  
 >
   <NavLink to="/contact" className="nav-avoid-blue">
     Book Your Free Strategy Call

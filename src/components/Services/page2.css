@@ -175,8 +175,8 @@
 }
 
 .e-commerce-services-benefits-div:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 16px rgba(0, 200, 255, 0.35);
+  transform: none !important;
+  box-shadow: none !important;
 }
 
 .e-commerce-services-benefits-div img {
@@ -184,8 +184,8 @@
 }
 
 .e-commerce-services-benefits-div:hover img {
-  transform: scale(1.08) rotate(-3deg);
-  filter: drop-shadow(0 0 14px rgba(0, 200, 255, 0.4));
+  transform: none !important;
+  filter: none !important;
 }
 
 /* ================= SECOND SECTION ================= */
@@ -218,21 +218,77 @@
 /* ================= TABLET ================= */
 
 @media (max-width: 992px) {
+  .benefites-2 {
+    padding-top: 52px;
+  }
+
+  .sub-title-2 {
+    margin-top: 6px;
+  }
+
+  .digital-marketing-services-2-2 {
+    background-size:
+      clamp(110px, 20vw, 220px) clamp(110px, 20vw, 220px),
+      clamp(110px, 20vw, 220px) auto,
+      100% auto,
+      cover;
+  }
+
+  .benefites-2,
+  .sub-title-2,
+  .benefites-containr-2,
+  .second-container-2 {
+    padding-left: 32px;
+  }
+
   .benefites-containr-2 {
     grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
   }
 
   .custom-border-2 {
     border-right: none;
     padding-right: 0;
   }
+
+  .second-container-2 {
+    margin-top: 48px;
+  }
 }
 
 /* ================= MOBILE ================= */
 
 @media (max-width: 576px) {
+
+  .digital-marketing-services-2-2 {
+    background: none;
+  }
+
+  .benefites-2 {
+    padding-top: 36px;
+  }
+
+  .sub-title-2 {
+    margin-top: 4px;
+    margin-bottom: 34px;
+  }
+
+  .digital-marketing-services-2-2 {
+    background-image:
+      linear-gradient(to right, #000103, #000814, #01112C, #00307C);
+  }
+
+  .benefites-2,
+  .sub-title-2,
+  .benefites-containr-2,
+  .second-container-2 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .benefites-containr-2 {
     grid-template-columns: 1fr;
+    gap: 18px;
   }
 
   .benefites-containr-2 .column-2>div,
@@ -242,5 +298,13 @@
     padding-right: 30px;
     padding-bottom: 20px;
     margin-top: 10px;
+  }
+
+  .benefit-title {
+    max-width: 100%;
+  }
+
+  .second-container-2 {
+    margin-top: 36px;
   }
 }

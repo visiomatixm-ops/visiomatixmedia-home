@@ -51,7 +51,7 @@
 ================================ */
 .slide-inner-home1 {
   width: 100%;
-  /* max-width: 1400px; */
+  max-width: 1400px;
   margin: 0 auto;
 
   padding: clamp(32px, 5vw, 70px);
@@ -71,11 +71,6 @@
 }
 /* ── Hover lift on the Get Free Call button ── */
 .button-home1 {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.button-home1:hover {
-  transform: translateY(-4px) scale(1.04);
-  box-shadow: 0 8px 30px rgba(0, 200, 255, 0.35);
 }
 
 /* ── Slide image hover zoom ── */
@@ -208,7 +203,6 @@ a{
 
 .dot-home1.active-home1 {
   background: #00c3d6;
-  transform: scale(1.6);
 }
 
 /* ===============================
@@ -233,20 +227,14 @@ a{
 
 /* dot active state transition */
 .dot-home1 {
-  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 /* arrow hover glow */
 .arrow-home1 {
-  transition: transform 0.25s ease, filter 0.25s ease;
-}
-.arrow-home1:hover {
-  transform: scale(1.2);
-  filter: brightness(1.6);
 }
 
 /* ======================================================
-   🔥 MOBILE IMAGE VISUAL-CENTER FIX (IMPORTANT)
+    MOBILE IMAGE VISUAL-CENTER FIX (IMPORTANT)
 ====================================================== */
 @media (max-width: 768px) {
   .slide-inner-home1 {
@@ -257,6 +245,11 @@ a{
 
   .content-home1 {
     margin: 0 auto;
+  }
+
+  .button-home1 {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* 🔑 visual centering frame */
@@ -300,9 +293,9 @@ a{
   }
 
   .button-home1 {
-    height: 32px;
-    width: 110px;
-    font-size: 10px;
+    height: 40px;
+    width: 150px;
+    font-size: 13px;
   }
 
   .dots-home1 {

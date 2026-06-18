@@ -1,4 +1,5 @@
 .why-section-home3 {
+  
   width: 100%;
   color: #FFFFFF;
   font-family: "Decolotype", sans-serif;
@@ -6,31 +7,27 @@
   overflow: hidden;
   /* padding: 0 clamp(24px, 6vw, 100px) clamp(60px, 8vw, 80px); */
   background-image:
-  url('../../../assets/images/Ellipse\ 6.png'),
-   radial-gradient(
-    circle at right center,
-    rgba(0, 123, 255, 0.6),
-    rgba(0, 123, 255, 0.3) 20%,
-    transparent 40%
-  ),
 
-  linear-gradient(90deg,#000103,#000814,#01112C,#00307C);
-  background-repeat: no-repeat,no-repeat,no-repeat,no-repeat;
+    radial-gradient(circle at right center,
+      rgba(0, 123, 255, 0.6),
+      rgba(0, 123, 255, 0.3) 20%,
+      transparent 40%),
+
+    linear-gradient(90deg, #000103, #000814, #01112C, #00307C);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-size:
-  250px auto,
-  650px auto,
-  cover
-  ;
+    
+    650px auto,
+    cover;
   background-position:
-  left 0px top 0px,
+    
 
-  right 0px top 0%,
-  center
-  ;
+    right 0px top 0%,
+    center;
 }
 
-.why-section-home3 > * {
-  /* max-width: 1400px; */
+.why-section-home3>* {
+  max-width: 1400px;
   margin: 0 auto;
   width: 100%;
 }
@@ -53,7 +50,7 @@
 }
 
 .years-home3 {
-  
+
   font-family: "Tourney", sans-serif;
   font-size: 96px;
   line-height: 1;
@@ -95,7 +92,7 @@
 .why-choose-big-text-home3 {
   font-size: 20px;
   font-weight: 300;
-  
+
 }
 
 
@@ -103,7 +100,8 @@
 .why-image-home3 {
   max-width: 550px;
   display: grid;
-  grid-template-columns: auto max-content;/* image | pill */
+  grid-template-columns: auto max-content;
+  /* image | pill */
   align-items: center;
 }
 
@@ -127,22 +125,22 @@
 
 /* PILL */
 .contact-pill-home3 {
-  transform: rotate(-90deg) translateY(-30px);
+  transform: rotate(-90deg) translateY(-12px);
   transform-origin: center;
   text-decoration: none;
   height: 36px;
   padding: 0 28px;
-padding-top:8px;
+  padding-top: 8px;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.9);
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(6px);
-  
+
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.4px;
   color: #FFFFFF;
-  
+
   white-space: nowrap;
 }
 
@@ -162,21 +160,33 @@ padding-top:8px;
 .stats-text-container-home3 {
   display: flex;
   align-items: center;
-  
-  gap: 10px;
+  gap: 12px;
 }
 
 .stat-box-home3 h1 {
-  font-size: 38px;
-  background: linear-gradient(90deg, #02C6FF, #4B6DEF);
+  background: linear-gradient(135deg, #02c5ff, #4b6def);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: "Commissioner", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "FLAR" 0,
+    "VOLM" 0;
+  font-size: 50px;
+  line-height: 1.1;
 }
+
 /* ── Stat box hover ── */
 .stat-box-home3 {
   transition: transform 0.3s ease;
   cursor: default;
 }
+
 .stat-box-home3:hover {
   transform: translateY(-6px);
 }
@@ -185,6 +195,7 @@ padding-top:8px;
 .why-image-home3 img {
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
+
 .why-image-home3:hover img {
   transform: scale(1.04);
   box-shadow: 0 20px 60px rgba(0, 100, 255, 0.3);
@@ -192,17 +203,22 @@ padding-top:8px;
 
 /* ── Brand card hover ── */
 .brand-card-home3 img {
-  transition: transform 0.3s ease, filter 0.3s ease;
-  filter: brightness(0.85) grayscale(0.3);
-}
-.brand-card-home3:hover img {
-  transform: scale(1.12);
-  filter: brightness(1.1) grayscale(0);
 }
 
 .stat-box-home3 span {
-  font-size: 18px;
-  color: rgba(225, 222, 222, 0.75);
+  font-family: "Commissioner", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "FLAR" 0,
+    "VOLM" 0;
+  /* font-size: 20px; */
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: left;
+  max-width: 140px;
 }
 
 
@@ -230,7 +246,7 @@ padding-top:8px;
   overflow: hidden;
   padding: 12px 0;
 } */
- .brands-wrapper-home3 {
+.brands-wrapper-home3 {
   width: 100%;
   overflow: hidden;
   padding: 12px 0;
@@ -245,6 +261,9 @@ padding-top:8px;
   width: max-content;
   animation: marquee 50s linear infinite !important;
   will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
 }
 
 .brand-card-home3 {
@@ -260,12 +279,6 @@ padding-top:8px;
 
 .brand-card-home3 img {
   max-width: 200px;
-  transition: filter 0.3s ease;
-  filter: brightness(0.85) grayscale(0.3);
-}
-
-.brand-card-home3:hover img {
-  filter: brightness(1.15) grayscale(0) drop-shadow(0 0 10px rgba(0, 200, 255, 0.5));
 }
 
 
@@ -293,11 +306,66 @@ padding-top:8px;
 }
 
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+
+  .top-badge-home3,
+  .why-content-home3 h1,
+  .why-content-home3 p,
+  .stats-wrapper-home3,
+  .trusted-text-home3,
+  .services-section-home3 {
+    padding-left: 32px;
+  }
+
+  .services-section-home3 {
+    padding-right: 32px;
+  }
+
+  .why-text-main-top-container-home3 {
+    gap: 32px;
+  }
+
+  .stats-row-home3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px 20px;
+  }
+
+  .stats-text-container-home3 {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .stat-box-home3 h1 {
+    font-size: 38px;
+  }
+
+  .stat-box-home3 span {
+    text-align: center;
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  .brand-card-home3 img {
+    max-width: 160px;
+  }
+
+  .brands-marquee-home3 {
+    animation-duration: 60s !important;
+  }
+}
+
+@media (max-width: 768px) {
   .why-text-main-top-container-home3 {
     grid-template-columns: 1fr;
     text-align: center;
@@ -307,30 +375,99 @@ padding-top:8px;
     grid-template-columns: 1fr;
   }
 
+  /* Show the connect pill as a centered horizontal button below the image on mobile */
   .pill-column-home3 {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  .contact-pill-home3 {
+    transform: rotate(0) translateY(0) !important;
+    height: auto;
+    padding: 8px 20px;
+    border-radius: 999px;
+    white-space: normal;
+    display: inline-block;
+    text-align: center;
   }
 
   .stats-row-home3 {
     grid-template-columns: repeat(2, 1fr);
+    gap: 40px 15px;
+  }
+
+  .stats-text-container-home3 {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .stat-box-home3 h1 {
+    font-size: 90px !important;
+  }
+
+  .stat-box-home3 span {
+    font-size: 15px;
+    text-align: center;
+    max-width: 100%;
   }
 }
 
-@media (max-width: 768px) {
-  .stats-row-home3 {
-    grid-template-columns: 1fr;
+@media (max-width: 1200px) and (min-width: 769px) {
+  .why-text-main-top-container-home3 {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 24px;
   }
 
-  .why-image-home3 img {
-    max-width: 320px;
+  .why-image-home3 {
+    grid-template-columns: auto max-content;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .pill-column-home3 {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .contact-pill-home3 {
+    transform: rotate(-90deg) translateY(-4px) !important;
+    height: 36px;
+    padding: 0 24px;
+    padding-top: 8px;
+    border-radius: 999px;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
   }
 }
 
 @media (max-width:480px) {
-  .why-section-home3{
+  .why-section-home3 {
     background-image: none;
   }
+   
+  .stats-row-home3 {
+    gap: 30px 10px;
+  }
+
+  .stat-box-home3 h1 {
+    font-size: 70px !important;
+  }
+
+  .stat-box-home3 span {
+    font-size: 14px;
+    
+  }
 }
+
 @media (min-width: 1200px) {
   .why-image-home3 {
     gap: 6px;
@@ -345,12 +482,12 @@ padding-top:8px;
 
 @media (min-width: 1200px) {
   .contact-pill-home3 {
-    transform: rotate(-90deg) translateY(-40px);
+    transform: rotate(-90deg) translateY(-22px);
   }
 }
 
 @media (min-width: 1400px) {
   .contact-pill-home3 {
-    transform: rotate(-90deg) translateY(-50px);
+    transform: rotate(-90deg) translateY(-32px);
   }
 }

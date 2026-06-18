@@ -76,10 +76,6 @@
 .sc3-image-box-blog img {
   transition: transform 0.55s ease !important;
 }
-.sc3-image-box-blog:hover img,
-.sc3-card-container-blog:hover .sc3-image-box-blog img {
-  transform: scale(1.04) !important;
-}
 
 .sc3-meta-text-blog {
   color: #00c8ff;
@@ -121,23 +117,13 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  transition: all 0.3s ease;
 }
 .sc3-read-more-btn-blog {
-  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.sc3-read-more-btn-blog:hover {
-  transform: translateX(4px);
-  box-shadow: 0 0 16px rgba(0, 200, 255, 0.4);
 }
 
 .sc3-btn-icon-blog {
   width: 14px !important;
   height: 14px !important;
-  transform: rotate(-45deg);
-  filter: drop-shadow(0.3px 0 white) drop-shadow(0.5px 0 0 white)
-    drop-shadow(0 0.5px 0 white) drop-shadow(0 0.5px 0 white);
 }
 
 /* ================= MEDIA QUERIES ================= */

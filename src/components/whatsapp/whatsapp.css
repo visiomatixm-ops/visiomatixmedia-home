@@ -12,19 +12,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 
   opacity: 0.9;
-  transition: all 0.3s ease;
 }
 
 /* Hover Effect */
-.whatsapp-btn:hover {
-  transform: scale(1.15);
-  opacity: 1;
-}
 
 /* Icon styling */
 .whatsapp-icon {

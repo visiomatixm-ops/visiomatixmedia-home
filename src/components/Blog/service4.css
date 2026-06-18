@@ -17,7 +17,7 @@
     padding-bottom: 0px;
   width: 100%;             /* Change from 95vw to match top container */
   box-sizing: border-box;  /* Forces padding to sit INSIDE the width */
-  min-height: 100vh;
+  min-height: auto;
 
   background-image:
     url("../assets/images/Ellipse 6-1.png"),
@@ -84,11 +84,6 @@
   box-shadow: 0 16px 48px rgba(0, 100, 255, 0.25);
 }
 .service4-icon-box-blog-blog img {
-  transition: transform 0.35s ease, filter 0.35s ease;
-}
-.service4-philosophy-card-blog:hover .service4-icon-box-blog-blog img {
-  transform: scale(1.18) rotate(-6deg);
-  filter: drop-shadow(0 0 10px rgba(0, 200, 255, 0.45));
 }
 .service4-philosophy-card-blog::before {
   content: "";
@@ -178,7 +173,26 @@
 
 @media (max-width: 1200px) {
   .service4-cards-grid-blog {
-    grid-template-columns: repeat(3, 1fr) !important;
+    display: flex !important;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 16px !important;
+    padding-bottom: 12px;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  .service4-cards-grid-blog::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  .service4-cards-grid-blog > * {
+    flex: 0 0 auto;
+    width: clamp(240px, 26vw, 280px);
+    scroll-snap-align: start;
   }
 }
 
@@ -186,13 +200,10 @@
   .service4-thought-leadership-blog {
     grid-template-columns: 1fr;
   }
-  .service4-cards-grid-blog {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
 }
 
 @media (max-width: 600px) {
-  .service4-cards-grid-blog {
-    grid-template-columns: 1fr !important;
+  .service4-cards-grid-blog > * {
+    width: 84vw;
   }
 }

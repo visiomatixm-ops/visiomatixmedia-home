@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import frame1 from '../../../../assets/branding-and-strategy/images/Frame 120.png'
 import frame3 from '../../../../assets/branding-and-strategy/images/Frame 121.png'
 import frame5 from '../../../../assets/branding-and-strategy/images/Frame 122.png'
@@ -24,7 +24,7 @@ const Page2 = () => {
 
           <div className="column-2 custom-border-2 right-pad-30">
             <div className='e-commerce-services-benefits-div'>
-              <img src={frame1} alt="Icon" />
+              <img src={frame1} alt="Icon"/>
               <h3 className="benefit-title">
                 Continuous Brand Performance Monitoring
               </h3>
@@ -34,7 +34,7 @@ const Page2 = () => {
             </div>
 
             <div className='e-commerce-services-benefits-div'>
-              <img src={frame2} alt="Icon" />
+              <img src={frame2} alt="Icon"/>
               <h3 className="benefit-title">
                 Structured Quality Control & Governance
               </h3>
@@ -46,7 +46,7 @@ const Page2 = () => {
 
           <div className="column-2 custom-border-2 left-pad-50 right-pad-30">
             <div className='e-commerce-services-benefits-div'>
-              <img src={frame3} alt="Icon" />
+              <img src={frame3} alt="Icon"/>
               <h3 className="benefit-title">
                 Scalable Optimization Systems
               </h3>
@@ -56,7 +56,7 @@ const Page2 = () => {
             </div>
 
             <div className='e-commerce-services-benefits-div'>
-              <img src={frame4} alt="Icon" />
+              <img src={frame4} alt="Icon"/>
               <h3 className="benefit-title">
                 Cross-Channel Performance Alignment
               </h3>
@@ -68,7 +68,7 @@ const Page2 = () => {
 
           <div className="column-2 left-pad-50 right-pad-30">
             <div className='e-commerce-services-benefits-div'>
-              <img src={frame5} alt="Icon" />
+              <img src={frame5} alt="Icon"/>
               <h3 className="benefit-title">
                 Stronger Market Presence & Relevance
               </h3>
@@ -78,7 +78,7 @@ const Page2 = () => {
             </div>
 
             <div className='e-commerce-services-benefits-div'>
-              <img src={frame6} alt="Icon" />
+              <img src={frame6} alt="Icon"/>
               <h3 className="benefit-title">
                 Operational Efficiency & Growth Stability
               </h3>

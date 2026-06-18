@@ -1,0 +1,13 @@
+/* Footer spacing overrides specific to HomePage9 */
+.service-footer .contact-block .brand-text,
+.service-footer .contact-block .brand-contact {
+	margin: 6px 0 !important;
+	line-height: 1.35 !important;
+}
+
+.service-footer .address-text {
+	margin-top: 6px !important;
+	margin-bottom: 0 !important;
+	line-height: 1.35 !important;
+}
+
