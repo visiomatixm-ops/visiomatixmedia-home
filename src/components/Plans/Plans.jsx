@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function useReveal(ref) {
   useEffect(() => {
@@ -125,7 +126,7 @@ function PlanCard({ plan, visible }) {
         <div className="bt" style={goldStyle}>Client Benefit</div>
         <p>{plan.benefit}</p>
       </div>
-      <a href="#contact" className="pc-cta">{plan.cta}</a>
+      <Link to="/contact" className="pc-cta">{plan.cta}</Link>
     </div>
   );
 }

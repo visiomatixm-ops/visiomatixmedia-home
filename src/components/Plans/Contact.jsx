@@ -58,7 +58,7 @@ export default function Contact() {
           <a className="social-link" href="https://youtube.com/@visiomatixmedia" target="_blank" title="YouTube" rel="noreferrer">
             <svg viewBox="0 0 24 24" width="18" height="18"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" fill="none" stroke="#fff" strokeWidth="2"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#fff" stroke="none"/></svg>
           </a>
-          <a className="social-link" href="https://wa.me/919270271916" target="_blank" title="WhatsApp" rel="noreferrer">
+          <a className="social-link" href="https://wa.me/919270271916?text=Hi%20Team%20Visiomatix!%0AI%E2%80%99m%20ready%20to%20scale%20my%20brand%20and%20explore%20your%20marketing%20solutions.%20Please%20recommend%20the%20most%20suitable%20plan%20and%20share%20the%20pricing%20and%20features.%20Looking%20forward%20to%20connecting!" target="_blank" title="WhatsApp" rel="noreferrer">
             <svg viewBox="0 0 24 24" width="18" height="18"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </a>
           <a className="social-link" href="https://linkedin.com/company/visiomatix-media" target="_blank" title="LinkedIn" rel="noreferrer">
@@ -71,7 +71,7 @@ export default function Contact() {
 
         <div className="cta-btns">
           <a href="tel:+919270271916" className="btn-white">📞 Call Now</a>
-          <a href="https://wa.me/919270271916" className="btn-outline-white">💬 WhatsApp Us</a>
+          <a href="https://wa.me/919270271916?text=Hi%20Team%20Visiomatix!%0AI%E2%80%99m%20ready%20to%20scale%20my%20brand%20and%20explore%20your%20marketing%20solutions.%20Please%20recommend%20the%20most%20suitable%20plan%20and%20share%20the%20pricing%20and%20features.%20Looking%20forward%20to%20connecting!" className="btn-outline-white">💬 WhatsApp Us</a>
         </div>
       </div>
     </section>
