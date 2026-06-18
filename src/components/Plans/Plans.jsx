@@ -158,7 +158,7 @@ export default function Plans() {
 
       <div className="plans-grid" id="plansGrid">
         {plans.map((p) => (
-          <PlanCard key={p.num} plan={p} visible={filter === 'all' || p.cat === filter} />
+          <PlanCard key={`${p.num}-${filter}`} plan={p} visible={filter === 'all' || p.cat === filter} />
         ))}
       </div>
     </section>

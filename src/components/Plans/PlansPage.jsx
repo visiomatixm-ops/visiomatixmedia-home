@@ -5,6 +5,8 @@ import Why from "./Why";
 import Plans from "./Plans";
 import Compare from "./Compare";
 import Notes from "./Notes";
+import Contact from "./Contact";
+import HomePage9 from "../Home/HomePage9";
 import "./plansPage.css";
 
 export default function PlansPage() {
@@ -54,6 +56,9 @@ export default function PlansPage() {
       <Plans />
       <Compare />
       <Notes />
+      <Contact />
+      <HomePage9 />
     </div>
   );
 }
+
