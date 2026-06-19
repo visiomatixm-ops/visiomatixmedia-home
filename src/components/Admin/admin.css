@@ -79,6 +79,7 @@
   font-size: 16px;
   transition: all 0.3s ease;
   background: #f8f9fa;
+  color: #000000;
 }
 
 .admin-login input:focus {

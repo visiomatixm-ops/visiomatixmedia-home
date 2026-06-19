@@ -23,9 +23,9 @@ export const updateMetaTags = (
     'meta[property="og:description"]':
       description || "Comprehensive digital services",
     'meta[property="og:url"]':
-      canonicalUrl || "https://visiomatix.onrender.com/",
+      canonicalUrl || "https://visiomatix.in/",
     'meta[property="og:image"]':
-      ogImage || "https://visiomatix.onrender.com/Logo PNG.png",
+      ogImage || "https://visiomatix.in/Logo.png",
   };
 
   Object.entries(metaTags).forEach(([selector, content]) => {
@@ -48,7 +48,7 @@ export const updateMetaTags = (
     canonical.rel = "canonical";
     document.head.appendChild(canonical);
   }
-  canonical.href = canonicalUrl || "https://visiomatix.onrender.com/";
+  canonical.href = canonicalUrl || "https://visiomatix.in/";
 };
 
 export const structuredData = {
@@ -57,8 +57,8 @@ export const structuredData = {
     "@type": "LocalBusiness",
     name: "Visiomatix Media",
     description: "Digital Marketing & Creative Services Agency",
-    url: "https://visiomatix.onrender.com",
-    logo: "https://visiomatix.onrender.com/Logo PNG.png",
+    url: "https://visiomatix.in",
+    logo: "https://visiomatix.in/Logo.png",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Om Sai Apartment, Road, Manmad - Chandwad Rd",
@@ -90,7 +90,7 @@ export const structuredData = {
     provider: {
       "@type": "LocalBusiness",
       name: "Visiomatix Media",
-      url: "https://visiomatix.onrender.com",
+      url: "https://visiomatix.in",
     },
   }),
 
@@ -115,7 +115,7 @@ export const pageConfigs = {
       "Award-winning digital agency offering web development, SEO, branding, graphic design, and creative solutions.",
     keywords:
       "digital marketing, web design, SEO, branding, graphic design, web development, Nashik",
-    canonicalUrl: "https://visiomatix.onrender.com/",
+    canonicalUrl: "https://visiomatix.in/",
   },
   about: {
     title: "About Us - Visiomatix Media | Digital Agency Nashik",
@@ -123,7 +123,7 @@ export const pageConfigs = {
       "Learn about Visiomatix Media's mission, team, and approach to delivering innovative digital solutions.",
     keywords:
       "about visiomatix, digital agency, web design company, creative team, Nashik",
-    canonicalUrl: "https://visiomatix.onrender.com/about",
+    canonicalUrl: "https://visiomatix.in/about",
   },
   contact: {
     title: "Contact Us - Visiomatix Media | Get Your Digital Solution",
@@ -131,7 +131,7 @@ export const pageConfigs = {
       "Contact Visiomatix Media for digital marketing, web development, and creative services.",
     keywords:
       "contact us, visiomatix media, web design agency, branding services",
-    canonicalUrl: "https://visiomatix.onrender.com/contact",
+    canonicalUrl: "https://visiomatix.in/contact",
   },
   blog: {
     title: "Blog - Visiomatix Media | Digital Marketing Tips & Insights",
@@ -139,21 +139,21 @@ export const pageConfigs = {
       "Read latest blog posts on digital marketing, web design, SEO, and creative strategies.",
     keywords:
       "blog, digital marketing tips, web design, SEO guide, marketing strategy",
-    canonicalUrl: "https://visiomatix.onrender.com/blog",
+    canonicalUrl: "https://visiomatix.in/blog",
   },
   career: {
     title: "Careers - Visiomatix Media | Join Our Team",
     description:
       "Join our dynamic team at Visiomatix Media. We're hiring talented professionals in web development, design, and marketing.",
     keywords: "careers, jobs, hiring, web developer, designer, marketer",
-    canonicalUrl: "https://visiomatix.onrender.com/career",
+    canonicalUrl: "https://visiomatix.in/careers",
   },
   plans: {
     title: "Pricing Plans - Visiomatix Media | Choose Your Growth Plan",
     description:
       "Explore Visiomatix Media's pricing plans for digital marketing, Meta & Google Ads, CGI, 3D visuals, and lead generation.",
     keywords: "pricing plans, growth plans, digital marketing cost, ads management pricing",
-    canonicalUrl: "https://visiomatix.onrender.com/plans",
+    canonicalUrl: "https://visiomatix.in/plans",
   },
 };
 
