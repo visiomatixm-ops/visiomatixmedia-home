@@ -158,9 +158,10 @@ export const pageConfigs = {
 };
 
 export const addSchemaMarkup = (schemaData) => {
-  let script = document.querySelector('script[type="application/ld+json"]');
+  let script = document.querySelector('script#dynamic-schema');
   if (!script) {
     script = document.createElement("script");
+    script.id = "dynamic-schema";
     script.type = "application/ld+json";
     document.head.appendChild(script);
   }
