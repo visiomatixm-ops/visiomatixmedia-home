@@ -7,9 +7,9 @@
   font-family: "Decalotype";
 
   background-image:
-    url("src/assets/images/Ellipse 5-1.png"), 
+    url("../../assets/images/Ellipse 5-1.png"), 
     /* url("src/assets/images/Ellipse 6.png"), */
-    url("src/assets/images/Vector 3.png"),
+    url("../../assets/images/Vector 3.png"),
     linear-gradient(
     90deg,
     #000103,

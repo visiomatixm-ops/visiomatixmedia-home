@@ -1,12 +1,12 @@
 /* ================= MAIN SECTION ================= */
 @font-face {
   font-family: "decalotype-light";
-  src: url("../assets/font/decalotype.light.ttf");
+  src: url("../../assets/fonts/decalotype.light.ttf");
 }
 
 @font-face {
   font-family: "decalotype-regular";
-  src: url("../assets/font/decalotype.regular.ttf");
+  src: url("../../assets/fonts/decalotype.regular.ttf");
 }
 .service4-container-blog {
 
@@ -20,7 +20,7 @@
   min-height: auto;
 
   background-image:
-    url("../assets/images/Ellipse 6-1.png"),
+    url("../../assets/images/Ellipse 6-1.png"),
     /* linear-gradient(to right,  #000000, #01112c, #002869,#014abc,#004bc0); */
     linear-gradient(
     90deg,

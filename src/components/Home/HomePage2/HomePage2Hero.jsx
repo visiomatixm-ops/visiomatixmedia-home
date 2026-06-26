@@ -70,7 +70,7 @@ const HomePage2Hero = () => {
           >
             <h1 className="hero-title-home2">
               <WordReveal text="Enter the Visiomatix system. Power" />
-              <img src={rightCoat} alt=""/>
+              <img src={rightCoat} alt="Visiomatix Media Decorative Right Quote Icon"/>
               <br />
               <WordReveal text="every digital move you make!" />
             </h1>
@@ -108,7 +108,7 @@ const HomePage2Hero = () => {
 
           {/* RIGHT CHARACTER */}
           <div className="hero-visual-home2">
-            <img src={vectorRight} className="hero-vector-home2" alt=""/>
+            <img src={vectorRight} className="hero-vector-home2" alt="Visiomatix Media Decorative Grid Vector"/>
             <motion.div
               variants={scaleIn}
               initial="hidden"
@@ -118,7 +118,7 @@ const HomePage2Hero = () => {
               animate="float"
               {...floatY}
             >
-              <img src={heroImage} className="hero-img-home2" alt=""/>
+              <img src={heroImage} className="hero-img-home2" alt="Visiomatix Media Digital Agency Hub Illustration"/>
             </motion.div>
           </div>
         </div>
@@ -127,7 +127,7 @@ const HomePage2Hero = () => {
         <div className="hero-bottom-home2">
           {/* ROCKET */}
           <div className="rocket-home2">
-            <img src={vectorLeft} className="rocket-vector-home2" alt=""/>
+            <img src={vectorLeft} className="rocket-vector-home2" alt="Visiomatix Media Decorative Left Grid Vector"/>
             <motion.div
               variants={scaleIn}
               initial="hidden"
@@ -136,7 +136,7 @@ const HomePage2Hero = () => {
               animate="float"
               {...floatYSlow}
             >
-              <img src={rocket} className="rocket-img-home2" alt=""/>
+              <img src={rocket} className="rocket-img-home2" alt="Visiomatix Media Growth Rocket Illustration"/>
             </motion.div>
           </div>
 
@@ -154,7 +154,7 @@ const HomePage2Hero = () => {
               transition={{ duration: 0.7, ease: EASE }}
               viewport={viewport}
             >
-              <img src={leftCoat} alt=""/>
+              <img src={leftCoat} alt="Visiomatix Media Decorative Left Quote Icon"/>
               Welcome to Visiomatix Media
             </motion.h2>
 

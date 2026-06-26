@@ -36,7 +36,7 @@ const Page3 = () => {
           with confidence.
         </motion.div>
 
-        <img src={image3} alt=""className="image-bss3" />
+        <img src={image3} alt="Website Maintenance and Support services illustration by Visiomatix Media" className="image-bss3" />
       </section>
     </>
   );

@@ -30,7 +30,7 @@ function Page3() {
           enabling businesses to strengthen engagement, streamline operations,
           and achieve sustainable digital growth.
         </motion.p>
-        <img src={image3} alt=""className="image-bss3" />
+        <img src={image3} alt="Custom Website Development services illustration by Visiomatix Media" className="image-bss3" />
       </section>
     </>
   );

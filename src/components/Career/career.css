@@ -1,16 +1,16 @@
 @font-face {
   font-family: "decalotype-light";
-  src: url("../assets/font/decalotype.light.ttf");
+  src: url("../../assets/fonts/decalotype.light.ttf");
 }
 
 @font-face {
   font-family: "decalotype-regular";
-  src: url("../assets/font/decalotype.regular.ttf");
+  src: url("../../assets/fonts/decalotype.regular.ttf");
 }
 
 @font-face {
   font-family: "decalotype-semibold";
-  src: url("../assets/font/decalotype.semibold.ttf");
+  src: url("../../assets/fonts/decalotype.semibold.ttf");
 }
 
 .service_1_root-blog {
@@ -22,9 +22,9 @@
   padding: 3%;
   padding-top: 80px;
   background-image:
-    url("../assets/images/Ellipse 6.png"),
-    url("../assets/images/Ellipse 8.png"),
-    url("../assets/images/Ellipse 9.png"), url("../assets/images/Vector 6.png"),
+    url("../../assets/images/Ellipse 6.png"),
+    url("../../assets/images/Ellipse 81.png"),
+    url("../../assets/images/Ellipse 7.png"), url("../../assets/images/Vector 4.png"),
     linear-gradient(90deg, #000103, #000814, #01112c, #00307c);
 
   background-repeat: no-repeat;
@@ -326,9 +326,9 @@
   padding: 3%;
   padding-top: 80px;
   background-image:
-    url("../assets/images/Ellipse 6.png"),
-    url("../assets/images/Ellipse 8.png"),
-    url("../assets/images/Ellipse 9.png"), url("../assets/images/Vector 6.png"),
+    url("../../assets/images/Ellipse 6.png"),
+    url("../../assets/images/Ellipse 81.png"),
+    url("../../assets/images/Ellipse 7.png"), url("../../assets/images/Vector 4.png"),
     linear-gradient(90deg, #000103, #000814, #01112c, #00307c);
 
   background-repeat: no-repeat;
